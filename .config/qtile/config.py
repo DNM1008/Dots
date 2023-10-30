@@ -38,7 +38,7 @@ myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox" # My browser of choice
 myFileManager = "pcmanfm" # My file manager
 myMail = "mailspring" # My Mail
-screenshot = "flameshot gui --clipboard"
+screenshot = "flameshot gui --clipboard" 
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -433,42 +433,22 @@ def init_widgets_list():
                  ],
                  ),
         widget.Spacer(length = 8),
-       #  widget.Battery(
-       #          # chars
-       #          charge_char = "󰢞",
-       #          discharge_char = "󰁾",
-       #          empty_char = "󰂃",
-       #          full_char = "󰁹",
-       #          unknown_char = "󰚥",
-       #          foreground = colors[5],
-       #          low_foreground = colors[3],
-       #          format = "{char}  {percent:2.0%} {hour:d}:{min:02d}",
-       #          notify_below = 5,
-       #          decorations=[
-       #              BorderDecoration(
-       #                  colour = colors[5],
-       #                  border_width = [0, 0, 2, 0],
-       #              )                    
-       #          ],
-       #          update_interval = 30,
-       #          ),
-       #  widget.Spacer(length = 8),
-        widget.DF(
-                 update_interval = 60,
-                 foreground = colors[1],
-                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e df')},
-                 partition = '/',
-                 #format = '[{p}] {uf}{m} ({r:.0f}%)',
-                 format = '{uf}/{s}{m}',
-                 fmt = '🖴  {}',
-                 visible_on_warn = False,
-                 decorations=[
-                     BorderDecoration(
-                         colour = colors[1],
-                         border_width = [0, 0, 2, 0],
-                     )
-                 ],
-                 ),
+#        widget.DF(
+#                 update_interval = 60,
+#                 foreground = colors[1],
+#                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e df')},
+#                 partition = '/',
+#                 #format = '[{p}] {uf}{m} ({r:.0f}%)',
+#                 format = '{uf}/{s}{m}',
+#                 fmt = '🖴  {}',
+#                 visible_on_warn = False,
+#                 decorations=[
+#                     BorderDecoration(
+#                         colour = colors[1],
+#                         border_width = [0, 0, 2, 0],
+#                     )
+#                 ],
+#                 ),
         widget.Spacer(length = 8),
         widget.Volume(
                  foreground = colors[7],
