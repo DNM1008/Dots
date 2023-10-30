@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Australia/Sydney
+X-LIC-LOCATION:Australia/Sydney
+BEGIN:STANDARD
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:AEDT
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Sydney:20231010T130000
+DTEND;TZID=Australia/Sydney:20231010T143000
+DTSTAMP:20231006T054710Z
+ORGANIZER;CN=john.vu@crosscloudpartners.com:mailto:john.vu@crosscloudpartne
+ rs.com
+UID:0uvec2ih1fk2vcapugsg2imftq@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=danny.nguyen@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:danny.ngu
+ yen@crosscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=levi.khuu@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:levi.khuu@cr
+ osscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=crystal.tran@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:crystal.t
+ ran@crosscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=hiep.le@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:hiep.le@crossc
+ loudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Jacky Lee;X-NUM-GUESTS=0:mailto:jacky.lee@crosscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=hilbert.nguyen@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:hilbert
+ .nguyen@crosscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ilham.dawoud@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:ilham.daw
+ oud@crosscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=john.vu@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:john.vu@crosscloud
+ partners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=my.dao@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:my.dao@crossclo
+ udpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=dungnguyen10082000@gmail.com;X-NUM-GUESTS=0:mailto:dungnguyen100820
+ 00@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=hung.nguyen@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:hung.nguye
+ n@crosscloudpartners.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=vincent.nguyen@crosscloudpartners.com;X-NUM-GUESTS=0:mailto:vincent
+ .nguyen@crosscloudpartners.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/hjp-anve-ycx
+X-MICROSOFT-CDO-OWNERAPPTID:267995403
+CREATED:20231006T054707Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hj
+ p-anve-ycx\nOr dial: (AU) +61 2 9051 5112 PIN: 684723101#\nMore phone numbe
+ rs: https://tel.meet/hjp-anve-ycx?pin=8578596767744&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231006T054707Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:You're the Boss - Setup for Success! 
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

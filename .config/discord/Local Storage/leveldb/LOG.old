@@ -1,0 +1,9 @@
+2023/10/27-18:22:13.138 473 Reusing MANIFEST /home/zeus/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/10/27-18:22:13.141 473 Recovering log #12
+2023/10/27-18:22:13.237 473 Level-0 table #15: started
+2023/10/27-18:22:13.325 473 Level-0 table #15: 4026993 bytes OK
+2023/10/27-18:22:13.355 473 Delete type=0 #12
+2023/10/27-18:26:43.644 4cf Level-0 table #18: started
+2023/10/27-18:26:43.691 4cf Level-0 table #18: 2069413 bytes OK
+2023/10/27-18:26:43.696 4cf Delete type=0 #16
+2023/10/27-18:26:43.699 4cf Compacting 4@0 + 1@1 files

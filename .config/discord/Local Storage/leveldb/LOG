@@ -1,0 +1,16 @@
+2023/10/27-18:26:56.107 11df Reusing MANIFEST /home/zeus/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/10/27-18:26:56.108 11df Recovering log #17
+2023/10/27-18:26:56.108 11df Reusing old log /home/zeus/.config/discord/Local Storage/leveldb/000017.log 
+2023/10/27-18:26:56.108 11df Compacting 4@0 + 1@1 files
+2023/10/27-18:26:56.273 11df Generated table #20@0: 22 keys, 4021295 bytes
+2023/10/27-18:26:56.345 11df Generated table #21@0: 75 keys, 2088841 bytes
+2023/10/27-18:26:56.345 11df Compacted 4@0 + 1@1 files => 6110136 bytes
+2023/10/27-18:26:56.349 11df compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/10/27-18:26:56.350 11df Delete type=2 #11
+2023/10/27-18:26:56.350 11df Delete type=2 #13
+2023/10/27-18:26:56.350 11df Delete type=2 #18
+2023/10/27-18:26:56.350 11df Delete type=2 #8
+2023/10/27-18:26:56.350 11df Delete type=2 #15
+2023/10/27-18:32:27.180 21cc Level-0 table #23: started
+2023/10/27-18:32:27.231 21cc Level-0 table #23: 2067230 bytes OK
+2023/10/27-18:32:27.235 21cc Delete type=0 #17

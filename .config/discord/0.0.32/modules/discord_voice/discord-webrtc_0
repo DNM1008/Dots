@@ -1,0 +1,885 @@
+0 [%]
+[2023-10-27 20:27:37.724] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 52024 
+[2023-10-27 20:27:38.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:38.393] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3796943736, sequence number: 52305, arrival time: 7565307508 us, toffset: 2160, abs send time: 14410954
+[2023-10-27 20:27:38.658] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 52417 
+[2023-10-27 20:27:39.211] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:39.241] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1447
+[2023-10-27 20:27:39.465] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1447, rtt: 223
+[2023-10-27 20:27:39.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1289
+[2023-10-27 20:27:39.704] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 52858 
+[2023-10-27 20:27:39.799] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1289, rtt: 139
+[2023-10-27 20:27:40.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:40.600] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 53237 
+[2023-10-27 20:27:40.971] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:27:40.989] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 53400 
+[2023-10-27 20:27:41.115] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:27:41.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:42.161] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2350254, lost: 1582, bytes received: 2704186939, bitrate: 3921264 [bps], video frames received (key/delta): 75/191722, decoded: 191796 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:27:42.161] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:27:42.161] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 9600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:27:42.161] [4698] (connection.cpp:909): Memory usage: 406 MB, CPU usage: 66%
+[2023-10-27 20:27:42.211] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:42.323] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 723348, noise canceller process time: 494988 [ms]
+[2023-10-27 20:27:42.323] [4708] (captured_audio_processor.cpp:93): Audio frame: 723348, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1511
+[2023-10-27 20:27:43.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:43.496] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 54457 
+[2023-10-27 20:27:44.222] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:44.241] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1448
+[2023-10-27 20:27:44.460] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1448, rtt: 218
+[2023-10-27 20:27:44.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1290
+[2023-10-27 20:27:44.805] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1290, rtt: 145
+[2023-10-27 20:27:45.183] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 120385, lost: 33, audio frames normal: 220703, silent: 497056, expand: 475, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:27:45.183] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 289010, packets lost: 6393
+[2023-10-27 20:27:45.183] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 218 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 23439, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:27:45.183] [4698] (connection.cpp:909): Memory usage: 406 MB, CPU usage: 57%
+[2023-10-27 20:27:45.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:45.301] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 55223 
+[2023-10-27 20:27:45.865] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 4498
+[2023-10-27 20:27:45.865] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1002, samples: 441882, rate: 44144, rate diff: 0%, level: 32262
+[2023-10-27 20:27:46.189] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 55599 
+[2023-10-27 20:27:46.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:47.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:47.864] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 56318 
+[2023-10-27 20:27:47.890] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:27:48.034] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:27:48.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:48.397] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3797843826, sequence number: 56553, arrival time: 7575311278 us, toffset: 2520, abs send time: 256565
+[2023-10-27 20:27:48.748] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 56707 
+[2023-10-27 20:27:49.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:49.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1449
+[2023-10-27 20:27:49.461] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1449, rtt: 218
+[2023-10-27 20:27:49.485] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 57026 
+[2023-10-27 20:27:49.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1291
+[2023-10-27 20:27:49.734] [4708] (agc_manager_direct.cc:137): Input clipping rate: 0%
+[2023-10-27 20:27:49.797] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1291, rtt: 136
+[2023-10-27 20:27:50.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:50.280] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 57377 
+[2023-10-27 20:27:51.096] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 57733 
+[2023-10-27 20:27:51.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:51.328] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 57832 
+[2023-10-27 20:27:52.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:52.270] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2354595, lost: 1582, bytes received: 2709248367, bitrate: 3991064 [bps], video frames received (key/delta): 75/192025, decoded: 192099 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:27:52.271] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:27:52.271] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 9600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:27:52.271] [4698] (connection.cpp:909): Memory usage: 387 MB, CPU usage: 67%
+[2023-10-27 20:27:52.328] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 724349, noise canceller process time: 495654 [ms]
+[2023-10-27 20:27:52.328] [4708] (captured_audio_processor.cpp:93): Audio frame: 724349, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 10948
+[2023-10-27 20:27:52.601] [4698] (rtp_streams_synchronizer2.cc:127): Sync info stats: 7579515, {ssrc: 345243, cur_delay_ms: 0, capture_time_ntp_secs: 3907387669, capture_time_ntp_frac: 3852585664, capture_time_source_clock: 3889214277, latest_received_capture_timestamp: 3889263813, latest_receive_time_ms: 7579495} {ssrc: 345244, cur_delay_ms: 45, capture_time_ntp_secs: 3907387670, capture_time_ntp_frac: 2671469658, capture_time_source_clock: 3798188256, latest_received_capture_timestamp: 3798221826, latest_receive_time_ms: 7579515} {relative_delay_ms: -45} 
+[2023-10-27 20:27:52.792] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 58456 
+[2023-10-27 20:27:53.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:54.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:54.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1450
+[2023-10-27 20:27:54.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1450, rtt: 221
+[2023-10-27 20:27:54.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1292
+[2023-10-27 20:27:54.721] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:27:54.796] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1292, rtt: 136
+[2023-10-27 20:27:54.869] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:27:55.029] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 59405 
+[2023-10-27 20:27:55.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:55.302] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 120435, lost: 33, audio frames normal: 220783, silent: 497986, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:27:55.302] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 289516, packets lost: 6405
+[2023-10-27 20:27:55.302] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 220 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 23943, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:27:55.302] [4698] (connection.cpp:909): Memory usage: 389 MB, CPU usage: 61%
+[2023-10-27 20:27:55.421] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 59569 
+[2023-10-27 20:27:55.718] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 59696 
+[2023-10-27 20:27:55.875] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 22334
+[2023-10-27 20:27:55.875] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 6582
+[2023-10-27 20:27:55.904] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 59775 
+[2023-10-27 20:27:55.933] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 59787 
+[2023-10-27 20:27:56.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:57.211] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:58.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:58.305] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 60787 
+[2023-10-27 20:27:58.400] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3798743826, sequence number: 60834, arrival time: 7585315203 us, toffset: 3060, abs send time: 2879417
+[2023-10-27 20:27:58.562] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 60892 
+[2023-10-27 20:27:59.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:27:59.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1451
+[2023-10-27 20:27:59.466] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1451, rtt: 223
+[2023-10-27 20:27:59.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1293
+[2023-10-27 20:27:59.795] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1293, rtt: 135
+[2023-10-27 20:28:00.224] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:01.036] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 61944 
+[2023-10-27 20:28:01.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:01.640] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:01.756] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 62246 
+[2023-10-27 20:28:01.777] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:01.889] [4902] (rtcp_sender.cc:474): Sender Report {ssrc: 826177, ntp: 3907387681:3822387749, rtp_timestamp: 2872552232, last_rtp_timestamp: 348145920, last_frame_capture_time_ms: 7588804, now_us: 7588804252, rtp_rate: 48}
+[2023-10-27 20:28:02.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:02.331] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 725349, noise canceller process time: 496317 [ms]
+[2023-10-27 20:28:02.331] [4708] (captured_audio_processor.cpp:93): Audio frame: 725349, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1072
+[2023-10-27 20:28:02.378] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2358869, lost: 1582, bytes received: 2714251132, bitrate: 3931096 [bps], video frames received (key/delta): 75/192329, decoded: 192402 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:28:02.378] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:28:02.378] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 9600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:02.378] [4698] (connection.cpp:909): Memory usage: 390 MB, CPU usage: 69%
+[2023-10-27 20:28:03.089] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 62786 
+[2023-10-27 20:28:03.089] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 62797 
+[2023-10-27 20:28:03.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:03.228] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 62864 
+[2023-10-27 20:28:03.489] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 62974 
+[2023-10-27 20:28:03.652] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 63043 
+[2023-10-27 20:28:03.828] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 63117 
+[2023-10-27 20:28:04.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:04.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1452
+[2023-10-27 20:28:04.463] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1452, rtt: 221
+[2023-10-27 20:28:04.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1294
+[2023-10-27 20:28:04.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1294, rtt: 140
+[2023-10-27 20:28:05.217] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:05.224] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 63707 
+[2023-10-27 20:28:05.405] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 120694, lost: 33, audio frames normal: 221273, silent: 498504, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:28:05.405] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 290021, packets lost: 6421
+[2023-10-27 20:28:05.405] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 234 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 24447, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:05.405] [4698] (connection.cpp:909): Memory usage: 390 MB, CPU usage: 59%
+[2023-10-27 20:28:05.468] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 63809 
+[2023-10-27 20:28:05.885] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1002, samples: 441882, rate: 44144, rate diff: 0%, level: 3743
+[2023-10-27 20:28:05.885] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 32076
+[2023-10-27 20:28:06.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:06.961] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 64438 
+[2023-10-27 20:28:07.071] [13564] (rtcp_sender.cc:474): Sender Report {ssrc: 345333, ntp: 3907387687:307974924, rtp_timestamp: 2699996441, last_rtp_timestamp: 310431360, last_frame_capture_time_ms: 7593986, now_us: 7593985989, rtp_rate: 48}
+[2023-10-27 20:28:07.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:07.550] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 64680 
+[2023-10-27 20:28:08.212] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:08.404] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3799643826, sequence number: 65047, arrival time: 7595318978 us, toffset: 3330, abs send time: 5501698
+[2023-10-27 20:28:08.471] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:08.616] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:08.928] [4899] (udp_socket.cpp:625): Reconnection started, sending echo
+[2023-10-27 20:28:09.211] [4698] (connection.cpp:1138): Received inbound estimate: 2853792 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:09.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1453
+[2023-10-27 20:28:09.465] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1453, rtt: 222
+[2023-10-27 20:28:09.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1295
+[2023-10-27 20:28:09.797] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1295, rtt: 136
+[2023-10-27 20:28:10.213] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:11.212] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:12.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:12.336] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 726350, noise canceller process time: 496977 [ms]
+[2023-10-27 20:28:12.336] [4708] (captured_audio_processor.cpp:93): Audio frame: 726350, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1482
+[2023-10-27 20:28:12.472] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2362999, lost: 1582, bytes received: 2719049159, bitrate: 3906592 [bps], video frames received (key/delta): 75/192631, decoded: 192705 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:28:12.472] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:28:12.472] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:12.472] [4698] (connection.cpp:909): Memory usage: 395 MB, CPU usage: 57%
+[2023-10-27 20:28:12.772] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 1230 
+[2023-10-27 20:28:13.218] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:13.821] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 1674 
+[2023-10-27 20:28:14.212] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:14.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1454
+[2023-10-27 20:28:14.460] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1454, rtt: 217
+[2023-10-27 20:28:14.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1296
+[2023-10-27 20:28:14.809] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1296, rtt: 146
+[2023-10-27 20:28:15.218] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:15.237] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 2284 
+[2023-10-27 20:28:15.390] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:15.498] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121004, lost: 33, audio frames normal: 221849, silent: 498935, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:28:15.498] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 290526, packets lost: 6433
+[2023-10-27 20:28:15.498] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 217 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 24950, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:15.498] [4698] (connection.cpp:909): Memory usage: 422 MB, CPU usage: 198%
+[2023-10-27 20:28:15.526] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:15.895] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1000, samples: 441000, rate: 44056, rate diff: 0%, level: 5336
+[2023-10-27 20:28:15.895] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 21231
+[2023-10-27 20:28:16.224] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:16.721] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 2905 
+[2023-10-27 20:28:17.214] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:18.217] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:18.412] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3800546796, sequence number: 3616, arrival time: 7605327052 us, toffset: 990, abs send time: 8125059
+[2023-10-27 20:28:18.731] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 3750 
+[2023-10-27 20:28:19.210] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:19.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1455
+[2023-10-27 20:28:19.435] [13554] (udp_socket.cpp:625): Reconnection started, sending echo
+[2023-10-27 20:28:19.459] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1455, rtt: 216
+[2023-10-27 20:28:19.572] [13554] (udp_socket.cpp:207): ReconnectionAttemptFinished: succeeded, local address: 129.78.56.227:30720
+[2023-10-27 20:28:19.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1297
+[2023-10-27 20:28:19.696] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 4155 
+[2023-10-27 20:28:19.725] [4708] (agc_manager_direct.cc:137): Input clipping rate: 4%
+[2023-10-27 20:28:19.752] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 4178 4179 
+[2023-10-27 20:28:19.796] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1297, rtt: 136
+[2023-10-27 20:28:20.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:20.534] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 4508 
+[2023-10-27 20:28:21.322] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:21.780] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 5032 
+[2023-10-27 20:28:21.796] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 5040 
+[2023-10-27 20:28:22.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:22.221] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:22.344] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 727351, noise canceller process time: 497655 [ms]
+[2023-10-27 20:28:22.344] [4708] (captured_audio_processor.cpp:93): Audio frame: 727351, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1513
+[2023-10-27 20:28:22.375] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:22.572] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2367262, lost: 1582, bytes received: 2723983872, bitrate: 3946979 [bps], video frames received (key/delta): 75/192934, decoded: 193008 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:28:22.572] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:28:22.572] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:22.573] [4698] (connection.cpp:909): Memory usage: 402 MB, CPU usage: 65%
+[2023-10-27 20:28:23.220] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:23.480] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 5741 
+[2023-10-27 20:28:23.604] [4698] (rtp_streams_synchronizer2.cc:127): Sync info stats: 7610518, {ssrc: 345243, cur_delay_ms: 0, capture_time_ntp_secs: 3907387700, capture_time_ntp_frac: 365072220, capture_time_source_clock: 3890663253, latest_received_capture_timestamp: 3890752773, latest_receive_time_ms: 7610518} {ssrc: 345244, cur_delay_ms: 43, capture_time_ntp_secs: 3907387701, capture_time_ntp_frac: 2680059592, capture_time_source_clock: 3800978436, latest_received_capture_timestamp: 3801011826, latest_receive_time_ms: 7610519} {relative_delay_ms: -44} 
+[2023-10-27 20:28:24.139] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 6031 
+[2023-10-27 20:28:24.214] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:24.241] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1456
+[2023-10-27 20:28:24.465] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1456, rtt: 223
+[2023-10-27 20:28:24.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1298
+[2023-10-27 20:28:24.796] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1298, rtt: 136
+[2023-10-27 20:28:25.212] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:25.597] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121004, lost: 33, audio frames normal: 221849, silent: 499945, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:28:25.597] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 291031, packets lost: 6449
+[2023-10-27 20:28:25.597] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 225 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 25455, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:25.597] [4698] (connection.cpp:909): Memory usage: 398 MB, CPU usage: 60%
+[2023-10-27 20:28:25.884] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 6770 
+[2023-10-27 20:28:25.905] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 3974
+[2023-10-27 20:28:25.905] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 0
+[2023-10-27 20:28:26.217] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:26.416] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 6995 
+[2023-10-27 20:28:27.000] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 7248 
+[2023-10-27 20:28:27.213] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:27.745] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 7535 
+[2023-10-27 20:28:28.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:28.420] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3801446796, sequence number: 7832, arrival time: 7615334863 us, toffset: 1620, abs send time: 10748403
+[2023-10-27 20:28:29.140] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:29.225] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:29.241] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1457
+[2023-10-27 20:28:29.422] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:29.460] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1457, rtt: 218
+[2023-10-27 20:28:29.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1299
+[2023-10-27 20:28:29.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1299, rtt: 139
+[2023-10-27 20:28:30.225] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:30.318] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 8649 
+[2023-10-27 20:28:30.618] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 8736 
+[2023-10-27 20:28:31.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:31.464] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 9140 
+[2023-10-27 20:28:32.224] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:32.350] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 728351, noise canceller process time: 498308 [ms]
+[2023-10-27 20:28:32.350] [4708] (captured_audio_processor.cpp:93): Audio frame: 728351, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1295
+[2023-10-27 20:28:32.372] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 9531 
+[2023-10-27 20:28:32.639] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2371543, lost: 1582, bytes received: 2728972763, bitrate: 3996800 [bps], video frames received (key/delta): 76/193235, decoded: 193309 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:28:32.639] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:28:32.639] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:32.639] [4698] (connection.cpp:909): Memory usage: 399 MB, CPU usage: 61%
+[2023-10-27 20:28:32.802] [4698] (rtcp_sender.cc:474): Sender Report {ssrc: 826177, ntp: 3907387712:3445732002, rtp_timestamp: 2874035768, last_rtp_timestamp: 349629120, last_frame_capture_time_ms: 7619710, now_us: 7619716555, rtp_rate: 48}
+[2023-10-27 20:28:32.833] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 9723 
+[2023-10-27 20:28:33.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:34.221] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:34.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1458
+[2023-10-27 20:28:34.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1458, rtt: 222
+[2023-10-27 20:28:34.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1300
+[2023-10-27 20:28:34.694] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 10519 
+[2023-10-27 20:28:34.795] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1300, rtt: 135
+[2023-10-27 20:28:34.873] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 10595 
+[2023-10-27 20:28:35.214] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:35.667] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121027, lost: 33, audio frames normal: 221874, silent: 500926, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:28:35.667] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 291534, packets lost: 6458
+[2023-10-27 20:28:35.667] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 229 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 25962, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:35.667] [4698] (connection.cpp:909): Memory usage: 399 MB, CPU usage: 65%
+[2023-10-27 20:28:35.915] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 3842
+[2023-10-27 20:28:35.915] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1000, samples: 441000, rate: 44056, rate diff: 0%, level: 5
+[2023-10-27 20:28:35.971] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:36.167] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:36.172] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 11151 
+[2023-10-27 20:28:36.212] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:37.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:37.364] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 11662 
+[2023-10-27 20:28:37.400] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 11678 
+[2023-10-27 20:28:38.160] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 11998 
+[2023-10-27 20:28:38.172] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 12004 
+[2023-10-27 20:28:38.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:38.423] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3802346796, sequence number: 12111, arrival time: 7625338077 us, toffset: 1800, abs send time: 13370733
+[2023-10-27 20:28:39.221] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:39.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1459
+[2023-10-27 20:28:39.480] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1459, rtt: 237
+[2023-10-27 20:28:39.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1301
+[2023-10-27 20:28:39.794] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1301, rtt: 133
+[2023-10-27 20:28:40.023] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 12795 
+[2023-10-27 20:28:40.212] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:40.564] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 13024 
+[2023-10-27 20:28:40.734] [4698] (rtcp_sender.cc:474): Sender Report {ssrc: 345333, ntp: 3907387720:3154537514, rtp_timestamp: 2701612217, last_rtp_timestamp: 312046080, last_frame_capture_time_ms: 7627627, now_us: 7627648756, rtp_rate: 48}
+[2023-10-27 20:28:41.031] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 13220 
+[2023-10-27 20:28:41.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:42.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:42.355] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 729352, noise canceller process time: 499008 [ms]
+[2023-10-27 20:28:42.355] [4708] (captured_audio_processor.cpp:93): Audio frame: 729352, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 877
+[2023-10-27 20:28:42.515] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 13846 
+[2023-10-27 20:28:42.659] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 13904 
+[2023-10-27 20:28:42.735] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2375826, lost: 1582, bytes received: 2733957039, bitrate: 3839848 [bps], video frames received (key/delta): 76/193537, decoded: 193612 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:28:42.737] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:28:42.737] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:42.737] [4698] (connection.cpp:909): Memory usage: 398 MB, CPU usage: 58%
+[2023-10-27 20:28:42.760] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 13935 
+[2023-10-27 20:28:42.890] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:43.024] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:43.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:44.217] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:44.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1460
+[2023-10-27 20:28:44.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1460, rtt: 222
+[2023-10-27 20:28:44.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1302
+[2023-10-27 20:28:44.799] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1302, rtt: 139
+[2023-10-27 20:28:45.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:45.352] [4707] (audio_device_pulse_linux.cc:1763): Playout underflow
+[2023-10-27 20:28:45.494] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 15100 
+[2023-10-27 20:28:45.664] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 15175 
+[2023-10-27 20:28:45.767] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121027, lost: 33, audio frames normal: 221874, silent: 501935, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:28:45.767] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 292039, packets lost: 6465
+[2023-10-27 20:28:45.767] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 219 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 26467, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:45.767] [4698] (connection.cpp:909): Memory usage: 398 MB, CPU usage: 73%
+[2023-10-27 20:28:45.925] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1000, samples: 441000, rate: 44056, rate diff: 0%, level: 3726
+[2023-10-27 20:28:45.925] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 0
+[2023-10-27 20:28:46.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:46.652] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 15601 
+[2023-10-27 20:28:46.822] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 15674 
+[2023-10-27 20:28:46.946] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 15723 
+[2023-10-27 20:28:47.221] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:48.225] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:48.424] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3803246796, sequence number: 16346, arrival time: 7635338554 us, toffset: 1800, abs send time: 15992227
+[2023-10-27 20:28:48.424] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 16345 
+[2023-10-27 20:28:48.472] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 16366 
+[2023-10-27 20:28:49.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:49.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1461
+[2023-10-27 20:28:49.460] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1461, rtt: 217
+[2023-10-27 20:28:49.583] [4707] (audio_device_pulse_linux.cc:1763): Playout underflow
+[2023-10-27 20:28:49.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1303
+[2023-10-27 20:28:49.728] [4708] (agc_manager_direct.cc:137): Input clipping rate: 0%
+[2023-10-27 20:28:49.801] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1303, rtt: 141
+[2023-10-27 20:28:49.878] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:50.020] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:50.159] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 17078 
+[2023-10-27 20:28:50.212] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:50.988] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 17405 
+[2023-10-27 20:28:50.990] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 17410 
+[2023-10-27 20:28:51.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:52.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:52.274] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 17976 
+[2023-10-27 20:28:52.363] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 730352, noise canceller process time: 499749 [ms]
+[2023-10-27 20:28:52.363] [4708] (captured_audio_processor.cpp:93): Audio frame: 730352, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 952
+[2023-10-27 20:28:52.708] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 18151 
+[2023-10-27 20:28:52.755] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 18177 
+[2023-10-27 20:28:52.931] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2380144, lost: 1582, bytes received: 2739018415, bitrate: 3893066 [bps], video frames received (key/delta): 76/193843, decoded: 193918 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:28:52.931] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:28:52.932] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:52.932] [4698] (connection.cpp:909): Memory usage: 401 MB, CPU usage: 58%
+[2023-10-27 20:28:53.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:53.605] [4698] (rtp_streams_synchronizer2.cc:127): Sync info stats: 7640519, {ssrc: 345243, cur_delay_ms: 0, capture_time_ntp_secs: 3907387731, capture_time_ntp_frac: 863288426, capture_time_source_clock: 3892156869, latest_received_capture_timestamp: 3892192773, latest_receive_time_ms: 7640519} {ssrc: 345244, cur_delay_ms: 46, capture_time_ntp_secs: 3907387731, capture_time_ntp_frac: 2680059592, capture_time_source_clock: 3803678436, latest_received_capture_timestamp: 3803711826, latest_receive_time_ms: 7640519} {relative_delay_ms: -45} 
+[2023-10-27 20:28:53.953] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 18683 
+[2023-10-27 20:28:54.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:54.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1462
+[2023-10-27 20:28:54.460] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1462, rtt: 218
+[2023-10-27 20:28:54.659] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1304
+[2023-10-27 20:28:54.796] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1304, rtt: 136
+[2023-10-27 20:28:54.959] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 19102 
+[2023-10-27 20:28:55.213] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:55.935] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1002, samples: 441882, rate: 44144, rate diff: 0%, level: 3949
+[2023-10-27 20:28:55.935] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 0
+[2023-10-27 20:28:55.954] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121027, lost: 33, audio frames normal: 221874, silent: 502955, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:28:55.954] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 292549, packets lost: 6484
+[2023-10-27 20:28:55.954] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 218 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 26971, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:28:55.954] [4698] (connection.cpp:909): Memory usage: 402 MB, CPU usage: 61%
+[2023-10-27 20:28:56.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:56.640] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:28:56.782] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:28:57.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:58.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:58.428] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3804146886, sequence number: 20558, arrival time: 7645342276 us, toffset: 2160, abs send time: 1837578
+[2023-10-27 20:28:59.217] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:28:59.241] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1463
+[2023-10-27 20:28:59.460] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1463, rtt: 218
+[2023-10-27 20:28:59.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1305
+[2023-10-27 20:28:59.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1305, rtt: 139
+[2023-10-27 20:29:00.059] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 21250 
+[2023-10-27 20:29:00.268] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:01.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:02.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:02.366] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 731353, noise canceller process time: 500409 [ms]
+[2023-10-27 20:29:02.366] [4708] (captured_audio_processor.cpp:93): Audio frame: 731353, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1520
+[2023-10-27 20:29:02.450] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 22258 
+[2023-10-27 20:29:03.042] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2384398, lost: 1582, bytes received: 2743933567, bitrate: 3821032 [bps], video frames received (key/delta): 76/194147, decoded: 194222 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:29:03.043] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:29:03.043] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:03.043] [4698] (connection.cpp:909): Memory usage: 407 MB, CPU usage: 65%
+[2023-10-27 20:29:03.186] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 22539 
+[2023-10-27 20:29:03.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:03.471] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:03.612] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:04.034] [4902] (rtcp_sender.cc:474): Sender Report {ssrc: 826177, ntp: 3907387744:147429047, rtp_timestamp: 2875534952, last_rtp_timestamp: 351128640, last_frame_capture_time_ms: 7650949, now_us: 7650948609, rtp_rate: 48}
+[2023-10-27 20:29:04.226] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:04.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1464
+[2023-10-27 20:29:04.459] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1464, rtt: 217
+[2023-10-27 20:29:04.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1306
+[2023-10-27 20:29:04.795] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1306, rtt: 135
+[2023-10-27 20:29:05.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:05.945] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 4236
+[2023-10-27 20:29:05.945] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 0
+[2023-10-27 20:29:06.071] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121027, lost: 33, audio frames normal: 221874, silent: 503965, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:29:06.071] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 293054, packets lost: 6496
+[2023-10-27 20:29:06.071] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 221 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 27477, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:06.071] [4698] (connection.cpp:909): Memory usage: 406 MB, CPU usage: 63%
+[2023-10-27 20:29:06.100] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 23756 
+[2023-10-27 20:29:06.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:06.220] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 23806 
+[2023-10-27 20:29:06.332] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 23851 
+[2023-10-27 20:29:06.404] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 23881 
+[2023-10-27 20:29:07.200] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 24212 
+[2023-10-27 20:29:07.217] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:08.218] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:08.431] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3805046796, sequence number: 24723, arrival time: 7655346107 us, toffset: 2520, abs send time: 4459875
+[2023-10-27 20:29:08.771] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 24868 
+[2023-10-27 20:29:08.929] [4899] (udp_socket.cpp:625): Reconnection started, sending echo
+[2023-10-27 20:29:09.152] [4899] (udp_socket.cpp:207): ReconnectionAttemptFinished: succeeded, local address: 129.78.56.227:59079
+[2023-10-27 20:29:09.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:09.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1465
+[2023-10-27 20:29:09.463] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1465, rtt: 220
+[2023-10-27 20:29:09.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1307
+[2023-10-27 20:29:09.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1307, rtt: 139
+[2023-10-27 20:29:09.864] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 25316 
+[2023-10-27 20:29:10.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:10.390] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:10.529] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:10.556] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 25603 
+[2023-10-27 20:29:11.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:11.532] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 26008 
+[2023-10-27 20:29:11.823] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 26130 
+[2023-10-27 20:29:12.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:12.374] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 732353, noise canceller process time: 501075 [ms]
+[2023-10-27 20:29:12.374] [4708] (captured_audio_processor.cpp:93): Audio frame: 732353, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1421
+[2023-10-27 20:29:12.409] [4698] (rtcp_sender.cc:474): Sender Report {ssrc: 345333, ntp: 3907387752:1759785540, rtp_timestamp: 2703132425, last_rtp_timestamp: 313566720, last_frame_capture_time_ms: 7659311, now_us: 7659324015, rtp_rate: 48}
+[2023-10-27 20:29:12.960] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 26593 
+[2023-10-27 20:29:12.963] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 26595 
+[2023-10-27 20:29:13.146] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2388567, lost: 1582, bytes received: 2748734271, bitrate: 4501224 [bps], video frames received (key/delta): 76/194450, decoded: 194525 (rate: 33 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:29:13.146] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:29:13.146] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:13.147] [4698] (connection.cpp:909): Memory usage: 402 MB, CPU usage: 69%
+[2023-10-27 20:29:13.213] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:13.235] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 26707 
+[2023-10-27 20:29:13.436] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 26790 
+[2023-10-27 20:29:14.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:14.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1466
+[2023-10-27 20:29:14.470] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1466, rtt: 224
+[2023-10-27 20:29:14.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1308
+[2023-10-27 20:29:14.803] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1308, rtt: 142
+[2023-10-27 20:29:15.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:15.528] [4707] (audio_device_pulse_linux.cc:1763): Playout underflow
+[2023-10-27 20:29:15.768] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 27746 
+[2023-10-27 20:29:15.955] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1000, samples: 441000, rate: 44056, rate diff: 0%, level: 3634
+[2023-10-27 20:29:15.955] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 0
+[2023-10-27 20:29:15.972] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 27834 
+[2023-10-27 20:29:16.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:16.234] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 27944 
+[2023-10-27 20:29:16.252] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121027, lost: 33, audio frames normal: 221874, silent: 504984, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:29:16.252] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 293563, packets lost: 6513
+[2023-10-27 20:29:16.252] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 220 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 27982, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:16.252] [4698] (connection.cpp:909): Memory usage: 403 MB, CPU usage: 82%
+[2023-10-27 20:29:17.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:17.221] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:17.368] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:18.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:18.435] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3805946886, sequence number: 28852, arrival time: 7665349669 us, toffset: 2880, abs send time: 7082734
+[2023-10-27 20:29:18.732] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 28975 
+[2023-10-27 20:29:19.041] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 29095 
+[2023-10-27 20:29:19.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:19.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1467
+[2023-10-27 20:29:19.434] [13554] (udp_socket.cpp:625): Reconnection started, sending echo
+[2023-10-27 20:29:19.463] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1467, rtt: 220
+[2023-10-27 20:29:19.586] [13554] (udp_socket.cpp:207): ReconnectionAttemptFinished: succeeded, local address: 129.78.56.227:53952
+[2023-10-27 20:29:19.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1309
+[2023-10-27 20:29:19.735] [4708] (agc_manager_direct.cc:137): Input clipping rate: 0%
+[2023-10-27 20:29:19.804] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1309, rtt: 142
+[2023-10-27 20:29:20.226] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:21.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:22.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:22.380] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 733354, noise canceller process time: 502025 [ms]
+[2023-10-27 20:29:22.380] [4708] (captured_audio_processor.cpp:93): Audio frame: 733354, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 826
+[2023-10-27 20:29:23.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:23.284] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 30619 
+[2023-10-27 20:29:23.353] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2392535, lost: 1582, bytes received: 2753298797, bitrate: 3064704 [bps], video frames received (key/delta): 76/194756, decoded: 194831 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 720, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:29:23.353] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:29:23.353] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:23.353] [4698] (connection.cpp:909): Memory usage: 403 MB, CPU usage: 132%
+[2023-10-27 20:29:24.140] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:24.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:24.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1468
+[2023-10-27 20:29:24.280] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:24.464] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 30982 
+[2023-10-27 20:29:24.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1468, rtt: 221
+[2023-10-27 20:29:24.598] [4698] (rtp_streams_synchronizer2.cc:127): Sync info stats: 7671512, {ssrc: 345243, cur_delay_ms: 0, capture_time_ntp_secs: 3907387762, capture_time_ntp_frac: 1258425417, capture_time_source_clock: 3893649285, latest_received_capture_timestamp: 3893678853, latest_receive_time_ms: 7671478} {ssrc: 345244, cur_delay_ms: 54, capture_time_ntp_secs: 3907387762, capture_time_ntp_frac: 2113123909, capture_time_source_clock: 3806456556, latest_received_capture_timestamp: 3806501826, latest_receive_time_ms: 7671494} {relative_delay_ms: -70} 
+[2023-10-27 20:29:24.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1310
+[2023-10-27 20:29:24.832] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1310, rtt: 171
+[2023-10-27 20:29:24.950] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 31100 
+[2023-10-27 20:29:25.220] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:25.964] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1002, samples: 441882, rate: 44144, rate diff: 0%, level: 3448
+[2023-10-27 20:29:25.965] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 20870
+[2023-10-27 20:29:26.132] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 31413 
+[2023-10-27 20:29:26.214] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:26.383] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121201, lost: 33, audio frames normal: 222167, silent: 505700, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:29:26.383] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 294045, packets lost: 6526
+[2023-10-27 20:29:26.383] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 227 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 28481, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:26.383] [4698] (connection.cpp:909): Memory usage: 407 MB, CPU usage: 60%
+[2023-10-27 20:29:26.423] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 31521 
+[2023-10-27 20:29:27.092] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 31768 
+[2023-10-27 20:29:27.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:27.271] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 31830 
+[2023-10-27 20:29:27.852] [13566] (video_adapter.cc:265): Frame size changed: scaled 0 / out 194954 / in 194954 Changes: 12 Input: 1280x692 Scale: 1/1 Output: 1280x692 fps: 2147483647/-1 alignment: 1
+[2023-10-27 20:29:28.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:28.288] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 32150 
+[2023-10-27 20:29:28.352] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 32171 
+[2023-10-27 20:29:28.444] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3806849856, sequence number: 32197, arrival time: 7675358769 us, toffset: 450, abs send time: 9705797
+[2023-10-27 20:29:29.072] [4707] (audio_device_pulse_linux.cc:1763): Playout underflow
+[2023-10-27 20:29:29.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:29.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1469
+[2023-10-27 20:29:29.468] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1469, rtt: 226
+[2023-10-27 20:29:29.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1311
+[2023-10-27 20:29:29.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1311, rtt: 138
+[2023-10-27 20:29:30.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:30.904] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 32937 
+[2023-10-27 20:29:30.971] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:31.116] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:31.214] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:32.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:32.384] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 734354, noise canceller process time: 502688 [ms]
+[2023-10-27 20:29:32.384] [4708] (captured_audio_processor.cpp:93): Audio frame: 734354, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 750
+[2023-10-27 20:29:33.224] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:33.455] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2395681, lost: 1582, bytes received: 2756893602, bitrate: 3225416 [bps], video frames received (key/delta): 77/195055, decoded: 195131 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 692, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:29:33.455] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:29:33.455] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:33.455] [4698] (connection.cpp:909): Memory usage: 409 MB, CPU usage: 55%
+[2023-10-27 20:29:34.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:34.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1470
+[2023-10-27 20:29:34.469] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1470, rtt: 226
+[2023-10-27 20:29:34.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1312
+[2023-10-27 20:29:34.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1312, rtt: 139
+[2023-10-27 20:29:35.092] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 34302 
+[2023-10-27 20:29:35.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:35.219] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 34351 
+[2023-10-27 20:29:35.974] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1000, samples: 441000, rate: 44056, rate diff: 0%, level: 3384
+[2023-10-27 20:29:35.975] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 32070
+[2023-10-27 20:29:36.040] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 34622 
+[2023-10-27 20:29:36.229] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:36.387] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 34746 
+[2023-10-27 20:29:36.459] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 34771 
+[2023-10-27 20:29:36.482] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121438, lost: 33, audio frames normal: 222594, silent: 506269, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:29:36.482] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 294462, packets lost: 6543
+[2023-10-27 20:29:36.482] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 224 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 28861, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:36.482] [4698] (connection.cpp:909): Memory usage: 409 MB, CPU usage: 49%
+[2023-10-27 20:29:36.571] [4902] (rtcp_sender.cc:474): Sender Report {ssrc: 826177, ntp: 3907387776:2452924542, rtp_timestamp: 2877096872, last_rtp_timestamp: 352690560, last_frame_capture_time_ms: 7683485, now_us: 7683485399, rtp_rate: 48}
+[2023-10-27 20:29:37.213] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:37.890] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:38.040] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:38.146] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 35353 
+[2023-10-27 20:29:38.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:38.448] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3807749856, sequence number: 35480, arrival time: 7685363097 us, toffset: 900, abs send time: 12328918
+[2023-10-27 20:29:38.603] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 35544 
+[2023-10-27 20:29:39.132] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 35715 
+[2023-10-27 20:29:39.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:39.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1471
+[2023-10-27 20:29:39.463] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1471, rtt: 221
+[2023-10-27 20:29:39.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1313
+[2023-10-27 20:29:39.798] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1313, rtt: 137
+[2023-10-27 20:29:40.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:40.759] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 36368 
+[2023-10-27 20:29:40.825] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 36390 
+[2023-10-27 20:29:41.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:41.264] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 36555 
+[2023-10-27 20:29:41.267] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 36558 
+[2023-10-27 20:29:42.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:42.394] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 735355, noise canceller process time: 503320 [ms]
+[2023-10-27 20:29:42.394] [4708] (captured_audio_processor.cpp:93): Audio frame: 735355, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1566
+[2023-10-27 20:29:42.497] [13564] (rtcp_sender.cc:474): Sender Report {ssrc: 345333, ntp: 3907387782:2136531481, rtp_timestamp: 2704576601, last_rtp_timestamp: 315011520, last_frame_capture_time_ms: 7689412, now_us: 7689411733, rtp_rate: 48}
+[2023-10-27 20:29:42.923] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 37203 
+[2023-10-27 20:29:43.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:43.540] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2399346, lost: 1582, bytes received: 2761116707, bitrate: 3675864 [bps], video frames received (key/delta): 77/195357, decoded: 195433 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 692, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:29:43.541] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:29:43.541] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:43.541] [4698] (connection.cpp:909): Memory usage: 413 MB, CPU usage: 61%
+[2023-10-27 20:29:44.214] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:44.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1472
+[2023-10-27 20:29:44.392] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 37763 
+[2023-10-27 20:29:44.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1472, rtt: 222
+[2023-10-27 20:29:44.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1314
+[2023-10-27 20:29:44.721] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:44.803] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1314, rtt: 142
+[2023-10-27 20:29:44.864] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:45.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:45.884] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 38188 
+[2023-10-27 20:29:45.984] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 3957
+[2023-10-27 20:29:45.985] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 32030
+[2023-10-27 20:29:46.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:46.567] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121800, lost: 33, audio frames normal: 223245, silent: 506599, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:29:46.567] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 294950, packets lost: 6553
+[2023-10-27 20:29:46.567] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 226 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 29350, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:46.567] [4698] (connection.cpp:909): Memory usage: 414 MB, CPU usage: 44%
+[2023-10-27 20:29:47.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:48.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:48.255] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 38700 
+[2023-10-27 20:29:48.452] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3808649856, sequence number: 38758, arrival time: 7695366354 us, toffset: 1170, abs send time: 14950964
+[2023-10-27 20:29:48.796] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 38860 
+[2023-10-27 20:29:49.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:49.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1473
+[2023-10-27 20:29:49.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1473, rtt: 221
+[2023-10-27 20:29:49.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1315
+[2023-10-27 20:29:49.735] [4708] (agc_manager_direct.cc:137): Input clipping rate: 0%
+[2023-10-27 20:29:49.800] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1315, rtt: 138
+[2023-10-27 20:29:50.213] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:50.859] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 39439 
+[2023-10-27 20:29:50.883] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 39448 
+[2023-10-27 20:29:51.187] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 39538 
+[2023-10-27 20:29:51.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:51.640] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:51.783] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:51.959] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 39763 
+[2023-10-27 20:29:52.235] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:52.394] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 736355, noise canceller process time: 503979 [ms]
+[2023-10-27 20:29:52.394] [4708] (captured_audio_processor.cpp:93): Audio frame: 736355, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1667
+[2023-10-27 20:29:52.959] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 40073 
+[2023-10-27 20:29:53.216] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:53.524] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 40252 
+[2023-10-27 20:29:53.625] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2402197, lost: 1582, bytes received: 2764355061, bitrate: 3032392 [bps], video frames received (key/delta): 77/195660, decoded: 195736 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 692, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:29:53.625] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:29:53.625] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 7600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:53.626] [4698] (connection.cpp:909): Memory usage: 394 MB, CPU usage: 51%
+[2023-10-27 20:29:54.215] [4698] (connection.cpp:1138): Received inbound estimate: 7600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:54.242] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1474
+[2023-10-27 20:29:54.464] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1474, rtt: 221
+[2023-10-27 20:29:54.600] [4698] (rtp_streams_synchronizer2.cc:127): Sync info stats: 7701514, {ssrc: 345243, cur_delay_ms: 0, capture_time_ntp_secs: 3907387787, capture_time_ntp_frac: 2534030704, capture_time_source_clock: 3894863493, latest_received_capture_timestamp: 3895119813, latest_receive_time_ms: 7701502} {ssrc: 345244, cur_delay_ms: 40, capture_time_ntp_secs: 3907387792, capture_time_ntp_frac: 2276332666, capture_time_source_clock: 3809159976, latest_received_capture_timestamp: 3809201826, latest_receive_time_ms: 7701514} {relative_delay_ms: -54} 
+[2023-10-27 20:29:54.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1316
+[2023-10-27 20:29:54.799] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1316, rtt: 138
+[2023-10-27 20:29:55.020] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 40800 
+[2023-10-27 20:29:55.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:55.796] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 41056 
+[2023-10-27 20:29:55.995] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1002, samples: 441882, rate: 44144, rate diff: 0%, level: 3990
+[2023-10-27 20:29:55.995] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 5053
+[2023-10-27 20:29:56.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:56.431] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 41271 
+[2023-10-27 20:29:56.664] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 121901, lost: 33, audio frames normal: 223364, silent: 507463, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:29:56.664] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 295329, packets lost: 6558
+[2023-10-27 20:29:56.664] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 223 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 29772, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:29:56.664] [4698] (connection.cpp:909): Memory usage: 399 MB, CPU usage: 51%
+[2023-10-27 20:29:56.709] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 41351 
+[2023-10-27 20:29:57.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:58.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:58.455] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3809549856, sequence number: 41848, arrival time: 7705369669 us, toffset: 1440, abs send time: 796033
+[2023-10-27 20:29:58.471] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:29:58.627] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:29:59.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:29:59.243] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1475
+[2023-10-27 20:29:59.491] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1475, rtt: 248
+[2023-10-27 20:29:59.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1317
+[2023-10-27 20:29:59.804] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1317, rtt: 142
+[2023-10-27 20:30:00.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:00.240] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 42188 
+[2023-10-27 20:30:01.219] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:01.329] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 42579 
+[2023-10-27 20:30:02.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:02.401] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 737356, noise canceller process time: 504610 [ms]
+[2023-10-27 20:30:02.401] [4708] (captured_audio_processor.cpp:93): Audio frame: 737356, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 1604
+[2023-10-27 20:30:03.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:03.295] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 43275 
+[2023-10-27 20:30:03.751] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2405272, lost: 1582, bytes received: 2767853035, bitrate: 2546488 [bps], video frames received (key/delta): 77/195963, decoded: 196040 (rate: 31 [fps]), dropped: 0, resolution: 1280 x 692, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:30:03.751] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:30:03.751] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 9600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:30:03.751] [4698] (connection.cpp:909): Memory usage: 405 MB, CPU usage: 54%
+[2023-10-27 20:30:04.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:04.243] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1476
+[2023-10-27 20:30:04.466] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1476, rtt: 223
+[2023-10-27 20:30:04.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1318
+[2023-10-27 20:30:04.814] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1318, rtt: 152
+[2023-10-27 20:30:05.051] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 43745 
+[2023-10-27 20:30:05.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:05.390] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:30:05.451] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 43833 
+[2023-10-27 20:30:05.524] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:30:06.004] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 16654
+[2023-10-27 20:30:06.005] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 12602
+[2023-10-27 20:30:06.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:06.790] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 122047, lost: 33, audio frames normal: 223617, silent: 508222, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:30:06.790] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 295768, packets lost: 6575
+[2023-10-27 20:30:06.790] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 224 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 30197, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:30:06.790] [4698] (connection.cpp:909): Memory usage: 405 MB, CPU usage: 49%
+[2023-10-27 20:30:07.199] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 44335 
+[2023-10-27 20:30:07.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:07.971] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 44569 
+[2023-10-27 20:30:07.979] [4902] (rtcp_sender.cc:474): Sender Report {ssrc: 826177, ntp: 3907387807:4206379300, rtp_timestamp: 2878604072, last_rtp_timestamp: 354197760, last_frame_capture_time_ms: 7714894, now_us: 7714893657, rtp_rate: 48}
+[2023-10-27 20:30:08.226] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:08.463] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3810449856, sequence number: 44713, arrival time: 7715377948 us, toffset: 2160, abs send time: 3419664
+[2023-10-27 20:30:08.928] [4899] (udp_socket.cpp:625): Reconnection started, sending echo
+[2023-10-27 20:30:08.969] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 44824 
+[2023-10-27 20:30:09.210] [4899] (udp_socket.cpp:207): ReconnectionAttemptFinished: succeeded, local address: 129.78.56.227:9304
+[2023-10-27 20:30:09.219] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:09.243] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1477
+[2023-10-27 20:30:09.465] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1477, rtt: 221
+[2023-10-27 20:30:09.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1319
+[2023-10-27 20:30:09.795] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1319, rtt: 134
+[2023-10-27 20:30:09.985] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 45151 
+[2023-10-27 20:30:10.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:11.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:11.459] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 45561 
+[2023-10-27 20:30:12.025] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 45685 
+[2023-10-27 20:30:12.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:12.221] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:30:12.391] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:30:12.408] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 738357, noise canceller process time: 505246 [ms]
+[2023-10-27 20:30:12.408] [4708] (captured_audio_processor.cpp:93): Audio frame: 738357, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 942
+[2023-10-27 20:30:12.683] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 45953 
+[2023-10-27 20:30:13.176] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 46137 
+[2023-10-27 20:30:13.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:13.252] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 46170 
+[2023-10-27 20:30:13.848] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2408309, lost: 1582, bytes received: 2771315215, bitrate: 3618024 [bps], video frames received (key/delta): 77/196267, decoded: 196343 (rate: 30 [fps]), dropped: 0, resolution: 1280 x 692, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:30:13.848] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:30:13.848] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 9600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:30:13.848] [4698] (connection.cpp:909): Memory usage: 413 MB, CPU usage: 74%
+[2023-10-27 20:30:14.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:14.243] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1478
+[2023-10-27 20:30:14.331] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 46603 
+[2023-10-27 20:30:14.467] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1478, rtt: 223
+[2023-10-27 20:30:14.660] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1320
+[2023-10-27 20:30:14.811] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1320, rtt: 150
+[2023-10-27 20:30:14.867] [4698] (rtcp_sender.cc:474): Sender Report {ssrc: 345333, ntp: 3907387814:3725656496, rtp_timestamp: 2706130697, last_rtp_timestamp: 316564800, last_frame_capture_time_ms: 7721765, now_us: 7721781730, rtp_rate: 48}
+[2023-10-27 20:30:15.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:16.015] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 32767
+[2023-10-27 20:30:16.015] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 32063
+[2023-10-27 20:30:16.213] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:16.877] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 122208, lost: 33, audio frames normal: 223887, silent: 508958, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:30:16.877] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 296246, packets lost: 6583
+[2023-10-27 20:30:16.877] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 222 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 30647, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:30:16.877] [4698] (connection.cpp:909): Memory usage: 414 MB, CPU usage: 51%
+[2023-10-27 20:30:17.218] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:17.958] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 47828 
+[2023-10-27 20:30:18.126] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 47868 
+[2023-10-27 20:30:18.220] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:18.483] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3811349856, sequence number: 47971, arrival time: 7725397462 us, toffset: 360, abs send time: 6036212
+[2023-10-27 20:30:19.140] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:30:19.233] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:19.244] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1479
+[2023-10-27 20:30:19.278] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:30:19.331] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 48214 
+[2023-10-27 20:30:19.435] [13554] (udp_socket.cpp:625): Reconnection started, sending echo
+[2023-10-27 20:30:19.465] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1479, rtt: 220
+[2023-10-27 20:30:19.610] [13554] (udp_socket.cpp:207): ReconnectionAttemptFinished: succeeded, local address: 129.78.56.227:18264
+[2023-10-27 20:30:19.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1321
+[2023-10-27 20:30:19.733] [4708] (agc_manager_direct.cc:137): Input clipping rate: 0%
+[2023-10-27 20:30:19.756] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 48387 48388 
+[2023-10-27 20:30:19.799] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1321, rtt: 138
+[2023-10-27 20:30:20.229] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:21.218] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:21.571] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 49012 
+[2023-10-27 20:30:21.634] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 49036 
+[2023-10-27 20:30:21.923] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 49121 
+[2023-10-27 20:30:22.219] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:22.416] [4708] (captured_audio_processor.cpp:82): Audio frames processed: 739357, noise canceller process time: 505875 [ms]
+[2023-10-27 20:30:22.416] [4708] (captured_audio_processor.cpp:93): Audio frame: 739357, samples: 480, channels: 2, rate: 48000 [Hz], bytes: 4, level: 952
+[2023-10-27 20:30:22.455] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 49270 
+[2023-10-27 20:30:23.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:23.929] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 345243, packets received: 0, lost: 0, audio frames normal: 0, silent: 0, expand: 0, video ssrc: 345244, packets received: 2411540, lost: 1582, bytes received: 2775017774, bitrate: 2182832 [bps], video frames received (key/delta): 77/196567, decoded: 196644 (rate: 29 [fps]), dropped: 0, resolution: 1280 x 692, freeze (count/duration): 59/68452, pause (count/duration): 0/0
+[2023-10-27 20:30:23.929] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 345333, packets sent: 6, packets lost: 0
+[2023-10-27 20:30:23.929] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: -1 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 9600000 [bps], ssrcs: 345333: {seq: 57422, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:30:23.929] [4698] (connection.cpp:909): Memory usage: 415 MB, CPU usage: 55%
+[2023-10-27 20:30:24.244] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1480
+[2023-10-27 20:30:24.268] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:24.483] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1480, rtt: 239
+[2023-10-27 20:30:24.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1322
+[2023-10-27 20:30:24.799] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1322, rtt: 137
+[2023-10-27 20:30:25.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:25.618] [4698] (rtp_streams_synchronizer2.cc:127): Sync info stats: 7732532, {ssrc: 345243, cur_delay_ms: 0, capture_time_ntp_secs: 3907387820, capture_time_ntp_frac: 2486786064, capture_time_source_clock: 3896446965, latest_received_capture_timestamp: 3896608773, latest_receive_time_ms: 7732522} {ssrc: 345244, cur_delay_ms: 46, capture_time_ntp_secs: 3907387823, capture_time_ntp_frac: 2645699854, capture_time_source_clock: 3811957716, latest_received_capture_timestamp: 3811994886, latest_receive_time_ms: 7732526} {relative_delay_ms: -76} 
+[2023-10-27 20:30:25.703] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 50164 
+[2023-10-27 20:30:25.971] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Sending heartbeat"]
+[2023-10-27 20:30:26.024] [4705] (audio_device_buffer.cc:434): [REC : 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 15043
+[2023-10-27 20:30:26.025] [4705] (audio_device_buffer.cc:460): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 23226
+[2023-10-27 20:30:26.116] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","Heartbeat ACK received"]
+[2023-10-27 20:30:26.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:26.658] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 50368 
+[2023-10-27 20:30:26.961] [4698] (connection.cpp:742): Inbound stats for user: 702433204044562432, audio ssrc: 825570, packets received: 122244, lost: 33, audio frames normal: 223951, silent: 509903, expand: 476, video ssrc: 0, packets received: 0, lost: 0, bytes received: 0, bitrate: 0 [bps], video frames received (key/delta): 0/0, decoded: 0 (rate: 0 [fps]), dropped: 0, resolution: 0 x 0, freeze (count/duration): 0/0, pause (count/duration): 0/0
+[2023-10-27 20:30:26.961] [4698] (connection.cpp:778): Outbound audio stats for user: 439694825709764623, audio ssrc: 826177, packets sent: 296666, packets lost: 6593
+[2023-10-27 20:30:26.961] [4698] (connection.cpp:881): Transport stats for user: 439694825709764623, rtt: 225 [ms], available bitrate: 600000 [bps], outbound estimate: 600000 [bps], remb: 0 [bps], inbound estimate: 0 [bps], ssrcs: 826177: {seq: 31088, tseq: -1},  packets sent: 0, received: 0, bytes sent: 0, received: 0
+[2023-10-27 20:30:26.961] [4698] (connection.cpp:909): Memory usage: 417 MB, CPU usage: 49%
+[2023-10-27 20:30:27.087] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 50426 
+[2023-10-27 20:30:27.216] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:27.783] [4698] (socket_client_adapter.cpp:133): Send RTCP NACK with sender ssrc: 345334 for media ssrc: 345244: 50495 
+[2023-10-27 20:30:28.214] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:28.486] [4698] (rtp_video_stream_receiver2.cc:1304): Packet received on SSRC: 345244 with payload type: 103, timestamp: 3812252826, sequence number: 50652, arrival time: 7735401076 us, toffset: 1260, abs send time: 8668973
+[2023-10-27 20:30:29.215] [4698] (connection.cpp:1138): Received inbound estimate: 9600000 [bps], loss rate: 0 [%]
+[2023-10-27 20:30:29.244] [4899] (udp_socket.cpp:898): Sending ping to 35.215.134.229:50007, seq: 1481
+[2023-10-27 20:30:29.479] [4698] (socket_client.cpp:290): Ping received from 35.215.134.229:50007, seq: 1481, rtt: 234
+[2023-10-27 20:30:29.661] [13554] (udp_socket.cpp:898): Sending ping to 66.22.218.33:50005, seq: 1323
+[2023-10-27 20:30:29.795] [4698] (socket_client.cpp:290): Ping received from 66.22.218.33:50005, seq: 1323, rtt: 133
+[2023-10-27 20:30:29.890] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","Destroy RTCConnection"]
+[2023-10-27 20:30:29.890] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","CLOSE"]
+[2023-10-27 20:30:29.891] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","Disconnected from RTC server, clean: true, code: 1000, reason: Force Close, state: RTC_CONNECTED"]
+[2023-10-27 20:30:29.903] [4698] (engine.cpp:1495): obtained codec survey:null
+
+[2023-10-27 20:30:29.904] [4698] (audio_send_stream.cc:183): ~AudioSendStream: 826177
+[2023-10-27 20:30:29.905] [4698] (audio_device_impl.cc:846): StopPlayout
+[2023-10-27 20:30:29.905] [4698] (audio_device_buffer.cc:147): total playout time: 7401266
+[2023-10-27 20:30:29.905] [4698] (audio_device_impl.cc:850): output: 0
+[2023-10-27 20:30:29.905] [4698] (call.cc:1243): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-10-27 20:30:29.905] [4698] (audio_receive_stream.cc:148): ~AudioReceiveStreamImpl: 825570
+[2023-10-27 20:30:29.905] [4901] (control_handler.cc:80): Bitrate estimate state changed, BWE: 600 kbps.
+[2023-10-27 20:30:29.905] [4698] (connection.cpp:1343): [callscope] key:
+[2023-10-27 20:30:29.905] [4900] (pacing_controller.cc:125): PacedSender paused.
+[2023-10-27 20:30:29.905] [4698] (call.cc:599): WebRTC.Call.AudioBitrateReceivedInBps, periodic_samples:1609, {min:96, avg:50984, max:77616}
+[2023-10-27 20:30:29.905] [4698] (call.cc:607): WebRTC.Call.RtcpBitrateReceivedInBps, periodic_samples:3682, {min:128, avg:256, max:384}
+[2023-10-27 20:30:29.905] [4698] (call.cc:615): WebRTC.Call.BitrateReceivedInBps, periodic_samples:3684, {min:128, avg:22520, max:77872}
+[2023-10-27 20:30:29.905] [4899] (udp_socket.cpp:395): Disconnect
+[2023-10-27 20:30:29.907] [4660] (discord.cpp:744): JS console: ["%c[Connection(default)]","Connection state change: CONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.907] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","RTC media connection state change: RTC_CONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.908] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","RTC connection state: RTC_CONNECTED => RTC_DISCONNECTED"]
+[2023-10-27 20:30:29.908] [4660] (discord.cpp:744): JS console: ["%c[Connection(default)]","Connection state change: DISCONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.908] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","RTC media connection state change: RTC_DISCONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.908] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","RTC connection state: RTC_DISCONNECTED => RTC_DISCONNECTED"]
+[2023-10-27 20:30:29.909] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","RTC connection state: RTC_DISCONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.961] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","Destroy RTCConnection"]
+[2023-10-27 20:30:29.961] [4660] (discord.cpp:744): JS console: ["%c[RTCControlSocket]","CLOSE"]
+[2023-10-27 20:30:29.961] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","Disconnected from RTC server, clean: true, code: 1000, reason: Force Close, state: RTC_CONNECTED"]
+[2023-10-27 20:30:29.963] [4698] (engine.cpp:1495): obtained codec survey:null
+
+[2023-10-27 20:30:29.963] [4698] (audio_device_impl.cc:888): Recording
+[2023-10-27 20:30:29.964] [4698] (audio_device_impl.cc:877): StopRecording
+[2023-10-27 20:30:29.964] [4698] (audio_device_buffer.cc:176): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2023-10-27 20:30:29.964] [4698] (audio_device_buffer.cc:179): total recording time: 7401322
+[2023-10-27 20:30:29.964] [4698] (audio_device_impl.cc:881): output: 0
+[2023-10-27 20:30:29.964] [4660] (discord.cpp:744): JS console: ["%c[Connection(stream)]","Connection state change: CONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.964] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","RTC media connection state change: RTC_CONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.964] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","RTC connection state: RTC_CONNECTED => RTC_DISCONNECTED"]
+[2023-10-27 20:30:29.964] [4698] (audio_device_impl.cc:877): StopRecording
+[2023-10-27 20:30:29.964] [4698] (audio_device_impl.cc:881): output: 0
+[2023-10-27 20:30:29.964] [4698] (audio_send_stream.cc:183): ~AudioSendStream: 345333
+[2023-10-27 20:30:29.965] [4660] (discord.cpp:744): JS console: ["%c[Connection(stream)]","Connection state change: DISCONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.965] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","RTC media connection state change: RTC_DISCONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.965] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","RTC connection state: RTC_DISCONNECTED => RTC_DISCONNECTED"]
+[2023-10-27 20:30:29.966] [4698] (receive_statistics_proxy2.cc:493): WebRTC.Video.ReceiveStreamLifetimeInSeconds 6610
+Frames decoded 196826
+WebRTC.Video.DroppedFrames.Receiver 989
+WebRTC.Video.ReceivedPacketsLostInPercent 0
+WebRTC.Video.DecodedFramesPerSecond 30
+WebRTC.Video.RenderFramesPerSecond 30
+WebRTC.Video.KeyFramesReceivedInPermille 0
+WebRTC.Video.DecodeTimeInMs 5
+WebRTC.Video.JitterBufferDelayInMs 36
+WebRTC.Video.TargetDelayInMs 56
+WebRTC.Video.CurrentDelayInMs 56
+WebRTC.Video.InterframeDelayInMs 33
+WebRTC.Video.InterframeDelayMaxInMs 5621
+WebRTC.Video.InterframeDelay95PercentileInMs 46
+WebRTC.Video.ReceivedWidthInPixels 1280
+WebRTC.Video.ReceivedHeightInPixels 702
+WebRTC.Video.MediaBitrateReceivedInKbps 3278
+
+[2023-10-27 20:30:29.966] [4698] (video_quality_observer2.cc:134): WebRTC.Video.MeanTimeBetweenFreezesMs 109023
+WebRTC.Video.MeanFreezeDurationMs 1160
+WebRTC.Video.TimeInHdPercentage 98
+WebRTC.Video.TimeInBlockyVideoPercentage 0
+WebRTC.Video.NumberResolutionDownswitchesPerMinute 0
+WebRTC.Video.NumberFreezesPerMinute 0
+WebRTC.Video.HarmonicFrameRate 16
+
+[2023-10-27 20:30:29.966] [4698] (video_render_frames.cc:47): WebRTC.Video.DroppedFrames.RenderQueue 8
+[2023-10-27 20:30:29.966] [4698] (video_receive_stream2.cc:289): ~VideoReceiveStream2: {decoders: [{payload_type: 101, payload_name: AV1, codec_params: {}}, {payload_type: 103, payload_name: H264, codec_params: {hardware-h264: 1, level-asymmetry-allowed: 1, packetization-mode: 1, profile-level-id: 42e034}}, {payload_type: 105, payload_name: VP8, codec_params: {}}, {payload_type: 107, payload_name: VP9, codec_params: {}}], rtp: {remote_ssrc: 345244, local_ssrc: 345334, rtcp_mode: RtcpMode::kCompound, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: -1, red_type: -1, rtx_ssrc: 345245, rtx_payload_types: {102 (pt) -> 101 (apt), 104 (pt) -> 103 (apt), 106 (pt) -> 105 (apt), 108 (pt) -> 107 (apt), }, raw_payload_types: {}, extensions: [{uri: urn:ietf:params:rtp-hdrext:toffset, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 3}, {uri: urn:3gpp:video-orientation, id: 4}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 5}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 6}]}, renderer: (renderer), render_delay_ms: 10, sync_group: 702433204044562432}
+[2023-10-27 20:30:29.967] [4698] (media_filter_manager.cpp:182): Updating video output stream 5
+[2023-10-27 20:30:29.967] [4698] (media_filter_manager.cpp:205): Updating direct video output stream 5
+[2023-10-27 20:30:29.967] [4698] (video_adapter.cc:358): These should always be created by VideoBroadcaster!
+[2023-10-27 20:30:29.967] [4698] (call.cc:1243): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-10-27 20:30:29.967] [4698] (audio_receive_stream.cc:148): ~AudioReceiveStreamImpl: 345243
+[2023-10-27 20:30:29.967] [4698] (connection.cpp:1343): [callscope] key:
+[2023-10-27 20:30:29.967] [4698] (engine.cpp:437): Stopping audio output device
+[2023-10-27 20:30:29.967] [4698] (audio_device_impl.cc:857): Playing
+[2023-10-27 20:30:29.967] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","RTC connection state: RTC_DISCONNECTED => DISCONNECTED"]
+[2023-10-27 20:30:29.967] [13556] (control_handler.cc:80): Bitrate estimate state changed, BWE: 600 kbps.
+[2023-10-27 20:30:29.967] [13555] (pacing_controller.cc:125): PacedSender paused.
+[2023-10-27 20:30:29.967] [4698] (call.cc:591): WebRTC.Call.VideoBitrateReceivedInBps, periodic_samples:3301, {min:23344, avg:3391720, max:10409568}
+[2023-10-27 20:30:29.967] [4698] (call.cc:599): WebRTC.Call.AudioBitrateReceivedInBps, periodic_samples:3303, {min:2672, avg:123872, max:201568}
+[2023-10-27 20:30:29.967] [4698] (call.cc:607): WebRTC.Call.RtcpBitrateReceivedInBps, periodic_samples:3291, {min:336, avg:720, max:1456}
+[2023-10-27 20:30:29.967] [4698] (call.cc:615): WebRTC.Call.BitrateReceivedInBps, periodic_samples:3304, {min:23344, avg:3513496, max:9907216}
+[2023-10-27 20:30:29.967] [13554] (udp_socket.cpp:395): Disconnect
+[2023-10-27 20:30:29.984] [4660] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 2 messages in 102ms"]
+[2023-10-27 20:30:29.990] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(814632985688932472, default)]","Error: codec survey is not available"]
+[2023-10-27 20:30:29.990] [4660] (discord.cpp:744): JS console: ["%c[RTCConnection(1167362161744564284, stream)]","Error: codec survey is not available"]
+[2023-10-27 20:30:30.146] [4660] (discord.cpp:744): JS console: ["Unsubscribing from direct frames for streamId 5"]
+[2023-10-27 20:30:30.146] [4698] (media_filter_manager.cpp:205): Updating direct video output stream 5

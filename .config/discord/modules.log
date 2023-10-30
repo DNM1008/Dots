@@ -1,0 +1,710 @@
+2023-10-23T07:01:53.944Z [Modules] Modules initializing
+2023-10-23T07:01:53.945Z [Modules] Distribution: remote
+2023-10-23T07:01:53.945Z [Modules] Host updates: enabled
+2023-10-23T07:01:53.945Z [Modules] Module updates: enabled
+2023-10-23T07:01:53.946Z [Modules] Module install path: /home/zeus/.config/discord/0.0.32/modules
+2023-10-23T07:01:53.946Z [Modules] Module installed file path: /home/zeus/.config/discord/0.0.32/modules/installed.json
+2023-10-23T07:01:53.946Z [Modules] Module download path: /home/zeus/.config/discord/0.0.32/modules/pending
+2023-10-23T07:01:54.258Z [Modules] Bootstrapping...
+2023-10-23T07:01:54.260Z [Modules] Installing discord_desktop_core@0 from /opt/discord/resources/bootstrap/discord_desktop_core.zip
+2023-10-23T07:01:54.268Z [Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_desktop_core.zip'
+2023-10-23T07:01:54.269Z [Modules] Installing discord_erlpack@0 from /opt/discord/resources/bootstrap/discord_erlpack.zip
+2023-10-23T07:01:54.274Z [Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_erlpack.zip'
+2023-10-23T07:01:54.275Z [Modules] Installing discord_spellcheck@0 from /opt/discord/resources/bootstrap/discord_spellcheck.zip
+2023-10-23T07:01:54.278Z [Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_spellcheck.zip'
+2023-10-23T07:01:54.279Z [Modules] Installing discord_utils@0 from /opt/discord/resources/bootstrap/discord_utils.zip
+2023-10-23T07:01:54.282Z [Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_utils.zip'
+2023-10-23T07:01:54.283Z [Modules] Installing discord_voice@0 from /opt/discord/resources/bootstrap/discord_voice.zip
+2023-10-23T07:01:54.285Z [Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_voice.zip'
+2023-10-23T07:01:54.286Z [Modules] Finished module installations. [success: 0] [failure: 5]
+2023-10-23T07:01:54.287Z [Modules] Checking for host updates.
+2023-10-23T07:01:54.587Z [Modules] Host is up to date.
+2023-10-23T07:01:54.588Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T07:01:54.635Z [Modules] Module update available: discord_desktop_core@1 [installed: 0]
+2023-10-23T07:01:54.636Z [Modules] Module update available: discord_erlpack@1 [installed: 0]
+2023-10-23T07:01:54.636Z [Modules] Module update available: discord_spellcheck@1 [installed: 0]
+2023-10-23T07:01:54.636Z [Modules] Module update available: discord_utils@1 [installed: 0]
+2023-10-23T07:01:54.637Z [Modules] Module update available: discord_voice@1 [installed: 0]
+2023-10-23T07:01:54.639Z [Modules] Fetching discord_desktop_core@1 from https://discord.com/api/modules/stable/discord_desktop_core/1
+2023-10-23T07:01:54.639Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip
+2023-10-23T07:01:54.943Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 2%
+2023-10-23T07:01:54.947Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 3%
+2023-10-23T07:01:54.953Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 5%
+2023-10-23T07:01:54.957Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 6%
+2023-10-23T07:01:54.961Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 7%
+2023-10-23T07:01:54.968Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 9%
+2023-10-23T07:01:54.973Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 10%
+2023-10-23T07:01:54.983Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 11%
+2023-10-23T07:01:54.996Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 14%
+2023-10-23T07:01:54.999Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 17%
+2023-10-23T07:01:55.002Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 18%
+2023-10-23T07:01:55.005Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 19%
+2023-10-23T07:01:55.010Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 20%
+2023-10-23T07:01:55.014Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 21%
+2023-10-23T07:01:55.016Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 22%
+2023-10-23T07:01:55.022Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 23%
+2023-10-23T07:01:55.025Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 25%
+2023-10-23T07:01:55.033Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 26%
+2023-10-23T07:01:55.036Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 28%
+2023-10-23T07:01:55.039Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 31%
+2023-10-23T07:01:55.044Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 32%
+2023-10-23T07:01:55.047Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 34%
+2023-10-23T07:01:55.053Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 37%
+2023-10-23T07:01:55.056Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 39%
+2023-10-23T07:01:55.059Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 41%
+2023-10-23T07:01:55.063Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 44%
+2023-10-23T07:01:55.068Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 46%
+2023-10-23T07:01:55.072Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 48%
+2023-10-23T07:01:55.075Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 49%
+2023-10-23T07:01:55.078Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 52%
+2023-10-23T07:01:55.082Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 54%
+2023-10-23T07:01:55.086Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 56%
+2023-10-23T07:01:55.092Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 57%
+2023-10-23T07:01:55.096Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 60%
+2023-10-23T07:01:55.098Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 61%
+2023-10-23T07:01:55.100Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 62%
+2023-10-23T07:01:55.103Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 64%
+2023-10-23T07:01:55.106Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 65%
+2023-10-23T07:01:55.109Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 68%
+2023-10-23T07:01:55.110Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 70%
+2023-10-23T07:01:55.113Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 71%
+2023-10-23T07:01:55.117Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 73%
+2023-10-23T07:01:55.119Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 74%
+2023-10-23T07:01:55.123Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 77%
+2023-10-23T07:01:55.127Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 79%
+2023-10-23T07:01:55.129Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 80%
+2023-10-23T07:01:55.133Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 83%
+2023-10-23T07:01:55.137Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 85%
+2023-10-23T07:01:55.140Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 86%
+2023-10-23T07:01:55.142Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 87%
+2023-10-23T07:01:55.145Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 89%
+2023-10-23T07:01:55.148Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 91%
+2023-10-23T07:01:55.153Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 94%
+2023-10-23T07:01:55.157Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 95%
+2023-10-23T07:01:55.160Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 98%
+2023-10-23T07:01:55.163Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 99%
+2023-10-23T07:01:55.165Z [Modules] Streaming discord_desktop_core@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip: 100%
+2023-10-23T07:01:55.168Z [Modules] Fetching discord_erlpack@1 from https://discord.com/api/modules/stable/discord_erlpack/1
+2023-10-23T07:01:55.168Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip
+2023-10-23T07:01:55.440Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 1%
+2023-10-23T07:01:55.443Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 5%
+2023-10-23T07:01:55.449Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 8%
+2023-10-23T07:01:55.453Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 10%
+2023-10-23T07:01:55.456Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 13%
+2023-10-23T07:01:55.459Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 15%
+2023-10-23T07:01:55.462Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 17%
+2023-10-23T07:01:55.465Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 18%
+2023-10-23T07:01:55.468Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 19%
+2023-10-23T07:01:55.470Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 23%
+2023-10-23T07:01:55.478Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 26%
+2023-10-23T07:01:55.481Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 28%
+2023-10-23T07:01:55.484Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 29%
+2023-10-23T07:01:55.485Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 33%
+2023-10-23T07:01:55.488Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 34%
+2023-10-23T07:01:55.492Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 35%
+2023-10-23T07:01:55.494Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 38%
+2023-10-23T07:01:55.496Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 39%
+2023-10-23T07:01:55.498Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 40%
+2023-10-23T07:01:55.501Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 42%
+2023-10-23T07:01:55.504Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 45%
+2023-10-23T07:01:55.507Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 47%
+2023-10-23T07:01:55.510Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 49%
+2023-10-23T07:01:55.514Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 51%
+2023-10-23T07:01:55.516Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 52%
+2023-10-23T07:01:55.519Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 55%
+2023-10-23T07:01:55.524Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 58%
+2023-10-23T07:01:55.526Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 59%
+2023-10-23T07:01:55.530Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 60%
+2023-10-23T07:01:55.532Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 61%
+2023-10-23T07:01:55.535Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 63%
+2023-10-23T07:01:55.537Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 64%
+2023-10-23T07:01:55.541Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 66%
+2023-10-23T07:01:55.545Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 67%
+2023-10-23T07:01:55.548Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 68%
+2023-10-23T07:01:55.551Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 69%
+2023-10-23T07:01:55.555Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 71%
+2023-10-23T07:01:55.564Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 72%
+2023-10-23T07:01:55.567Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 74%
+2023-10-23T07:01:55.569Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 75%
+2023-10-23T07:01:55.572Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 76%
+2023-10-23T07:01:55.576Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 78%
+2023-10-23T07:01:55.579Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 82%
+2023-10-23T07:01:55.584Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 83%
+2023-10-23T07:01:55.586Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 85%
+2023-10-23T07:01:55.590Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 88%
+2023-10-23T07:01:55.595Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 90%
+2023-10-23T07:01:55.599Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 94%
+2023-10-23T07:01:55.601Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 95%
+2023-10-23T07:01:55.604Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 97%
+2023-10-23T07:01:55.609Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 98%
+2023-10-23T07:01:55.612Z [Modules] Streaming discord_erlpack@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip: 100%
+2023-10-23T07:01:55.615Z [Modules] Fetching discord_spellcheck@1 from https://discord.com/api/modules/stable/discord_spellcheck/1
+2023-10-23T07:01:55.616Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip
+2023-10-23T07:01:55.882Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 1%
+2023-10-23T07:01:55.892Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 2%
+2023-10-23T07:01:55.899Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 3%
+2023-10-23T07:01:55.907Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 4%
+2023-10-23T07:01:55.915Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 5%
+2023-10-23T07:01:55.923Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 6%
+2023-10-23T07:01:55.934Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 7%
+2023-10-23T07:01:55.939Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 8%
+2023-10-23T07:01:55.946Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 9%
+2023-10-23T07:01:55.958Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 10%
+2023-10-23T07:01:55.964Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 11%
+2023-10-23T07:01:55.973Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 12%
+2023-10-23T07:01:55.982Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 13%
+2023-10-23T07:01:55.992Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 14%
+2023-10-23T07:01:55.997Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 15%
+2023-10-23T07:01:56.006Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 16%
+2023-10-23T07:01:56.015Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 17%
+2023-10-23T07:01:56.020Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 18%
+2023-10-23T07:01:56.030Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 19%
+2023-10-23T07:01:56.037Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 20%
+2023-10-23T07:01:56.044Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 21%
+2023-10-23T07:01:56.056Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 22%
+2023-10-23T07:01:56.064Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 23%
+2023-10-23T07:01:56.070Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 24%
+2023-10-23T07:01:56.075Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 25%
+2023-10-23T07:01:56.085Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 26%
+2023-10-23T07:01:56.092Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 27%
+2023-10-23T07:01:56.104Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 28%
+2023-10-23T07:01:56.111Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 29%
+2023-10-23T07:01:56.119Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 30%
+2023-10-23T07:01:56.125Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 31%
+2023-10-23T07:01:56.137Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 32%
+2023-10-23T07:01:56.141Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 33%
+2023-10-23T07:01:56.148Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 34%
+2023-10-23T07:01:56.156Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 35%
+2023-10-23T07:01:56.168Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 36%
+2023-10-23T07:01:56.174Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 37%
+2023-10-23T07:01:56.185Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 38%
+2023-10-23T07:01:56.193Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 39%
+2023-10-23T07:01:56.197Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 40%
+2023-10-23T07:01:56.207Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 41%
+2023-10-23T07:01:56.218Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 42%
+2023-10-23T07:01:56.222Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 43%
+2023-10-23T07:01:56.231Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 44%
+2023-10-23T07:01:56.240Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 45%
+2023-10-23T07:01:56.251Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 46%
+2023-10-23T07:01:56.258Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 47%
+2023-10-23T07:01:56.263Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 48%
+2023-10-23T07:01:56.271Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 49%
+2023-10-23T07:01:56.277Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 50%
+2023-10-23T07:01:56.287Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 51%
+2023-10-23T07:01:56.296Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 52%
+2023-10-23T07:01:56.305Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 53%
+2023-10-23T07:01:56.319Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 54%
+2023-10-23T07:01:56.324Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 55%
+2023-10-23T07:01:56.328Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 56%
+2023-10-23T07:01:56.339Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 57%
+2023-10-23T07:01:56.347Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 58%
+2023-10-23T07:01:56.354Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 59%
+2023-10-23T07:01:56.362Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 60%
+2023-10-23T07:01:56.371Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 61%
+2023-10-23T07:01:56.379Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 62%
+2023-10-23T07:01:56.389Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 63%
+2023-10-23T07:01:56.396Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 64%
+2023-10-23T07:01:56.402Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 65%
+2023-10-23T07:01:56.413Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 66%
+2023-10-23T07:01:56.417Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 67%
+2023-10-23T07:01:56.428Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 68%
+2023-10-23T07:01:56.434Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 69%
+2023-10-23T07:01:56.445Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 70%
+2023-10-23T07:01:56.455Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 71%
+2023-10-23T07:01:56.458Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 72%
+2023-10-23T07:01:56.469Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 73%
+2023-10-23T07:01:56.474Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 74%
+2023-10-23T07:01:56.485Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 75%
+2023-10-23T07:01:56.492Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 76%
+2023-10-23T07:01:56.502Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 77%
+2023-10-23T07:01:56.509Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 78%
+2023-10-23T07:01:56.519Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 79%
+2023-10-23T07:01:56.527Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 80%
+2023-10-23T07:01:56.530Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 81%
+2023-10-23T07:01:56.543Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 82%
+2023-10-23T07:01:56.549Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 83%
+2023-10-23T07:01:56.557Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 84%
+2023-10-23T07:01:56.568Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 85%
+2023-10-23T07:01:56.572Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 86%
+2023-10-23T07:01:56.581Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 87%
+2023-10-23T07:01:56.592Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 88%
+2023-10-23T07:01:56.598Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 89%
+2023-10-23T07:01:56.607Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 90%
+2023-10-23T07:01:56.615Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 91%
+2023-10-23T07:01:56.624Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 92%
+2023-10-23T07:01:56.631Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 93%
+2023-10-23T07:01:56.639Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 94%
+2023-10-23T07:01:56.648Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 95%
+2023-10-23T07:01:56.656Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 96%
+2023-10-23T07:01:56.665Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 97%
+2023-10-23T07:01:56.671Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 98%
+2023-10-23T07:01:56.681Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 99%
+2023-10-23T07:01:56.689Z [Modules] Streaming discord_spellcheck@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip: 100%
+2023-10-23T07:01:56.720Z [Modules] Fetching discord_utils@1 from https://discord.com/api/modules/stable/discord_utils/1
+2023-10-23T07:01:56.721Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip
+2023-10-23T07:01:56.991Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 1%
+2023-10-23T07:01:56.994Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 2%
+2023-10-23T07:01:56.997Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 3%
+2023-10-23T07:01:57.001Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 5%
+2023-10-23T07:01:57.005Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 6%
+2023-10-23T07:01:57.008Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 8%
+2023-10-23T07:01:57.017Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 10%
+2023-10-23T07:01:57.021Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 11%
+2023-10-23T07:01:57.025Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 13%
+2023-10-23T07:01:57.030Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 15%
+2023-10-23T07:01:57.034Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 16%
+2023-10-23T07:01:57.040Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 18%
+2023-10-23T07:01:57.045Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 20%
+2023-10-23T07:01:57.046Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 21%
+2023-10-23T07:01:57.050Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 22%
+2023-10-23T07:01:57.053Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 23%
+2023-10-23T07:01:57.058Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 24%
+2023-10-23T07:01:57.061Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 25%
+2023-10-23T07:01:57.064Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 26%
+2023-10-23T07:01:57.067Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 27%
+2023-10-23T07:01:57.070Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 28%
+2023-10-23T07:01:57.074Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 29%
+2023-10-23T07:01:57.079Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 31%
+2023-10-23T07:01:57.080Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 32%
+2023-10-23T07:01:57.087Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 34%
+2023-10-23T07:01:57.091Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 35%
+2023-10-23T07:01:57.094Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 36%
+2023-10-23T07:01:57.096Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 37%
+2023-10-23T07:01:57.101Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 38%
+2023-10-23T07:01:57.104Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 40%
+2023-10-23T07:01:57.106Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 41%
+2023-10-23T07:01:57.110Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 42%
+2023-10-23T07:01:57.113Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 43%
+2023-10-23T07:01:57.118Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 44%
+2023-10-23T07:01:57.121Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 46%
+2023-10-23T07:01:57.125Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 47%
+2023-10-23T07:01:57.127Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 49%
+2023-10-23T07:01:57.135Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 51%
+2023-10-23T07:01:57.141Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 53%
+2023-10-23T07:01:57.144Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 54%
+2023-10-23T07:01:57.148Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 55%
+2023-10-23T07:01:57.151Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 56%
+2023-10-23T07:01:57.160Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 57%
+2023-10-23T07:01:57.161Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 58%
+2023-10-23T07:01:57.164Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 60%
+2023-10-23T07:01:57.165Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 61%
+2023-10-23T07:01:57.172Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 62%
+2023-10-23T07:01:57.176Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 63%
+2023-10-23T07:01:57.180Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 64%
+2023-10-23T07:01:57.183Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 65%
+2023-10-23T07:01:57.187Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 66%
+2023-10-23T07:01:57.190Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 68%
+2023-10-23T07:01:57.194Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 69%
+2023-10-23T07:01:57.196Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 70%
+2023-10-23T07:01:57.202Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 72%
+2023-10-23T07:01:57.206Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 73%
+2023-10-23T07:01:57.210Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 74%
+2023-10-23T07:01:57.212Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 75%
+2023-10-23T07:01:57.216Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 76%
+2023-10-23T07:01:57.219Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 77%
+2023-10-23T07:01:57.220Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 79%
+2023-10-23T07:01:57.226Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 80%
+2023-10-23T07:01:57.229Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 81%
+2023-10-23T07:01:57.232Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 82%
+2023-10-23T07:01:57.242Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 84%
+2023-10-23T07:01:57.245Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 86%
+2023-10-23T07:01:57.247Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 87%
+2023-10-23T07:01:57.249Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 88%
+2023-10-23T07:01:57.253Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 89%
+2023-10-23T07:01:57.258Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 91%
+2023-10-23T07:01:57.260Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 92%
+2023-10-23T07:01:57.263Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 93%
+2023-10-23T07:01:57.267Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 94%
+2023-10-23T07:01:57.270Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 95%
+2023-10-23T07:01:57.274Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 96%
+2023-10-23T07:01:57.277Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 97%
+2023-10-23T07:01:57.279Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 98%
+2023-10-23T07:01:57.281Z [Modules] Streaming discord_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip: 100%
+2023-10-23T07:01:57.284Z [Modules] Fetching discord_voice@1 from https://discord.com/api/modules/stable/discord_voice/1
+2023-10-23T07:01:57.284Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip
+2023-10-23T07:01:57.558Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 1%
+2023-10-23T07:01:57.577Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 2%
+2023-10-23T07:01:57.590Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 3%
+2023-10-23T07:01:57.610Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 4%
+2023-10-23T07:01:57.626Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 5%
+2023-10-23T07:01:57.639Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 6%
+2023-10-23T07:01:57.659Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 7%
+2023-10-23T07:01:57.676Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 8%
+2023-10-23T07:01:57.692Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 9%
+2023-10-23T07:01:57.708Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 10%
+2023-10-23T07:01:57.725Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 11%
+2023-10-23T07:01:57.741Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 12%
+2023-10-23T07:01:57.768Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 13%
+2023-10-23T07:01:57.794Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 14%
+2023-10-23T07:01:57.812Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 15%
+2023-10-23T07:01:57.824Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 16%
+2023-10-23T07:01:57.844Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 17%
+2023-10-23T07:01:57.859Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 18%
+2023-10-23T07:01:57.875Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 19%
+2023-10-23T07:01:57.893Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 20%
+2023-10-23T07:01:57.911Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 21%
+2023-10-23T07:01:57.923Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 22%
+2023-10-23T07:01:57.940Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 23%
+2023-10-23T07:01:57.959Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 24%
+2023-10-23T07:01:57.975Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 25%
+2023-10-23T07:01:57.993Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 26%
+2023-10-23T07:01:58.005Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 27%
+2023-10-23T07:01:58.026Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 28%
+2023-10-23T07:01:58.043Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 29%
+2023-10-23T07:01:58.078Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 30%
+2023-10-23T07:01:58.099Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 31%
+2023-10-23T07:01:58.112Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 32%
+2023-10-23T07:01:58.128Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 33%
+2023-10-23T07:01:58.144Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 34%
+2023-10-23T07:01:58.161Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 35%
+2023-10-23T07:01:58.180Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 36%
+2023-10-23T07:01:58.193Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 37%
+2023-10-23T07:01:58.210Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 38%
+2023-10-23T07:01:58.225Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 39%
+2023-10-23T07:01:58.244Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 40%
+2023-10-23T07:01:58.262Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 41%
+2023-10-23T07:01:58.276Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 42%
+2023-10-23T07:01:58.296Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 43%
+2023-10-23T07:01:58.310Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 44%
+2023-10-23T07:01:58.331Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 45%
+2023-10-23T07:01:58.354Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 46%
+2023-10-23T07:01:58.388Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 47%
+2023-10-23T07:01:58.411Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 48%
+2023-10-23T07:01:58.429Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 49%
+2023-10-23T07:01:58.444Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 50%
+2023-10-23T07:01:58.461Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 51%
+2023-10-23T07:01:58.476Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 52%
+2023-10-23T07:01:58.494Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 53%
+2023-10-23T07:01:58.512Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 54%
+2023-10-23T07:01:58.525Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 55%
+2023-10-23T07:01:58.543Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 56%
+2023-10-23T07:01:58.562Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 57%
+2023-10-23T07:01:58.578Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 58%
+2023-10-23T07:01:58.594Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 59%
+2023-10-23T07:01:58.610Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 60%
+2023-10-23T07:01:58.632Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 61%
+2023-10-23T07:01:58.666Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 62%
+2023-10-23T07:01:58.696Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 63%
+2023-10-23T07:01:58.728Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 64%
+2023-10-23T07:01:58.744Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 65%
+2023-10-23T07:01:58.763Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 66%
+2023-10-23T07:01:58.779Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 67%
+2023-10-23T07:01:58.795Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 68%
+2023-10-23T07:01:58.810Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 69%
+2023-10-23T07:01:58.828Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 70%
+2023-10-23T07:01:58.844Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 71%
+2023-10-23T07:01:58.860Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 72%
+2023-10-23T07:01:58.877Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 73%
+2023-10-23T07:01:58.894Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 74%
+2023-10-23T07:01:58.911Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 75%
+2023-10-23T07:01:58.933Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 76%
+2023-10-23T07:01:58.959Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 77%
+2023-10-23T07:01:58.985Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 78%
+2023-10-23T07:01:59.019Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 79%
+2023-10-23T07:01:59.045Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 80%
+2023-10-23T07:01:59.061Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 81%
+2023-10-23T07:01:59.078Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 82%
+2023-10-23T07:01:59.094Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 83%
+2023-10-23T07:01:59.110Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 84%
+2023-10-23T07:01:59.128Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 85%
+2023-10-23T07:01:59.147Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 86%
+2023-10-23T07:01:59.160Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 87%
+2023-10-23T07:01:59.178Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 88%
+2023-10-23T07:01:59.191Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 89%
+2023-10-23T07:01:59.216Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 90%
+2023-10-23T07:01:59.237Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 91%
+2023-10-23T07:01:59.267Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 92%
+2023-10-23T07:01:59.295Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 93%
+2023-10-23T07:01:59.327Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 94%
+2023-10-23T07:01:59.349Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 95%
+2023-10-23T07:01:59.364Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 96%
+2023-10-23T07:01:59.379Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 97%
+2023-10-23T07:01:59.398Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 98%
+2023-10-23T07:01:59.417Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 99%
+2023-10-23T07:01:59.428Z [Modules] Streaming discord_voice@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip: 100%
+2023-10-23T07:01:59.430Z [Modules] Finished module downloads. [success: 5] [failure: 0]
+2023-10-23T07:01:59.431Z [Modules] Installing updates...
+2023-10-23T07:01:59.431Z [Modules] Installing discord_desktop_core@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_desktop_core-1.zip
+2023-10-23T07:01:59.597Z [Modules] Installing discord_erlpack@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_erlpack-1.zip
+2023-10-23T07:01:59.750Z [Modules] Installing discord_spellcheck@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_spellcheck-1.zip
+2023-10-23T07:02:01.553Z [Modules] Installing discord_utils@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_utils-1.zip
+2023-10-23T07:02:02.661Z [Modules] Installing discord_voice@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_voice-1.zip
+2023-10-23T07:02:04.310Z [Modules] Finished module installations. [success: 5] [failure: 0]
+2023-10-23T07:02:04.311Z [Modules] Checking for host updates.
+2023-10-23T07:02:04.577Z [Modules] Host is up to date.
+2023-10-23T07:02:04.577Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T07:02:04.583Z [Modules] No module updates available.
+2023-10-23T07:02:07.854Z [Modules] Starting to install discord_krisp...
+2023-10-23T07:02:07.854Z [Modules] Fetching discord_krisp@1 from https://discord.com/api/modules/stable/discord_krisp/1
+2023-10-23T07:02:07.854Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip
+2023-10-23T07:02:07.890Z [Modules] Starting to install discord_game_utils...
+2023-10-23T07:02:08.145Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 1%
+2023-10-23T07:02:08.178Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 2%
+2023-10-23T07:02:08.206Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 3%
+2023-10-23T07:02:08.225Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 4%
+2023-10-23T07:02:08.243Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 5%
+2023-10-23T07:02:08.261Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 6%
+2023-10-23T07:02:08.281Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 7%
+2023-10-23T07:02:08.301Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 8%
+2023-10-23T07:02:08.318Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 9%
+2023-10-23T07:02:08.336Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 10%
+2023-10-23T07:02:08.354Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 11%
+2023-10-23T07:02:08.372Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 12%
+2023-10-23T07:02:08.388Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 13%
+2023-10-23T07:02:08.458Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 14%
+2023-10-23T07:02:08.620Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 15%
+2023-10-23T07:02:08.769Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 16%
+2023-10-23T07:02:08.811Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 17%
+2023-10-23T07:02:08.840Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 18%
+2023-10-23T07:02:08.853Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 19%
+2023-10-23T07:02:08.862Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 20%
+2023-10-23T07:02:08.879Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 21%
+2023-10-23T07:02:08.885Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 22%
+2023-10-23T07:02:08.894Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 23%
+2023-10-23T07:02:08.905Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 24%
+2023-10-23T07:02:08.919Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 25%
+2023-10-23T07:02:08.925Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 26%
+2023-10-23T07:02:08.938Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 27%
+2023-10-23T07:02:08.947Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 28%
+2023-10-23T07:02:08.962Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 29%
+2023-10-23T07:02:08.979Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 30%
+2023-10-23T07:02:09.004Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 31%
+2023-10-23T07:02:09.021Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 32%
+2023-10-23T07:02:09.041Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 33%
+2023-10-23T07:02:09.058Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 34%
+2023-10-23T07:02:09.077Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 35%
+2023-10-23T07:02:09.093Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 36%
+2023-10-23T07:02:09.114Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 37%
+2023-10-23T07:02:09.130Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 38%
+2023-10-23T07:02:09.148Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 39%
+2023-10-23T07:02:09.170Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 40%
+2023-10-23T07:02:09.204Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 41%
+2023-10-23T07:02:09.226Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 42%
+2023-10-23T07:02:09.245Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 43%
+2023-10-23T07:02:09.263Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 44%
+2023-10-23T07:02:09.290Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 45%
+2023-10-23T07:02:09.308Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 46%
+2023-10-23T07:02:09.324Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 47%
+2023-10-23T07:02:09.342Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 48%
+2023-10-23T07:02:09.368Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 49%
+2023-10-23T07:02:09.410Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 50%
+2023-10-23T07:02:09.497Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 51%
+2023-10-23T07:02:09.531Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 52%
+2023-10-23T07:02:09.537Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 53%
+2023-10-23T07:02:09.544Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 54%
+2023-10-23T07:02:09.547Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 55%
+2023-10-23T07:02:09.549Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 56%
+2023-10-23T07:02:09.552Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 57%
+2023-10-23T07:02:09.564Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 58%
+2023-10-23T07:02:09.582Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 59%
+2023-10-23T07:02:09.607Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 60%
+2023-10-23T07:02:09.617Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 61%
+2023-10-23T07:02:09.639Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 62%
+2023-10-23T07:02:09.656Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 63%
+2023-10-23T07:02:09.675Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 64%
+2023-10-23T07:02:09.694Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 65%
+2023-10-23T07:02:09.711Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 66%
+2023-10-23T07:02:09.730Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 67%
+2023-10-23T07:02:09.750Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 68%
+2023-10-23T07:02:09.765Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 69%
+2023-10-23T07:02:09.787Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 70%
+2023-10-23T07:02:09.808Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 71%
+2023-10-23T07:02:09.847Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 72%
+2023-10-23T07:02:09.865Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 73%
+2023-10-23T07:02:09.884Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 74%
+2023-10-23T07:02:09.903Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 75%
+2023-10-23T07:02:09.925Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 76%
+2023-10-23T07:02:09.941Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 77%
+2023-10-23T07:02:09.960Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 78%
+2023-10-23T07:02:09.979Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 79%
+2023-10-23T07:02:09.994Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 80%
+2023-10-23T07:02:10.014Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 81%
+2023-10-23T07:02:10.031Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 82%
+2023-10-23T07:02:10.050Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 83%
+2023-10-23T07:02:10.067Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 84%
+2023-10-23T07:02:10.087Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 85%
+2023-10-23T07:02:10.110Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 86%
+2023-10-23T07:02:10.136Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 87%
+2023-10-23T07:02:10.172Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 88%
+2023-10-23T07:02:10.198Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 89%
+2023-10-23T07:02:10.216Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 90%
+2023-10-23T07:02:10.234Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 91%
+2023-10-23T07:02:10.252Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 92%
+2023-10-23T07:02:10.270Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 93%
+2023-10-23T07:02:10.292Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 94%
+2023-10-23T07:02:10.307Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 95%
+2023-10-23T07:02:10.328Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 96%
+2023-10-23T07:02:10.346Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 97%
+2023-10-23T07:02:10.363Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 98%
+2023-10-23T07:02:10.380Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 99%
+2023-10-23T07:02:10.398Z [Modules] Streaming discord_krisp@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip: 100%
+2023-10-23T07:02:10.402Z [Modules] Fetching discord_game_utils@1 from https://discord.com/api/modules/stable/discord_game_utils/1
+2023-10-23T07:02:10.402Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip
+2023-10-23T07:02:10.402Z [Modules] Installing discord_krisp@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_krisp-1.zip
+2023-10-23T07:02:10.665Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 1%
+2023-10-23T07:02:10.667Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 3%
+2023-10-23T07:02:10.670Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 5%
+2023-10-23T07:02:10.671Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 6%
+2023-10-23T07:02:10.675Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 7%
+2023-10-23T07:02:10.679Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 10%
+2023-10-23T07:02:10.682Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 11%
+2023-10-23T07:02:10.686Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 13%
+2023-10-23T07:02:10.689Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 14%
+2023-10-23T07:02:10.692Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 16%
+2023-10-23T07:02:10.697Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 18%
+2023-10-23T07:02:10.702Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 21%
+2023-10-23T07:02:10.705Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 22%
+2023-10-23T07:02:10.708Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 24%
+2023-10-23T07:02:10.718Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 29%
+2023-10-23T07:02:10.722Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 31%
+2023-10-23T07:02:10.725Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 33%
+2023-10-23T07:02:10.728Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 34%
+2023-10-23T07:02:10.731Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 35%
+2023-10-23T07:02:10.734Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 36%
+2023-10-23T07:02:10.737Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 38%
+2023-10-23T07:02:10.744Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 40%
+2023-10-23T07:02:10.747Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 41%
+2023-10-23T07:02:10.750Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 42%
+2023-10-23T07:02:10.753Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 43%
+2023-10-23T07:02:10.757Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 44%
+2023-10-23T07:02:10.761Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 46%
+2023-10-23T07:02:10.768Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 47%
+2023-10-23T07:02:10.771Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 49%
+2023-10-23T07:02:10.775Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 50%
+2023-10-23T07:02:10.779Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 51%
+2023-10-23T07:02:10.784Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 52%
+2023-10-23T07:02:10.787Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 53%
+2023-10-23T07:02:10.790Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 55%
+2023-10-23T07:02:10.803Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 57%
+2023-10-23T07:02:10.807Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 59%
+2023-10-23T07:02:10.816Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 61%
+2023-10-23T07:02:10.817Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 62%
+2023-10-23T07:02:10.819Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 64%
+2023-10-23T07:02:10.824Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 65%
+2023-10-23T07:02:10.830Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 68%
+2023-10-23T07:02:10.831Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 69%
+2023-10-23T07:02:10.834Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 71%
+2023-10-23T07:02:10.836Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 72%
+2023-10-23T07:02:10.843Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 75%
+2023-10-23T07:02:10.845Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 76%
+2023-10-23T07:02:10.849Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 78%
+2023-10-23T07:02:10.852Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 79%
+2023-10-23T07:02:10.856Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 81%
+2023-10-23T07:02:10.860Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 83%
+2023-10-23T07:02:10.864Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 84%
+2023-10-23T07:02:10.865Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 85%
+2023-10-23T07:02:10.866Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 86%
+2023-10-23T07:02:10.869Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 88%
+2023-10-23T07:02:10.871Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 89%
+2023-10-23T07:02:10.874Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 92%
+2023-10-23T07:02:10.879Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 93%
+2023-10-23T07:02:10.882Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 94%
+2023-10-23T07:02:10.885Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 96%
+2023-10-23T07:02:10.887Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 97%
+2023-10-23T07:02:10.890Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 99%
+2023-10-23T07:02:10.893Z [Modules] Streaming discord_game_utils@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip: 100%
+2023-10-23T07:02:10.895Z [Modules] Finished module downloads. [success: 2] [failure: 0]
+2023-10-23T07:02:10.968Z [Modules] Checking for host updates.
+2023-10-23T07:02:11.220Z [Modules] Host is up to date.
+2023-10-23T07:02:11.221Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T07:02:11.228Z [Modules] No module updates available.
+2023-10-23T07:02:11.685Z [Modules] Starting to install discord_rpc...
+2023-10-23T07:02:11.685Z [Modules] Fetching discord_rpc@1 from https://discord.com/api/modules/stable/discord_rpc/1
+2023-10-23T07:02:11.686Z [Modules] Streaming discord_rpc@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_rpc-1.zip
+2023-10-23T07:02:11.961Z [Modules] Streaming discord_rpc@1 to /home/zeus/.config/discord/0.0.32/modules/pending/discord_rpc-1.zip: 100%
+2023-10-23T07:02:11.963Z [Modules] Finished module downloads. [success: 1] [failure: 0]
+2023-10-23T07:02:12.231Z [Modules] Installing discord_game_utils@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_game_utils-1.zip
+2023-10-23T07:02:12.478Z [Modules] Installing discord_rpc@1 from /home/zeus/.config/discord/0.0.32/modules/pending/discord_rpc-1.zip
+2023-10-23T07:02:12.512Z [Modules] Finished module installations. [success: 3] [failure: 0]
+2023-10-23T07:45:41.382Z [Modules] Modules initializing
+2023-10-23T07:45:41.382Z [Modules] Distribution: remote
+2023-10-23T07:45:41.382Z [Modules] Host updates: enabled
+2023-10-23T07:45:41.383Z [Modules] Module updates: enabled
+2023-10-23T07:45:41.384Z [Modules] Module install path: /home/zeus/.config/discord/0.0.32/modules
+2023-10-23T07:45:41.384Z [Modules] Module installed file path: /home/zeus/.config/discord/0.0.32/modules/installed.json
+2023-10-23T07:45:41.384Z [Modules] Module download path: /home/zeus/.config/discord/0.0.32/modules/pending
+2023-10-23T07:45:41.746Z [Modules] No updates to install
+2023-10-23T07:45:41.747Z [Modules] Checking for host updates.
+2023-10-23T07:45:42.025Z [Modules] Host is up to date.
+2023-10-23T07:45:42.025Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T07:45:42.051Z [Modules] No module updates available.
+2023-10-23T07:45:48.854Z [Modules] Checking for host updates.
+2023-10-23T07:45:49.112Z [Modules] Host is up to date.
+2023-10-23T07:45:49.113Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T07:45:49.119Z [Modules] No module updates available.
+2023-10-23T13:33:31.341Z [Modules] Modules initializing
+2023-10-23T13:33:31.342Z [Modules] Distribution: remote
+2023-10-23T13:33:31.342Z [Modules] Host updates: enabled
+2023-10-23T13:33:31.342Z [Modules] Module updates: enabled
+2023-10-23T13:33:31.343Z [Modules] Module install path: /home/zeus/.config/discord/0.0.32/modules
+2023-10-23T13:33:31.343Z [Modules] Module installed file path: /home/zeus/.config/discord/0.0.32/modules/installed.json
+2023-10-23T13:33:31.345Z [Modules] Module download path: /home/zeus/.config/discord/0.0.32/modules/pending
+2023-10-23T13:33:31.972Z [Modules] No updates to install
+2023-10-23T13:33:31.973Z [Modules] Checking for host updates.
+2023-10-23T13:33:32.230Z [Modules] Host is up to date.
+2023-10-23T13:33:32.231Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T13:33:32.259Z [Modules] No module updates available.
+2023-10-23T13:33:44.975Z [Modules] Checking for host updates.
+2023-10-23T13:33:45.214Z [Modules] Host is up to date.
+2023-10-23T13:33:45.215Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T13:33:45.226Z [Modules] No module updates available.
+2023-10-23T14:33:44.983Z [Modules] Checking for host updates.
+2023-10-23T14:33:45.223Z [Modules] Host is up to date.
+2023-10-23T14:33:45.223Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-23T14:33:45.245Z [Modules] No module updates available.
+2023-10-27T07:19:46.098Z [Modules] Modules initializing
+2023-10-27T07:19:46.098Z [Modules] Distribution: remote
+2023-10-27T07:19:46.099Z [Modules] Host updates: enabled
+2023-10-27T07:19:46.100Z [Modules] Module updates: enabled
+2023-10-27T07:19:46.101Z [Modules] Module install path: /home/zeus/.config/discord/0.0.32/modules
+2023-10-27T07:19:46.104Z [Modules] Module installed file path: /home/zeus/.config/discord/0.0.32/modules/installed.json
+2023-10-27T07:19:46.105Z [Modules] Module download path: /home/zeus/.config/discord/0.0.32/modules/pending
+2023-10-27T07:19:46.683Z [Modules] No updates to install
+2023-10-27T07:19:46.684Z [Modules] Checking for host updates.
+2023-10-27T07:19:47.014Z [Modules] Host is up to date.
+2023-10-27T07:19:47.015Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T07:19:47.172Z [Modules] No module updates available.
+2023-10-27T07:19:54.364Z [Modules] Checking for host updates.
+2023-10-27T07:19:54.621Z [Modules] Host is up to date.
+2023-10-27T07:19:54.622Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T07:19:54.637Z [Modules] No module updates available.
+2023-10-27T07:22:13.214Z [Modules] Modules initializing
+2023-10-27T07:22:13.215Z [Modules] Distribution: remote
+2023-10-27T07:22:13.215Z [Modules] Host updates: enabled
+2023-10-27T07:22:13.216Z [Modules] Module updates: enabled
+2023-10-27T07:22:13.216Z [Modules] Module install path: /home/zeus/.config/discord/0.0.32/modules
+2023-10-27T07:22:13.217Z [Modules] Module installed file path: /home/zeus/.config/discord/0.0.32/modules/installed.json
+2023-10-27T07:22:13.217Z [Modules] Module download path: /home/zeus/.config/discord/0.0.32/modules/pending
+2023-10-27T07:22:13.973Z [Modules] No updates to install
+2023-10-27T07:22:13.974Z [Modules] Checking for host updates.
+2023-10-27T07:22:14.393Z [Modules] Host is up to date.
+2023-10-27T07:22:14.394Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T07:22:14.489Z [Modules] No module updates available.
+2023-10-27T07:22:19.871Z [Modules] Checking for host updates.
+2023-10-27T07:22:20.332Z [Modules] Host is up to date.
+2023-10-27T07:22:20.333Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T07:22:20.340Z [Modules] No module updates available.
+2023-10-27T07:26:56.125Z [Modules] Modules initializing
+2023-10-27T07:26:56.130Z [Modules] Distribution: remote
+2023-10-27T07:26:56.130Z [Modules] Host updates: enabled
+2023-10-27T07:26:56.131Z [Modules] Module updates: enabled
+2023-10-27T07:26:56.132Z [Modules] Module install path: /home/zeus/.config/discord/0.0.32/modules
+2023-10-27T07:26:56.132Z [Modules] Module installed file path: /home/zeus/.config/discord/0.0.32/modules/installed.json
+2023-10-27T07:26:56.134Z [Modules] Module download path: /home/zeus/.config/discord/0.0.32/modules/pending
+2023-10-27T07:26:56.554Z [Modules] No updates to install
+2023-10-27T07:26:56.555Z [Modules] Checking for host updates.
+2023-10-27T07:26:56.887Z [Modules] Host is up to date.
+2023-10-27T07:26:56.888Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T07:26:56.918Z [Modules] No module updates available.
+2023-10-27T07:27:01.612Z [Modules] Checking for host updates.
+2023-10-27T07:27:01.879Z [Modules] Host is up to date.
+2023-10-27T07:27:01.879Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T07:27:01.884Z [Modules] No module updates available.
+2023-10-27T08:27:01.614Z [Modules] Checking for host updates.
+2023-10-27T08:27:01.892Z [Modules] Host is up to date.
+2023-10-27T08:27:01.893Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T08:27:01.943Z [Modules] No module updates available.
+2023-10-27T09:27:01.614Z [Modules] Checking for host updates.
+2023-10-27T09:27:01.889Z [Modules] Host is up to date.
+2023-10-27T09:27:01.889Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-10-27T09:27:01.916Z [Modules] No module updates available.
