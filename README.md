@@ -8,10 +8,14 @@ To install: install all of the necessary software: alacritty, better discord,
 copyq, dunst, flameshot, firefox (optional), kitty, (optional), libreoffice
 (optional), lxsession, mailspring, mvp, neofetch, nitrogen (optional), nsxiv,
 nvim, ngvim, pavucontrol, pcmanfm, picom, pulseaudio, qbittorrent, qt5ct,
-qtile, qtile extras, rofi, starship, sycthing (optional), zathura.
+qtile, qtile extras, rofi, starship, sycthing (optional), xwallpaper, zathura.
 
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
+
+Get yourself a wallpaper :) and put it in `~/.cache`, name it `wall`
+(xwallpaper will look for `wall` in `.cache`. Alternatively you can just use
+nitrogen.
 
 Add this to your `/etc/bash.bashrc` (You will need sudo privilleges):
 
