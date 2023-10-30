@@ -58,3 +58,5 @@ For funsies, you can either click on the Arch glyph on the top left (the first w
 on the bar) or hit Super + Backspace and you should have a dunst notification that quotes a quote from
 fortune
 
+## Credits
+[DistroTube](https://gitlab.com/dwt1)
