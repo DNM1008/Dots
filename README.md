@@ -58,5 +58,7 @@ For funsies, you can either click on the Arch glyph on the top left (the first w
 on the bar) or hit Super + Backspace and you should have a dunst notification that quotes a quote from
 fortune
 
+If you just want the Qtile config, have a look at my [Qtile config](https://github.com/DNM1008/Qtile-config)
+
 ## Credits
 [DistroTube](https://gitlab.com/dwt1)
