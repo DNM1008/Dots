@@ -15,7 +15,11 @@ Copy the content of `.config` to your own `~/.config` folder, then copy
 
 Add this to your `/etc/bash.bashrc` (You will need sudo privilleges):
 
-``` source `"$HOME/.config/bash/bashrc" ``` Reboot
+```
+source `"$HOME/.config/bash/bashrc"
+``` 
+
+Reboot
 
 
 # Keybinding
