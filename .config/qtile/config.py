@@ -38,8 +38,7 @@ myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox" # My browser of choice
 myFileManager = "pcmanfm" # My file manager
 myMail = "mailspring" # My Mail
-screenshot = "maim --hidecursor -s | xclip -selection clipboard -t image/png"
-screengrab = "maim --hidecursor ~/.cache/screenshot.png"
+screenshot = "flameshot gui --clipboard"
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -66,7 +65,6 @@ keys = [
     Key([mod], "v", lazy.spawn('copyq toggle'), desc = "Clipboard"),
     Key([mod], "w", lazy.spawn(myBrowser), desc='Web browser'),
     Key([mod, "shift"], "s", lazy.spawn(screenshot, shell=True), desc="Screenshot region to clipboard"),
-    Key(["mod1", "shift"], "s", lazy.spawn(screengrab, shell=True), desc="Screenshot screen to ~/.cache/screenshot.png"),
 
     # Rofi and prompts
     Key([mod], "p", lazy.spawn("rofi -show drun"), desc='Run Launcher'),
