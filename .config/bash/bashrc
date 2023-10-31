@@ -7,7 +7,7 @@ shopt -s autocd
 HISTSIZE= HISTFILESIZE=
 
 # aliases
-alias homecount='ls -A | wc -w'
+alias homecount='ls ~ -lA | wc -l'
 alias grep='grep --color=auto'
 alias ls='exa --color=auto --icons=always'
 alias shutnow='shutdown now'
