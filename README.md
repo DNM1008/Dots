@@ -5,8 +5,8 @@ Can be installed by the installed script in my repo (incoming)
 Install yay first
 
 To install: install all of the necessary software: alacritty, better discord,
-copyq, dunst, flameshot, firefox (optional), kitty, (optional), libreoffice
-(optional), lxsession, mailspring, mvp, neofetch, nitrogen (optional), nsxiv,
+copyq, dunst, emote (optional), eza, flameshot, firefox (optional), kitty, (optional), libreoffice
+(optional), lxsession, ly (optional), mailspring, mvp, neofetch, nitrogen (optional), nsxiv,
 nvim, ngvim, pavucontrol, pcmanfm, picom, pulseaudio, qbittorrent, qt5ct,
 qtile, qtile extras, rofi, starship, sycthing (optional), xwallpaper, zathura.
 

@@ -9,7 +9,7 @@ HISTSIZE= HISTFILESIZE=
 # aliases
 alias homecount='ls -A | wc -w'
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
+alias ls='exa --color=auto --icons=always'
 alias shutnow='shutdown now'
 alias vim='nvim'
 alias sudo='sudo '
