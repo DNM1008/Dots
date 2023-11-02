@@ -20,7 +20,7 @@ nitrogen.
 Add this to your `/etc/bash.bashrc` (You will need sudo privilleges):
 
 ```
-source `"$HOME/.config/bash/bashrc"
+source `"$HOME/.config/bash/bash_profile"
 ``` 
 
 Reboot
