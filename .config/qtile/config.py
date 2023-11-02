@@ -261,7 +261,7 @@ layouts = [
 # Some settings that I use on almost every widget, which saves us
 # from having to type these out for each individual widget.
 widget_defaults = dict(
-    font="Ubuntu Bold",
+    font="Ubuntu NerdFont Bold",
     fontsize = 12,
     padding = 0,
     background=colors[0]
@@ -305,11 +305,11 @@ def init_widgets_list():
                  foreground = colors[1]
         ),
         widget.GroupBox(
-                 fontsize = 11,
+                 fontsize = 10,
                  margin_y = 3,
                  margin_x = 4,
                  padding_y = 2,
-                 padding_x = 3,
+                 padding_x = 2,
                  borderwidth = 3,
                  active = colors[1],
                  inactive = colors[1],
@@ -449,10 +449,10 @@ def init_widgets_list():
 #                     )
 #                 ],
 #                 ),
-        widget.Spacer(length = 8),
+#        widget.Spacer(length = 8),
         widget.Volume(
                  foreground = colors[7],
-                 fmt = '🕫 {}',
+                 fmt = '󰕾 {}',
                  decorations=[
                      BorderDecoration(
                          colour = colors[7],
