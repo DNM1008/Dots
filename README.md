@@ -5,23 +5,25 @@ Can be installed by the installed script in my repo (incoming)
 Install yay first
 
 To install: install all of the necessary software: alacritty, better discord,
-copyq, dunst, emote (optional), eza, flameshot, firefox (optional), kitty, (optional), libreoffice
-(optional), lxsession, ly (optional), mailspring, mvp, neofetch, nitrogen (optional), nsxiv,
-nvim, ngvim, pavucontrol, pcmanfm, picom, pulseaudio, qbittorrent, qt5ct,
-qtile, qtile extras, rofi, starship, sycthing (optional), xwallpaper, zathura.
+copyq, dunst, emote (optional), eza, flameshot, firefox (optional), kitty,
+(optional), libreoffice (optional), lxsession, ly (optional), mailspring, mvp,
+neofetch, nitrogen (optional), nsxiv, nvim, ngvim, pavucontrol, pcmanfm, picom,
+pulseaudio, qbittorrent, qt5ct, qtile, qtile extras, rofi, starship, sycthing
+(optional), udiskie (optional but really recommended), xwallpaper, zathura.
+
+For other programs that I might have forgotten, consult the `packages.txt` file 
 
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
 
-Get yourself a wallpaper :) and put it in `~/.cache`, name it `wall`
+I included a default wallpaper that you can put in `~/.cache`, though you can
+get yourself a wallpaper :) and put it in `~/.cache`, name it `wall`
 (xwallpaper will look for `wall` in `.cache`. Alternatively you can just use
 nitrogen.
 
 Add this to your `/etc/bash.bashrc` (You will need sudo privilleges):
 
-```
-source `"$HOME/.config/bash/bash_profile"
-``` 
+``` source `"$HOME/.config/bash/bash_profile" ``` 
 
 Reboot
 
@@ -62,11 +64,11 @@ key and add it in the config file, which already has a line for you to do it:
 `# app_key="placeholder",`, simply replace the "placeholder" text with your own
 key and uncomment the line (of course reload Qtile).
 
-For funsies, you can either click on the Arch glyph on the top left (the first widget
-on the bar) or hit Super + Backspace and you should have a dunst notification that quotes a quote from
-fortune
+For funsies, you can either click on the Arch glyph on the top left (the first
+widget on the bar) or hit Super + Backspace and you should have a dunst
+notification that quotes a quote from fortune
 
-If you just want the Qtile config, have a look at my [Qtile config](https://github.com/DNM1008/Qtile-config)
+If you just want the Qtile config, have a look at my [Qtile
+config](https://github.com/DNM1008/Qtile-config)
 
-## Credits
-[DistroTube](https://gitlab.com/dwt1)
+## Credits [DistroTube](https://gitlab.com/dwt1)
