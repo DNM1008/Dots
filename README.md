@@ -47,7 +47,10 @@ Reboot
 * Super + W launches Firefox if installed
 * Super + Shift + S set up screenshot region, I set the default to just copy
   the screenshot to the clipboard instead of to a file
-* Super + Shift + P launches Rofi Power Menu
+* Super + Shift + P launches Rofi Power Menu (if installed, not recommended
+  though cuz normal rofi is quicker to just shutdown/reboot and I have not
+  configured signout, and with an SSD you should be just as quick rebooting
+  anyway)
 * Super + Minus shrinks the window horizontally
 * Super + Equal expands the window horizontally
 * Super + H/J/K/L moves the focus onto window of relative positions
