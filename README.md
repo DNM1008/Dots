@@ -7,9 +7,13 @@ Install yay first
 To install: install all of the necessary software: alacritty, better discord,
 copyq, dunst, emote (optional), eza, flameshot, firefox (optional), kitty,
 (optional), libreoffice (optional), lxsession, ly (optional), mailspring, mvp,
-neofetch, nitrogen (optional), nsxiv, nvim, ngvim, pavucontrol, pcmanfm, picom,
+neofetch, nitrogen (optional), nvim, ngvim, pavucontrol, pcmanfm, picom,
 pulseaudio, qbittorrent, qt5ct, qtile, qtile extras, rofi, starship, sycthing
 (optional), udiskie (optional but really recommended), xwallpaper, zathura.
+
+These are not necessary, but can be really convenient: tumbler, webp-pixbuf,
+poppler-glib, ffmpegthumbnailer, frreytpe2, libgsf, raw-thumbnailer, totem,
+evince, gnome-epub-thumbnailer, mcomix, folder preview, f3d.
 
 For other programs that I might have forgotten, consult the `packages.txt` file 
 
