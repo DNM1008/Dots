@@ -11,11 +11,21 @@ neofetch, nitrogen (optional), nvim, ngvim, pavucontrol, pcmanfm, picom,
 pulseaudio, qbittorrent, qt5ct, qtile, qtile extras, rofi, starship, sycthing
 (optional), udiskie (optional but really recommended), xwallpaper, zathura.
 
+It is also very important that you install nerd fonts. I recommend you install
+them all, since they are nice looking :), and I use them here and there. But if
+you want to be minimal, the JetBrains and Fira Mono are the first that came to
+mind. But again, I recommend that you install them all.
+
 These are not necessary, but can be really convenient: tumbler, webp-pixbuf,
 poppler-glib, ffmpegthumbnailer, frreytpe2, libgsf, raw-thumbnailer, totem,
 evince, gnome-epub-thumbnailer, mcomix, folder preview, f3d.
 
 For other programs that I might have forgotten, consult the `packages.txt` file 
+
+* DO NOT install Pipewire! * At least at the time of writing this Qtile's
+  Volume Widget is still using commands and programs from good ol' Pulseaudio.
+  `amixer` refused to work with Pipewire and worked the moment I switched out
+  Pipewire for Pulseaudio.
 
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
