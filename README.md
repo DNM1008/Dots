@@ -2,19 +2,50 @@
 
 Can be installed by the installed script in my repo (incoming)
 
-Install yay first
+Install `yay` first
 
-To install: install all of the necessary software: alacritty, better discord,
-copyq, dunst, emote (optional), eza, flameshot, firefox (optional), kitty,
-(optional), libreoffice (optional), lxsession, ly (optional), mailspring, mvp,
-neofetch, nitrogen (optional), nvim, ngvim, pavucontrol, pcmanfm, picom,
-pulseaudio, qbittorrent, qt5ct, qtile, qtile extras, rofi, starship, sycthing
-(optional), udiskie (optional but really recommended), xwallpaper, zathura.
+Since you have yay, `base-devel` and `git` are installed. You will need to
+install `psutil`, `pulsectl-asyncio` for the temperature, CPU, Memory, Volume
+and Battery widgets to work.
 
-It is also very important that you install nerd fonts. I recommend you install
-them all, since they are nice looking :), and I use them here and there. But if
-you want to be minimal, the JetBrains and Fira Mono are the first that came to
-mind. But again, I recommend that you install them all.
+You will need a terminal, I recommend Alacritty and have set it up to be the
+default terminal. You can install Alacritty or use your own terminal by editing
+the config file at `.config/qtile/config.py`, the variable that you need to
+edit is `myTerm`.
+
+As for browsers, I recommend Firefox, but again, you can choose whatever you
+want, just edit the variable `myBrowser` in the config fire.
+
+For a mail client, I use Mailspring, but you can edit the variable `myMail` to
+whatever you like.
+
+Flameshot is the allround screenshot utility for me. `maim` is a good
+lightweight alternative but it is slightly harder to use since it doesn't pause
+the screen for you and I have been having problems with taking the screenshot
+of the whole screen, but I do change between the two. The relevant variable is
+`screenshot`.
+
+You will also have to install `eza`, since I have aliased `ls` to using it.
+
+Other software that you'd want to install to get basic functions:
+* Copyq
+* dunst
+* lxappearance
+* lxsession
+* ly
+* mpv
+* nvim
+* ngvim
+* pavucontrol
+* pcmanfm
+* picom
+* pulseaudio
+* qt5ct
+* qtile & qtile-extras (duh)
+* rofi
+* starship
+
+*If you use another language like me*: install ibus.
 
 These are not necessary, but can be really convenient: tumbler, webp-pixbuf,
 poppler-glib, ffmpegthumbnailer, frreytpe2, libgsf, raw-thumbnailer, totem,
@@ -22,10 +53,10 @@ evince, gnome-epub-thumbnailer, mcomix, folder preview, f3d.
 
 For other programs that I might have forgotten, consult the `packages.txt` file 
 
-* DO NOT install Pipewire! * At least at the time of writing this Qtile's
-  Volume Widget is still using commands and programs from good ol' Pulseaudio.
-  `amixer` refused to work with Pipewire and worked the moment I switched out
-  Pipewire for Pulseaudio.
+***DO NOT install Pipewire!*** At least at the time of writing this Qtile's
+Volume Widget is still using commands and programs from good ol' Pulseaudio.
+`amixer` refused to work with Pipewire and worked the moment I switched out
+Pipewire for Pulseaudio.
 
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
@@ -63,7 +94,7 @@ Reboot
   the screenshot to the clipboard instead of to a file
 * Super + Shift + P launches Rofi Power Menu (if installed, not recommended
   though cuz normal rofi is quicker to just shutdown/reboot and I have not
-  configured signout, and with an SSD you should be just as quick rebooting
+  configured signout, and with an SSD you should be just as quick rebootingj
   anyway)
 * Super + Minus shrinks the window horizontally
 * Super + Equal expands the window horizontally
