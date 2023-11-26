@@ -1,11 +1,21 @@
 import:
 
 - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+
 font:
   size: 8.0
+  normal:
+    family: Fira Mono
+    style: Medium
+  bold:
+    family: Fira Mono
+  italic:
+    family: Fira Mono
 
 window:
-  opacity: 0.90
+  padding:
+    x: 10
+    y: 0
 
 env:
   TERM: xterm-256color

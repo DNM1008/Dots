@@ -37,8 +37,8 @@ mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox" # My browser of choice
 myFileManager = "pcmanfm" # My file manager
-myMail = "mailspring" # My Mail
-screenshot = "flameshot gui --clipboard" 
+myMail = 'mailspring --password-store="gnome-libsecret"' # My Mail
+screenshot = "flameshot gui --clipboard " 
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -57,7 +57,7 @@ def minimize_all(qtile):
 # at https://docs.qtile.org/en/latest/manual/config/lazy.html
 keys = [
     # Launching programs
-    Key([mod], "Backspace", lazy.spawn('dunstify "$(fortune)"', shell = True), desc="Terminal"),
+    Key([mod], "Backspace", lazy.spawn('dunstify "$(fortune)"', shell = True), desc="Quote"),
     Key([mod], "Return", lazy.spawn(myTerm), desc="Terminal"),
     Key([mod], "d", lazy.spawn("discord"), desc = "Discord"),
     Key([mod], "e", lazy.spawn(myFileManager), desc='File browser'),
@@ -69,7 +69,7 @@ keys = [
     # Rofi and prompts
     Key([mod], "p", lazy.spawn("rofi -show drun"), desc='Run Launcher'),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu "), desc="Logout menu"),
+    Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/scripts/rofi-power-menu "), desc="Logout menu"),
 
     # Qtile
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
@@ -294,7 +294,7 @@ def init_widgets_list():
                  text = '󰣇',
                  font = "Ubuntu Mono",
                  foreground = colors[6],
-		mouse_callbacks = {'Button1': lazy.spawn('dunstify "$(fortune)"', shell=True)}, 
+		mouse_callbacks = {'Button1': lazy.spawn(myTerm + ' -e yay', shell=True)}, 
                  padding = 2,
                  fontsize = 14
                  ),
@@ -364,50 +364,52 @@ def init_widgets_list():
     #                  )
     #              ],
     #              ),
-#        widget.ThermalSensor(
-#                format = 'CPU: {temp:.1f}{unit}',
-#                foreground = colors[3],
-#                decorations=[
-#                    BorderDecoration(
-#                        colour = colors[3],
-#                        border_width = [0, 0, 2, 0],
-#                    )
-#                ],    
-#                ),
-        widget.OpenWeather(
-		location= "Sydney",
-		weather_symbols = {
-		        "Unknown": "",
-		        "01d": "☀️",
-		        "01n": "🌕",
-		        "02d": "🌤️",
-		        "02n": "☁️",
-		        "03d": "🌥️",
-		        "03n": "☁️",
-		        "04d": "☁️",
-		        "04n": "☁️",
-		        "09d": "🌧️",
-		        "09n": "🌧️",
-		        "10d": "⛈",
-		        "10n": "⛈",
-		        "11d": "🌩",
-		        "11n": "🌩",
-		        "13d": "❄️",
-		        "13n": "❄️",
-		        "50d": "🌫",
-		        "50n": "🌫",
-		    },
-		app_key="4d251138ceb3b7db73e25e832da303a4",
-		format = "{main_temp: .1f}{units_temperature}: {icon}",	
-		fmt="{}",
-		foreground = colors[1],
+#        widget.OpenWeather(
+#		location= "Sydney",
+#		weather_symbols = {
+#		        "Unknown": "",
+#		        "01d": "☀️",
+#		        "01n": "🌕",
+#		        "02d": "🌤️",
+#		        "02n": "☁️",
+#		        "03d": "🌥️",
+#		        "03n": "☁️",
+#		        "04d": "☁️",
+#		        "04n": "☁️",
+#		        "09d": "🌧️",
+#		        "09n": "🌧️",
+#		        "10d": "⛈",
+#		        "10n": "⛈",
+#		        "11d": "🌩",
+#		        "11n": "🌩",
+#		        "13d": "❄️",
+#		        "13n": "❄️",
+#		        "50d": "🌫",
+#		        "50n": "🌫",
+#		    },
+#		app_key="4d251138ceb3b7db73e25e832da303a4",
+#		format = "{main_temp: .1f}{units_temperature}: {icon}",	
+#		fmt="{}",
+#		foreground = colors[1],
+#                 decorations=[
+#                     BorderDecoration(
+#                         colour = colors[1],
+#                         border_width = [0, 0, 2, 0],
+#                     )
+#                 ],
+#                 ),
+        widget.ThermalSensor(
+                format='󰏈 : {temp:.1f}{unit}',
+                foreground = colors[1],
+                foreground_alert = colors[5],
+                threshold = 95,
                  decorations=[
                      BorderDecoration(
                          colour = colors[1],
                          border_width = [0, 0, 2, 0],
                      )
                  ],
-                 ),
+                ),
         widget.Spacer(length = 8),
         widget.CPU(
                 format = '󰘚  {load_percent}%',
@@ -517,17 +519,17 @@ def init_widgets_list():
 #                 ],
 #		),
 #        widget.Spacer(length = 8),
-        widget.Systray(
-                padding = 3,
-                icon_size = 16, 
-                decorations=[
-                    BorderDecoration(
-                        colour = "#ffffff",
-                        border_width = [0, 0, 2, 0],
-                    )
-                ],
-                ),
-        widget.Spacer(length = 8),
+#        widget.Systray(
+#                padding = 3,
+#                icon_size = 16, 
+#                decorations=[
+#                    BorderDecoration(
+#                        colour = "#ffffff",
+#                        border_width = [0, 0, 2, 0],
+#                    )
+#                ],
+#                ),
+#        widget.Spacer(length = 8),
 
         ]
     return widgets_list
@@ -549,7 +551,7 @@ def init_widgets_screen1():
 # For ex: Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=24)),
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=20))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=16))]
 #            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=20)),
 #            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=20))]
 
