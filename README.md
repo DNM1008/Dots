@@ -47,9 +47,10 @@ Other software that you'd want to install to get basic functions:
 
 *If you use another language like me*: install ibus.
 
-These are not necessary, but can be really convenient: tumbler, webp-pixbuf,
-poppler-glib, ffmpegthumbnailer, frreytpe2, libgsf, raw-thumbnailer, totem,
-evince, gnome-epub-thumbnailer, mcomix, folder preview, f3d.
+These are not necessary, but can be really convenient: tumbler,
+webp-pixbuf-loader, poppler-glib, ffmpegthumbnailer, freetype2, libgsf,
+raw-thumbnailer, totem, evince, gnome-epub-thumbnailer, mcomix, folder preview,
+f3d.
 
 For other programs that I might have forgotten, consult the `packages.txt` file 
 
@@ -61,12 +62,15 @@ Pipewire for Pulseaudio.
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
 
-I included a default wallpaper that you can put in `~/.cache`, though you can
-get yourself a wallpaper :) and put it in `~/.cache`, name it `wall`
-(xwallpaper will look for `wall` in `.cache`. Alternatively you can just use
-nitrogen.
-
-Add this to your `/etc/bash.bashrc` (You will need sudo privilleges):
+The config files should already have a wallpaper and a lockscreen wallpaper
+(the lockscreen wallpaper is set to 1388x768 because that's my current
+resolution, you might want to resize it to your liking. I also included another
+wallpaper for you. By defalt, xwallpaper will look for `wall` in
+`~.config/qtile` for the wallpaper and `i3lock` will look for `lock` in the
+same directory for the lock screen. To change the wallpaper/lockscreen, just
+replace these files (make sure the name is correct). Alternatively, for the
+wallpaper, you can use nitrogen :D. Add this to your `/etc/bash.bashrc` (You
+will need sudo privilleges):
 
 ``` source `"$HOME/.config/bash/bash_profile" ``` 
 
