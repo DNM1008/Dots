@@ -1,0 +1,5 @@
+04:41:03.841020 Log continuation - Log started 2023-12-23T02:28:08.552638000Z
+04:41:04.701611 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 2886x22 x 944x1048
+04:41:04.714241 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 2886x548 x 944x522
+04:51:03.152769 GUI: UICommon: Handling aboutToQuit request..
+04:51:04.045240 GUI: UICommon: aboutToQuit request handled!

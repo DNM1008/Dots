@@ -11,7 +11,6 @@ alias homecount='ls ~ -lA | wc -l'
 alias grep='grep --color=auto'
 alias ls='eza --color=auto --icons=always -l'
 alias shutnow='shutdown now'
-export ANDROID_HOME="$XDG_DATA_HOME"/android
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias vim='nvim'
 alias sudo='sudo '
@@ -26,11 +25,21 @@ neofetch && echo && fortune && echo
 bind -s 'set completion-ignore-case on'
 
 eval "$(starship init bash)"	# Starship prompt
-eval "$(antidot init)"		# Antidot: hopefully prevent more unnecessary dot files in home directory
-export PATH="$HOME/.local/bin/:$PATH"		# So that Rofi power menu can launch, but consider just remove it, you don't really need it
-export PATH="$HOME/.local/bin/scripts:$PATH"		
 if [[ -r /usr/share/bash-completion/bash_completion ]]; then
   . /usr/share/bash-completion/bash_completion		# Enable auto complete
 fi
 
+cl() {
+	local dir="$1"
+	local dir="${dir:=$HOME}"
+	if [[ -d "$dir" ]]; then
+		cd "$dir" >/dev/null; ls
+	else
+		echo "bash: cl: $dir: Directory not found"
+	fi
+}
+
 PERL_DESTRUCT_LEVEL=2
+
+
+eval "$(antidot init)"

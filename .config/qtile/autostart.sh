@@ -7,7 +7,7 @@ COLORSCHEME=Catppuccin
 lxsession &
 copyq &
 # nm-applet &
-# udiskie --tray &
+ udiskie &
 ibus-daemon -rxRd &
 syncthing --no-browser &
 # pamac-tray-icon-plasma
@@ -19,9 +19,9 @@ xss-lock -- i3lock -ei ~/.config/qtile/lock &
 xrdb -load ~/.config/xresources &
 ### UNCOMMENT ONLY ONE OF THE FOLLOWING THREE OPTIONS! ###
 # 1. Uncomment to restore last saved wallpaper
-xwallpaper --stretch ~/.config/qtile/wall &
+#xwallpaper --stretch ~/.config/qtile/wall &
 # 2. Uncomment to set a random wallpaper on login
 # find /path/to/wallpaper/folders -type f | shuf -n 1 | xargs xwallpaper --stretch &
 # 3. Uncomment to set wallpaper with nitrogen
-# nitrogen --restore &
-
+nitrogen --restore &
+xrandr --output DP1 --primary --mode 1920x1080 --rate 144.00 --output LVDS1 --mode 1920x1080 --left-of DP1

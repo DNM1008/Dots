@@ -305,7 +305,7 @@ def init_widgets_list():
                  foreground = colors[1]
         ),
         widget.GroupBox(
-                 fontsize = 10,
+                 fontsize = 11,
                  margin_y = 3,
                  margin_x = 4,
                  padding_y = 2,
@@ -542,17 +542,17 @@ def init_widgets_screen1():
     return widgets_screen1 
 
 # All other monitors' bars will display everything but widgets 22 (systray) and 23 (spacer).
-#def init_widgets_screen2():
-#    widgets_screen2 = init_widgets_list()
-#    del widgets_screen2[22:24]
-#    return widgets_screen2
+def init_widgets_screen2():
+    widgets_screen2 = init_widgets_list()
+    del widgets_screen2[22:24]
+    return widgets_screen2
 
 # For adding transparency to your bar, add (background="#00000000") to the "Screen" line(s)
 # For ex: Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=24)),
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=16))]
-#            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=20)),
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=16)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=16))]
 #            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=20))]
 
 if __name__ in ["config", "__main__"]:

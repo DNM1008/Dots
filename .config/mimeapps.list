@@ -1,7 +1,22 @@
 [Default Applications]
 x-scheme-handler/mailspring=Mailspring.desktop
 text/plain=nvim.desktop
+audio/mpeg=org.gnome.Rhythmbox3.desktop
+image/jpeg=org.gnome.eog.desktop
+image/png=mcomix.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+application/vnd.oasis.opendocument.text=onlyoffice-desktopeditors.desktop
+image/heif=org.gnome.eog.desktop
 
 [Added Associations]
 application/pdf=org.pwmt.zathura.desktop;
 text/plain=nvim.desktop;
+audio/mpeg=org.gnome.Rhythmbox3.desktop;
+image/jpeg=mcomix.desktop;org.gnome.eog.desktop;
+image/png=mcomix.desktop;
+application/vnd.oasis.opendocument.text=onlyoffice-desktopeditors.desktop;
+image/heif=org.gnome.eog.desktop;

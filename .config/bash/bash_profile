@@ -4,6 +4,7 @@
 [[ -f ~/.config/bash/bashrc ]] && . ~/.config/bash/bashrc
 
 export EDITOR='nvim'
+export PATH="$HOME/.local/bin/scripts:$PATH"		
 export XDG_STATE_HOME="$HOME/.local/state"
 export HISTFILE="${XDG_STATE_HOME}"/bash/history      
 export QT_QPA_PLATFORMTHEME="qt5ct"
@@ -14,9 +15,10 @@ export ANDROID_HOME="$XDG_DATA_HOME"/android
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch-config"
-export GT2_RC_FILES="$XDG_CONFIG_HOME/gti-2.0/gtkrc"
+export GT2_RC_FILES=~/.config/gtk-2.0/gtkrc
 export TEXMHOME=$XDG_DATA_HOME/texmf
 export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export RANGER_LOAD_DEFAULT_RC=FALSE
 export GNUPGHOME="${XDG_DATA_HOME}/gnupg"
+wget="wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts""

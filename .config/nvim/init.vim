@@ -34,11 +34,11 @@ set viewdir=$XDG_STATE_HOME/vim/view     | call mkdir(&viewdir,   'p', 0700)
 if !has('nvim') " Neovim has its own special location
   set viminfofile=$XDG_STATE_HOME/vim/viminfo
 endif
-
+set clipboard+=unnamedplus
 set number
 set relativenumber
 syntax on
 colorscheme catppuccin-macchiato
 set termguicolors
-vnoremap <C-c> "*y :let @+=@*<CR>
+vnoremap <C-c> "+y :let @+=@*<CR>
 map <C-p> "+P

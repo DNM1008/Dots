@@ -1,0 +1,32 @@
+2024/01/17-21:10:31.738 10862 Reusing MANIFEST /home/zeus/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/01/17-21:10:31.738 10862 Recovering log #250
+2024/01/17-21:10:31.861 10862 Reusing old log /home/zeus/.config/discord/Local Storage/leveldb/000250.log 
+2024/01/17-21:14:18.382 1089d Level-0 table #254: started
+2024/01/17-21:14:18.494 1089d Level-0 table #254: 2789508 bytes OK
+2024/01/17-21:14:18.570 1089d Delete type=0 #250
+2024/01/17-21:38:39.227 1089d Level-0 table #256: started
+2024/01/17-21:38:39.283 1089d Level-0 table #256: 19855 bytes OK
+2024/01/17-21:38:39.357 1089d Delete type=0 #253
+2024/01/17-22:18:39.228 1089d Level-0 table #258: started
+2024/01/17-22:18:39.378 1089d Level-0 table #258: 13414 bytes OK
+2024/01/17-22:18:39.462 1089d Delete type=0 #255
+2024/01/17-22:18:39.463 1089d Compacting 4@0 + 2@1 files
+2024/01/17-22:18:39.578 1089d Generated table #259@0: 62 keys, 2778431 bytes
+2024/01/17-22:18:39.695 1089d Generated table #260@0: 99 keys, 2092644 bytes
+2024/01/17-22:18:39.695 1089d Compacted 4@0 + 2@1 files => 4871075 bytes
+2024/01/17-22:18:39.769 1089d compacted to: files[ 0 2 1 0 0 0 0 ]
+2024/01/17-22:18:39.770 1089d Delete type=2 #254
+2024/01/17-22:18:39.770 1089d Delete type=2 #249
+2024/01/17-22:18:39.770 1089d Delete type=2 #258
+2024/01/17-22:18:39.770 1089d Delete type=2 #256
+2024/01/17-22:18:39.770 1089d Delete type=2 #248
+2024/01/17-22:18:39.770 1089d Delete type=2 #251
+2024/01/17-23:15:39.227 1089d Level-0 table #262: started
+2024/01/17-23:15:39.365 1089d Level-0 table #262: 10597 bytes OK
+2024/01/17-23:15:39.439 1089d Delete type=0 #257
+2024/01/18-00:16:39.227 2b627 Level-0 table #264: started
+2024/01/18-00:16:39.494 2b627 Level-0 table #264: 9253 bytes OK
+2024/01/18-00:16:39.568 2b627 Delete type=0 #261
+2024/01/18-01:17:39.229 2b627 Level-0 table #266: started
+2024/01/18-01:17:39.372 2b627 Level-0 table #266: 9279 bytes OK
+2024/01/18-01:17:39.447 2b627 Delete type=0 #263

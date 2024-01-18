@@ -1,0 +1,17 @@
+2024/01/18-20:16:32.910 d2f85 Reusing MANIFEST /home/zeus/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/01/18-20:16:32.910 d2f85 Recovering log #265
+2024/01/18-20:16:33.352 d2f85 Reusing old log /home/zeus/.config/discord/Local Storage/leveldb/000265.log 
+2024/01/18-20:42:34.388 d2f86 Level-0 table #269: started
+2024/01/18-20:42:34.577 d2f86 Level-0 table #269: 2784708 bytes OK
+2024/01/18-20:42:34.652 d2f86 Delete type=0 #265
+2024/01/18-20:42:34.653 d2f86 Compacting 4@0 + 2@1 files
+2024/01/18-20:42:34.770 d2f86 Generated table #270@0: 62 keys, 2780451 bytes
+2024/01/18-20:42:34.876 d2f86 Generated table #271@0: 99 keys, 2092336 bytes
+2024/01/18-20:42:34.876 d2f86 Compacted 4@0 + 2@1 files => 4872787 bytes
+2024/01/18-20:42:34.950 d2f86 compacted to: files[ 0 2 1 0 0 0 0 ]
+2024/01/18-20:42:34.950 d2f86 Delete type=2 #260
+2024/01/18-20:42:34.950 d2f86 Delete type=2 #269
+2024/01/18-20:42:34.950 d2f86 Delete type=2 #262
+2024/01/18-20:42:34.950 d2f86 Delete type=2 #264
+2024/01/18-20:42:34.950 d2f86 Delete type=2 #259
+2024/01/18-20:42:34.950 d2f86 Delete type=2 #266

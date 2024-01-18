@@ -1,0 +1,21 @@
+import = ["/home/zeus/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 7.5
+
+[font.bold]
+family = "Fira Mono"
+
+[font.italic]
+family = "Fira Mono"
+
+[font.normal]
+family = "Fira Mono"
+style = "Medium"
+
+[window.padding]
+x = 10
+y = 0

@@ -1,0 +1,12 @@
+size: 256
+use_hidden: false
+request_child_thumbs: true
+request_timeout: 30
+priority:
+- media
+- thumbs
+- icons
+- subdirs
+locations:
+- /
+renderer: folderpreview.renderer.TileThumbRenderer

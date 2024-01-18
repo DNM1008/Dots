@@ -1,4 +1,15 @@
 # GIMP action-history
 
+(history-item "dialogs-preferences" 2)
+(history-item "tools-heal" 2)
+(history-item "dialogs-keyboard-shortcuts" 0)
+(history-item "edit-fill-fg" 1)
+(history-item "file-open" 1)
+(history-item "file-quit" 0)
+(history-item "python-fu-heal-selection" 1)
+(history-item "dialogs-module-dialog" 0)
+(history-item "tools-size-set-to-default" 0)
+(history-item "windows-tab-position" 0)
+(history-item "edit-fill-bg" 1)
 
 # end of action-history
