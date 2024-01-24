@@ -36,6 +36,7 @@ Other software that you'd want to install to get basic functions:
 * mpv
 * nvim
 * ngvim
+* oblogout
 * pavucontrol
 * pcmanfm
 * picom
@@ -61,6 +62,10 @@ Pipewire for Pulseaudio.
 
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
+
+Edit the file `/etc/oblogout.conf`:
+* Make sure the `logout` action do `qtile cmd-obj -o cmd -f shutdown`
+* Make sure the `lock` action do `i3lock -ei ~/.config/qtile/lock`
 
 The config files should already have a wallpaper and a lockscreen wallpaper
 (the lockscreen wallpaper is set to 1388x768 because that's my current
@@ -107,6 +112,7 @@ Reboot
   columns
 * Super + Shift + R reloads Qtile configs (do this to apply changes that you
   made in the config file instead of rebooting/logging out)
+* Super + Shift + Q launches Oblogout
 * Super + Tab cycles between layouts
 * There are other keybindings for layouts that I don't use (yet) but decided to
   leave them as is if you can make use of them
