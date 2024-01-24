@@ -74,6 +74,7 @@ keys = [
     # Qtile
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([mod, "shift"], "q", lazy.spawn("oblogout"), desc="Logout"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle between layouts"),
     
@@ -592,6 +593,7 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),    # ssh-askpass
         Match(wm_class="toolbar"),        # toolbars
         Match(wm_class="Yad"),            # yad boxes
+        Match(wm_class="oblogout"),       # oblogout
         Match(title="branchdialog"),      # gitk
         Match(title='Confirmation'),      # tastyworks exit box
         Match(title='Qalculate!'),        # qalculate-gtk

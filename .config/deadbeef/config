@@ -1,12 +1,22 @@
+add_folders_follow_symlinks 1
+ape.write_apev2 1
+cli_add_playlist_name Default
+converter.dsp_preset -1
+converter.encoder_preset 0
+converter.output_folder /home/zeus
+converter.output_format 0
+converter.overwrite_action 0
 deadbeef_version 1.9.6
 filechooser.lastdir file:///home/zeus/Music
-gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"418","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"558","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"374","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.columns.search [{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
-gtkui.layout.1.9.0 {"type":"vbox","legacy_params":" expand=\"0 1\" fill=\"1 1\" homogeneous=0","children":[{"type":"hbox","legacy_params":" expand=\"0 1 0\" fill=\"1 1 1\" homogeneous=0","children":[{"type":"playtb"},{"type":"seekbar"},{"type":"volumebar","settings":{"scale":"db"}}]},{"type":"tabbed_playlist","legacy_params":" hideheaders=0 width=667"}]}
+gtkui.layout.1.9.0 {"type":"vbox","legacy_params":" expand=\"0 1\" fill=\"1 1\" homogeneous=0","children":[{"type":"hbox","legacy_params":" expand=\"0 1 0\" fill=\"1 1 1\" homogeneous=0","children":[{"type":"playtb"},{"type":"seekbar"},{"type":"volumebar","settings":{"scale":"db"}}]},{"type":"tabbed_playlist","legacy_params":" hideheaders=0 width=944"}]}
 gtkui.playlist.group_by_tf 
 gtkui.search.group_by_tf 
 gtkui.statusbar.visible 1
 gtkui.tabscroll 0
+gtkui.titlebar_playing_tf DeaDBeeF - %artist% - %title%
+gtkui.titlebar_stopped_tf DeaDBeeF
 hotkey.key01 "Ctrl f" 0 0 find
 hotkey.key02 "Ctrl o" 0 0 open_files
 hotkey.key03 "Ctrl q" 0 0 quit
@@ -39,30 +49,45 @@ hotkey.key30 b 0 0 next
 hotkey.key31 n 0 0 playback_random
 hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
 hotkeys_created 1
-logwindow.geometry.h 366
-logwindow.geometry.w 667
-logwindow.geometry.x 689
-logwindow.geometry.y 392
-mainwin.geometry.h 736
-mainwin.geometry.w 667
-mainwin.geometry.x 689
+logwindow.geometry.h 1048
+logwindow.geometry.w 944
+logwindow.geometry.x 966
+logwindow.geometry.y 22
+mainwin.geometry.h 1048
+mainwin.geometry.w 950
+mainwin.geometry.x 6
 mainwin.geometry.y 22
+mp3.id3v1_encoding iso8859-1
+mp3.id3v2_version 3
+mp3.write_id3v1 1
+mp3.write_id3v2 1
+network.proxy.port 8080
 output_plugin alsa
-playback.loop 1
+playback.loop 2
+playback.order 2
 playback.volume.normalized 1.0000000
-playlist.current 1
-playlist.cursor.0 0
-playlist.cursor.1 -1
-playlist.scroll.0 0
-playlist.scroll.1 0
+playlist.cursor.0 40
+playlist.scroll.0 931
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Music
-playlist.tab.00001 Default
+prefwin.geometry.h 684
+prefwin.geometry.w 749
+prefwin.geometry.x 585
+prefwin.geometry.y 206
 resume.paused 0
-resume.playlist -1
-resume.position -1.000000
-resume.track -1
-trkproperties.geometry.h 240
-trkproperties.geometry.w 667
-trkproperties.geometry.x 689
-trkproperties.geometry.y 517
+resume.playlist 0
+resume.position 0.0464399
+resume.track 87
+searchwin.geometry.h 1048
+searchwin.geometry.w 944
+searchwin.geometry.x 966
+searchwin.geometry.y 22
+streamer.bit_override 0
+streamer.samplerate 44100
+streamer.samplerate_mult_44 44100
+streamer.samplerate_mult_48 48000
+trkproperties.geometry.h 516
+trkproperties.geometry.w 944
+trkproperties.geometry.x 966
+trkproperties.geometry.y 22
+wv.write_apev2 1

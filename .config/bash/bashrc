@@ -7,9 +7,9 @@ shopt -s autocd
 HISTSIZE= HISTFILESIZE=
 
 # aliases
-alias homecount='ls ~ -lA | wc -l'
+alias hc='ls ~ -lA | wc -l'
 alias grep='grep --color=auto'
-alias ls='eza --color=auto --icons=always -l'
+alias ls='eza --color=auto --icons=always -la'
 alias shutnow='shutdown now'
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias vim='nvim'
