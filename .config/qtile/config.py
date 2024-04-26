@@ -1,5 +1,3 @@
-# Copyright (c) 2012 Randall Ma
-# Copyright (c) 2012-2014 Tycho Andersen
 # Copyright (c) 2012 Craig Barnes
 # Copyright (c) 2013 horsik
 # Copyright (c) 2013 Tao Sauvage
@@ -32,13 +30,16 @@ from qtile_extras import widget
 from qtile_extras.widget.decorations import BorderDecoration
 #from qtile_extras.widget import StatusNotifier
 import colors
+# import custom_widgets
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox" # My browser of choice
 myFileManager = "pcmanfm" # My file manager
 myMail = 'mailspring --password-store="gnome-libsecret"' # My Mail
-screenshot = "flameshot gui --clipboard " 
+screenshot = "maim -s | xclip -selection clipboard -t image/png" 
+# screenshot = "flameshot gui --clipboard " 
+
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -57,7 +58,7 @@ def minimize_all(qtile):
 # at https://docs.qtile.org/en/latest/manual/config/lazy.html
 keys = [
     # Launching programs
-    Key([mod], "Backspace", lazy.spawn('dunstify "$(fortune)"', shell = True), desc="Quote"),
+    Key([mod], "Backspace", lazy.spawn('notify-send "$(fortune)" -i /usr/share/icons/Papirus-Dark/16x16/emotes/face-devilish.svg', shell = True), desc="Quote"),
     Key([mod], "Return", lazy.spawn(myTerm), desc="Terminal"),
     Key([mod], "d", lazy.spawn("discord"), desc = "Discord"),
     Key([mod], "e", lazy.spawn(myFileManager), desc='File browser'),
@@ -68,13 +69,17 @@ keys = [
 
     # Rofi and prompts
     Key([mod], "p", lazy.spawn("rofi -show drun"), desc='Run Launcher'),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/scripts/rofi-power-menu "), desc="Logout menu"),
+    Key([mod], "r", lazy.spawn("rofi -show run"), desc='Run Prompt'),
+    Key([mod], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"), desc='Show Clipboard'),
+    #Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod, "shift"], "q", lazy.spawn("rofi -modi p:rofi-power-menu -show p"), desc="Power Menu"),
+    # Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/scripts/rofi-power-menu "), desc="Logout menu"), (use this if you dont' want to install the rofi-power-menu package)
 
     # Qtile
+    Key([mod], "l", lazy.spawn("i3lock -ei ~/.config/qtile/lock"), desc="Kill focused window"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod, "shift"], "q", lazy.spawn("oblogout"), desc="Logout"),
+    # Key([mod, "shift"], "q", lazy.spawn("oblogout"), desc="Logout"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle between layouts"),
     
@@ -182,13 +187,20 @@ for i in groups:
                 lazy.group[i.name].toscreen(),
                 desc="Switch to group {}".format(i.name),
             ),
-            # mod1 + shift + letter of group = move focused window to group
+            ## mod1 + shift + letter of group = move focused window to group
             Key(
                 [mod, "shift"],
                 i.name,
                 lazy.window.togroup(i.name, switch_group=False),
                 desc="Move focused window to group {}".format(i.name),
             ),
+            # mod1 + f keys (f + no of group) = move focused window to group
+            # Key(
+            #     [mod],
+            #     "f"+i.name,
+            #     lazy.window.togroup(i.name, switch_group=False),
+            #     desc="Move focused window to group {}".format(i.name),
+            # ),
         ]
     )
 
@@ -295,16 +307,18 @@ def init_widgets_list():
                  text = '󰣇',
                  font = "Ubuntu Mono",
                  foreground = colors[6],
-		mouse_callbacks = {'Button1': lazy.spawn(myTerm + ' -e yay', shell=True)}, 
+                 #mouse_callbacks = {'Button1': lazy.spawn(myTerm + ' -e yay', shell=True)}, 
+                 mouse_callbacks = {'Button1': lazy.spawn('dunstify "I use 󰣇, BTW!" -i /home/zeus/.config/qtile/icons/arch.png', shell=True)}, 
+                 # mouse_callbacks = {'Button1': lazy.spawn('dunstify "I use 󰣇, BTW!"', shell=True)}, 
                  padding = 2,
                  fontsize = 14
                  ),
         widget.Spacer(length = 8),
-        widget.Prompt(
-                 font = "Ubuntu Mono",
-                 fontsize=14,
-                 foreground = colors[1]
-        ),
+        # widget.Prompt(
+        #          font = "Ubuntu Mono",
+        #          fontsize=14,
+        #          foreground = colors[1]
+        # ),
         widget.GroupBox(
                  fontsize = 11,
                  margin_y = 3,
@@ -361,7 +375,7 @@ def init_widgets_list():
     #              decorations=[
     #                  BorderDecoration(
     #                      colour = colors[3],
-    #                      border_width = [0, 0, 2, 0],
+    #                      border_width = [0, 0, 2, 0]<S-D-R>
     #                  )
     #              ],
     #              ),
@@ -399,6 +413,18 @@ def init_widgets_list():
 #                     )
 #                 ],
 #                 ),
+        #        custom_widgets.CapsNumLockIndicator(
+        #            foreground = colors[4],
+        #            fmt = '{}',
+        #            format = '{%c}',
+        #                 decorations=[
+        #                     BorderDecoration(
+        #                         colour = colors[4],
+        #                         border_width = [0, 0, 2, 0],
+        #                     )
+        #                 ],
+        #        ),
+        widget.Spacer(length = 8),
         widget.ThermalSensor(
                 format='󰏈 : {temp:.1f}{unit}',
                 foreground = colors[1],
@@ -497,6 +523,7 @@ def init_widgets_list():
         widget.Clock(
                  foreground = colors[1],
                  format = "  %a, %b %d - %H:%M",
+                 #timezone = "Australia/NSW",
                  decorations=[
                      BorderDecoration(
                          colour = colors[1],

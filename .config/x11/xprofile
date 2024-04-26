@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+#xmodmap $HOME/.config/x11/Xmodmap
+#xmodmap ~/.Xmodmap
+
+#xeyes

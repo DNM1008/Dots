@@ -9,7 +9,7 @@ EnumerateBackwardKeys=
 EnumerateSkipFirst=False
 
 [Hotkey/TriggerKeys]
-0=Control+grave
+0=Alt+Tab
 1=Zenkaku_Hankaku
 2=Hangul
 

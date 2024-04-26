@@ -13,7 +13,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = 'on [$hostname](bold #c0c0c0) '
+format = 'to [$hostname](bold #c0c0c0) '
 trim_at = "."
 disabled = false
 

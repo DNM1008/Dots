@@ -5,6 +5,8 @@
 
 export EDITOR='nvim'
 export PATH="$HOME/.local/bin/scripts:$PATH"		
+export PATH="$HOME/.local/bin/:$PATH"		
+export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
 export XDG_STATE_HOME="$HOME/.local/state"
 export HISTFILE="${XDG_STATE_HOME}"/bash/history      
 export QT_QPA_PLATFORMTHEME="qt5ct"
@@ -22,3 +24,9 @@ export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export RANGER_LOAD_DEFAULT_RC=FALSE
 export GNUPGHOME="${XDG_DATA_HOME}/gnupg"
 wget="wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts""
+export NO_AT_BRIDGE=1
+export export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
+export JUPYTER_PLATFORM_DIRS="1"
+export TERMINAL='alacritty'
+# export INIT_X11_SCALE_FACTOR=1
+WINIT_HIDPI_FACTOR=5

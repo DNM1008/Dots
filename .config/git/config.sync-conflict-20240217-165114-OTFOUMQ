@@ -1,0 +1,9 @@
+[user]
+	email = dungnguyen10082000@gmail.com
+	name = ZALMT
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

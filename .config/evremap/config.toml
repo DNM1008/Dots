@@ -1,0 +1,16 @@
+device_name = "AT Translated Set 2 keyboard"
+
+[[remap]]
+
+input = ["KEY_CAPSLOCK"]
+output = ["KEY_TAB"]
+
+[[remap]]
+
+input = ["KEY_TAB"]
+output = ["KEY_ESC"]
+
+[[remap]]
+
+input = ["KEY_ESC"]
+output = ["KEY_CAPSLOCK"]
