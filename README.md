@@ -114,14 +114,10 @@ work
 * Super + T toggles floating
   * Super + LMB moves the window
   * Super + RMB resizes the window
-* Super + V toggles CopyQ main window
+* Super + V toggles the clipboard history
 * Super + W launches Firefox if installed
 * Super + Shift + S set up screenshot region, I set the default to just copy
 the screenshot to the clipboard instead of to a file
-* Super + Shift + P launches Rofi Power Menu (if installed, not recommended
-though cuz normal rofi is quicker to just shutdown/reboot and I have not
-configured signout, and with an SSD you should be just as quick rebootingj
-anyway)
 * Super + Minus shrinks the window horizontally
 * Super + Equal expands the window horizontally
 * Super + H/J/K/L moves the focus onto window of relative positions
@@ -129,7 +125,10 @@ anyway)
 columns
 * Super + Shift + R reloads Qtile configs (do this to apply changes that you
 made in the config file instead of rebooting/logging out)
-* Super + Shift + Q launches Oblogout
+* Super + Shift + Q launches Rofi Power Menu (if installed, not recommended
+though cuz normal rofi is quicker to just shutdown/reboot and I have not
+configured signout, and with an SSD you should be just as quick rebooting
+anyway).
 * Super + Tab cycles between layouts
 * There are other keybindings for layouts that I don't use (yet) but decided to
 leave them as is if you can make use of them
