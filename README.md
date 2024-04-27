@@ -28,15 +28,14 @@ of the whole screen, but I do change between the two. The relevant variable is
 You will also have to install `eza`, since I have aliased `ls` to using it.
 
 Other software that you'd want to install to get basic functions:
-* Copyq
 * dunst
-* lxappearance
-* lxsession
-* ly
+* eof
+* greenclip
+* i3lock
+* maim (or flameshot)
 * mpv
 * nvim
 * ngvim
-* oblogout
 * pavucontrol
 * pcmanfm
 * picom
@@ -45,13 +44,25 @@ Other software that you'd want to install to get basic functions:
 * qtile & qtile-extras (duh)
 * rofi
 * starship
+* xclip
+* xorg
+* xrdb
+* xss-lock
+* xwallpaper (or feh or any other wallpaper setter)
 
-*If you use another language like me*: install ibus.
+Of course, you can use alternatives, but this is what I use and this config
+file is designed to work around them, jst remember to edit the files
+`config.py` and `autostart.sh` to your liking.
 
-These are not necessary, but can be really convenient: tumbler,
-webp-pixbuf-loader, poppler-glib, ffmpegthumbnailer, freetype2, libgsf,
-raw-thumbnailer, totem, evince, gnome-epub-thumbnailer, mcomix, folder preview,
-f3d.
+You should also install the [Catppuccin](https://github.com/catppuccin/Catppuccin)
+
+*If you use another language like me*: install fcitx.
+
+These are not necessary, but can be really convenient: zathura and its
+extensions, I choose mupdf over poppler, but that's just me. If you use LaTex
+or pandoc, you should install them to, I have an alias `pdpdf` which shortens
+the command to render markdown files to pdf files, using the `lualatex` engine.
+It adds a table of content as well as citations.
 
 For other programs that I might have forgotten, consult the `packages.txt` file 
 
@@ -63,9 +74,6 @@ Pipewire for Pulseaudio.
 Copy the content of `.config` to your own `~/.config` folder, then copy
 `.bash_profile` to your home (`~`) folder.
 
-Edit the file `/etc/oblogout.conf`:
-* Make sure the `logout` action do `qtile cmd-obj -o cmd -f shutdown`
-* Make sure the `lock` action do `i3lock -ei ~/.config/qtile/lock`
 
 The config files should already have a wallpaper and a lockscreen wallpaper
 (the lockscreen wallpaper is set to 1388x768 because that's my current
@@ -93,38 +101,34 @@ Reboot
 * Super + P launches Rofi
 * Super + Q closes the focused window
 * Super + R launches a run prompt, but I only use it when other keybinds don't
-  work
+work
 * Super + T toggles floating
   * Super + LMB moves the window
   * Super + RMB resizes the window
 * Super + V toggles CopyQ main window
 * Super + W launches Firefox if installed
 * Super + Shift + S set up screenshot region, I set the default to just copy
-  the screenshot to the clipboard instead of to a file
+the screenshot to the clipboard instead of to a file
 * Super + Shift + P launches Rofi Power Menu (if installed, not recommended
-  though cuz normal rofi is quicker to just shutdown/reboot and I have not
-  configured signout, and with an SSD you should be just as quick rebootingj
-  anyway)
+though cuz normal rofi is quicker to just shutdown/reboot and I have not
+configured signout, and with an SSD you should be just as quick rebootingj
+anyway)
 * Super + Minus shrinks the window horizontally
 * Super + Equal expands the window horizontally
 * Super + H/J/K/L moves the focus onto window of relative positions
 * Super + Shift + H/J/K/L moves the focused window in the stack or between the
-  columns
+columns
 * Super + Shift + R reloads Qtile configs (do this to apply changes that you
-  made in the config file instead of rebooting/logging out)
+made in the config file instead of rebooting/logging out)
 * Super + Shift + Q launches Oblogout
 * Super + Tab cycles between layouts
 * There are other keybindings for layouts that I don't use (yet) but decided to
-  leave them as is if you can make use of them
+leave them as is if you can make use of them
 
-**Note**: To use the weather widget to its fullest, look to create your own api
-key and add it in the config file, which already has a line for you to do it:
-`# app_key="placeholder",`, simply replace the "placeholder" text with your own
-key and uncomment the line (of course reload Qtile).
 
 For funsies, you can either click on the Arch glyph on the top left (the first
-widget on the bar) or hit Super + Backspace and you should have a dunst
-notification that quotes a quote from fortune
+widget on the bar) to have a reminder that you are using Arch (btw) or hit Super + Backspace and you should have a dunst
+notification that quotes a quote from fortune.
 
 If you just want the Qtile config, have a look at my [Qtile
 config](https://github.com/DNM1008/Qtile-config)
