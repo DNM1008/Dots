@@ -54,7 +54,8 @@ Of course, you can use alternatives, but this is what I use and this config
 file is designed to work around them, jst remember to edit the files
 `config.py` and `autostart.sh` to your liking.
 
-You should also install the [Catppuccin](https://github.com/catppuccin/Catppuccin)
+You should also install the [Catppuccin](https://github.com/catppuccin/Catppuccin) GTK and QT themes. The `gtkrc` file in `./config/gtk2.0/` can be copied to `/etc/gtk-2.0/` to apply the GTK theme.
+
 
 *If you use another language like me*: install fcitx.
 
@@ -71,8 +72,7 @@ Volume Widget is still using commands and programs from good ol' Pulseaudio.
 `amixer` refused to work with Pipewire and worked the moment I switched out
 Pipewire for Pulseaudio.
 
-Copy the content of `.config` to your own `~/.config` folder, then copy
-`.bash_profile` to your home (`~`) folder.
+Copy the content of `.config` to your own `~/.config` folder, then add `source /home/<your user name>/.config/bash/bash_profile` to `/etc/bash.bashrc`
 
 
 The config files should already have a wallpaper and a lockscreen wallpaper
@@ -92,6 +92,8 @@ Reboot
 
 # Keybinding
 
+* Super + 1 to 9 to switch to workspace
+    * Super + Shift + 1 to 9 to move highlighted window to workspaces
 * Super + Caps Lock toggles the bar
 * Super + D launches Discord
 * Super + E launches PCManFM
@@ -133,4 +135,9 @@ notification that quotes a quote from fortune.
 If you just want the Qtile config, have a look at my [Qtile
 config](https://github.com/DNM1008/Qtile-config)
 
-## Credits [DistroTube](https://gitlab.com/dwt1)
+You might want to check out my [Firefox config](https://github.com/DNM1008/Firefox-userChrome)
+
+## Credits
+
+[DistroTube](https://gitlab.com/dwt1)
+
