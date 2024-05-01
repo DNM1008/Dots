@@ -108,10 +108,10 @@ logwindow.geometry.h 1048
 logwindow.geometry.w 944
 logwindow.geometry.x 966
 logwindow.geometry.y 22
-mainwin.geometry.h 522
+mainwin.geometry.h 344
 mainwin.geometry.w 944
 mainwin.geometry.x 966
-mainwin.geometry.y 548
+mainwin.geometry.y 725
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -123,7 +123,7 @@ playback.order 2
 playback.volume.normalized 1.0000000
 playlist.current 1
 playlist.cursor.0 410
-playlist.cursor.1 -1
+playlist.cursor.1 0
 playlist.cursor.2 0
 playlist.scroll.0 -410
 playlist.scroll.1 0
@@ -139,7 +139,7 @@ quick_search.append_search_string 0
 quick_search.history_size 10.000000
 resume.paused 0
 resume.playlist 1
-resume.position 3.0650330
+resume.position 70.960487
 resume.track 0
 searchwin.geometry.h 1048
 searchwin.geometry.w 944

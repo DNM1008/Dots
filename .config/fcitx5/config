@@ -9,7 +9,7 @@ EnumerateBackwardKeys=
 EnumerateSkipFirst=False
 
 [Hotkey/TriggerKeys]
-0=Alt+Tab
+0=Alt+Shift+Shift_L
 1=Zenkaku_Hankaku
 2=Hangul
 
@@ -46,6 +46,8 @@ EnumerateSkipFirst=False
 [Behavior]
 # Active By Default
 ActiveByDefault=False
+# Reset state on Focus In
+resetStateWhenFocusIn=No
 # Share Input State
 ShareInputState=No
 # Show preedit in application
@@ -59,7 +61,7 @@ CompactInputMethodInformation=True
 # Show first input method information
 ShowFirstInputMethodInformation=True
 # Default page size
-DefaultPageSize=5
+DefaultPageSize=1
 # Override Xkb Option
 OverrideXkbOption=False
 # Custom Xkb Option

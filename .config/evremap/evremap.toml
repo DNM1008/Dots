@@ -14,3 +14,13 @@ output = ["KEY_ESC"]
 
 input = ["KEY_ESC"]
 output = ["KEY_CAPSLOCK"]
+
+[[remap]]
+
+input = ['KEY_PAGEUP']
+output = ['KEY_BACK']
+
+[[remap]]
+
+input = ['KEY_PAGEDOWN']
+output = ['KEY_FORWARD']
