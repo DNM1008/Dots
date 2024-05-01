@@ -80,6 +80,8 @@ Volume Widget is still using commands and programs from good ol' Pulseaudio.
 Pipewire for Pulseaudio.
 
 Copy the content of `.config` to your own `~/.config` folder, then add `source /home/<your user name>/.config/bash/bash_profile` to `/etc/bash.bashrc`
+To use custom keymap, install evremap. Consult their [github page](https://github.com/wez/evremap) and/or [Arch Wiki](https://wiki.archlinux.org/title/Input_remap_utilities) for further instruction as to how to get going. The sample config file is in `~/.config/evremap/evremap.toml`. You can either edit the service file to point it to it or move it to `/etc/`. Obviously you can edit the toml file to suit your liking.
+* If you don't want to use my key remaps (see below), you can disable evremap.service and uninstall evremap.
 
 
 The config files should already have a wallpaper and a lockscreen wallpaper
@@ -137,6 +139,12 @@ leave them as is if you can make use of them
 For funsies, you can either click on the Arch glyph on the top left (the first
 widget on the bar) to have a reminder that you are using Arch (btw) or hit Super + Backspace and you should have a dunst
 notification that quotes a quote from fortune.
+
+# Key maps
+
+* Escape is mapped to Capslock
+* Tab is mapped to Escape
+* Capslock is mapped to Tab
 
 If you just want the Qtile config, have a look at my [Qtile
 config](https://github.com/DNM1008/Qtile-config)
