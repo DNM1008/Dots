@@ -19,10 +19,9 @@ want, just edit the variable `myBrowser` in the config fire.
 For a mail client, I use Mailspring, but you can edit the variable `myMail` to
 whatever you like.
 
-Flameshot is the allround screenshot utility for me. `maim` is a good
-lightweight alternative but it is slightly harder to use since it doesn't pause
-the screen for you and I have been having problems with taking the screenshot
-of the whole screen, but I do change between the two. The relevant variable is
+`maim` is a good
+lightweight screenshotting tool but it is slightly harder to use since it doesn't pause
+the screen for you. A more feature-rich alternative is flameshot. The relevant variable is
 `screenshot`.
 
 You will also have to install `eza`, since I have aliased `ls` to using it.
@@ -59,7 +58,7 @@ file is designed to work around them, jst remember to edit the files
 
 You should also install the [Catppuccin](https://github.com/catppuccin/Catppuccin) GTK and QT themes. The `gtkrc` file in `./config/gtk2.0/` can be copied to `/etc/gtk-2.0/` to apply the GTK theme.
 
-I have fortune-mod and fastfetch in my bashrc, they are not strictly needed as the terminal should still work without them, but I think you should install them.
+I have fortune-mod and fastfetch in my bashrc, they are not strictly needed as the terminal should still work without them, but I think you should install them. For old time's sake, I have a nefetch folder there, and if you run neofetch, it should look basically the same as fastfetch (creative, I know), but I probably won't touch it ever again.
 
 Another application that is not strictly needed but I would strongly recommend is antidot, it cleans up your home directory. After installing, you should run `antidot update && antidot clean`.
 
