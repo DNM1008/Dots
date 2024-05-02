@@ -20,7 +20,7 @@ alias pdpdf='pandoc --citeproc --pdf-engine=lualatex --include-in-header="/home/
 
 
 # Pretty (?) neofetch and a quote to start
-neofetch && echo && fortune && echo
+fastfetch && echo && fortune && echo
 
 # Case insensitive tab autocomplete
 bind -s 'set completion-ignore-case on'
