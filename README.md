@@ -59,7 +59,7 @@ file is designed to work around them, jst remember to edit the files
 
 You should also install the [Catppuccin](https://github.com/catppuccin/Catppuccin) GTK and QT themes. The `gtkrc` file in `./config/gtk2.0/` can be copied to `/etc/gtk-2.0/` to apply the GTK theme.
 
-I have fortune-mod and neofetch in my bashrc, they are not strictly needed as the terminal should still work without them, but I think you should install them.
+I have fortune-mod and fastfetch in my bashrc, they are not strictly needed as the terminal should still work without them, but I think you should install them.
 
 Another application that is not strictly needed but I would strongly recommend is antidot, it cleans up your home directory. After installing, you should run `antidot update && antidot clean`.
 
