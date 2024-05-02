@@ -71,7 +71,7 @@ or pandoc, you should install them to, I have an alias `pdpdf` which shortens
 the command to render markdown files to pdf files, using the `lualatex` engine.
 It adds a table of content as well as citations.
 
-For other programs that I might have forgotten, consult the `packages.txt` file 
+You might want to consult `packages.txt` and `fonts.txt` for the packages that I install.
 
 ***DO NOT install Pipewire!*** At least at the time of writing this Qtile's
 Volume Widget is still using commands and programs from good ol' Pulseaudio.
