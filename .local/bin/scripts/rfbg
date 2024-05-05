@@ -1,0 +1,3 @@
+#! /bin/bash
+
+xwallpaper --zoom ~/.config/qtile/wall
