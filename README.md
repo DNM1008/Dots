@@ -39,13 +39,15 @@ Other software that you'd want to install to get basic functions:
 * nvim
 * ngvim
 * pavucontrol
-* pcmanfm
+* pcmanfm (replaced by ranger in my config)
 * picom
 * pulseaudio
 * qt5ct
 * qtile & qtile-extras (duh)
+* ranger
 * rofi
 * starship
+* ueberzugpp
 * xclip
 * xorg
 * xrdb
