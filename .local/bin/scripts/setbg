@@ -1,9 +1,0 @@
-#!/bin/sh
-
-
-image = $1
-
-
-cp image ~/.config/qtile/wall
-
-xwallpaper --zoom ~/.config/qtile/wall
