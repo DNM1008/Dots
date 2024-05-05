@@ -39,7 +39,7 @@ Other software that you'd want to install to get basic functions:
 * nvim
 * ngvim
 * pavucontrol
-* pcmanfm (replaced by ranger in my config)
+* pcmanfm (replaced by Thunar in my config)
 * picom
 * pulseaudio
 * qt5ct
