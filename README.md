@@ -86,7 +86,7 @@ Copy the content of `.config` to your own `~/.config` folder, then add `source /
 
 Since I change wallpapers frequently, I have a script that should help.
 * If you move the file there and named it `wall` manually, then `rfbg` automatically refreshes the wallpaper.
-* I might write one that would take an arguement as the exact location to a file and then do all that, but no promises :P
+* For convenience and future scriptings I have `setbg`, which takes the first argument as an image file and then copies it to `~/.config/qtile/wall` then run `rfbg`.
 
 To use custom keymap, install evremap. Consult their [github page](https://github.com/wez/evremap) and/or [Arch Wiki](https://wiki.archlinux.org/title/Input_remap_utilities) for further instruction as to how to get going. The sample config file is in `~/.config/evremap/evremap.toml`. You can either edit the service file to point it to it or move it to `/etc/`. Obviously you can edit the toml file to suit your liking.
 * If you don't want to use my key remaps (see below), you can disable evremap.service and uninstall evremap.

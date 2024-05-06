@@ -1,0 +1,11 @@
+#!/bin/sh
+
+img=$1
+
+
+echo ${img}
+
+cp "$img" ~/.config/qtile/wall
+
+
+rfbg
