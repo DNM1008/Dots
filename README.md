@@ -1,8 +1,8 @@
 # All of my Qtile configurations
 
-Can be installed by the installed script in my repo (incoming)
+Can be installed by the installed script in my repo (ready for Arch user)
 
-Install `yay` first
+Install `yay` firstj
 
 Since you have yay, `base-devel` and `git` are installed. You will need to
 install `psutil`, `pulsectl-asyncio` for the temperature, CPU, Memory, Volume
@@ -39,7 +39,7 @@ Other software that you'd want to install to get basic functions:
 * nvim
 * ngvim
 * pavucontrol
-* pcmanfm (replaced by Thunar in my config)
+* pcmanfm (replaced by ranger in my config)
 * picom
 * pulseaudio
 * qt5ct
@@ -153,6 +153,17 @@ notification that quotes a quote from fortune.
 * Escape is mapped to Capslock
 * Tab is mapped to Escape
 * Capslock is mapped to Tab
+
+# If you are done things to your Arch install or you use some sort of Arch derivative:
+
+* Backup your data. Always back up your data.
+* Pick the bits that you want to use (if you want to use a different display manager or file manager or even web browser or anything like that)
+* Install the enssential packages (things like `catppuccin-gtk` should be installed always if you want to replicate the look of my system).
+* Put the config files where they should be.
+
+# If you are using Debian or Fedora or anthing like that
+
+* Should not be too different, although installing and get alacritty working can ben tricky in Ubuntu, I suggest just use something like `kitty` or even your standard terminal, make sure to edit the config file accordingly.
 
 If you just want the Qtile config, have a look at my [Qtile
 config](https://github.com/DNM1008/Qtile-config)
