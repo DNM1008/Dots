@@ -36,7 +36,7 @@ mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox" # My browser of choice
 myFileManager = "thunar" # My file manager
-#myFileManager = "alacritty -e ranger" # My file manager
+#myFileManager = "alacritty --command ranger" # My file manager
 myMail = 'mailspring --password-store="gnome-libsecret"' # My Mail
 screenshot = "maim -s | xclip -selection clipboard -t image/png" 
 # screenshot = "flameshot gui --clipboard " 
