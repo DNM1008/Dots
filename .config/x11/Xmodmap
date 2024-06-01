@@ -1,7 +1,7 @@
 clear lock
 
-keycode   8 = 
-keycode   9 = Caps_Lock NoSymbol Caps_Lock 
+keycode   8 =
+keycode   9 = Caps_Lock NoSymbol Caps_Lock
 keycode  10 = 1 exclam 1 exclam
 keycode  11 = 2 at 2 at
 keycode  12 = 3 numbersign 3 numbersign
@@ -14,7 +14,7 @@ keycode  18 = 9 parenleft 9 parenleft
 keycode  19 = 0 parenright 0 parenright
 keycode  20 = minus underscore minus underscore
 keycode  21 = equal plus equal plus
-keycode  22 = BackSpace BackSpace BackSpace BackSpace NoSymbol NoSymbol Terminate_Server
+keycode  22 = BackSpace BackSpace BackSpace BackSpace
 keycode  23 = Escape NoSymbol Escape
 keycode  24 = q Q q Q
 keycode  25 = w W w W

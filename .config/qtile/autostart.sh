@@ -4,15 +4,15 @@ COLORSCHEME=Catppuccin
 
 
 ### AUTOSTART PROGRAMS ###
-#/bin/bash -c  "sleep 1; /usr/bin/xmodmap /home/zeus/.config/x11/Xmodmap" &
 # lxsession &
-fcitx5 -d
+fcitx5 -d &
 # copyq &
 greenclip daemon &
 # nm-applet &
 udiskie &
 syncthing --no-browser &
 # pamac-tray-icon-plasma
+# /bin/bash -c  "sleep 1; /usr/bin/xmodmap /home/zeus/.config/x11/Xmodmap" &
 # picom &
 # birdtray &
 # cbatticon &

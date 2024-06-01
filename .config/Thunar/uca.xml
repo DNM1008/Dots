@@ -12,4 +12,15 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon></icon>
+	<name>setbg</name>
+	<submenu></submenu>
+	<unique-id>1716387079749787-1</unique-id>
+	<command>/home/zeus/.local/bin/scripts/setbg %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
 </actions>

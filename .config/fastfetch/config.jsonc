@@ -54,8 +54,6 @@
             "keyColor": "cyan",
             "format": "{2} x {3}"
         },
-        "break",
-        "player",
-        "media"
+        "break"
     ]
 }

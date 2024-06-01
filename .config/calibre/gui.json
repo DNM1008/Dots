@@ -103,28 +103,28 @@
   ],
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 1052,
-      "width": 1908,
-      "x": 4,
-      "y": 20
+      "height": 526,
+      "width": 948,
+      "x": 964,
+      "y": 546
     },
     "full_screened": false,
     "geometry": {
-      "height": 1048,
-      "width": 1904,
-      "x": 6,
-      "y": 22
+      "height": 522,
+      "width": 944,
+      "x": 966,
+      "y": 548
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 1048,
-      "width": 1904,
-      "x": 6,
-      "y": 22
+      "height": 522,
+      "width": 944,
+      "x": 966,
+      "y": 548
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAEAAAAFAAAB3cAAAQvAAAABgAAABYAAAd1AAAELQAAAAAAAAAAB4AAAAAGAAAAFgAAB3UAAAQt"
+      "__value__": "AdnQywADAAAAAAPEAAACIgAAB3cAAAQvAAADxgAAAiQAAAd1AAAELQAAAAAAAAAAB4AAAAPGAAACJAAAB3UAAAQt"
     },
     "screen": {
       "depth": 24,
@@ -360,7 +360,7 @@
   "library_usage_stats": {
     "/home/zeus/Calibre Library": 4,
     "/home/zeus/Documents/Others/Calibre Library": 4,
-    "/home/zeus/Documents/Projects/Calibre Library": 6
+    "/home/zeus/Documents/Projects/Calibre Library": 8
   },
   "main_window_central_widget_state": {
     "layout": "wide",
@@ -392,6 +392,7 @@
     }
   },
   "quick_start_guide_added": true,
+  "qv_open_at_shutdown": false,
   "replace_scene_breaks_history": [
     "",
     "<hr />",

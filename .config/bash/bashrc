@@ -12,6 +12,7 @@ alias grep='grep --color=auto'
 alias ls='eza --color=auto --icons=always -la'
 alias shutnow='shutdown now'
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
+alias wget="wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts""
 alias vim='nvim'
 alias sudo='sudo '
 alias pdpdf='pandoc --citeproc --pdf-engine=lualatex --include-in-header="/home/zeus/.config/pandoc/header.tex" --toc --csl="/home/zeus/.config/pandoc/apa.csl"'
