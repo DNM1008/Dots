@@ -1,0 +1,238 @@
+OS: Arch Linux
+HandBrake 1.7.2 (2023122400)
+Kernel: Linux 6.7.0-arch3-1 (x86_64)
+CPU: Intel(R) Core(TM) i7-2630QM CPU @ 2.00GHz x 8
+Install Dir: /usr/bin
+Config Dir:  /home/zeus/.config/ghb
+_______________________________
+
+[20:11:20] Compile-time hardening features are enabled
+Cannot load libnvidia-encode.so.1
+[20:11:20] qsv: not available on this system
+[20:11:20] hb_init: starting libhb thread
+[20:11:20] hb_init: starting libhb thread
+[20:11:20] hb_init: starting libhb thread
+[20:11:20] gtkgui: Failed to read presets file, initializing new presets...
+
+(fr.handbrake.ghb:517326): GLib-CRITICAL **: 20:11:20.668: g_variant_get_type: assertion 'value != NULL' failed
+
+(fr.handbrake.ghb:517326): GLib-CRITICAL **: 20:11:20.668: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(fr.handbrake.ghb:517326): GLib-CRITICAL **: 20:11:20.668: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(fr.handbrake.ghb:517326): GLib-CRITICAL **: 20:11:20.668: g_variant_unref: assertion 'value != NULL' failed
+
+(fr.handbrake.ghb:517326): Gtk-WARNING **: 20:11:42.218: Could not init tracker3 search engine: The name is not activatable
+[20:11:55] CPU: Intel(R) Core(TM) i7-2630QM CPU @ 2.00GHz
+[20:11:55]  - Intel microarchitecture Sandy Bridge
+[20:11:55]  - logical processor count: 8
+[20:11:55] Intel Quick Sync Video support: no
+[20:11:55] hb_scan: path=/home/zeus/Music/Shalom Margaret - Viva La Vida (Full Song) [0en3MxlVImA].m4a, title_index=0
+udfread ERROR: ECMA 167 Volume Recognition failed
+disc.c:333: failed opening UDF image /home/zeus/Music/Shalom Margaret - Viva La Vida (Full Song) [0en3MxlVImA].m4a
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+[20:11:55] bd: not a bd - trying as a stream/file instead
+libdvdread: DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav: vm: vm: failed to read VIDEO_TS.IFO
+[20:11:55] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/zeus/Music/Shalom Margaret - Viva La Vida (Full Song) [0en3MxlVImA].m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: M4A isomiso2
+    title           : Shalom Margaret - Viva La Vida (Full Song)
+    artist          : shalom margaret
+    date            : 20200925
+    encoder         : Lavf60.16.100
+    comment         : https://www.youtube.com/watch?v=0en3MxlVImA
+    description     : hey i’m shalom maragaret, thanks for watching. pre-save my new’ single Malibu Sunrise’ now https://ffm.to/shalommalibu.oyd
+                    : 
+                    : subscribe 📹 https://bit.ly/2WwEaaO
+                    : 
+                    : follow me ✌️
+                    : #TikTok: https://www.tiktok.com/@shalommargaret
+                    : Instagram: https://www.instagram.com/shalommargarett/
+                    : Twitter: https://twitter.com/shalommargaret
+                    : Spotify: https://spoti.fi/2YGcJOc
+                    : Soundcloud: https://soundcloud.com/shalommargaret
+                    : 
+                    : lyrics 💖
+                    : I hear Jerusalem bells are ringing
+                    : Roman Cavalry choirs are singing
+                    : Be my mirror, my sword and shield
+                    : My missionaries in a foreign field
+                    : For some reason I can't explain
+                    : Once you go there was never, never an honest word
+                    : But that was when I ruled the world
+                    : 
+                    : I used to rule the world
+                    : Seas would rise when I gave the word
+                    : Now in the morning, I sleep alone
+                    : Sweep the streets I used to own
+                    : 
+                    : One minute I held the key
+                    : Next the walls were closed on me
+                    : And I discovered that my castles stand
+                    : Upon pillars of salt and pillars of sand
+                    : 
+                    : I hear Jerusalem bells are ringing
+                    : Roman Cavalry choirs are singing
+                    : Be my mirror, my sword and shield
+                    : My missionaries in a foreign field
+                    : For some reason I can't explain
+                    : Once you go there was never, never an honest word
+                    : But that was when I ruled the world
+                    : 
+                    : I hear Jerusalem bells are ringing
+                    : Roman Cavalry choirs are singing
+                    : Be my mirror, my sword and shield
+                    : My missionaries in a foreign field
+                    : For some reason I can't explain
+                    : Once you go there was never, never an honest word
+                    : But that was when I ruled the world
+                    : 
+                    : #shalommargaret #vivalavida
+    synopsis        : hey i’m shalom maragaret, thanks for watching. pre-save my new’ single Malibu Sunrise’ now https://ffm.to/shalommalibu.oyd
+                    : 
+                    : subscribe 📹 https://bit.ly/2WwEaaO
+                    : 
+                    : follow me ✌️
+                    : #TikTok: https://www.tiktok.com/@shalommargaret
+                    : Instagram: https://www.instagram.com/shalommargarett/
+                    : Twitter: https://twitter.com/shalommargaret
+                    : Spotify: https://spoti.fi/2YGcJOc
+                    : Soundcloud: https://soundcloud.com/shalommargaret
+                    : 
+                    : lyrics 💖
+                    : I hear Jerusalem bells are ringing
+                    : Roman Cavalry choirs are singing
+                    : Be my mirror, my sword and shield
+                    : My missionaries in a foreign field
+                    : For some reason I can't explain
+                    : Once you go there was never, never an honest word
+                    : But that was when I ruled the world
+                    : 
+                    : I used to rule the world
+                    : Seas would rise when I gave the word
+                    : Now in the morning, I sleep alone
+                    : Sweep the streets I used to own
+                    : 
+                    : One minute I held the key
+                    : Next the walls were closed on me
+                    : And I discovered that my castles stand
+                    : Upon pillars of salt and pillars of sand
+                    : 
+                    : I hear Jerusalem bells are ringing
+                    : Roman Cavalry choirs are singing
+                    : Be my mirror, my sword and shield
+                    : My missionaries in a foreign field
+                    : For some reason I can't explain
+                    : Once you go there was never, never an honest word
+                    : But that was when I ruled the world
+                    : 
+                    : I hear Jerusalem bells are ringing
+                    : Roman Cavalry choirs are singing
+                    : Be my mirror, my sword and shield
+                    : My missionaries in a foreign field
+                    : For some reason I can't explain
+                    : Once you go there was never, never an honest word
+                    : But that was when I ruled the world
+                    : 
+                    : #shalommargaret #vivalavida
+  Duration: 00:02:56.31, start: 0.000000, bitrate: 137 kb/s
+  Stream #0:0[0x1](vie): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x0]: Video: png, rgb24(pc, gbr/unknown/unknown), 1280x720, 90k tbr, 90k tbn (attached pic)
+[20:11:55] scan: decoding previews for title 1
+[20:11:55] No video decoder set!
+[20:11:55] scan: Too few previews (0), trying harder
+[20:11:55] scan: decoding previews for title 1
+[20:11:55] libhb: scan thread found 0 valid title(s)
+[20:12:29] Starting work at: Sun Jan 21 20:12:29 2024
+
+[20:12:29] 1 job(s) to process
+[20:12:29] json job:
+{
+    "Audio": {
+        "AudioList": []
+    },
+    "Destination": {
+        "AlignAVStart": true,
+        "ChapterList": [],
+        "File": "/tmp/hb.517326/live01",
+        "InlineParameterSets": false,
+        "Mux": "m4v",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 5,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 10,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 19,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "Source": {
+        "Range": {
+            "End": 1350000,
+            "SeekPoints": 10,
+            "Start": 2,
+            "Type": "preview"
+        }
+    },
+    "Subtitle": {
+        "Search": {
+            "Enable": false
+        },
+        "SubtitleList": []
+    }
+}
+[20:12:29] No video decoder set!
+[20:12:29] json unpack failure, failed to find title: Object item not found: Path
+[20:12:29] hb_dict_to_job: failed to find title: Object item not found: Title
+[20:12:29] Finished work at: Sun Jan 21 20:12:29 2024
+
+[20:12:29] libhb: work result = 3

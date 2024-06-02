@@ -28,6 +28,5 @@ export NO_AT_BRIDGE=1
 export export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export JUPYTER_PLATFORM_DIRS="1"
 export TERMINAL='alacritty'
-export LS_COLORS='tw=00;33:ow=01;33:'
 # export INIT_X11_SCALE_FACTOR=1
 WINIT_HIDPI_FACTOR=5
