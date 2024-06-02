@@ -6,17 +6,11 @@ WINIT_X11_SCALE_FACTOR= "1"
 
 [font]
 size = 9.5
+normal = { family = "Fira Mono", style = "Medium"}
+italic = {style = "Italic"}
+bold = {style = "bold"}
 
-[font.bold]
-family = "Fira Mono"
-
-[font.italic]
-family = "Fira Mono"
-
-[font.normal]
-family = "Fira Mono"
-style = "Medium"
-
-[window.padding]
-x = 10
-y = 0
+[window]
+opacity= 0.6
+dynamic_padding=true
+padding={x=10, y=0}
