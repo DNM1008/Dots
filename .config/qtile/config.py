@@ -1,5 +1,4 @@
-# Copyright (c) 2012 Craig Barnes
-# Copyright (c) 2013 horsik
+# Copyright (c) 2012 Craig Barnes Copyright (c) 2013 horsik
 # Copyright (c) 2013 Tao Sauvage
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -85,11 +84,16 @@ keys = [
     Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle between layouts"),
     
     # Volumes
-    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer sset Master 5%-"), desc="Lower Volume by 5%"),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer sset Master 5%+"), desc="Raise Volume by 5%"),
-    Key([], "XF86AudioMute", lazy.spawn("amixer sset Master 1+ toggle"), desc="Mute/Unmute Volume"),
-    Key([], "XF86AudioMicMute", lazy.spawn("amixer set Capture toggle"), desc="Mute/Unmute Volume"),
-    # Switch between windows
+    # Key([], "XF86AudioLowerVolume", lazy.spawn("amixer sset Master 5%-"), desc="Lower Volume by 5%"),
+    # Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer sset Master 5%+"), desc="Raise Volume by 5%"),
+    # Key([], "XF86AudioMute", lazy.spawn("amixer sset Master 1+ toggle"), desc="Mute/Unmute Volume"),
+    # Key([], "XF86AudioMicMute", lazy.spawn("amixer set Capture toggle"), desc="Mute/Unmute Volume"),
+
+
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"), desc="Lower Volume by 5%"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"), desc="Raise Volume by 5%"),
+    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Mute/Unmute Volume"),
+    Key([], "XF86AudioMicMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Mute/Unmute Volume"),
     # Some layouts like 'monadtall' only need to use j/k to move
     # through the stack, but other layouts like 'columns' will
     # require all four directions h/j/k/l to move around.
@@ -480,7 +484,7 @@ def init_widgets_list():
 #                 ],
 #                 ),
 #        widget.Spacer(length = 8),
-        widget.Volume(
+        widget.PulseVolume(
                  foreground = colors[7],
                  fmt = '󰕾 {}',
                  decorations=[
