@@ -139,6 +139,9 @@ made in the config file instead of rebooting/logging out)
 though cuz normal rofi is quicker to just shutdown/reboot and I have not
 configured signout, and with an SSD you should be just as quick rebooting
 anyway).
+* Super + Shift + Z runs `multi.sh`, my script that tries to look for any monitor
+connected to HDMI-2 then have it above the default LVDS-1 monitor (you can config
+this, of course.)
 * Super + Tab cycles between layouts
 * There are other keybindings for layouts that I don't use (yet) but decided to
 leave them as is if you can make use of them

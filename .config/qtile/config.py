@@ -39,7 +39,8 @@ myFileManager = "thunar" # My file manager
 myMail = 'mailspring --password-store="gnome-libsecret"' # My Mail
 screenshot = "maim -s | xclip -selection clipboard -t image/png" 
 # screenshot = "flameshot gui --clipboard " 
-
+# Path to custom scripts
+path = os.path.expanduser('~/.local/bin/scripts/')
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -76,12 +77,16 @@ keys = [
     # Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/scripts/rofi-power-menu "), desc="Logout menu"), (use this if you dont' want to install the rofi-power-menu package)
 
     # Qtile
-    Key([mod], "l", lazy.spawn("i3lock -ei ~/.config/qtile/lock"), desc="Kill focused window"),
+    Key([mod], "l", lazy.spawn("i3lock -ei ~/.config/qtile/lock"), desc="Lock the screen"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     # Key([mod, "shift"], "q", lazy.spawn("oblogout"), desc="Logout"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle between layouts"),
+
+    # Load monitor layout: I gave up on making the thing work automatically, so I'll just have a script run when a keybind is hit, the script is in ~/.local/bin/scripts/multi.sh 
+    # Key([mod], "o", lazy.spawn("/home/zeus/.local/bin/scripts/multi.sh", shell=True), desc="Load up monitor preset"),
+    Key([mod, "shift"], "z", lazy.spawn(path + 'multi.sh'), desc="Load up monitor preset"),
     
     # Volumes
     # Key([], "XF86AudioLowerVolume", lazy.spawn("amixer sset Master 5%-"), desc="Lower Volume by 5%"),
@@ -577,7 +582,6 @@ def init_widgets_screen1():
 # All other monitors' bars will display everything but widgets 22 (systray) and 23 (spacer).
 def init_widgets_screen2():
     widgets_screen2 = init_widgets_list()
-    del widgets_screen2[22:24]
     return widgets_screen2
 
 # For adding transparency to your bar, add (background="#00000000") to the "Screen" line(s)
@@ -592,7 +596,7 @@ if __name__ in ["config", "__main__"]:
     screens = init_screens()
     widgets_list = init_widgets_list()
     widgets_screen1 = init_widgets_screen1()
-    #widgets_screen2 = init_widgets_screen2()
+    widgets_screen2 = init_widgets_screen2()
 
 # Drag floating layouts.
 mouse = [
