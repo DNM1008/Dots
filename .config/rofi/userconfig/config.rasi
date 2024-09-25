@@ -1,0 +1,27 @@
+configuration{
+    /* modi: "drun,file-browser-extended,power-menu:/home/zeus/.local/bin/scripts/rofi-power-menu"; */
+    modi: "drun,emoji,file-browser-extended";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps";
+    display-run: "   Run";
+    display-window: "   Window";
+    display-Network: " 󰤨  Network";
+    display-file-browser-extended: "󰪶 Files";
+    display-clipboard: "  Clipboard";
+    display-emoji: "󰞅  Emoji";
+    display-power: "⏻  Power";
+    sidebar-mode: false;
+
+    file-browser-extended{
+      resume: true;
+    }
+}
+
+@theme "catppuccin-macchiato"
+

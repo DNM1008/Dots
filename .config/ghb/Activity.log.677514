@@ -1,0 +1,53 @@
+OS: Arch Linux
+HandBrake 1.7.3 (2024021100)
+Kernel: Linux 6.8.1-arch1-1 (x86_64)
+CPU: Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz x 4
+Install Dir: /usr/bin
+Config Dir:  /home/zeus/.config/ghb
+_______________________________
+
+[18:11:34] Compile-time hardening features are enabled
+Cannot load libnvidia-encode.so.1
+[18:11:34] qsv: not available on this system
+[18:11:34] hb_init: starting libhb thread
+[18:11:34] hb_init: starting libhb thread
+[18:11:34] hb_init: starting libhb thread
+
+** (fr.handbrake.ghb:677514): WARNING **: 18:11:34.853: AT-SPI: Could not obtain desktop path or name
+
+
+** (fr.handbrake.ghb:677514): WARNING **: 18:11:34.854: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (fr.handbrake.ghb:677514): WARNING **: 18:11:34.854: atk-bridge: get_device_events_reply: unknown signature
+
+(fr.handbrake.ghb:677514): GLib-CRITICAL **: 18:11:34.856: g_variant_get_type: assertion 'value != NULL' failed
+
+(fr.handbrake.ghb:677514): GLib-CRITICAL **: 18:11:34.856: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(fr.handbrake.ghb:677514): GLib-CRITICAL **: 18:11:34.856: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(fr.handbrake.ghb:677514): GLib-CRITICAL **: 18:11:34.856: g_variant_unref: assertion 'value != NULL' failed
+[18:11:35] CPU: Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz
+[18:11:35]  - Intel microarchitecture Sandy Bridge
+[18:11:35]  - logical processor count: 4
+[18:11:35] Intel Quick Sync Video support: no
+[18:11:35] hb_scan: path=/home/zeus/Videos/Cars.2006.1080p.BluRay.x264.AAC-ETRG/Cars.2006.1080p.BluRay.x264.AAC-ETRG.mp4, title_index=0
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/zeus/Videos/Cars.2006.1080p.BluRay.x264.AAC-ETRG/Cars.2006.1080p.BluRay.x264.AAC-ETRG.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isom
+    creation_time   : 2016-07-04T08:11:41.000000Z
+  Duration: 01:56:35.99, start: 0.000000, bitrate: 2098 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/bt709/unknown, progressive), 1920x804 [SAR 1:1 DAR 160:67], 1998 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+    Metadata:
+      creation_time   : 2016-07-01T22:56:24.000000Z
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 95 kb/s (default)
+    Metadata:
+      vendor_id       : [0][0][0][0]
+[18:11:35] scan: decoding previews for title 1
+[18:11:35] scan: audio 0x1: aac, rate=48000Hz, bitrate=95939 Unknown (AAC LC, 2.0 ch, 95 kbps)
+[18:11:37] using bitstream PAR 1:1
+[18:11:37] scan: 10 previews, 1920x804, 23.976 fps, autocrop = 2/0/0/0, aspect 2.39:1, PAR 1:1, color profile: 1-1-1, chroma location: left
+[18:11:37] libhb: scan thread found 1 valid title(s)

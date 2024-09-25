@@ -1,0 +1,23 @@
+# GIMP action-history
+
+(history-item "dialogs-preferences" 1)
+(history-item "python-fu-heal-selection" 0)
+(history-item "file-export-as" 1)
+(history-item "tools-heal" 0)
+(history-item "file-open" 1)
+(history-item "tools-aspect-decrease" 0)
+(history-item "tools-aspect-increase" 0)
+(history-item "file-quit" 1)
+(history-item "dialogs-keyboard-shortcuts" 0)
+(history-item "tools-opacity-decrease" 1)
+(history-item "edit-fill-fg" 1)
+(history-item "tools-opacity-increase" 1)
+(history-item "tools-clone" 1)
+(history-item "dialogs-module-dialog" 0)
+(history-item "tools-size-set-to-default" 0)
+(history-item "windows-tab-position" 0)
+(history-item "edit-fill-bg" 0)
+(history-item "tools-rect-select" 0)
+(history-item "image-scale" 1)
+
+# end of action-history

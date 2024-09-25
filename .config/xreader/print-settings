@@ -1,0 +1,31 @@
+[Print Settings]
+cups-JCLEdgeEnhance=Normal
+media-type=None
+cups-MediaType=None
+cups-job-priority=50
+xreader-print-setting-page-autorotate=true
+cups-TonerSaveMode=Standard
+cups-number-up=1
+xreader-print-setting-page-scale=1
+cover-before=none
+cups-JCLSkipBlankPages=False
+xreader-print-setting-page-size=false
+cups-Quality=600dpi
+print-at-time=
+cups-secBrightness=50
+cover-after=none
+print-at=now
+printer=HP-Laser-10x
+cups-secContrast=50
+cups-job-sheets=none,none
+
+[Page Setup]
+PPDName=Letter
+DisplayName=US Letter
+Width=215.89999389648438
+Height=279.39999389648438
+MarginTop=6.3499999999999996
+MarginBottom=14.224
+MarginLeft=6.3499999999999996
+MarginRight=6.3499999999999996
+Orientation=portrait
