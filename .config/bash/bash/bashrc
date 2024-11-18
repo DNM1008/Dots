@@ -1,0 +1,48 @@
+# ~/.bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+shopt -s autocd
+HISTSIZE=500 
+HISTFILESIZE=1000
+
+# aliases
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
+alias cowsay='cowsay -f /usr/share/cowsay/cows/tux.cow'
+alias grep='grep --color=auto'
+alias hc='ls ~ -lA | wc -l'
+alias ls='eza --color=auto --icons=always -la'
+alias pdpdf='pandoc --citeproc --pdf-engine=lualatex --include-in-header="/home/zeus/.config/pandoc/header.tex" --toc --csl="/home/zeus/.config/pandoc/apa.csl"'
+alias shutnow='shutdown now'
+alias vim="nvim"
+alias wget="wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts""
+
+#PS1='[\u@\h \W]\$ '
+
+
+# Pretty (?) neofetch and a quote to start
+fastfetch && echo && fortune && echo
+
+# Case insensitive tab autocomplete
+bind -s 'set completion-ignore-case on'
+
+eval "$(starship init bash)"	# Starship prompt
+if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion		# Enable auto complete
+fi
+
+cl() {
+	local dir="$1"
+	local dir="${dir:=$HOME}"
+	if [[ -d "$dir" ]]; then
+		cd "$dir" >/dev/null; ls
+	else
+		echo "bash: cl: $dir: Directory not found"
+	fi
+}
+
+PERL_DESTRUCT_LEVEL=2
+
+
+eval "$(antidot init)"

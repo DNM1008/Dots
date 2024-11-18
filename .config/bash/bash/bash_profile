@@ -1,0 +1,38 @@
+#
+#
+# export INIT_X11_SCALE_FACTOR=1
+# ~/.bash_profile
+WINIT_HIDPI_FACTOR=5
+[[ -f ~/.config/bash/bashrc ]] && . ~/.config/bash/bashrc
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+cache=${XDG_CACHE_HOME}/npm
+export ANDROID_HOME="$XDG_DATA_HOME"/android
+export BROWSER='firefox'
+export EDITOR='nvim'
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc":"$XDG_CONFIG_HOME/gtk-2.0/gtkrc.mine"
+export HISTFILE="${XDG_STATE_HOME}"/bash/history      
+export LS_COLORS='tw=00;33:ow=01;33:'
+export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch-config"
+export NO_AT_BRIDGE=1
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export PATH="$HOME/.local/bin/:$PATH"		
+export PATH="$HOME/.local/bin/scripts:$PATH"		
+export PATH="$HOME/.local/share/python/bin:$PATH"		
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export RANGER_LOAD_DEFAULT_RC=FALSE
+export TERMINAL='alacritty'
+export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
+export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
+export TEXMHOME=$XDG_DATA_HOME/texmf
+export XAUTHORITY=$XDG_RUNTIME_DIR/lyauth
+export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons  
+export PYTHON_HISTORY=$XDG_STATE_HOME/python/history
+export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
+export PYTHONUSERBASE=$XDG_DATA_HOME/python
+export npm_config_cache="${XDG_CACHE_HOME}/npm"
+prefix=${XDG_DATA_HOME}/npm
+wget="wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts""
