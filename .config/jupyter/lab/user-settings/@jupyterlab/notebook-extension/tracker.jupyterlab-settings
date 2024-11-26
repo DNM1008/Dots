@@ -1,0 +1,22 @@
+{
+    "codeCellConfig": {
+        "autoClosingBrackets": true,
+        "lineWrap": "on"
+    },
+    "markdownCellConfig": {
+        "lineNumbers": false,
+        "matchBrackets": false,
+        "autoClosingBrackets": true
+    },
+    "rawCellConfig": {
+        "lineNumbers": false,
+        "matchBrackets": false,
+        "autoClosingBrackets": true
+    },
+    "defaultCell": "code",
+    "scrollPastEnd": true,
+    "overscanCount": 1,
+    "maxNumberOutputs": 50,
+    "showEditorForReadOnlyMarkdown": true,
+    "showHiddenCellsButton": true
+}

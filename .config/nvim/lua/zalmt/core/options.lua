@@ -23,6 +23,7 @@ opt.smartcase = true -- if you include mixed case in your search, assumes you wa
 opt.cursorline = true -- highlight the current cursor line
 
 -- appearance
+opt.modelines = 0
 
 -- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
@@ -42,3 +43,10 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- autowrap
+
+opt.textwidth = 0
+opt.wrapmargin = 0
+opt.wrap = true
+opt.linebreak = true

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+notify-send -i ~/.config/qtile/icons/cpu.png "Biggest CPU hogs:
+
+$(ps axch -o cmd,%cpu --sort=-%cpu | head )"  

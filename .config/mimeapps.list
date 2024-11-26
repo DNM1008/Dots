@@ -25,9 +25,10 @@ x-scheme-handler/webcal=userapp-Thunderbird-DAI3S2.desktop
 text/calendar=userapp-Thunderbird-DAI3S2.desktop
 application/x-extension-ics=userapp-Thunderbird-DAI3S2.desktop
 x-scheme-handler/webcals=userapp-Thunderbird-DAI3S2.desktop
+application/octet-stream=xarchiver.desktop
 
 [Added Associations]
-application/pdf=libreoffice-draw.desktop;firefox.desktop;org.pwmt.zathura.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
+application/pdf=firefox.desktop;libreoffice-draw.desktop;org.pwmt.zathura.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
 text/plain=nvim.desktop;
 audio/mpeg=org.gnome.Rhythmbox3.desktop;
 image/jpeg=mcomix.desktop;org.gnome.eog.desktop;org.pwmt.zathura.desktop;
@@ -45,3 +46,5 @@ x-scheme-handler/mailto=userapp-Thunderbird-3QZ6S2.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-3QZ6S2.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-DAI3S2.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-DAI3S2.desktop;
+application/zip=xarchiver.desktop;
+application/octet-stream=xarchiver.desktop;

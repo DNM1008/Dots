@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+mesg=$1
+
+git add . && git commit -m "$mesg" && git push

@@ -4,7 +4,8 @@
 [[ $- != *i* ]] && return
 
 shopt -s autocd
-HISTSIZE= HISTFILESIZE=
+HISTSIZE=500 
+HISTFILESIZE=1000
 
 # aliases
 alias adb='HOME="$XDG_DATA_HOME"/android adb'

@@ -1,0 +1,7 @@
+{
+    "version": "2.0.1",
+    "autoload": {
+        "AT Translated Set 2 keyboard": "remap",
+        "2.4G RF Keyboard & Mouse": "remap"
+    }
+}

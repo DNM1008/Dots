@@ -6,14 +6,14 @@ COLORSCHEME=Catppuccin
 ### AUTOSTART PROGRAMS ###
 # lxsession &
 fcitx5 -d &
-copyq &
-# nm-applet &
+copyq --start-server hide &
+nm-applet &
 udiskie &
 dunst &
 syncthing --no-browser &
 # pamac-tray-icon-plasma
 # /bin/bash -c  "sleep 1; /usr/bin/xmodmap /home/zeus/.config/x11/Xmodmap" &
-picom &
+# picom &
 # birdtray &
 # cbatticon &
 xrdb -load ~/.config/x11/xresouces &
@@ -23,7 +23,7 @@ dockd --daemon &
 # multi.sh
 # xrandr --output HDMI-2 --primary --mode 1920x1080  --output LVDS-1 --mode 1920x1080 --below HDMI-2
 if [[ $(< /sys/class/drm/card1-HDMI-A-2/status) = "connected" ]]; then
-  xrandr --output LVDS-1 --mode 1920x1080 --pos 0x1080 --rotate normal --output VGA-1 --off --output HDMI-1 --off --output HDMI-2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-3 --off --output DP-2 --off --output DP-3 --off
+  xrandr --output LVDS-1 --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-1 --off --output HDMI-1 --off --output HDMI-2 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-3 --off --output DP-2 --off --output DP-3 --off
 else
   xrandr --auto
 fi

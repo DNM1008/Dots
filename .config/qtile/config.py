@@ -35,7 +35,8 @@ from qtile_extras.widget.decorations import BorderDecoration
 # import custom_widgets
 
 mod = "mod4"  # Sets mod key to SUPER/WINDOWS
-myTerm = "alacritty"  # My terminal of choice
+# myTerm = "alacritty"  # My terminal of choice
+myTerm = "kitty"  # My terminal of choice
 myBrowser = "firefox"  # My browser of choice
 myFileManager = "thunar"  # My file manager
 # myFileManager = "alacritty --command ranger" # My file manager
@@ -78,8 +79,14 @@ keys = [
     Key([mod], "Return", lazy.spawn(myTerm), desc="Terminal"),
     Key([mod], "d", lazy.spawn("discord"), desc="Discord"),
     Key([mod], "e", lazy.spawn(myFileManager), desc="File browser"),
+    #    Key(
+    #        [mod, "shift"],
+    #        "p",
+    #        lazy.spawn(path + "todolist", shell=True),
+    #        desc="To do list",
+    #    ),
     Key([mod], "m", lazy.spawn(myMail), desc="Mail client"),
-    # Key([mod], "v", lazy.spawn('copyq toggle'), desc = "Clipboard"),
+    Key([mod], "v", lazy.spawn("copyq toggle"), desc="Clipboard"),
     Key([mod], "w", lazy.spawn(myBrowser), desc="Web browser"),
     Key(
         [mod, "shift"],
@@ -90,15 +97,21 @@ keys = [
     # Rofi and prompts
     Key([mod], "p", lazy.spawn("rofi -show drun"), desc="Run Launcher"),
     Key([mod], "r", lazy.spawn("rofi -show run"), desc="Run Prompt"),
-    Key(
-        [mod],
-        "v",
-        lazy.spawn(
-            "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
-        ),
-        desc="Show Clipboard",
-    ),
+    # Key(
+    #     [mod],
+    #     "v",
+    #     lazy.spawn(
+    #         "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
+    #     ),
+    #     desc="Show Clipboard",
+    # ),
     # Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key(
+        [mod, "shift"],
+        "p",
+        lazy.spawn(path + "rofi_todo"),
+        desc="Power Menu",
+    ),
     Key(
         [mod, "shift"],
         "q",
@@ -120,12 +133,6 @@ keys = [
     Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle between layouts"),
     # Load monitor layout: I gave up on making the thing work automatically, so I'll just have a script run when a keybind is hit, the script is in ~/.local/bin/scripts/multi.sh
     # Key([mod], "o", lazy.spawn("/home/zeus/.local/bin/scripts/multi.sh", shell=True), desc="Load up monitor preset"),
-    Key(
-        [mod, "shift"],
-        "z",
-        lazy.spawn(path + "reloadqtile.sh"),
-        desc="Load up monitor preset",
-    ),
     # Volumes
     # Key([], "XF86AudioLowerVolume", lazy.spawn("amixer sset Master 5%-"), desc="Lower Volume by 5%"),
     # Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer sset Master 5%+"), desc="Raise Volume by 5%"),
@@ -263,18 +270,29 @@ group_names = [
 ]
 
 # group_labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9",]
-group_labels = [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-]
+# group_labels = [
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+# ]
 
+group_labels = [
+    " ",
+    "󰝚 ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+]
 
 group_layouts = [
     "monadtall",
@@ -553,6 +571,12 @@ def init_widgets_list():
         widget.Spacer(length=8),
         widget.CPU(
             format="󰘚  {load_percent}%",
+            mouse_callbacks={
+                "Button1": lazy.spawn(
+                    path + "cpuhoggers",
+                    shell=True,
+                )
+            },
             foreground=colors[4],
             decorations=[
                 BorderDecoration(
@@ -564,7 +588,12 @@ def init_widgets_list():
         widget.Spacer(length=8),
         widget.Memory(
             foreground=colors[8],
-            mouse_callbacks={"Button1": lambda: qtile.cmd_spawn(myTerm + " -e htop")},
+            mouse_callbacks={
+                "Button1": lazy.spawn(
+                    path + "memhoggers",
+                    shell=True,
+                )
+            },
             format="{MemUsed: .0f}{mm}",
             fmt="󰍛 {}",
             decorations=[
@@ -602,6 +631,25 @@ def init_widgets_list():
         #                     )
         #                 ],
         #                 ),
+        widget.HDD(
+            foreground=colors[1],
+            fmt="{}",
+            mouse_callbacks={
+                "Button1": lazy.spawn(
+                    path + "storagehoggers",
+                    shell=True,
+                )
+            },
+            format=" {HDDPercent}%",
+            update_interval=5,
+            decorations=[
+                BorderDecoration(
+                    colour=colors[1],
+                    border_width=[0, 0, 2, 0],
+                )
+            ],
+        ),
+        widget.Spacer(length=8),
         widget.PulseVolume(
             foreground=colors[7],
             fmt="󰕾 {}",

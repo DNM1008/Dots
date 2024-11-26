@@ -1,0 +1,3 @@
+notify-send -i ~/.config/qtile/icons/check-list.png "Still to do:
+
+$(cat ~/Documents/Share/Todo.md)"

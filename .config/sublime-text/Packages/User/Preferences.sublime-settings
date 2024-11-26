@@ -1,0 +1,9 @@
+{
+	"theme": "Default.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Catppuccin Macchiato.sublime-color-scheme",
+	"index_files": true,
+}

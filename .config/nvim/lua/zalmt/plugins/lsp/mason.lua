@@ -47,6 +47,8 @@ return {
 				"stylua", -- lua formatter
 				"eslint_d", -- js linter
 				"pylint", -- python linter
+				"markdownlint-cli2",
+				"markdown-toc",
 			},
 		})
 	end,

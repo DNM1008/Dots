@@ -1309,10 +1309,28 @@
   <resource identifier="0xProto Nerd Font" checksum="(null)">
   </resource>
 
+  <resource identifier="0xProto Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="0xProto Nerd Font Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="0xProto Nerd Font Mono" checksum="(null)">
   </resource>
 
+  <resource identifier="0xProto Nerd Font Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="0xProto Nerd Font Mono Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="0xProto Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="0xProto Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="0xProto Nerd Font Propo Italic" checksum="(null)">
   </resource>
 
   <resource identifier="3270 Nerd Font" checksum="(null)">
