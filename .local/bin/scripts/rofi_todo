@@ -22,16 +22,20 @@ selection=$(show_todo_list | rofi -dmenu -i -p "TODO List")
 if [[ "$selection" == "Add Entry" ]]; then
     # Prompt for the new entry
     new_entry=$(rofi -dmenu -i -p "New TODO:")
-    [ -n "$new_entry" ] && echo "$new_entry" >> "$TODO_FILE"
+    if [ -n "$new_entry" ]; then
+        echo "$new_entry" >> "$TODO_FILE"
+        notify-send -i ~/.config/qtile/icons/check-list.png "TODO List" "Entry added: \"$new_entry\""
+    fi
     exit 0
 fi
 
 # If a task is selected, delete it
 # Extract the line number (before the first space)
 line_number=$(echo "$selection" | awk '{print $1}')
+task_content=$(echo "$selection" | cut -d' ' -f2-)
 
 # Remove the selected line from the file
 if [[ "$line_number" =~ ^[0-9]+$ ]]; then
     sed -i "${line_number}d" "$TODO_FILE"
+    notify-send -i ~/.config/qtile/icons/check-list.png "TODO List" "Entry cleared: \"$task_content\""
 fi
-
