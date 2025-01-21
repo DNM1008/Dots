@@ -27,7 +27,6 @@ import colors
 from libqtile import bar, extension, hook, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, KeyChord, Match, Screen
 from libqtile.lazy import lazy
-
 # Make sure 'qtile-extras' is installed or this config will not work.
 from qtile_extras import widget
 from qtile_extras.widget.decorations import BorderDecoration
@@ -86,7 +85,7 @@ keys = [
     #        desc="To do list",
     #    ),
     Key([mod], "m", lazy.spawn(myMail), desc="Mail client"),
-    Key([mod], "v", lazy.spawn("copyq toggle"), desc="Clipboard"),
+    Key([mod], "v", lazy.spawn("clipster -sp"), desc="Clipboard"),
     Key([mod], "w", lazy.spawn(myBrowser), desc="Web browser"),
     Key(
         [mod, "shift"],
@@ -120,17 +119,17 @@ keys = [
     ),
     # Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/scripts/rofi-power-menu "), desc="Logout menu"), (use this if you dont' want to install the rofi-power-menu package)
     # Qtile
-    # Key(
-    #     [mod, "shift"],
-    #     "l",
-    #     lazy.spawn("i3lock -ei ~/.config/qtile/lock"),
-    #     desc="Lock the screen",
-    # ),
+    Key(
+        [mod, "mod1"],
+        "l",
+        lazy.spawn("loginctl lock-session"),
+        desc="Lock the screen",
+    ),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     # Key([mod, "shift"], "q", lazy.spawn("oblogout"), desc="Logout"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle between layouts"),
+    Key([mod], "Caps_Lock", lazy.hide_show_bar(), desc="Toggle bar"),
     # Load monitor layout: I gave up on making the thing work automatically, so I'll just have a script run when a keybind is hit, the script is in ~/.local/bin/scripts/multi.sh
     # Key([mod], "o", lazy.spawn("/home/zeus/.local/bin/scripts/multi.sh", shell=True), desc="Load up monitor preset"),
     # Volumes
@@ -161,6 +160,18 @@ keys = [
         "XF86AudioMicMute",
         lazy.spawn("amixer set Capture toggle"),
         desc="Mute/Unmute Mic",
+    ),
+    Key(
+        [],
+        "XF86MonBrightnessUp",
+        lazy.spawn("blight set +5%"),
+        desc="Increase brightness",
+    ),
+    Key(
+        [],
+        "XF86MonBrightnessDown",
+        lazy.spawn("blight set -5%"),
+        desc="Decrease brightness",
     ),
     # Some layouts like 'monadtall' only need to use j/k to move
     # through the stack, but other layouts like 'columns' will
@@ -510,40 +521,40 @@ def init_widgets_list():
         #                  )
         #              ],
         #              ),
-        #        widget.OpenWeather(
-        # 		location= "Sydney",
-        # 		weather_symbols = {
-        # 		        "Unknown": "",
-        # 		        "01d": "☀️",
-        # 		        "01n": "🌕",
-        # 		        "02d": "🌤️",
-        # 		        "02n": "☁️",
-        # 		        "03d": "🌥️",
-        # 		        "03n": "☁️",
-        # 		        "04d": "☁️",
-        # 		        "04n": "☁️",
-        # 		        "09d": "🌧️",
-        # 		        "09n": "🌧️",
-        # 		        "10d": "⛈",
-        # 		        "10n": "⛈",
-        # 		        "11d": "🌩",
-        # 		        "11n": "🌩",
-        # 		        "13d": "❄️",
-        # 		        "13n": "❄️",
-        # 		        "50d": "🌫",
-        # 		        "50n": "🌫",
-        # 		    },
-        # 		app_key="4d251138ceb3b7db73e25e832da303a4",
-        # 		format = "{main_temp: .1f}{units_temperature}: {icon}",
-        # 		fmt="{}",
-        # 		foreground = colors[1],
-        #                 decorations=[
-        #                     BorderDecoration(
-        #                         colour = colors[1],
-        #                         border_width = [0, 0, 2, 0],
-        #                     )
-        #                 ],
-        #                 ),
+        # widget.OpenWeather(
+        #     location="Hanoi",
+        #     weather_symbols={
+        #         "Unknown": "",
+        #         "01d": "☀️",
+        #         "01n": "🌕",
+        #         "02d": "🌤️",
+        #         "02n": "☁️",
+        #         "03d": "🌥️",
+        #         "03n": "☁️",
+        #         "04d": "☁️",
+        #         "04n": "☁️",
+        #         "09d": "🌧️",
+        #         "09n": "🌧️",
+        #         "10d": "⛈",
+        #         "10n": "⛈",
+        #         "11d": "🌩",
+        #         "11n": "🌩",
+        #         "13d": "❄️",
+        #         "13n": "❄️",
+        #         "50d": "🌫",
+        #         "50n": "🌫",
+        #     },
+        #     app_key="4d251138ceb3b7db73e25e832da303a4",
+        #     format="{main_temp: .1f}{units_temperature}: {icon}",
+        #     fmt="{}",
+        #     foreground=colors[1],
+        #     decorations=[
+        #         BorderDecoration(
+        #             colour=colors[1],
+        #             border_width=[0, 0, 2, 0],
+        #         )
+        #     ],
+        # ),
         #        custom_widgets.CapsNumLockIndicator(
         #            foreground = colors[4],
         #            fmt = '{}',
@@ -680,7 +691,7 @@ def init_widgets_list():
             unknown_char="󰚥",
             foreground=colors[5],
             low_foreground=colors[4],
-            format="{char}  {percent:2.0%} {hour:d}:{min:02d}",
+            format="{char}  {percent:2.0%} {hour:d}:{min:02d} {watt:.2f} W",
             notify_below=5,
             decorations=[
                 BorderDecoration(
@@ -718,17 +729,17 @@ def init_widgets_list():
         #                 ],
         # 		),
         #        widget.Spacer(length = 8),
-        #        widget.Systray(
-        #                padding = 3,
-        #                icon_size = 16,
-        #                decorations=[
-        #                    BorderDecoration(
-        #                        colour = "#ffffff",
-        #                        border_width = [0, 0, 2, 0],
-        #                    )
-        #                ],
-        #                ),
-        #        widget.Spacer(length = 8),
+        widget.Systray(
+            padding=3,
+            icon_size=16,
+            decorations=[
+                BorderDecoration(
+                    colour="#ffffff",
+                    border_width=[0, 0, 2, 0],
+                )
+            ],
+        ),
+        widget.Spacer(length=8),
     ]
     return widgets_list
 

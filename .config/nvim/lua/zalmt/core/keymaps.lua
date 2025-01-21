@@ -23,6 +23,10 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decremen
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
+keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", { noremap = true, silent = true }) -- make split window narrower
+keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", { noremap = true, silent = true }) -- make split window wider
+keymap.set("n", "<C-Up>", ":resize +2<CR>", { noremap = true, silent = true }) -- make split window taller
+keymap.set("n", "<C-Down>", ":resize -2<CR>", { noremap = true, silent = true }) -- make split window shorter
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
@@ -30,6 +34,37 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- terminal split toggle
+local term_buf = nil
+local term_win = nil
+
+function TermToggle(height)
+	if term_win and vim.api.nvim_win_is_valid(term_win) then
+		vim.cmd("hide")
+	else
+		vim.cmd("botright new")
+		local new_buf = vim.api.nvim_get_current_buf()
+		vim.cmd("resize " .. height)
+		if term_buf and vim.api.nvim_buf_is_valid(term_buf) then
+			vim.cmd("buffer " .. term_buf) -- go to terminal buffer
+			vim.cmd("bd " .. new_buf) -- cleanup new buffer
+		else
+			vim.cmd("terminal")
+			term_buf = vim.api.nvim_get_current_buf()
+			vim.wo.number = false
+			vim.wo.relativenumber = false
+			vim.wo.signcolumn = "no"
+		end
+		vim.cmd("startinsert!")
+		term_win = vim.api.nvim_get_current_win()
+	end
+end
+
+-- term toggle keymaps
+keymap.set("n", "<leader><CR>", ":lua TermToggle(20)<CR>", { noremap = true, silent = true })
+keymap.set("i", "<leader><CR>", "<Esc>:lua TermToggle(20)<CR>", { noremap = true, silent = true })
+keymap.set("t", "<leader><CR>", "<C-\\><C-n>:lua TermToggle(20)<CR>", { noremap = true, silent = true })
 
 -- improve vim keys (?)
 keymap.set("n", "j", "gj", { desc = "Move down visually" })

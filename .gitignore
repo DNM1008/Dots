@@ -13,3 +13,8 @@
 .config/pip/
 .config/libreoffice/
 .config/'Raspberry Pi'/
+.config/virtscreen/
+.config/teams/
+.config/Microsoft/
+.config/jupyter/
+*pyc

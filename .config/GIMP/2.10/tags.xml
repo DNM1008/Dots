@@ -1834,6 +1834,18 @@
   <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Carlito" checksum="(null)">
+  </resource>
+
+  <resource identifier="Carlito Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Carlito Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Carlito Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="CaskaydiaCove Nerd Font" checksum="(null)">
   </resource>
 
@@ -2257,6 +2269,24 @@
   <resource identifier="DEC Terminal Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="DejaVu Math TeX Gyre" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold Oblique Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="DejaVuSansM Nerd Font" checksum="(null)">
   </resource>
 
@@ -2291,6 +2321,54 @@
   </resource>
 
   <resource identifier="DejaVuSansM Nerd Font Propo Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Mono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Oblique Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Sans Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="DejaVu Serif Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="DroidSansM Nerd Font" checksum="(null)">
