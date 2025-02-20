@@ -55,7 +55,7 @@ local desktop = {
 local mime_types = {}
 
 -- Icons positioning
-desktop.current_pos = {}
+local desktop_current_pos = {}
 
 -- @return iterator on input pipe
 local function pipelines(...)
@@ -74,19 +74,18 @@ end
 -- @param onclick function to execute on click
 function desktop.add_single_icon(args, label, icon, onclick)
     local s = args.screen
-    local dcp = desktop.current_pos
 
     -- define icon dimensions and position
-    if not dcp[s] then
-        dcp[s] = { x = (screen[s].geometry.x + args.iconsize.width + args.margin.x), y = screen[s].geometry.y + 20 + args.margin.y  }
+    if not desktop_current_pos[s] then
+        desktop_current_pos[s] = { x = (screen[s].geometry.x + args.iconsize.width + args.margin.x), y = 40 }
     end
 
-    local tot_height = (icon and args.iconsize.height or 0) + (label and args.labelsize.height or 0)
-    if tot_height == 0 then return end
+    local totheight = (icon and args.iconsize.height or 0) + (label and args.labelsize.height or 0)
+    if totheight == 0 then return end
 
-    if dcp[s].y + tot_height > screen[s].geometry.y + screen[s].geometry.height - 20 - args.margin.y then
-        dcp[s].x = dcp[s].x + args.labelsize.width + args.iconsize.width + args.margin.x
-        dcp[s].y = 20 + args.margin.y
+    if desktop_current_pos[s].y + totheight > screen[s].geometry.height - 40 then
+        desktop_current_pos[s].x = desktop_current_pos[s].x + args.labelsize.width + args.iconsize.width + args.margin.x
+        desktop_current_pos[s].y = 40
     end
 
     local common = { screen = s, bg = "#00000000", visible = true, type = "desktop" }
@@ -95,8 +94,8 @@ function desktop.add_single_icon(args, label, icon, onclick)
     if icon then
         common.width = args.iconsize.width
         common.height = args.iconsize.height
-        common.x = dcp[s].x
-        common.y = dcp[s].y
+        common.x = desktop_current_pos[s].x
+        common.y = desktop_current_pos[s].y
 
         icon = wibox.widget {
             image = icon,
@@ -109,15 +108,15 @@ function desktop.add_single_icon(args, label, icon, onclick)
         icon_container = wibox(common)
         icon_container:set_widget(icon)
 
-        dcp[s].y = dcp[s].y + args.iconsize.height + 5
+        desktop_current_pos[s].y = desktop_current_pos[s].y + args.iconsize.height + 5
     end
 
     -- create label container
     if label then
         common.width = args.labelsize.width
         common.height = args.labelsize.height
-        common.x = dcp[s].x - (args.labelsize.width/2) + args.iconsize.width/2
-        common.y = dcp[s].y
+        common.x = desktop_current_pos[s].x - (args.labelsize.width/2) + args.iconsize.width/2
+        common.y = desktop_current_pos[s].y
 
         caption = wibox.widget {
             text          = label,
@@ -133,11 +132,7 @@ function desktop.add_single_icon(args, label, icon, onclick)
         caption_container:set_widget(caption)
     end
 
-    dcp[s].y = dcp[s].y + args.labelsize.height + args.margin.y
-
-    desktop.current_pos = dcp
-
-    return dcp
+    desktop_current_pos[s].y = desktop_current_pos[s].y + args.labelsize.height + args.margin.y
 end
 
 -- Adds base icons (This PC, Trash, etc) to desktop
@@ -196,7 +191,7 @@ end
 -- @return files table with found entries
 function desktop.parse_dirs_and_files(dir)
     local files = {}
-    local paths = pipelines('find '..dir..' -maxdepth 1 -type d |sort|tail -n +1')
+    local paths = pipelines('find '..dir..' -maxdepth 1 -type d | tail -1')
     for path in paths do
         if path:match("[^/]+$") then
             local file = {}
