@@ -1,5 +1,8 @@
 # ~/.bashrc
 
+# Blesh sourcing
+[[ $- == *i* ]] && source /usr/share/blesh/ble.sh --noattach
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -42,7 +45,28 @@ cl() {
 	fi
 }
 
-PERL_DESTRUCT_LEVEL=2
 
+# Fix broken venv activation if needed
+if [ -n "$VIRTUAL_ENV" ] && [[ ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
+    export PATH="$VIRTUAL_ENV/bin:$PATH"
+fi
 
 eval "$(antidot init)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+#
+#
+[[ ${BLE_VERSION-} ]] && ble-attach

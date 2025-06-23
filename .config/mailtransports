@@ -1,0 +1,10 @@
+[General]
+default-transport=174192120
+
+[Transport 174192120]
+encryption=TLS
+host=smtp.office365.com
+id=174192120
+name=SMTP (dungnm2.ho@vietcombank.com.vn)
+storepass=true
+user=dungnm2.ho@vietcombank.com.vn

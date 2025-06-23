@@ -1,0 +1,15 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[8d58f8be-8123-4e4f-84bf-3271e12b9f2c]
+Description=Application settings for systemsettings
+noborderrule=3
+wmclass=systemsettings
+wmclassmatch=1
+
+[a6856343-b6f5-4bc6-ada8-7e3244cb17e8]
+Description=Application settings for systemsettings
+noborder=true
+noborderrule=3
+wmclass=*
+wmclassmatch=1

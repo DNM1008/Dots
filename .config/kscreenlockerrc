@@ -1,0 +1,7 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/zeus/Pictures/wallpapers/horizontal/other_car_related/ambitious_but_rubbish_1.jpg
+PreviewImage=/home/zeus/Pictures/wallpapers/horizontal/other_car_related/ambitious_but_rubbish_1.jpg
+SlidePaths=/usr/share/wallpapers/

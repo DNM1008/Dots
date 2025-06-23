@@ -10,11 +10,18 @@
 .config/yarn/
 .config/xfce4/
 .config/nvimlog
-.config/pip/
-.config/libreoffice/
-.config/'Raspberry Pi'/
-.config/virtscreen/
-.config/teams/
-.config/Microsoft/
-.config/jupyter/
+.config/pip/*
+.config/libreoffice/*
+.config/'Raspberry Pi'/*
+.config/virtscreen/*
+.config/teams/*
+.config/Microsoft/*
+.config/jupyter/*
+Code
+Docker\ Desktop
+ibus
+fcitx
+session
+Hanwha\ Vision
+EOS-greeter.conf
 *pyc

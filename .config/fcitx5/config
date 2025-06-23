@@ -9,6 +9,8 @@ EnumerateForwardKeys=
 EnumerateBackwardKeys=
 # Skip first input method while enumerating
 EnumerateSkipFirst=False
+# Time limit in milliseconds for triggering modifier key shortcuts
+ModifierOnlyKeyTimeout=250
 
 [Hotkey/TriggerKeys]
 0=Alt+Shift+Shift_L
@@ -44,7 +46,7 @@ EnumerateSkipFirst=False
 
 [Behavior]
 # Active By Default
-ActiveByDefault=False
+ActiveByDefault=True
 # Reset state on Focus In
 resetStateWhenFocusIn=No
 # Share Input State

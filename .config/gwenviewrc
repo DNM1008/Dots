@@ -1,0 +1,40 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Documents/vcb/ai_vision_demo/data/running/capture/in/38390/20250613_135527.jpg
+File10[$e]=$HOME/.mozilla/firefox/qdkrwzom.default-release/chrome/img/Catppuccin.jpg
+File2[$e]=$HOME/Documents/vcb/ai_vision_demo/data/running/capture/out/52871/20250613_145641.jpg
+File3[$e]=$HOME/Documents/vcb/ai_vision_demo/data/running/capture/in/329/20250613_135427.jpg
+File4[$e]=$HOME/Documents/vcb/ai_vision_demo/data/running/capture/in/12402/20250613_134948.jpg
+File5[$e]=$HOME/Documents/vcb/ai_vision_demo/data/running/capture/out/355/20250613_151832.jpg
+File6[$e]=$HOME/Pictures/Wallpapers/horizontal/ai/ai_2.jpg
+File7[$e]=$HOME/Pictures/Wallpapers/horizontal/assetto_corsa/assetto_corsa_5.jpg
+File8[$e]=$HOME/Pictures/mountains/mountain_2.jpg
+File9[$e]=$HOME/Pictures/wallpapers/vertical/top_gear/top_gear_2.jpg
+Name1[$e]=20250613_135527.jpg
+Name10[$e]=Catppuccin.jpg
+Name2[$e]=20250613_145641.jpg
+Name3[$e]=20250613_135427.jpg
+Name4[$e]=20250613_134948.jpg
+Name5[$e]=20250613_151832.jpg
+Name6[$e]=ai_2.jpg
+Name7[$e]=assetto_corsa_5.jpg
+Name8[$e]=mountain_2.jpg
+Name9[$e]=top_gear_2.jpg
+
+[SemanticInfoDialog]
+2 screens: Height=288
+2 screens: Width=284
+
+[SideBar]
+InformationSplitterSizes=218,257
+IsVisible ViewMode=true
+SideBarSplitterSizes=245,1168

@@ -1,0 +1,26 @@
+[Editor]
+3072x1920 screen: XPosition=0
+3072x1920 screen: YPosition=0
+State=AAAA/wAAAAD9AAAAAAAAA6IAAACdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[GPG Settings]
+gpg_config_path[$e]=$HOME/.gnupg/gpg.conf
+
+[General Options]
+First run=false
+
+[MainWindow]
+2 screens: XPosition=232
+2 screens: YPosition=168
+3072x1920 screen: XPosition=0
+3072x1920 screen: YPosition=0
+HDMI-1 eDP-1=HDMI-1
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAA6IAAACdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[User Interface]
+AutoStart=true

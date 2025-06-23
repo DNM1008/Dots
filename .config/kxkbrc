@@ -1,0 +1,10 @@
+[$Version]
+update_info=kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions,kxkb_variants.upd:split-variants
+
+[Layout]
+Model=pc105
+LayoutList=us
+VariantList=
+DisplayNames=
+Use=true
+

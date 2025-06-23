@@ -1,0 +1,6 @@
+[General]
+AirplaneModeEnabled=false
+HotspotPassword=1D2F68924AFDAA370860BC95D7
+ManageVirtualConnections=true
+SystemConnectionsByDefault=false
+UnlockModemOnDetection=true

@@ -1,0 +1,57 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[CompactMode]
+PreviewSize=64
+
+[ContextMenu]
+ShowOpenTerminal=false
+
+[DetailsMode]
+PreviewSize=32
+RightPadding=87
+
+[ExtractDialog]
+1920x1200 screen: Height=590
+1920x1200 screen: Width=1251
+3 screens: Height=1280
+3 screens: Width=960
+DirHistory[$e]=$HOME/Documents/vcb/ai_vision_demo/data/decompressed/,$HOME/Documents/vcb/ai_vision_demo/data/uncompressed/
+
+[FoldersPanel]
+HiddenFilesShown=true
+
+[General]
+BrowseThroughArchives=true
+EditableUrl=true
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
+ShowZoomSlider=true
+SortingChoice=CaseSensitiveSorting
+UseTabForSwitchingSplitView=true
+Version=202
+ViewPropsTimestamp=2025,3,22,11,27,0.02
+
+[InformationPanel]
+dateFormat=ShortFormat
+previewsAutoPlay=true
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+MenuBar=Disabled
+
+[Notification Messages]
+warnAboutRisksBeforeActingAsAdmin=false
+
+[PlacesPanel]
+IconSize=32
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs,gdk-pixbuf-thumbnailer

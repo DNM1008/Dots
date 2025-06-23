@@ -17,18 +17,18 @@
     "modules": [
         {
             "type": "os",
-            "key": " ",
+            "key": " ",
             "keyColor": "blue",
             "format": "{2}"
         },
         {
             "type": "kernel",
-            "key": " ",
+            "key": "󰌽 ",
             "keyColor": "white"
         },
         {
             "type": "packages",
-            "key": " ",
+            "key": " ",
             "keyColor": "green"
         },
         {
@@ -38,7 +38,7 @@
         },
         {
             "type": "terminal",
-            "key": " ",
+            "key": " ",
             "keyColor": "black"
         },
         {

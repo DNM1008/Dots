@@ -1,0 +1,15 @@
+[General]
+Default Identity=57570492
+
+[Identity #0]
+Default Domain=olympus
+Disable Fcc=false
+Email Address=dungnm2.ho@vietcombank.com.vn
+Identity=zeus
+Image Location=
+Inline Signature=
+Name=zeus
+Override Encryption Defaults=false
+Signature Enabled=false
+Transport=174192120
+uoid=57570492

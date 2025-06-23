@@ -1,6 +1,5 @@
 configuration{
-    /* modi: "drun,file-browser-extended,power-menu:/home/zeus/.local/bin/scripts/rofi-power-menu"; */
-    modi: "drun,emoji,file-browser-extended";
+    modi: "run,drun,window";
     icon-theme: "Oranchelo";
     show-icons: true;
     terminal: "alacritty";
@@ -8,20 +7,16 @@ configuration{
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
-    display-drun: "   Apps";
-    display-run: "   Run";
-    display-window: "   Window";
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 󰕰  Window";
     display-Network: " 󰤨  Network";
-    display-file-browser-extended: "󰪶 Files";
-    display-clipboard: "  Clipboard";
-    display-emoji: "󰞅  Emoji";
-    display-power: "⏻  Power";
-    sidebar-mode: false;
-
-    file-browser-extended{
-      resume: true;
-    }
+    sidebar-mode: true;
 }
 
 @theme "catppuccin-macchiato"
+window {
+    width: 1800px;  /* Change this to your preferred size */
+    height: 1600px; /* Optional */
+}
 

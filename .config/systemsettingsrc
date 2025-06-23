@@ -1,0 +1,20 @@
+[FileDialogSize]
+2 screens: Height=690
+2 screens: Width=1259
+2458x1536 screen: Height=708
+2458x1536 screen: Width=1210
+3 screens: Height=687
+3 screens: Width=1260
+
+[KFileDialog Settings]
+detailViewIconSize=64
+
+[MainWindow]
+2 screens: Height=630
+2 screens: Width=918
+2 screens: XPosition=1089
+2 screens: YPosition=538
+3072x1920 screen: XPosition=1077
+3072x1920 screen: YPosition=637
+HDMI-1 eDP-1=HDMI-1
+eDP-1=eDP-1

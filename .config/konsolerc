@@ -1,0 +1,8 @@
+[General]
+ConfigVersion=1
+
+[MainWindow]
+RestorePositionForNextInstance=false
+
+[UiSettings]
+ColorScheme=

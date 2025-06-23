@@ -1,0 +1,17 @@
+[Show]
+RunGhosttyDir=true
+compressfileitemaction=true
+extractfileitemaction=true
+forgetfileitemaction=true
+installFont=true
+kactivitymanagerd_fileitem_linking_plugin=true
+kdeconnectfileitemaction=true
+kio-admin=true
+makefileactions=true
+mountisoaction=true
+movetonewfolderitemaction=true
+runInKonsole=false
+sharefileitemaction=true
+slideshowfileitemaction=true
+tagsfileitemaction=true
+wallpaperfileitemaction=true

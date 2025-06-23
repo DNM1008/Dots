@@ -1,0 +1,12 @@
+[cache]
+AccountIdentity=2136224243
+IntervalCheckTime=60
+TrashCollectionMigrated=true
+UseDefaultIdentity=false
+
+[network]
+Authentication=0
+ImapPort=143
+ImapServer=outlook.office365.com
+SubscriptionEnabled=true
+UserName=dungnm2.ho@vietcombank.com.vn

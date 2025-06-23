@@ -1,0 +1,31 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[Notification Messages]
+presentationInfo=false
+
+[Recent Files]
+File1[$e]=$HOME/Documents/others/sol_2_2_7_install_guide_-_download_links.pdf
+File10[$e]=$HOME/Documents/projects/lfs/LFS-BOOK-12.3.pdf
+File2[$e]=$HOME/Documents/vcb/admin_schizz/professional_exam/KT2025.CNTT5_Nhom 5_Bo de on tap Thi nghiep vu Khoi CNTT va CDS_27052025_v1.pdf
+File3[$e]=$HOME/Documents/vcb/llms/rag_2/test.pdf
+File4[$e]=$HOME/Documents/vcb/llms/rag_2/RAG.pdf
+File5[$e]=$HOME/Documents/vcb/llms/rag_2/notes.pdf
+File6[$e]=$HOME/Documents/vcb/llms/rag_2/RAG_comparison.pdf
+File7[$e]=$HOME/Documents/vcb/computer_vision/docs/papers/Huong dan Milestone XProtection Professional+.pdf
+File8[$e]=$HOME/Documents/vcb/computer_vision/docs/papers/DataSheet_XND-C6083RV_250620_VN.pdf
+File9[$e]=$HOME/Documents/vcb/computer_vision/docs/papers/Manuals_XND-C9083RVXND-C8083RVXND-C7083RVXND-C6083RV_240704_EN.pdf
+Name1[$e]=sol_2_2_7_install_guide_-_download_links.pdf
+Name10[$e]=LFS-BOOK-12.3.pdf
+Name2[$e]=KT2025.CNTT5_Nhom 5_Bo de on tap Thi nghiep vu Khoi CNTT va CDS_27052025_v1.pdf
+Name3[$e]=test.pdf
+Name4[$e]=RAG.pdf
+Name5[$e]=notes.pdf
+Name6[$e]=RAG_comparison.pdf
+Name7[$e]=Huong dan Milestone XProtection Professional+.pdf
+Name8[$e]=DataSheet_XND-C6083RV_250620_VN.pdf
+Name9[$e]=Manuals_XND-C9083RVXND-C8083RVXND-C7083RVXND-C6083RV_240704_EN.pdf

@@ -1,7 +1,10 @@
 {
-    "version": "2.0.1",
+    "version": "2.1.1",
     "autoload": {
         "AT Translated Set 2 keyboard": "remap",
-        "2.4G RF Keyboard & Mouse": "remap"
+        "2.4G RF Keyboard & Mouse": "remap",
+        "Intel HID events": "new preset",
+        "JP AL65": "keyboard",
+        "SINO WEALTH R65 Keyboard Single Mode": "preset"
     }
 }

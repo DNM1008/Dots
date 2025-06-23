@@ -19,4 +19,7 @@ require("lazy").setup({ { import = "zalmt.plugins" }, { import = "zalmt.plugins.
 	change_detection = {
 		notify = false,
 	},
+	rocks = {
+		hererocks = true,
+	},
 })
