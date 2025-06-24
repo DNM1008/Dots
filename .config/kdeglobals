@@ -136,10 +136,10 @@ XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=none
 fixed=JetBrains Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=SF Pro,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=SF Pro,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=SF Pro,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=SF Pro,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=FreeSans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=FreeSans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=FreeSans,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=FreeSans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
 Theme=kora-light
@@ -192,7 +192,7 @@ ToolButtonStyleOtherToolbars=NoText
 [WM]
 activeBackground=36,39,58
 activeBlend=202,211,245
-activeFont=SF Pro,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=FreeSans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=202,211,245
 inactiveBackground=24,25,38
 inactiveBlend=165,173,203

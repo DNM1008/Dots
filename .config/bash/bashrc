@@ -1,72 +1,70 @@
+# shellcheck shell=bash
+
 # ~/.bashrc
 
-# Blesh sourcing
-[[ $- == *i* ]] && source /usr/share/blesh/ble.sh --noattach
+# ── Blesh ─────────────────────────────────────────────
+if [[ $- == *i* ]]; then
+  source /usr/share/blesh/ble.sh --noattach
+fi
+# --- Blesh colours ------------------------------------
+[[ -f ~/.config/blesh/colors.macchiato ]] && source ~/.config/blesh/colors.macchiato
 
-# If not running interactively, don't do anything
+# ── Exit for non-interactive shells ──────────────────-
 [[ $- != *i* ]] && return
 
-shopt -s autocd
-HISTSIZE=500 
+# ── Shell Options ─────────────────────────────────────
+shopt -s autocd                  # Auto-change to dir name
+
+# ── History Config ────────────────────────────────────
+HISTSIZE=500
 HISTFILESIZE=1000
 
-# aliases
+# ── Aliases ───────────────────────────────────────────
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias cowsay='cowsay -f /usr/share/cowsay/cows/tux.cow'
 alias grep='grep --color=auto'
 alias hc='ls ~ -lA | wc -l'
 alias ls='eza --color=auto --icons=always -la'
-alias pdpdf='pandoc --citeproc --pdf-engine=lualatex --include-in-header="/home/zeus/.config/pandoc/header.tex" --toc --csl="/home/zeus/.config/pandoc/apa.csl"'
+alias pdpdf='pandoc --citeproc --pdf-engine=lualatex \
+  --include-in-header="$HOME/.config/pandoc/header.tex" \
+  --toc --csl="$HOME/.config/pandoc/apa.csl"'
 alias shutnow='shutdown now'
-alias vim="nvim"
-alias wget="wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts""
+alias vim='nvim'
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
-#PS1='[\u@\h \W]\$ '
+# ── Shell Prompt & Appearance ─────────────────────────
+eval "$(starship init bash)"     # Starship prompt
 
+# Pretty banner (optional: check command existence)
+command -v fastfetch &>/dev/null && fastfetch && echo
+command -v fortune &>/dev/null && fortune && echo
 
-# Pretty (?) neofetch and a quote to start
-fastfetch && echo && fortune && echo
+# ── Case-insensitive tab completion ──────────────────
+bind 'set completion-ignore-case on'
 
-# Case insensitive tab autocomplete
-bind -s 'set completion-ignore-case on'
-
-eval "$(starship init bash)"	# Starship prompt
+# ── Bash Completion ───────────────────────────────────
 if [[ -r /usr/share/bash-completion/bash_completion ]]; then
-  . /usr/share/bash-completion/bash_completion		# Enable auto complete
+  . /usr/share/bash-completion/bash_completion
 fi
 
+# ── cl: Change to directory and list ─────────────────
 cl() {
-	local dir="$1"
-	local dir="${dir:=$HOME}"
-	if [[ -d "$dir" ]]; then
-		cd "$dir" >/dev/null; ls
-	else
-		echo "bash: cl: $dir: Directory not found"
-	fi
+  local dir="${1:-$HOME}"
+  if [[ -d $dir ]]; then
+    cd "$dir" >/dev/null && ls
+  else
+    echo "bash: cl: $dir: Directory not found"
+  fi
 }
 
-
-# Fix broken venv activation if needed
-if [ -n "$VIRTUAL_ENV" ] && [[ ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
-    export PATH="$VIRTUAL_ENV/bin:$PATH"
+# ── Fix broken virtualenv PATH ───────────────────────
+if [[ -n $VIRTUAL_ENV ]] && [[ ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
+  export PATH="$VIRTUAL_ENV/bin:$PATH"
 fi
 
+# ── Antidot Init ──────────────────────────────────────
 eval "$(antidot init)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
-        . "/usr/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-#
-#
+
+# ── Re-attach blesh if available ──────────────────────
 [[ ${BLE_VERSION-} ]] && ble-attach

@@ -178,7 +178,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][147][Applets][158][Applets][172][Configuration]
-PreloadWeight=64
+PreloadWeight=37
 
 [Containments][147][Applets][158][Applets][172][Configuration][General]
 showPercentage=true
@@ -204,14 +204,14 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][147][Applets][158][Applets][204][Configuration]
-PreloadWeight=100
+PreloadWeight=76
 
 [Containments][147][Applets][158][Applets][212]
 immutability=1
 plugin=org.kde.merkuro.contact.applet
 
 [Containments][147][Applets][158][Applets][212][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][147][Applets][158][Applets][212][Configuration][ConfigDialog]
 DialogHeight=540
@@ -308,8 +308,7 @@ dateFormat=longDate
 displayTimezoneFormat=FullText
 enabledCalendarPlugins=alternatecalendar,astronomicalevents,holidaysevents
 firstDayOfWeek=1
-fontFamily=CaskaydiaMono Nerd Font
-fontSize=8
+fontFamily=Noto Sans
 fontStyleName=Regular
 fontWeight=400
 showSeconds=Never

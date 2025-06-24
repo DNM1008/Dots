@@ -1,6 +1,10 @@
-export DISPLAY=:0
+# Only set DISPLAY if in X11 session
+if [ "$XDG_SESSION_TYPE" = "x11" ]; then
+  export DISPLAY=:0
+fi
 export INIT_X11_SCALE_FACTOR=1.5
 # ~/.bash_profile
+
 
 # XDG stuff
 WINIT_HIDPI_FACTOR=1.0
@@ -62,3 +66,4 @@ export TESSDATA_PREFIX="/usr/share"
 export NLTK_DATA=/usr/share/nltk_data
 export REDISCLI_HISTFILE="$XDG_DATA_HOME"/redis/rediscli_history
 export VALKEYCLI_HISTFILE="$XDG_DATA_HOME"/valkey/valkeycli_history
+export QT_QPA_PLATFORM="xcb"

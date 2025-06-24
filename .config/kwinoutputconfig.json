@@ -18,7 +18,7 @@
                 "maxBitsPerColor": 0,
                 "mode": {
                     "height": 1920,
-                    "refreshRate": 120002,
+                    "refreshRate": 60000,
                     "width": 3072
                 },
                 "overscan": 0,
@@ -38,7 +38,7 @@
                 "brightness": 1,
                 "colorPowerTradeoff": "PreferAccuracy",
                 "colorProfileSource": "EDID",
-                "connectorName": "DP-7",
+                "connectorName": "DP-5",
                 "detectedDdcCi": true,
                 "edidHash": "20a28d346ec45203bb7474d737fc12d5",
                 "edidIdentifier": "DEL 53568 809973068 48 2024 0",
@@ -171,7 +171,7 @@
                 "brightness": 1,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "sRGB",
-                "connectorName": "DP-8",
+                "connectorName": "DP-6",
                 "detectedDdcCi": true,
                 "edidHash": "80666ea68b5e35560b84a2fff23a9d5a",
                 "edidIdentifier": "DEL 53569 809972300 48 2024 0",
