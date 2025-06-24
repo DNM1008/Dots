@@ -45,7 +45,7 @@ return {
 					},
 					unfocused = {
 						fg = "#939ab7",
-						bg = "#24273a",
+						bg = "#181926",
 						bold = false,
 					},
 				},
@@ -57,7 +57,7 @@ return {
 					},
 					unfocused = {
 						fg = "#939ab7",
-						bg = "#24273a",
+						bg = "#181926",
 						bold = false,
 					},
 				},

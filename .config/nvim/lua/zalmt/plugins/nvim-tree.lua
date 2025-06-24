@@ -122,11 +122,14 @@ return {
 		-- Auto-open on startup with better logic
 		vim.api.nvim_create_autocmd("VimEnter", {
 			callback = function()
-				-- Auto-open nvim-tree in these cases:
-				-- 1. No arguments (just 'nvim')
-				-- 2. Single directory argument ('nvim .')
-				if vim.fn.argc() == 0 or (vim.fn.argc() == 1 and vim.fn.isdirectory(vim.fn.argv(0)) == 1) then
-					vim.cmd("NvimTreeOpen")
+				require("nvim-tree.api").tree.open({ focus = false })
+				-- Focus on file
+				for _, win in ipairs(vim.api.nvim_list_wins()) do
+					local bufnr = vim.api.nvim_win_get_buf(win)
+					if vim.api.nvim_buf_get_option(bufnr, "filetype") ~= "NvimTree" then
+						vim.api.nvim_set_current_win(win)
+						break
+					end
 				end
 			end,
 		})

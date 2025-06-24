@@ -50,10 +50,14 @@ return {
 			},
 		}
 
-		-- configure lualine with modified theme
+		-- configure lualine with modified theme and separators
 		lualine.setup({
 			options = {
 				theme = my_lualine_theme,
+				component_separators = { left = "", right = "" },
+				section_separators = { left = "", right = "" },
+				-- Optional: make sure icons are enabled
+				icons_enabled = true,
 			},
 			sections = {
 				lualine_x = {
