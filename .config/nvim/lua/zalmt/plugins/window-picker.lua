@@ -4,7 +4,7 @@ return {
 	event = "VeryLazy",
 	config = function()
 		require("window-picker").setup({
-			hint = "statusline-winbar", -- or "floating-letter", "floating-big-letter"
+			hint = "floating-big-letter", -- "statusline-winbar" or "floating-letter", "floating-big-letter"
 			selection_chars = "FJDKSLA;CMRUEIWOQP",
 
 			picker_config = {
@@ -12,7 +12,7 @@ return {
 					selection_display = function(char)
 						return "%=" .. char .. "%="
 					end,
-					use_winbar = "never", -- "always" | "never" | "smart"
+					use_winbar = "always", -- "always" | "never" | "smart"
 				},
 				floating_big_letter = {
 					font = "ansi-shadow",

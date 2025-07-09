@@ -43,13 +43,14 @@ return {
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"black", -- python formatter
-				"isort", -- python formatter
-				"prettier", -- prettier formatter
-				"stylua", -- lua formatter
 				"eslint_d", -- js linter
-				"pylint", -- python linter
-				"markdownlint-cli2",
+				"isort", -- python formatter
 				"markdown-toc",
+				"markdownlint-cli2",
+				"prettier", -- prettier formatter
+				"pylint", -- python linter
+				"stylua", -- lua formatter
+				"ruff",
 			},
 		})
 	end,

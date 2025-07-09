@@ -1,3 +1,7 @@
+-- Add this at the top of your file
+local term_buf = nil
+local term_win = nil
+
 -- Set leader key to space
 vim.g.mapleader = " "
 

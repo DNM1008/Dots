@@ -21,7 +21,7 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-				python = { "black" },
+				python = { "ruff" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
