@@ -34,6 +34,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("n", "<leader>tl", ":tabs<CR>", { desc = "List all tabs" }) -- List all tabs
 
 -----------------------
+
 -- Terminal Toggle Function -------------------
 
 function TermToggle(height)
@@ -57,11 +58,12 @@ function TermToggle(height)
 		term_win = vim.api.nvim_get_current_win()
 	end
 end
+
 -- Terminal keymaps
 keymap.set("n", "<leader><CR>", function()
 	TermToggle(20)
 end, { noremap = true, silent = true })
-keymap.set("i", "<leader><CR>", "<Esc>:lua TermToggle(20)<CR>", { noremap = true, silent = true })
+-- keymap.set("i", "<leader><CR>", "<Esc>:lua TermToggle(20)<CR>", { noremap = true, silent = true })
 keymap.set("t", "<leader><CR>", "<C-\\><C-n>:lua TermToggle(20)<CR>", { noremap = true, silent = true })
 keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 

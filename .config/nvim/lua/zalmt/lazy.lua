@@ -11,7 +11,15 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "zalmt.plugins" }, { import = "zalmt.plugins.lsp" } }, {
+require("lazy").setup({
+	{ import = "zalmt.plugins" },
+	{ import = "zalmt.plugins.lsp" },
+	{ import = "zalmt.plugins.ai" },
+	{ import = "zalmt.plugins.ui" },
+	{ import = "zalmt.plugins.editor" },
+	{ import = "zalmt.plugins.completion" },
+	{ import = "zalmt.plugins.tools" },
+}, {
 	checker = {
 		enabled = true,
 		notify = false,

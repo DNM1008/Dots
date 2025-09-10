@@ -57,16 +57,6 @@ opt.colorcolumn = "80" -- Shows a guide at column 80
 -- underscores
 opt.iskeyword:remove("_") -- Treat underscores as word separators
 
--- auto activate venv
-vim.api.nvim_create_autocmd("TermOpen", {
-	pattern = "*",
-	callback = function()
-		local venv = os.getenv("VIRTUAL_ENV")
-		if venv then
-			local shell = os.getenv("SHELL") or "/bin/bash"
-			local activate_script = venv .. "/bin/activate"
-			-- Send the source command to the terminal buffer
-			vim.api.nvim_chan_send(vim.b.terminal_job_id, "source " .. activate_script .. "\n")
-		end
-	end,
-})
+-- always use bash (system login shell), this way the spawn terminal inherits
+-- the virtual environment
+vim.opt.shell = "/bin/bash -l"
