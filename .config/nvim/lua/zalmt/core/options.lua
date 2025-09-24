@@ -54,9 +54,6 @@ opt.linebreak = true
 opt.breakindent = true
 opt.colorcolumn = "80" -- Shows a guide at column 80
 
--- underscores
-opt.iskeyword:remove("_") -- Treat underscores as word separators
-
 -- always use bash (system login shell), this way the spawn terminal inherits
 -- the virtual environment
-vim.opt.shell = "/bin/bash -l"
+opt.shell = "/bin/bash -l"

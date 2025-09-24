@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{ import = "zalmt.plugins" },
 	{ import = "zalmt.plugins.lsp" },
-	{ import = "zalmt.plugins.ai" },
 	{ import = "zalmt.plugins.ui" },
 	{ import = "zalmt.plugins.editor" },
 	{ import = "zalmt.plugins.completion" },
