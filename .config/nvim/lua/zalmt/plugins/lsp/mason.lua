@@ -34,7 +34,6 @@ return {
 				"lua_ls",
 				"prismals",
 				"pyright",
-				"pylsp",
 				"svelte",
 				"tailwindcss",
 			},

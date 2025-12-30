@@ -7,16 +7,17 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				bash = { "beautysh" },
-				css = { "prettier" },
-				html = { "prettier" },
-				json = { "prettier" },
-				yaml = { "prettier" },
+				css = { "prettierd" },
+				html = { "prettierd" },
+				json = { "prettierd" },
+				yaml = { "prettierd" },
 				markdown = { "markdownlint" },
 				["markdown.mdx"] = { "prettier" },
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				-- python = { "isort", "black" },
+				python = { "isort", "ruff" },
 			},
 			formatters = {
 				black = {
@@ -27,11 +28,17 @@ return {
 				isort = {
 					command = "isort",
 					args = { "$FILENAME" },
+					-- stdin = true,
 					stdin = false,
 				},
 				markdownlint = {
 					command = "markdownlint-cli2",
 					args = { "--fix", "$FILENAME" },
+					stdin = false,
+				},
+				ruff = {
+					command = "ruff",
+					args = { "format", "$FILENAME" },
 					stdin = false,
 				},
 			},

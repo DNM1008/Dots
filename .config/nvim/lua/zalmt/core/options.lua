@@ -1,3 +1,4 @@
+-- Use list style #3 in netrw (tree-style file browser)
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt -- for conciseness
@@ -24,6 +25,7 @@ opt.cursorline = true -- highlight the current cursor line
 
 -- appearance
 opt.modelines = 0
+opt.cmdheight = 0
 
 -- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
@@ -38,14 +40,13 @@ opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or 
 opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 -- split windows
--- opt.splitright = true -- split vertical window to the right
--- opt.splitbelow = true -- split horizontal window to the bottom
+opt.splitright = true -- split vertical window to the right
+opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
 
 -- autowrap
-
 opt.textwidth = 80
 opt.wrapmargin = 0
 opt.wrap = true
@@ -54,6 +55,13 @@ opt.linebreak = true
 opt.breakindent = true
 opt.colorcolumn = "80" -- Shows a guide at column 80
 
+-- auto-save when a buffer is hidden
+vim.opt.hidden = true
+vim.opt.autowrite = true
+vim.opt.autowriteall = true
+
+-- underscores
+
 -- always use bash (system login shell), this way the spawn terminal inherits
 -- the virtual environment
-opt.shell = "/bin/bash -l"
+vim.opt.shell = "/bin/bash -l"

@@ -3,10 +3,15 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local lint = require("lint")
+		lint.linters.ruff.args = {
+			"--config",
+			vim.fn.expand("~/.config/ruff/pyproject.toml"),
+		}
 
 		-- Define linters for different file types
 		lint.linters_by_ft = {
 			bash = { "shellcheck" },
+			html = { "htmlhint" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },

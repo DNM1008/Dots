@@ -6,6 +6,7 @@ return {
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		{ "folke/neodev.nvim", opts = {} },
 	},
+
 	config = function()
 		local mason_lspconfig = require("mason-lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -103,7 +104,19 @@ return {
 							completion = { callSnippet = "Replace" },
 						},
 					}
-				elseif server == "pyright" or server == "tsserver" then
+				elseif server == "pyright" then
+					opts.settings = {
+						python = {
+							analysis = {
+								typeCheckingMode = "basic",
+								diagnosticMode = "openFilesOnly",
+								reportUnusedVariable = "none",
+								reportUnusedImport = "none",
+								reportLineTooLong = "none", -- stop Pyright from complaining about long lines
+							},
+						},
+					}
+				elseif server == "tsserver" then
 					opts.on_attach = function(client, _)
 						client.handlers["textDocument/publishDiagnostics"] = function() end
 					end

@@ -37,14 +37,14 @@ return {
 			},
 			ignore_install = {},
 			incremental_selection = {
-				enable = false, -- ⏳ Disabling if not actively used to reduce processing overhead
+				enable = false,
 			},
 			indent = {
-				enable = false, -- 🚀 Treesitter indent can be slow, consider disabling it
+				enable = false,
 			},
 			modules = {},
 			sync_install = false,
-			-- 🔥 Performance: Disable Treesitter for large files
+			-- Performance: Disable Treesitter for large files
 			disable = function(lang, buf)
 				local max_filesize = 100 * 1024 -- 100 KB
 				local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))

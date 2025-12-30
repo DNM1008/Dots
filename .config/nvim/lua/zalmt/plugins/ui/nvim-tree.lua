@@ -2,107 +2,128 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
+		"s1n7ax/nvim-window-picker",
 	},
 	config = function()
 		local nvimtree = require("nvim-tree")
-		-- recommended settings from nvim-tree documentation
+
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
+
+		-- helper: write buffer in target window before replacement
+		local function write_buffer_in_window(winid)
+			if not winid or not vim.api.nvim_win_is_valid(winid) then
+				return
+			end
+
+			local bufnr = vim.api.nvim_win_get_buf(winid)
+
+			if
+				vim.api.nvim_buf_is_valid(bufnr)
+				and vim.bo[bufnr].modifiable
+				and vim.bo[bufnr].modified
+				and vim.bo[bufnr].buftype == ""
+			then
+				vim.api.nvim_buf_call(bufnr, function()
+					vim.cmd("silent write")
+				end)
+			end
+		end
+
 		nvimtree.setup({
-			open_on_tab = true, -- Open tree when opening a new tab
-			update_cwd = true, -- Update cwd when navigating
+			open_on_tab = true,
+			update_cwd = true,
+
 			view = {
-				width = 35,
+				width = 45,
 				relativenumber = true,
 			},
+
 			renderer = {
-				indent_markers = {
-					enable = true,
-				},
+				indent_markers = { enable = true },
 				icons = {
 					glyphs = {
 						folder = {
-							arrow_closed = "", -- arrow when folder is closed
-							arrow_open = "", -- arrow when folder is open
+							arrow_closed = "",
+							arrow_open = "",
 						},
 					},
 				},
 			},
+
 			actions = {
 				open_file = {
 					window_picker = {
 						enable = true,
 						picker = function()
-							-- Check if window-picker is available
 							local ok, window_picker = pcall(require, "window-picker")
 							if not ok then
 								return nil
 							end
 
-							-- Get all valid windows for picking
 							local wins = vim.tbl_filter(function(win_id)
 								local bufnr = vim.api.nvim_win_get_buf(win_id)
-								local filetype = vim.api.nvim_buf_get_option(bufnr, "filetype")
-								local buftype = vim.api.nvim_buf_get_option(bufnr, "buftype")
+								local ft = vim.bo[bufnr].filetype
+								local bt = vim.bo[bufnr].buftype
 
-								-- Exclude filtered filetypes and buftypes
 								local excluded_ft = { "NvimTree", "neo-tree", "notify" }
 								local excluded_bt = { "terminal", "quickfix" }
 
-								return not vim.tbl_contains(excluded_ft, filetype)
-									and not vim.tbl_contains(excluded_bt, buftype)
+								return not vim.tbl_contains(excluded_ft, ft) and not vim.tbl_contains(excluded_bt, bt)
 							end, vim.api.nvim_list_wins())
 
-							-- If no valid windows, create a new split to the right
+							-- no valid windows -> create split
 							if #wins == 0 then
-								-- Find the nvim-tree window
-								local nvim_tree_win = nil
-								for _, win_id in pairs(vim.api.nvim_list_wins()) do
-									local bufnr = vim.api.nvim_win_get_buf(win_id)
-									local filetype = vim.api.nvim_buf_get_option(bufnr, "filetype")
-									if filetype == "NvimTree" then
-										nvim_tree_win = win_id
+								local tree_win
+								for _, win in ipairs(vim.api.nvim_list_wins()) do
+									local bufnr = vim.api.nvim_win_get_buf(win)
+									if vim.bo[bufnr].filetype == "NvimTree" then
+										tree_win = win
 										break
 									end
 								end
 
-								-- Create a new split to the right of nvim-tree
-								if nvim_tree_win then
-									vim.api.nvim_set_current_win(nvim_tree_win)
+								if tree_win then
+									vim.api.nvim_set_current_win(tree_win)
 									vim.cmd("rightbelow vsplit")
-									return vim.api.nvim_get_current_win()
-								else
-									-- Fallback if nvim-tree window not found
-									vim.cmd("vsplit")
-									return vim.api.nvim_get_current_win()
+									local win = vim.api.nvim_get_current_win()
+									write_buffer_in_window(win)
+									return win
 								end
+
+								vim.cmd("vsplit")
+								local win = vim.api.nvim_get_current_win()
+								write_buffer_in_window(win)
+								return win
 							end
 
-							-- If only one valid window, use it
+							-- exactly one valid window
 							if #wins == 1 then
+								write_buffer_in_window(wins[1])
 								return wins[1]
 							end
 
-							-- Otherwise use window picker
-							return window_picker.pick_window()
+							-- multiple windows -> picker
+							local picked = window_picker.pick_window()
+							write_buffer_in_window(picked)
+							return picked
 						end,
-						chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
-						exclude = {
-							filetype = { "NvimTree", "neo-tree", "notify" },
-							buftype = { "terminal", "quickfix" },
-						},
 					},
 				},
 			},
+
 			filters = {
 				custom = { ".DS_Store" },
 			},
+
 			git = {
 				ignore = false,
 			},
-			-- Custom keymaps using on_attach
+
 			on_attach = function(bufnr)
 				local api = require("nvim-tree.api")
+				api.config.mappings.default_on_attach(bufnr)
+
 				local function opts(desc)
 					return {
 						desc = "nvim-tree: " .. desc,
@@ -112,21 +133,17 @@ return {
 						nowait = true,
 					}
 				end
-				-- Load default mappings first
-				api.config.mappings.default_on_attach(bufnr)
-				-- Vertical split
+
 				vim.keymap.set("n", "<leader>v", api.node.open.vertical, opts("Open: Vertical Split"))
 			end,
 		})
 
-		-- Auto-open on startup with better logic
 		vim.api.nvim_create_autocmd("VimEnter", {
 			callback = function()
 				require("nvim-tree.api").tree.open({ focus = false })
-				-- Focus on file
 				for _, win in ipairs(vim.api.nvim_list_wins()) do
 					local bufnr = vim.api.nvim_win_get_buf(win)
-					if vim.api.nvim_buf_get_option(bufnr, "filetype") ~= "NvimTree" then
+					if vim.bo[bufnr].filetype ~= "NvimTree" then
 						vim.api.nvim_set_current_win(win)
 						break
 					end
@@ -134,7 +151,6 @@ return {
 			end,
 		})
 
-		-- Global keymaps
 		local keymap = vim.keymap
 		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
 		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle explorer on file" })
