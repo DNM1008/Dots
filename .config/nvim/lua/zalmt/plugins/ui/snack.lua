@@ -3,12 +3,20 @@ return {
 	priority = 1000,
 	lazy = false,
 	dependencies = {
-		{ "echasnovski/mini.icons", version = "*" },
+		{ "nvim-tree/nvim-web-devicons", version = "*" },
 	},
-	---@type snacks.Config
 	opts = {
-		bigfile = { enabled = true },
-		image = { enabled = true },
+		animate = {
+			duration = 0.5,
+			easing = "linear",
+		},
+		bigfile = { enabled = true, size = 50 * 1024 * 1024 },
+		image = {
+			enabled = true,
+			-- doc = {
+			-- 	enabled = true,
+			-- },
+		},
 		indent = { enabled = true },
 		-- Enable the input module (replaces vim.ui.input / dressing input)
 		input = {
@@ -25,7 +33,9 @@ return {
 			theme = "cursor",
 		},
 		quickfile = { enabled = true },
-		scroll = { enabled = true },
+		scroll = {
+			enabled = true,
+		},
 		words = { enabled = true },
 
 		explorer = { enabled = false },
