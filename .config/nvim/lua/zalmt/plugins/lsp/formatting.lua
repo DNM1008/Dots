@@ -6,46 +6,25 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				bash = { "beautysh" },
-				css = { "prettierd" },
-				html = { "prettierd" },
-				json = { "prettierd" },
-				yaml = { "prettierd" },
-				markdown = { "markdownlint" },
-				["markdown.mdx"] = { "prettier" },
+				javascript = { "prettier" },
+				typescript = { "prettier" },
+				javascriptreact = { "prettier" },
+				typescriptreact = { "prettier" },
+				svelte = { "prettier" },
+				css = { "prettier" },
+				html = { "prettier" },
+				json = { "prettier" },
+				yaml = { "prettier" },
+				markdown = { "prettier" },
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-				-- python = { "isort", "black" },
-				python = { "isort", "ruff" },
-			},
-			formatters = {
-				black = {
-					command = "black",
-					args = { "--line-length", "79", "$FILENAME" },
-					stdin = false,
-				},
-				isort = {
-					command = "isort",
-					args = { "$FILENAME" },
-					-- stdin = true,
-					stdin = false,
-				},
-				markdownlint = {
-					command = "markdownlint-cli2",
-					args = { "--fix", "$FILENAME" },
-					stdin = false,
-				},
-				ruff = {
-					command = "ruff",
-					args = { "format", "$FILENAME" },
-					stdin = false,
-				},
+				python = { "isort", "black" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
-				timeout_ms = 5000,
+				timeout_ms = 3000,
 			},
 		})
 
