@@ -17,9 +17,17 @@ local terminal = require("zalmt.utils.terminal")
 -- Clear search highlight
 keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", { desc = "Clear search highlights" })
 
--- Window management
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split vertically" })
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split horizontally" })
+-- Window management (Alpha splits)
+keymap.set("n", "<leader>sv", function()
+	vim.cmd("vnew")
+	vim.cmd("Alpha")
+end, { desc = "Vertical split with Alpha" })
+
+keymap.set("n", "<leader>sh", function()
+	vim.cmd("new")
+	vim.cmd("Alpha")
+end, { desc = "Horizontal split with Alpha" })
+
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Equalise splits" })
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close split" })
 
@@ -54,24 +62,15 @@ keymap.set("n", "<leader>lx", "<cmd>Lazy clean<CR>", { desc = "Lazy clean" })
 --- Mason
 ---------------------
 keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Mason" })
--- keymap.set("n", "<leader>ls", "<cmd>Lazy sync<CR>", {desc = "Lazy sync"})
--- keymap.set("n", "<leader>lu", "<cmd>Lazy update<CR>", {desc = "Lazy update"})
--- keymap.set("n", "<leader>lx", "<cmd>Lazy clean<CR>", {desc = "Lazy clean"})
 
 ---------------------
 -- Terminal Toggle
 ---------------------
-
 keymap.set("n", "<leader><CR>", function()
-  terminal.toggle(20)
+	terminal.toggle(20)
 end, { silent = true })
 
-keymap.set(
-  "t",
-  "<leader><CR>",
-  "<C-\\><C-n>:lua require('zalmt.utils.terminal').toggle(20)<CR>",
-  { silent = true }
-)
+keymap.set("t", "<leader><CR>", "<C-\\><C-n>:lua require('zalmt.utils.terminal').toggle(20)<CR>", { silent = true })
 
 keymap.set("t", "<Esc>", "<C-\\><C-n>", { silent = true })
 
@@ -81,5 +80,3 @@ keymap.set("t", "<Esc>", "<C-\\><C-n>", { silent = true })
 
 keymap.set("n", "j", "gj", { desc = "Visual down" })
 keymap.set("n", "k", "gk", { desc = "Visual up" })
-
-
