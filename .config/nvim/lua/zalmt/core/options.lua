@@ -56,12 +56,12 @@ opt.breakindent = true
 opt.colorcolumn = "80" -- Shows a guide at column 80
 
 -- auto-save when a buffer is hidden
-vim.opt.hidden = true
-vim.opt.autowrite = true
-vim.opt.autowriteall = true
+opt.hidden = true
+opt.autowrite = true
+opt.autowriteall = true
 
 -- underscores
 
 -- always use bash (system login shell), this way the spawn terminal inherits
 -- the virtual environment
-vim.opt.shell = "/bin/bash -l"
+opt.shell = "/bin/bash -l"

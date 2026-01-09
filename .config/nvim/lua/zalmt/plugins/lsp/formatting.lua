@@ -24,15 +24,15 @@ return {
 				lua = { "stylua" },
 
 				-- Python
-				python = { "isort", "black" }, -- or { "ruff_format" }
-				-- python = { "ruff_format" },
+				-- python = { "isort", "black" }, -- or { "ruff_format" }
+				python = { "ruff_format" },
 
 				-- Shell
 				sh = { "shfmt" },
 				bash = { "shfmt" },
 
 				-- Go
-				go = { "goimports", "gofmt" },
+				go = { "gofmt" },
 
 				-- Rust
 				rust = { "rustfmt" },

@@ -11,6 +11,9 @@ return {
 			easing = "linear",
 		},
 		bigfile = { enabled = true, size = 50 * 1024 * 1024 },
+		lazygit = {
+			enabled = true,
+		},
 		image = {
 			enabled = true,
 			-- doc = {

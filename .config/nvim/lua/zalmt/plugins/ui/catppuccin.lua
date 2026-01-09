@@ -2,20 +2,22 @@ return {
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
-		priority = 1000, -- make sure to load this before all the other start plugins
+		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
-				transparent_background = true, -- Enable transparency
+				flavour = "macchiato",
+				transparent_background = true,
 				integrations = {
+					treesitter = true,
 					nvimtree = {
 						enabled = true,
 						show_root = true,
-						transparent_panel = true, -- Makes NvimTree transparent too
+						transparent_panel = true,
 					},
 				},
 			})
-			-- Load the colorscheme
-			vim.cmd([[colorscheme catppuccin]])
+
+			vim.cmd.colorscheme("catppuccin")
 		end,
 	},
 }

@@ -11,10 +11,12 @@ return {
 
 			-- Lua
 			"stylua",
+			"lua-language-server",
 
 			-- Python
 			"black",
 			"isort",
+			"pyright",
 			-- "ruff", -- optional if you switch to ruff_format
 
 			-- Shell
@@ -29,6 +31,7 @@ return {
 
 			-- C / C++
 			"clang-format",
+			"clangd",
 		},
 	},
 }

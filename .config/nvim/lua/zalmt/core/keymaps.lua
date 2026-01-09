@@ -48,7 +48,10 @@ keymap.set("n", "<leader>tl", "<cmd>tabs<CR>", { desc = "List tabs" })
 ---------------------
 --- Lazygit
 ---------------------
-keymap.set("n", "<leader>gg", require("zalmt.core.lazygit").open, { desc = "LazyGit (Snacks)" })
+-- keymap.set("n", "<leader>gg", require("zalmt.core.lazygit").open, { desc = "LazyGit (Snacks)" })
+keymap.set("n", "<leader>gg", function()
+	require("snacks").lazygit()
+end, { desc = "LazyGit (Snacks)" })
 
 ---------------------
 --- Lazy
