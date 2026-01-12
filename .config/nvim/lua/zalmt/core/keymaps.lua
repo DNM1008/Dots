@@ -7,7 +7,7 @@ local keymap = vim.keymap
 ---------------------
 -- Helpers
 ---------------------
-local win_utils = require("zalmt.utils.window")
+-- local win_utils = require("zalmt.utils.window")
 local terminal = require("zalmt.utils.terminal")
 
 ---------------------
