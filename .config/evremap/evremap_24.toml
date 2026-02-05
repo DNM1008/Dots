@@ -1,0 +1,46 @@
+device_name = "2.4G RF Keyboard & Mouse"
+phys = "usb-0000:00:1d.0-1.8.1/input0"
+
+[[remap]]
+
+input = ["KEY_CAPSLOCK"]
+output = ["KEY_TAB"]
+
+[[remap]]
+
+input = ["KEY_TAB"]
+output = ["KEY_ESC"]
+
+[[remap]]
+
+input = ["KEY_ESC"]
+output = ["KEY_CAPSLOCK"]
+
+[[remap]]
+input = ["KEY_LEFTALT", "KEY_UP"]
+output = ["KEY_PAGEUP"]
+
+[[remap]]
+input = ["KEY_LEFTALT", "KEY_DOWN"]
+output = ["KEY_PAGEDOWN"]
+
+
+[[remap]]
+
+input = ['KEY_RIGHTSHIFT', 'KEY_LEFT']
+output = ['KEY_BACK']
+
+[[remap]]
+
+input = ['KEY_RIGHTSHIFT', 'KEY_RIGHT']
+output = ['KEY_FORWARD']
+
+[[remap]]
+
+input = ['KEY_RIGHTCTRL', 'KEY_UP']
+output = ['KEY_VOLUMEUP']
+
+[[remap]]
+
+input = ['KEY_RIGHTCTRL', 'KEY_DOWN']
+output = ['KEY_VOLUMEDOWN']

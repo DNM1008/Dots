@@ -1,0 +1,6 @@
+! Sxiv colors
+*.foreground: #b8c0e0
+*.background: #1e2030
+*.font: JetBrainsMono:style=bold:size=11
+
+

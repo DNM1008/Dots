@@ -1,0 +1,11 @@
+gtk-enable-animations=1
+gtk-theme-name="catppuccin-macchiato-sapphire-standard+default"
+gtk-primary-button-warps-slider=1
+gtk-toolbar-style=0
+gtk-menu-images=0
+gtk-button-images=0
+gtk-cursor-theme-size=24
+gtk-cursor-theme-name="elementary"
+gtk-sound-theme-name="ocean"
+gtk-icon-theme-name="breeze-dark"
+gtk-font-name="Hack Nerd Font,  10"

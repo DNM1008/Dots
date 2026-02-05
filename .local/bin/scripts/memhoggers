@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+notify-send -i ~/.config/qtile/icons/memory.png "Biggest memory hogs:
+
+$(ps axch -o cmd,%mem --sort=-%mem | head )"  

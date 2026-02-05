@@ -1,0 +1,11 @@
+#!/bin/sh
+
+img=$1
+mon=$2
+
+echo ${img}
+
+cp "$img" ~/.config/qtile/wall{$mon}
+
+dunstify "Wallpaper changed"
+~/.local/bin/scripts/multi.sh

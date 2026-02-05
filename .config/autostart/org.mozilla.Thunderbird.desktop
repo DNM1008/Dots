@@ -1,0 +1,28 @@
+[Desktop Entry]
+Actions=ComposeMessage;OpenAddressBook;
+Categories=Network;Email;
+Comment[en_GB]=Send and receive mail with Thunderbird
+Comment=Send and receive mail with Thunderbird
+Exec=thunderbird %u
+GenericName[en_GB]=Mail Client
+GenericName=Mail Client
+Icon=org.mozilla.Thunderbird
+MimeType=text/vcard;text/vcard;text/calendar;message/rfc822;
+Name[en_GB]=Thunderbird
+Name=Thunderbird
+Path=
+StartupNotify=true
+StartupWMClass=thunderbird
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Desktop Action ComposeMessage]
+Exec=thunderbird -compose
+Name=Write new message
+
+[Desktop Action OpenAddressBook]
+Exec=thunderbird -addressbook
+Name=Open address book

@@ -1,0 +1,11 @@
+account default
+host smtp.gmail.com
+port 587
+auth on
+user dungnguyen10082000@gmail.com
+password Du bist Weltmeister!
+tls on
+tls_starttls on
+from dungnguyen10082000@gmail.com
+logfile ~/.config/msmtp/log.log
+

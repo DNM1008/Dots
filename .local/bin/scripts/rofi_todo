@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# File containing the TODO list
+TODO_FILE="$HOME/Documents/Share/Todo.md"
+
+# Check if the TODO file exists; if not, create it
+[ -f "$TODO_FILE" ] || touch "$TODO_FILE"
+
+# Display the TODO list with an "Add Entry" option
+show_todo_list() {
+    # Use `awk` to format tasks as "LineNumber: TaskContent"
+    awk '{printf "%d: %s\n", NR, $0}' "$TODO_FILE"
+    echo "Add Entry"
+}
+
+# Main menu
+selection=$(show_todo_list | rofi -dmenu -i -p "TODO List (type to add):")
+
+# If nothing is selected, exit
+[ -z "$selection" ] && exit 0
+
+# Handle adding a new entry if typed directly
+if [[ "$selection" != Add\ Entry ]] && ! echo "$selection" | grep -qE "^[0-9]+: "; then
+    # Add the entry only if it doesn't match the existing numbered list format
+    echo "$selection" >> "$TODO_FILE"
+    notify-send "TODO List" "Entry added: \"$selection\""
+    exit 0
+fi
+
+# Handle the "Add Entry" option
+if [[ "$selection" == "Add Entry" ]]; then
+    new_entry=$(rofi -dmenu -i -p "New TODO:")
+    if [ -n "$new_entry" ]; then
+        echo "$new_entry" >> "$TODO_FILE"
+        notify-send -i ~/.config/qtile/icons/check-list.png "TODO List" "Entry added: \"$new_entry\""
+    fi
+    exit 0
+fi
+
+# Handle task deletion
+# Extract the line number and the task content
+line_number=$(echo "$selection" | cut -d: -f1)
+task_content=$(echo "$selection" | cut -d: -f2- | sed 's/^ //')
+
+# Delete the selected task
+if [[ "$line_number" =~ ^[0-9]+$ ]]; then
+    sed -i "${line_number}d" "$TODO_FILE"
+    notify-send -i ~/.config/qtile/icons/check-list.png "TODO List" "Entry cleared: \"$task_content\""
+fi

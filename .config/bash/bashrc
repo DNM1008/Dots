@@ -1,0 +1,70 @@
+# shellcheck shell=bash
+
+# ~/.bashrc
+
+# ── Blesh ─────────────────────────────────────────────
+if [[ $- == *i* ]]; then
+  source /usr/share/blesh/ble.sh --noattach
+fi
+# --- Blesh colours ------------------------------------
+[[ -f ~/.config/blesh/colors.macchiato ]] && source ~/.config/blesh/colors.macchiato
+
+# ── Exit for non-interactive shells ──────────────────-
+[[ $- != *i* ]] && return
+
+# ── Shell Options ─────────────────────────────────────
+shopt -s autocd                  # Auto-change to dir name
+
+# ── History Config ────────────────────────────────────
+HISTSIZE=500
+HISTFILESIZE=1000
+
+# ── Aliases ───────────────────────────────────────────
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
+alias cowsay='cowsay -f /usr/share/cowsay/cows/tux.cow'
+alias grep='grep --color=auto'
+alias hc='ls ~ -lA | wc -l'
+alias ls='eza --color=auto --icons=always -la'
+alias pdpdf='pandoc --citeproc --pdf-engine=lualatex \
+  --include-in-header="$HOME/.config/pandoc/header.tex" \
+  --toc --csl="$HOME/.config/pandoc/apa.csl"'
+alias shutnow='shutdown now'
+alias vim='nvim'
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+
+# ── Shell Prompt & Appearance ─────────────────────────
+eval "$(starship init bash)"     # Starship prompt
+
+# Pretty banner (optional: check command existence)
+command -v fastfetch &>/dev/null && fastfetch && echo
+command -v fortune &>/dev/null && fortune && echo
+
+# ── Case-insensitive tab completion ──────────────────
+bind 'set completion-ignore-case on'
+
+# ── Bash Completion ───────────────────────────────────
+if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion
+fi
+
+# ── cl: Change to directory and list ─────────────────
+cl() {
+  local dir="${1:-$HOME}"
+  if [[ -d $dir ]]; then
+    cd "$dir" >/dev/null && ls
+  else
+    echo "bash: cl: $dir: Directory not found"
+  fi
+}
+
+# ── Fix broken virtualenv PATH ───────────────────────
+if [[ -n $VIRTUAL_ENV ]] && [[ ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
+  export PATH="$VIRTUAL_ENV/bin:$PATH"
+fi
+
+# ── Antidot Init ──────────────────────────────────────
+eval "$(antidot init)"
+
+
+# ── Re-attach blesh if available ──────────────────────
+[[ ${BLE_VERSION-} ]] && ble-attach

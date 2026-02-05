@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" = "mount" ]; then
+  sudo cryptsetup open /dev/sda2 vcb
+  sudo mount /dev/mapper/vcb ~/Documents/VCB/
+elif [ "$1" = "unmount" ]; then 
+  sudo umount ~/Documents/VCB/
+  sudo cryptsetup close vcb
+fi

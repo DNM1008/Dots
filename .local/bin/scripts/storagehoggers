@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Define the user's home directory
+HOME_DIR="$HOME"
+
+# Iterate through each non-dot directory in the home directory
+for dir in "$HOME_DIR"/*; do
+    if [ -d "$dir" ] && [ "$(basename "$dir")" != "Videos" ]; then
+        # Collect the 10 largest files in the directory
+        largest_files=$(find "$dir" -type f -exec du -h {} + 2>/dev/null | sort -rh | head -n 5)
+
+        # Prepare the notification message
+        if [ -n "$largest_files" ]; then
+            title="Largest Files in $(basename "$dir")"
+            notify-send -i ~/.config/qtile/icons/warehouse.png "$title" "$largest_files"
+        else
+            notify-send -i ~/.config/qtile/icons/warehouse.png "Largest Files in $(basename "$dir")" "No files found in this directory."
+        fi
+
+        # Pause briefly to avoid overwhelming the notification system
+        sleep 1
+    fi
+done
