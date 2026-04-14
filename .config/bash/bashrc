@@ -1,25 +1,18 @@
 # shellcheck shell=bash
+# shellcheck source=/usr/share/bash-completion/bash_completion
+# shellcheck disable=SC1091
 
-# ~/.bashrc
-
-# ── Blesh ─────────────────────────────────────────────
-if [[ $- == *i* ]]; then
-  source /usr/share/blesh/ble.sh --noattach
-fi
-# --- Blesh colours ------------------------------------
-[[ -f ~/.config/blesh/colors.macchiato ]] && source ~/.config/blesh/colors.macchiato
-
-# ── Exit for non-interactive shells ──────────────────-
+# ── Exit for non-interactive shells ──────────────────────────────
 [[ $- != *i* ]] && return
 
-# ── Shell Options ─────────────────────────────────────
-shopt -s autocd                  # Auto-change to dir name
+# ── Shell Options ────────────────────────────────────────────────
+shopt -s autocd
 
-# ── History Config ────────────────────────────────────
+# ── History ──────────────────────────────────────────────────────
 HISTSIZE=500
 HISTFILESIZE=1000
 
-# ── Aliases ───────────────────────────────────────────
+# ── Aliases ──────────────────────────────────────────────────────
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias cowsay='cowsay -f /usr/share/cowsay/cows/tux.cow'
 alias grep='grep --color=auto'
@@ -29,42 +22,38 @@ alias pdpdf='pandoc --citeproc --pdf-engine=lualatex \
   --include-in-header="$HOME/.config/pandoc/header.tex" \
   --toc --csl="$HOME/.config/pandoc/apa.csl"'
 alias shutnow='shutdown now'
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME/nvidia/settings"'
 alias vim='nvim'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
-# ── Shell Prompt & Appearance ─────────────────────────
-eval "$(starship init bash)"     # Starship prompt
+# ── Prompt ───────────────────────────────────────────────────────
+eval "$(starship init bash)"
 
-# Pretty banner (optional: check command existence)
-command -v fastfetch &>/dev/null && fastfetch && echo
-command -v fortune &>/dev/null && fortune && echo
+# ── Fastfetch (if installed) ─────────────────────────────────────
+if command -v fastfetch >/dev/null 2>&1; then
+  fastfetch
+  printf '\n'
+fi
 
-# ── Case-insensitive tab completion ──────────────────
-bind 'set completion-ignore-case on'
+# ── Fortune (optional) ───────────────────────────────────────────
+if command -v fortune >/dev/null 2>&1; then
+  fortune
+  printf '\n'
+fi
 
-# ── Bash Completion ───────────────────────────────────
+# ── Bash Completion ──────────────────────────────────────────────
 if [[ -r /usr/share/bash-completion/bash_completion ]]; then
   . /usr/share/bash-completion/bash_completion
 fi
 
-# ── cl: Change to directory and list ─────────────────
-cl() {
-  local dir="${1:-$HOME}"
-  if [[ -d $dir ]]; then
-    cd "$dir" >/dev/null && ls
-  else
-    echo "bash: cl: $dir: Directory not found"
-  fi
-}
+# Case-insensitive completion
+bind 'set completion-ignore-case on'
 
-# ── Fix broken virtualenv PATH ───────────────────────
-if [[ -n $VIRTUAL_ENV ]] && [[ ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
-  export PATH="$VIRTUAL_ENV/bin:$PATH"
+# ── Virtualenv PATH Fix ──────────────────────────────────────────
+if [[ -n $VIRTUAL_ENV && ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
+  PATH="$VIRTUAL_ENV/bin:$PATH"
 fi
 
-# ── Antidot Init ──────────────────────────────────────
+# ── Tool Initialisers (last to reduce prompt flicker) ───────────
 eval "$(antidot init)"
-
-
-# ── Re-attach blesh if available ──────────────────────
-[[ ${BLE_VERSION-} ]] && ble-attach
+eval "$(zoxide init bash)"

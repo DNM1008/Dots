@@ -96,7 +96,8 @@
 # 
 #   - macOS: titlebar tabs style is not updated when switching themes.
 # 
-theme = catppuccin-macchiato 
+# theme = catppuccin-macchiato.conf
+theme = Catppuccin Macchiato
 
 # Configure a preference for window decorations. This setting specifies
 # a _preference_; the actual OS, desktop environment, window manager, etc.
@@ -162,7 +163,7 @@ window-decoration = none
 # left padding to 2 and the right padding to 4. If you want to set both
 # paddings to the same value, you can use a single value. For example,
 # `window-padding-x = 2` will set both paddings to 2.
-window-padding-x = 10
+window-padding-x = 15
 
 # Vertical window padding. This applies padding between the terminal cells and
 # the top and bottom window borders. The value is in points, meaning that it
@@ -181,7 +182,7 @@ window-padding-x = 10
 # top padding to 2 and the bottom padding to 4. If you want to set both
 # paddings to the same value, you can use a single value. For example,
 # `window-padding-y = 2` will set both paddings to 2.
-window-padding-y = 10
+window-padding-y = 15
 
 # The viewport dimensions are usually not perfectly divisible by the cell
 # size. In this case, some extra padding on the end of a column and the bottom
@@ -248,9 +249,14 @@ window-padding-balance = false
 # 
 # Changing this configuration at runtime will only affect new terminals, i.e.
 # new windows, tabs, etc.
-font-family = JetBrains Mono Nerd Font
+font-family = FiraCode Nerd Font Mono
+font-size = 11
 
 # Duration (in seconds) of the quick terminal enter and exit animation.
 # Set it to 0 to disable animation completely. This can be changed at
 # runtime.
 quick-terminal-animation-duration = 0
+
+
+# Transparency
+background-opacity = 0.9

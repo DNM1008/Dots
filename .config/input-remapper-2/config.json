@@ -1,10 +1,28 @@
 {
-    "version": "2.1.1",
+    "version": "2.2.0",
     "autoload": {
         "AT Translated Set 2 keyboard": "remap",
-        "2.4G RF Keyboard & Mouse": "remap",
-        "Intel HID events": "new preset",
         "JP AL65": "keyboard",
-        "SINO WEALTH R65 Keyboard Single Mode": "preset"
+        "AL65_0": "new preset",
+        "Yiancar-Designs NK65B": "new preset",
+        "SINO WEALTH R65 Keyboard Single Mode": "keyboard",
+        "JP AL65 2": "keyboard",
+        "JP A": "new preset",
+        "Compx 2.4G Wireless Receiver": "new preset",
+        "ROYUAN R83": "kb",
+        "ROYUAN 2.4G Wireless Keyboard": "keyboard"
+    },
+    "macros": {
+        "keystroke_sleep_ms": 10
+    },
+    "gamepad": {
+        "joystick": {
+            "non_linearity": 4,
+            "pointer_speed": 80,
+            "left_purpose": "none",
+            "right_purpose": "none",
+            "x_scroll_speed": 2,
+            "y_scroll_speed": 0.5
+        }
     }
 }

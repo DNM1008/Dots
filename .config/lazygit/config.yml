@@ -1,0 +1,11 @@
+gui:
+  border: single
+  theme:
+    activeBorderColor:
+      - default
+      - bold
+    inactiveBorderColor:
+      - default
+git:
+  pagers:
+    - colorArg: always

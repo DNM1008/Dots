@@ -40,9 +40,9 @@ local function get_nvimtree_width()
 end
 
 function TermToggle(size)
-	-- Hide if visible
+	-- Hide if visible (close correct window)
 	if term_win and vim.api.nvim_win_is_valid(term_win) then
-		vim.cmd("hide")
+		vim.api.nvim_win_close(term_win, true)
 		term_win = nil
 		return
 	end
@@ -51,6 +51,10 @@ function TermToggle(size)
 
 	if is_vertical then
 		vim.cmd("botright vnew")
+
+		-- Prevent collapse
+		vim.wo.winfixwidth = true
+		vim.o.winminwidth = 20
 
 		local usable_width = vim.o.columns - get_nvimtree_width()
 		local half_width = math.floor(usable_width * 0.5)
@@ -63,9 +67,9 @@ function TermToggle(size)
 
 	local scratch_buf = vim.api.nvim_get_current_buf()
 
-	if term_buf and vim.api.nvim_buf_is_valid(term_buf) then
+	if term_buf and vim.api.nvim_buf_is_valid(term_buf) and vim.bo[term_buf].buftype == "terminal" then
 		vim.cmd("buffer " .. term_buf)
-		vim.cmd("bd " .. scratch_buf)
+		vim.api.nvim_buf_delete(scratch_buf, { force = true })
 	else
 		vim.cmd("terminal")
 		term_buf = vim.api.nvim_get_current_buf()
@@ -75,10 +79,35 @@ function TermToggle(size)
 		vim.wo.signcolumn = "no"
 	end
 
-	vim.cmd("startinsert!")
 	term_win = vim.api.nvim_get_current_win()
+
+	-- Force redraw to prevent vertical character stacking
+	local job = vim.b[term_buf].terminal_job_id
+	if job then
+		vim.api.nvim_chan_send(job, "\x0c") -- Ctrl-L
+	end
+
+	vim.cmd("startinsert!")
 end
 
+local function swap_with_direction(dir)
+	local cur_win = vim.api.nvim_get_current_win()
+	local cur_buf = vim.api.nvim_win_get_buf(cur_win)
+
+	vim.cmd("wincmd " .. dir)
+	local target_win = vim.api.nvim_get_current_win()
+
+	if cur_win == target_win then
+		return -- no neighbour in that direction
+	end
+
+	local target_buf = vim.api.nvim_win_get_buf(target_win)
+
+	vim.api.nvim_win_set_buf(cur_win, target_buf)
+	vim.api.nvim_win_set_buf(target_win, cur_buf)
+
+	vim.api.nvim_set_current_win(cur_win)
+end
 ---------------------
 -- general Keymaps
 ---------------------
@@ -105,6 +134,20 @@ keymap.set("n", "<A-Left>", "<cmd>vertical resize -2<CR>", { silent = true })
 keymap.set("n", "<A-Right>", "<cmd>vertical resize +2<CR>", { silent = true })
 keymap.set("n", "<A-Up>", "<cmd>resize +2<CR>", { silent = true })
 keymap.set("n", "<A-Down>", "<cmd>resize -2<CR>", { silent = true })
+
+-- move splits
+keymap.set("n", "<A-h>", function()
+	swap_with_direction("h")
+end, { desc = "Swap left" })
+keymap.set("n", "<A-j>", function()
+	swap_with_direction("j")
+end, { desc = "Swap down" })
+keymap.set("n", "<A-k>", function()
+	swap_with_direction("k")
+end, { desc = "Swap up" })
+keymap.set("n", "<A-l>", function()
+	swap_with_direction("l")
+end, { desc = "Swap right" })
 
 -- tabs
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "New tab" })

@@ -3,14 +3,12 @@ return {
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 		"s1n7ax/nvim-window-picker",
-		{ "b0o/nvim-tree-preview.lua", dependencies = {
-			"nvim-lua/plenary.nvim",
-		} },
 	},
 	config = function()
 		local nvimtree = require("nvim-tree")
 		local tree_utils = require("zalmt.utils.nvim-tree")
-		local preview = require("nvim-tree-preview")
+		-- local preview = require("nvim-tree-preview")
+		-- preview.setup()
 
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
@@ -71,8 +69,8 @@ return {
 				end
 
 				-- keymaps to toggle preview and open in vertical/horizontal splits
-				vim.keymap.set("n", "<Tab>", preview.watch, { buffer = bufnr, desc = "Preview" })
-				vim.keymap.set("n", "<Esc>", preview.unwatch, { buffer = bufnr, desc = "Preview Stop" })
+				-- vim.keymap.set("n", "<Tab>", preview.watch, { buffer = bufnr, desc = "Preview" })
+				-- vim.keymap.set("n", "<Esc>", preview.unwatch, { buffer = bufnr, desc = "Preview Stop" })
 				vim.keymap.set("n", "<leader>v", api.node.open.vertical, opts("Open: Vertical Split"))
 				vim.keymap.set("n", "<leader>h", api.node.open.horizontal, opts("Open: Horizonta Split"))
 			end,

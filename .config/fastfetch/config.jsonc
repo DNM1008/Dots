@@ -2,11 +2,18 @@
 
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    // "logo": {
+    //     "type" : "small",
+    //     "padding": {
+    //         "right": 4 
+    //     }
+    // },
     "logo": {
-        "type" : "small",
-        "padding": {
-            "right":4 
-        }
+      "type": "file",
+      "source": "/home/zeus/.config/fastfetch/thinkpad.txt",
+      "padding": {
+        "right": 4
+      }
     },
     "display": {
         "separator": " ▐  ",
@@ -17,7 +24,7 @@
     "modules": [
         {
             "type": "os",
-            "key": " ",
+            "key": " ",
             "keyColor": "blue",
             "format": "{2}"
         },
@@ -39,7 +46,7 @@
         {
             "type": "terminal",
             "key": " ",
-            "keyColor": "black"
+            "keyColor": "white"
         },
         {
             "type": "wm",
@@ -47,12 +54,28 @@
             "keyColor": "red",
             "format": "{1}"
         },
+        // {
+        //     "type": "monitor",
+        //     "key": "󰍹 ",
+        //     "keyColor": "cyan",
+        //     "format": "{2} x {3}"
+        // }
         {
-            "type": "monitor",
-            "key": "󰍹 ",
-            "keyColor": "cyan",
-            "format": "{2} x {3}"
+          "type": "cpu",
+          "key": "󰻠 ",
+          "keyColor": "blue"
         },
-        "break"
+        {
+          "type": "gpu",
+          "key": " ",
+          "keyColor": "green"
+        },
+        {
+          "type": "memory",
+          "key": " ", 
+          "keyColor": "yellow"
+        }
+
+
     ]
 }

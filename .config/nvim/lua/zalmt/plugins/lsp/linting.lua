@@ -19,7 +19,7 @@ return {
 			typescriptreact = { "eslint_d" },
 			sh = { "shellcheck" },
 			svelte = { "eslint_d" },
-			python = { "ruff" },
+			python = { "flake8" },
 		}
 
 		-- Configure diagnostic signs to replace deprecated sign_define()
