@@ -63,3 +63,13 @@ opt.autowriteall = true
 -- always use bash (system login shell), this way the spawn terminal inherits
 -- the virtual environment
 opt.shell = "/bin/bash -l"
+
+-- reload buffers changed externally (e.g. by Claude)
+opt.autoread = true
+opt.updatetime = 1000 -- 1s
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold" }, {
+  pattern = "*",
+  callback = function()
+    if vim.fn.mode() ~= "c" then vim.cmd("checktime") end
+  end,
+})

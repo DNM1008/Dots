@@ -8,6 +8,6 @@ return {
 		})
 	end,
 	keys = {
-		{ "<leader>nd", "<cmd>lua require('neogen').generate()<CR>", desc = "Generate docstring" },
+		{ "<leader>ds", "<cmd>lua require('neogen').generate()<CR>", desc = "Generate docstring" },
 	},
 }

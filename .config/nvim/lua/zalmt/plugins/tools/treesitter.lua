@@ -1,5 +1,6 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	branch = "main",
 	event = { "BufReadPre", "BufNewFile" },
 	build = ":TSUpdate",
 	dependencies = {
@@ -7,19 +8,6 @@ return {
 	},
 
 	opts = function()
-		-- custom parser injection (safe + lazy-correct)
-		local ok, parsers = pcall(require, "nvim-treesitter.parsers")
-		if ok and type(parsers.get_parser_configs) == "function" then
-			parsers.get_parser_configs().comment = {
-				install_info = {
-					url = "https://github.com/OXY2DEV/tree-sitter-comment",
-					files = { "src/parser.c" },
-					branch = "main",
-					queries = "queries/",
-				},
-			}
-		end
-
 		return {
 			auto_install = true,
 
