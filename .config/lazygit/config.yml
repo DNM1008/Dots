@@ -1,0 +1,12 @@
+gui:
+  border: single
+  theme:
+    activeBorderColor:
+      - default
+      - bold
+    inactiveBorderColor:
+      - default
+git:
+  diffRenderers:
+    - colorArg: always
+      type: rawGit

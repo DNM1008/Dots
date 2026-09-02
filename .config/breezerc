@@ -1,0 +1,22 @@
+[Common]
+OutlineEnabled=false
+OutlineIntensity=OutlineMedium
+RoundedCorners=false
+ShadowSize=ShadowNone
+ShadowStrength=26
+
+[Style]
+MenuOpacity=90
+ToolBarDrawItemSeparator=false
+ViewDrawFocusIndicator=false
+
+[Windeco]
+ButtonSize=ButtonTiny
+
+[Windeco Exception 0]
+BorderSize=4
+Enabled=true
+ExceptionPattern=.*
+ExceptionType=0
+HideTitleBar=true
+Mask=0

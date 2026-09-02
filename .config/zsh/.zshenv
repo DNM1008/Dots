@@ -1,0 +1,71 @@
+# Only set DISPLAY if in X11 session
+if [ "$XDG_SESSION_TYPE" = "x11" ]; then
+  export DISPLAY=:0
+  export INIT_X11_SCALE_FACTOR=1.5
+fi
+
+export WINIT_HIDPI_FACTOR=1.0
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export GTK_USE_PORTAL=1
+
+export LANG=en_GB.UTF-8
+export LC_ALL=en_GB.UTF-8
+
+export ANDROID_HOME="$XDG_DATA_HOME"/android
+export BROWSER='firefox'
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export CLAUDE_CONFIG_DIR="$XDG_CONFIG_HOME"/claude
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+[ -f "$HOME/Projects/personal/dots/.env" ] && source "$HOME/Projects/personal/dots/.env"
+export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
+export GOPATH="$XDG_DATA_HOME"/go
+export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc:$XDG_CONFIG_HOME/gtk-2.0/gtkrc.mine"
+export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
+export JULIAUP_DEPOT_PATH="$XDG_DATA_HOME/julia"
+export KEYTIMEOUT=1
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+export TUF_ROOT="$XDG_DATA_HOME"/sigstore/root
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PERL_DESTRUCT_LEVEL=2
+export HISTFILE="${XDG_STATE_HOME}"/zsh/history
+export LS_COLORS='tw=00;33:ow=01;33:'
+export MOZ_ENABLE_WAYLAND=1
+export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch-config"
+export NO_AT_BRIDGE=1
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export OLLAMA_MODELS=$XDG_DATA_HOME/ollama/models
+export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin/miniconda3/:$PATH"
+export PATH="$HOME/.local/bin/scripts:$PATH"
+export PATH="$HOME/.local/share/python/bin:$PATH"
+export PYENV_ROOT=$XDG_DATA_HOME/pyenv
+export RANGER_LOAD_DEFAULT_RC=FALSE
+export SAL_USE_VCLPLUGIN=gtk3 libreoffice
+export TERM='xterm-kitty'
+export TERM_PROGRAM='kitty'
+export TERMINAL='kitty'
+export EDITOR='nvim'
+export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
+export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
+export TEXMHOME=$XDG_DATA_HOME/texmf
+export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
+export PYTHON_HISTORY=$XDG_STATE_HOME/python/history
+export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
+export PYTHONUSERBASE=$XDG_DATA_HOME/python
+export npm_config_cache="${XDG_CACHE_HOME}/npm"
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+export TESSDATA_PREFIX="/usr/share"
+export TF_ENABLE_ONEDNN_OPTS="0"
+export TUNNEL_ORIGIN_CERT="$HOME/.config/cloudflared/cert.pem"
+export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
+export NLTK_DATA=/usr/share/nltk_data
+export REDISCLI_HISTFILE="$XDG_DATA_HOME"/redis/rediscli_history
+export VALKEYCLI_HISTFILE="$XDG_DATA_HOME"/valkey/valkeycli_history
+export GUESTFISH_HISTORY=/tmp/guestfish_history
+export QT_QPA_PLATFORM="wayland;xcb"

@@ -1,0 +1,69 @@
+# shellcheck shell=bash
+# shellcheck source=/usr/share/bash-completion/bash_completion
+# shellcheck disable=SC1091
+
+# ── Exit for non-interactive shells ──────────────────────────────
+[[ $- != *i* ]] && return
+
+# ── Shell Options ────────────────────────────────────────────────
+shopt -s autocd
+
+# ── History ──────────────────────────────────────────────────────
+HISTSIZE=500
+HISTFILESIZE=1000
+
+# ── Aliases ──────────────────────────────────────────────────────
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
+alias cowsay='cowsay -f /usr/share/cowsay/cows/tux.cow'
+alias grep='grep --color=auto'
+alias hc='ls ~ -lA | wc -l'
+alias ls='eza --color=auto --icons=always -la'
+alias pdpdf='pandoc --citeproc --pdf-engine=lualatex \
+  --include-in-header="$HOME/.config/pandoc/header.tex" \
+  --toc --csl="$HOME/.config/pandoc/apa.csl"'
+alias shutnow='shutdown now'
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME/nvidia/settings"'
+alias vim='nvim'
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+
+# ── Prompt ───────────────────────────────────────────────────────
+eval "$(starship init bash)"
+
+# ── Fastfetch (if installed) ─────────────────────────────────────
+if command -v fastfetch >/dev/null 2>&1; then
+  fastfetch
+  printf '\n'
+fi
+
+# ── Fortune (optional) ───────────────────────────────────────────
+if command -v fortune >/dev/null 2>&1; then
+  fortune
+  printf '\n'
+fi
+
+# ── Bash Completion ──────────────────────────────────────────────
+if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion
+fi
+
+# Case-insensitive completion
+bind 'set completion-ignore-case on'
+
+# SSH host completion: only use aliases from ~/.ssh/config, not known_hosts
+_ssh_config_hosts() {
+  local hosts cur
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  hosts=$(awk '/^Host[[:space:]]/ { for (i=2; i<=NF; i++) if ($i !~ /[*?]/) print $i }' ~/.ssh/config 2>/dev/null)
+  COMPREPLY=($(compgen -W "$hosts" -- "$cur"))
+}
+complete -F _ssh_config_hosts ssh scp sftp
+
+# ── Virtualenv PATH Fix ──────────────────────────────────────────
+if [[ -n $VIRTUAL_ENV && ":$PATH:" != *":$VIRTUAL_ENV/bin:"* ]]; then
+  PATH="$VIRTUAL_ENV/bin:$PATH"
+fi
+
+# ── Tool Initialisers (last to reduce prompt flicker) ───────────
+eval "$(antidot init)"
+eval "$(zoxide init bash)"
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

@@ -1,0 +1,11 @@
+
+[Unit]
+Description=Fcitx5 Input Method
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/fcitx5 -d
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

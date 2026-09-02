@@ -1,0 +1,11 @@
+gtk-enable-animations=1
+gtk-theme-name="catppuccin-macchiato-blue-standard+default"
+gtk-primary-button-warps-slider=1
+gtk-toolbar-style=0
+gtk-menu-images=0
+gtk-button-images=0
+gtk-cursor-theme-size=30
+gtk-cursor-theme-name="Apple-cursors"
+gtk-sound-theme-name="ocean"
+gtk-icon-theme-name="Tela-circle-dracula-dark"
+gtk-font-name="FiraCode Nerd Font Med,  10"

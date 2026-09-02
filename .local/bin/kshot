@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+"""Fast screenshot via KWin's native ScreenShot2 DBus interface."""
+import os
+import struct
+import sys
+
+import dbus
+
+def main():
+    out_path = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser(
+        f"~/Pictures/{__import__('time').strftime('%Y%m%d_%H%M%S')}.png"
+    )
+
+    bus = dbus.SessionBus()
+    obj = bus.get_object("org.kde.KWin", "/org/kde/KWin/ScreenShot2")
+    iface = dbus.Interface(obj, "org.kde.KWin.ScreenShot2")
+
+    read_fd, write_fd = os.pipe()
+
+    options = dbus.Dictionary({"native-resolution": True}, signature="sv")
+    result = iface.CaptureWorkspace(options, dbus.types.UnixFd(write_fd))
+    os.close(write_fd)
+
+    with os.fdopen(read_fd, "rb") as f:
+        data = f.read()
+
+    width = int(result["width"])
+    height = int(result["height"])
+    stride = int(result["stride"])
+    fmt = str(result["format"])
+
+    from PIL import Image
+    mode_map = {
+        "Format_ARGB32": ("BGRA", "raw"),
+        "Format_ARGB32_Premultiplied": ("BGRA", "raw"),
+        "Format_RGB32": ("BGRX", "raw"),
+    }
+    pil_mode, _ = mode_map.get(fmt, ("BGRA", "raw"))
+    img = Image.frombuffer("RGBA", (width, height), data, "raw", pil_mode, stride, 1)
+    img.save(out_path)
+    print(out_path)
+
+if __name__ == "__main__":
+    main()

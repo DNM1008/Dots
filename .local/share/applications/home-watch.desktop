@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Home Watch
+Comment=Notifies when files are added or removed in the home directory
+Icon=folder
+NoDisplay=true

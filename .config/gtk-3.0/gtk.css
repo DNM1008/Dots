@@ -1,0 +1,9 @@
+@import 'colors.css';
+
+/* Thunar sidebar font size bump */
+#shortcuts-view,
+#shortcuts-view *,
+#shortcuts-pane treeview,
+#shortcuts-pane treeview * {
+  font-size: 13px;
+}

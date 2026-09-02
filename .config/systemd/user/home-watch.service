@@ -1,0 +1,12 @@
+[Unit]
+Description=Notify on changes to top-level entries in home directory
+
+[Service]
+Type=simple
+Environment=DISPLAY=:1
+ExecStart=/usr/bin/bash -c '/usr/bin/inotifywait -m -e create,delete,moved_to,moved_from,attrib,modify,close_write --format "%%e %%f" %h | while read -r event file; do case "$event" in MODIFY|ATTRIB) [ -d "%h/$file" ] && continue ;; esac; /usr/bin/notify-send -a "home-watch" -i folder "Home directory changed" "$file ($event)"; done'
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

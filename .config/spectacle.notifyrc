@@ -1,0 +1,8 @@
+[Event/newScreenshotSaved]
+Action=Popup|Sound
+
+[Event/ocrTextExtracted]
+Action=Popup|Sound
+
+[Event/recordingSaved]
+Action=Popup|Sound

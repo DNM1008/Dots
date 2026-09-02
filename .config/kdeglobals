@@ -1,0 +1,190 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=36, 39, 58
+ColorAmount=0.30000000000000004
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=0
+Enable=
+IntensityAmount=-1
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=36, 39, 58
+ColorAmount=0.5
+ColorEffect=3
+ContrastAmount=0
+ContrastEffect=0
+Enable=true
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=138, 173, 244
+BackgroundNormal=54, 58, 79
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=138, 173, 244
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+[Colors:Complementary]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=30, 32, 48
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=138, 173, 244
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+[Colors:Header]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=30, 32, 48
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=138, 173, 244
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+[Colors:Selection]
+BackgroundAlternate=138, 173, 244
+BackgroundNormal=138, 173, 244
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=17, 17, 27
+ForegroundInactive=17, 17, 27
+ForegroundLink=17, 17, 27
+ForegroundNegative=17, 17, 27
+ForegroundNeutral=17, 17, 27
+ForegroundNormal=17, 17, 27
+ForegroundPositive=17, 17, 27
+ForegroundVisited=17, 17, 27
+
+[Colors:Tooltip]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=36, 39, 58
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=138, 173, 244
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+[Colors:View]
+BackgroundAlternate=30, 32, 48
+BackgroundNormal=36, 39, 58
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=138, 173, 244
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+[Colors:Window]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=30, 32, 48
+DecorationFocus=138, 173, 244
+DecorationHover=73, 77, 100
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=138, 173, 244
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+[General]
+AccentColor=0,0,0,0
+ColorScheme=CatppuccinMacchiatoBlue
+ColorSchemeHash=85329bef1994d009d321f8197bd13fffa1ccd06a
+LastUsedCustomAccentColor=61,212,37
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+XftAntialias=true
+XftHintStyle=hintnone
+XftSubPixel=rgb
+fixed=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+font=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+menuFont=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+smallestReadableFont=FiraCode Nerd Font Med,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+toolBarFont=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+
+[Icons]
+Theme=Tela-circle-dracula-dark
+
+[KDE]
+AnimationDurationFactor=0
+DefaultDarkLookAndFeel=Catppuccin.Macchiato
+DndBehavior=MoveIfSameDevice
+LookAndFeelPackage=Catppuccin.Macchiato
+ShowDeleteCommand=false
+SingleClick=false
+contrast=4
+frameContrast=0.2
+widgetStyle=Breeze
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=2
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=140
+View Style=DetailTree
+
+[KScreen]
+ScreenScaleFactors=eDP-1=1;HDMI-1=1;DP-1=1;DP-2=1;DP-3=1;DP-4=1;DP-1-1=1;DP-1-2=1;DP-1-3=1;DP-3-1=1;DP-3-2=1;DP-3-3=1;
+XwaylandClientsScale=false
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+
+[Toolbar style]
+ToolButtonStyle=NoText
+ToolButtonStyleOtherToolbars=NoText
+
+[WM]
+activeBackground=36,39,58
+activeBlend=202,211,245
+activeFont=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+activeForeground=202,211,245
+inactiveBackground=24,25,38
+inactiveBlend=165,173,203
+inactiveForeground=165,173,203

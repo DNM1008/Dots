@@ -1,0 +1,30 @@
+[AC][Display]
+DimDisplayIdleTimeoutSec=-1
+DimDisplayWhenIdle=false
+TurnOffDisplayIdleTimeoutSec=-1
+TurnOffDisplayIdleTimeoutWhenLockedSec=300
+TurnOffDisplayWhenIdle=false
+
+[AC][Performance]
+PowerProfile=performance
+
+[AC][RunScript]
+ProfileLoadCommand=brightnessctl -d 'intel_backlight' s 400
+ProfileUnloadCommand=brightnessctl -d 'intel_backlight' s 200
+
+[AC][SuspendAndShutdown]
+AutoSuspendAction=0
+LidAction=0
+PowerButtonAction=32
+
+[Battery][Performance]
+PowerProfile=power-saver
+
+[Battery][RunScript]
+ProfileLoadCommand=brightnessctl -d 'intel_backlight' s 50%
+
+[BatteryManagement]
+BatteryCriticalAction=1
+
+[LowBattery][Performance]
+PowerProfile=power-saver
