@@ -1,18 +1,42 @@
 # Dots
 
-Personal configuration files for an Arch Linux + Qtile desktop. Deployed
-automatically by the [install script](https://github.com/DNM1008/Install-Script)
-via `cp -r .config/* ~/.config/`.
+Personal configuration files for an Arch Linux + Qtile/KDE Plasma desktop.
+`~/.config` and `~/.local` are symlinked straight to this repo — there's no
+copy step, no symlink manager, edits under `~/.config` or `~/.local` *are*
+edits to this repo.
 
 Theme: **Catppuccin Macchiato** throughout.
 
 ---
 
-## Structure
+## How it works
 
 ```
-.config/        All XDG config files (copied to ~/.config/)
+~/.config  ->  ~/Projects/personal/dots/.config
+~/.local   ->  ~/Projects/personal/dots/.local
 ```
+
+Both directories hold far more than dotfiles-worthy content (caches, browser
+profiles, credentials, machine-specific state), so `.gitignore` uses a
+**whitelist**: everything under `.config/` and `.local/` is ignored by
+default, and specific paths are un-ignored with `!` rules. Anything not
+explicitly listed in `.gitignore` stays local and untracked, even though it
+physically lives inside the repo directory.
+
+When adding a new config to track, add a matching `!.config/foo` (or
+`.local/...`) line to `.gitignore` — otherwise it silently stays untracked.
+
+### Secrets
+
+Never hardcode API keys or credentials into a tracked config file. Put them
+in `.env` at the repo root (gitignored) and source it from shell config:
+
+```sh
+[ -f "$HOME/Projects/personal/dots/.env" ] && source "$HOME/Projects/personal/dots/.env"
+```
+
+`.config/git/` and `.config/plasma-nm` (WiFi credentials) are deliberately
+untracked for the same reason.
 
 ---
 
@@ -22,27 +46,25 @@ Theme: **Catppuccin Macchiato** throughout.
 
 | Path | Purpose |
 |------|---------|
-| `.config/bash/bash_profile` | Login shell — sets all XDG paths, env vars, and tool paths. Sourced system-wide via `/etc/bash.bashrc` by the install script. |
+| `.config/bash/bash_profile` | Login shell — sets all XDG paths, env vars, tool paths, and sources `.env` |
 | `.config/bash/bashrc` | Interactive bash — aliases, prompt (Starship), zoxide, fastfetch |
-| `.config/zsh/.zshrc` | Zsh equivalent; uses Antidote for plugin management |
+| `.config/zsh/.zshenv` | Zsh equivalent — XDG paths, env vars, sources `.env` |
+| `.config/zsh/.zshrc` | Zsh interactive config |
 
-Key environment variables set in `bash_profile`:
-- `TERMINAL=kitty`
-- `EDITOR=nvim`
-- `BROWSER=firefox`
-- `TERM=xterm-kitty`
-- Full XDG base directory compliance (`XDG_CONFIG_HOME`, `XDG_DATA_HOME`, etc.)
+Full XDG base directory compliance (`XDG_CONFIG_HOME`, `XDG_DATA_HOME`, etc.)
+is set in `bash_profile` / `.zshenv`.
 
 ### Window manager
 
 | Path | Purpose |
 |------|---------|
-| `.config/qtile/config.py` | Main Qtile config — keybinds, layouts, bar, widgets |
-| `.config/qtile/autostart.sh` | Autostart — xrandr, wallpaper, dunst, copyq, syncthing, udiskie |
-| `.config/qtile/colors.py` | Catppuccin Macchiato colour definitions used by the bar |
-| `.config/awesome/rc.lua` | Awesome WM config (alternative WM, not the primary) |
+| `.config/kwinrc`, `.config/kwinrulesrc` | KDE Plasma/KWin |
+| `.config/krohnkite/` | Tiling extension for KWin |
+| `.config/qtile/config.py` | Qtile config — keybinds, layouts, bar, widgets (alternative WM, not primary) |
+| `.config/qtile/autostart.sh` | Qtile autostart — xrandr, wallpaper, dunst, copyq, syncthing, udiskie |
+| `.config/qtile/colors.py` | Catppuccin Macchiato colour definitions used by the Qtile bar |
 
-The `autostart.sh` contains hardcoded xrandr commands for a specific
+The Qtile `autostart.sh` contains hardcoded xrandr commands for a specific
 dual-monitor layout. Edit these if your outputs differ — check with `xrandr --query`.
 
 ### Terminal
@@ -52,9 +74,7 @@ dual-monitor layout. Edit these if your outputs differ — check with `xrandr --
 | `.config/kitty/kitty.conf` | Primary terminal — full config with Catppuccin Macchiato theme |
 | `.config/alacritty/alacritty.toml` | Alternative terminal config |
 | `.config/ghostty/config` | Ghostty config with Catppuccin theme variants |
-
-See [NOTES.md in the install script repo](https://github.com/DNM1008/Install-Script/blob/main/NOTES.md)
-for how to make Thunar and KDE open files in Kitty rather than Konsole.
+| `.config/foot/foot.ini` | Wayland terminal |
 
 ### File manager
 
@@ -72,19 +92,18 @@ for how to make Thunar and KDE open files in Kitty rather than Konsole.
 
 | Path | Purpose |
 |------|---------|
-| `.config/gtk-3.0/` | GTK3 theme settings and custom CSS |
+| `.config/gtk-2.0/`, `.config/gtk-3.0/` | GTK theme settings and custom CSS |
 | `.config/gtk-4.0/` | Symlinks to Catppuccin Macchiato system theme |
-| `.config/qt5ct/` | Qt5 theme — Catppuccin Macchiato colour scheme |
-| `.config/qt6ct/` | Qt6 equivalent |
-| `.config/Kvantum/` | Kvantum Qt theme engine config |
+| `.config/qt5ct/`, `.config/qt6ct/` | Qt theme — Catppuccin Macchiato colour scheme |
+| `.local/share/color-schemes/` | KDE colour scheme files |
 
-### Launchers and notifications
+### Input / fonts
 
 | Path | Purpose |
 |------|---------|
-| `.config/rofi/` | Application launcher config |
-| `.config/dunst/` | Notification daemon |
-| `.config/wofi/` | Wayland launcher (for future Wayland use) |
+| `.config/fcitx5/` | Input method framework |
+| `.config/fontconfig/` | Font configuration |
+| `.config/kxkbrc` | Keyboard layout |
 
 ### Other tools
 
@@ -92,25 +111,28 @@ for how to make Thunar and KDE open files in Kitty rather than Konsole.
 |------|---------|
 | `.config/starship.toml` | Shell prompt |
 | `.config/fastfetch/` | System info on shell startup |
-| `.config/yazi/` | TUI file manager |
-| `.config/ranger/` | Alternative TUI file manager |
-| `.config/mpv/` | Video player |
-| `.config/zathura/` | PDF viewer |
 | `.config/lazygit/` | Git TUI |
+| `.config/wofi/` | Wayland launcher |
+| `.config/pandoc/`, `.local/share/pandoc/` | Pandoc templates and defaults |
+| `.local/bin/` | Personal scripts (`kshot`, `gtkrc-janitor.sh`) |
+| `.local/share/applications/` | Custom `.desktop` entries |
 
 ---
 
 ## Deployment
 
-Deployed by the install script on a fresh Arch install. To update an existing
-system after changing configs here:
+On a fresh system:
 
 ```sh
-cd ~/Projects/personal/dots
-cp -r .config/* ~/.config/
+git clone <this repo> ~/Projects/personal/dots
+mv ~/.config ~/.config_bak   # back up whatever's there first
+mv ~/.local  ~/.local_bak
+ln -s ~/Projects/personal/dots/.config ~/.config
+ln -s ~/Projects/personal/dots/.local  ~/.local
 ```
 
-No symlink manager is used — files are copied directly.
+After that, changes to `~/.config`/`~/.local` are changes to this repo —
+just `git add`/`commit`/`push` from `~/Projects/personal/dots` as normal.
 
 No package list is tracked here — reinstalling packages is handled separately
 by the [install script](https://github.com/DNM1008/Install-Script).
