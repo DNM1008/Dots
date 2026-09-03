@@ -74,6 +74,7 @@
 !.config/wgetrc
 !.config/wofi
 !.config/xdg-terminals.list
+!.config/xfce4
 !.config/xsettingsd
 !.config/zsh
 
