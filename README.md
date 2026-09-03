@@ -2,7 +2,7 @@
 
 Personal configuration files for an Arch Linux + KDE desktop. Deployed
 automatically by the [install script](https://github.com/DNM1008/Install-Script)
-via `cp -r .config/* ~/.config/`.
+via `cp -r .config/* ~/.config/` and `cp -r .local/* ~/.local/`.
 
 Theme: **Catppuccin Macchiato** throughout.
 
@@ -12,6 +12,7 @@ Theme: **Catppuccin Macchiato** throughout.
 
 ```
 .config/        All XDG config files (copied to ~/.config/)
+.local/         Several local scripts (copied to ~/.local/)
 ```
 
 ---
@@ -26,14 +27,14 @@ Theme: **Catppuccin Macchiato** throughout.
 | `.config/bash/bashrc` | Interactive bash — aliases, prompt (Starship), zoxide, fastfetch |
 | `.config/zsh/.zshrc` | Zsh equivalent; uses Antidote for plugin management |
 
-Key environment variables set in `bash_profile`:
+Key environment variables set in `bash_profile` and `.zshenv`:
 - `TERMINAL=kitty`
 - `EDITOR=nvim`
 - `BROWSER=firefox`
 - `TERM=xterm-kitty`
 - Full XDG base directory compliance (`XDG_CONFIG_HOME`, `XDG_DATA_HOME`, etc.)
 
-### Window manager
+### Window manager: Qtile (WIP)
 
 | Path | Purpose |
 |------|---------|
@@ -82,9 +83,9 @@ for how to make Thunar and KDE open files in Kitty rather than Konsole.
 
 | Path | Purpose |
 |------|---------|
-| `.config/rofi/` | Application launcher config |
-| `.config/dunst/` | Notification daemon |
-| `.config/wofi/` | Wayland launcher (for future Wayland use) |
+| `.config/rofi/` | Application launcher config (for X11 use - WIP) |
+| `.config/dunst/` | Notification daemon (if you're using a tiling wm - WIP)|
+| `.config/wofi/` | Wayland launcher (for Wayland use) |
 
 ### Other tools
 
@@ -106,11 +107,16 @@ Deployed by the install script on a fresh Arch install. To update an existing
 system after changing configs here:
 
 ```sh
-cd ~/Projects/personal/dots
+cd ~/path/to/Dots
 cp -r .config/* ~/.config/
+cp -r .local/* ~/.local/
 ```
 
-No symlink manager is used — files are copied directly.
+*Make sure to point your shell config to the right place, for example I have
+`/etc/bash.bashrc` sources `~/.config/bash/bash_profile` and set `$ZDOTDIR` to
+`~/.config/zsh` in `/etc/zsh/zshenv`*
+
+You can either use symlinks or copy the config files straight over
 
 No package list is tracked here — reinstalling packages is handled separately
 by the [install script](https://github.com/DNM1008/Install-Script).

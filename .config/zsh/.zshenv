@@ -11,9 +11,6 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export GTK_USE_PORTAL=1
 
-export LANG=en_GB.UTF-8
-export LC_ALL=en_GB.UTF-8
-
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export BROWSER='firefox'
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
