@@ -55,7 +55,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][430][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/other_car_related/car_wallpaper_34.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/one_offs_unique_in_category/spider_man_1.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][497]
