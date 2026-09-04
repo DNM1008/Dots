@@ -21,4 +21,4 @@ WhenFullscreen=false
 WhenScreensMirrored=false
 
 [Notifications]
-PopupPosition=BottomCenter
+PopupPosition=TopCenter

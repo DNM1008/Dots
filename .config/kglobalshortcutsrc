@@ -9,12 +9,8 @@ Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]
-Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
+Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
-
-[khotkeys]
-_k_friendly_name=Custom Shortcuts Service
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -30,7 +26,7 @@ push_to_talk=none,none,Push to talk
 
 [ksmserver]
 Halt Without Confirmation=none,none,Shut Down Without Confirmation
-Lock Session=Meta+Alt+L,Screensaver\tMeta+L,Lock Session
+Lock Session=Meta+Space,Screensaver\tMeta+L,Lock Session
 Log Out=Meta+Shift+Q,Ctrl+Alt+Del,Show Logout Screen
 Log Out Without Confirmation=none,none,Log Out Without Confirmation
 LogOut=none,none,Log Out
@@ -411,6 +407,8 @@ ShowOSD=Meta+Shift+M
 _launch=Meta+Alt+.
 
 [services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=Meta+Shift+Print
+OpenWithoutScreenshot=none
 RecordWindow=none
 RectangularRegionScreenShot=Meta+Shift+S
 _launch=Print
@@ -425,8 +423,8 @@ _launch=Meta+M
 _launch=Meta+Return
 
 [services][systemsettings.desktop]
-_launch=\tTools
-kcm-kscreen=Meta+I
+_launch=Meta+I
+kcm-kscreen=none
 kcm-powerdevilprofilesconfig=Meta+Shift+P
 
 [services][thunar.desktop]

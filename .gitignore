@@ -48,7 +48,6 @@
 !.config/pandoc
 !.config/pavucontrol.ini
 !.config/pavucontrol-qt
-!.config/peazip
 !.config/pip
 !.config/plasma-localerc
 !.config/plasma-org.kde.plasma.desktop-appletsrc
