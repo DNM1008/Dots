@@ -16,6 +16,24 @@ return {
 		},
 		image = {
 			enabled = true,
+			-- pdf handled separately in core/pdf.lua with page navigation
+			formats = {
+				"png",
+				"jpg",
+				"jpeg",
+				"gif",
+				"bmp",
+				"webp",
+				"tiff",
+				"heic",
+				"avif",
+				"mp4",
+				"mov",
+				"avi",
+				"mkv",
+				"webm",
+				"icns",
+			},
 			-- doc = {
 			-- 	enabled = true,
 			-- },

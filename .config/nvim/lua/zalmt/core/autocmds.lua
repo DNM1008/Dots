@@ -5,3 +5,10 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
   end,
 })
 
+vim.api.nvim_create_autocmd("BufReadCmd", {
+  pattern = "*.pdf",
+  callback = function(args)
+    require("zalmt.core.pdf").attach(args.buf)
+  end,
+})
+

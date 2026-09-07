@@ -39,7 +39,11 @@ return {
 
 				preview = {
 					mime_hook = function(filepath, bufnr, opts)
-						if is_image(filepath) then
+						if filepath:match("%.pdf$") then
+							vim.schedule(function()
+								require("zalmt.core.pdf").attach(bufnr)
+							end)
+						elseif is_image(filepath) then
 							vim.schedule(function()
 								local win = vim.fn.bufwinid(bufnr)
 								if win == -1 then
