@@ -3,7 +3,6 @@ clipboardGroup=PostScreenshotCopyImage
 ocrLanguages=tessdata/osd
 
 [GuiConfig]
-includePointer=true
 videoIncludePointer=false
 
 [ImageSave]
