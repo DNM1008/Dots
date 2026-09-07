@@ -42,10 +42,23 @@ return {
 		{
 			"<leader>an",
 			function()
-				vim.cmd("ClaudeCode")       -- close if open
-				vim.defer_fn(function()
-					vim.cmd("ClaudeCode")   -- reopen fresh (no --resume/--continue)
-				end, 300)
+				local is_open = false
+				for _, win in ipairs(vim.api.nvim_list_wins()) do
+					local name = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(win))
+					if name:match("claude") then
+						is_open = true
+						break
+					end
+				end
+
+				if is_open then
+					vim.cmd("ClaudeCode")       -- close it
+					vim.defer_fn(function()
+						vim.cmd("ClaudeCode")   -- reopen fresh (no --resume/--continue)
+					end, 300)
+				else
+					vim.cmd("ClaudeCode")       -- just open fresh
+				end
 			end,
 			desc = "New Claude chat",
 		},
