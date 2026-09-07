@@ -52,17 +52,50 @@ local function render(buf, file, page, total)
 	vim.wo.statusline = ("%s — page %d/%d"):format(vim.fn.fnamemodify(file, ":t"), page, total)
 end
 
+-- rapid J/K presses each spawn a snacks.image conversion+placement; firing
+-- several before the previous one settles leaves one stuck mid-flight
+-- ("identify" spinner that never resolves). Debounce so only the final
+-- target page after a burst of presses actually renders.
+local nav_timer = {} ---@type table<number, uv.uv_timer_t>
+local pending_page = {} ---@type table<number, number>
+
 local function goto_page(buf, delta)
-	local page = (vim.b[buf].pdf_page or 1) + delta
 	local total = vim.b[buf].pdf_total or 1
-	page = math.max(1, math.min(total, page))
-	render(buf, vim.b[buf].pdf_file, page, total)
+	local base = pending_page[buf] or vim.b[buf].pdf_page or 1
+	local page = math.max(1, math.min(total, base + delta))
+	pending_page[buf] = page
+
+	if not nav_timer[buf] then
+		nav_timer[buf] = vim.uv.new_timer()
+	end
+	nav_timer[buf]:stop()
+	nav_timer[buf]:start(
+		80,
+		0,
+		vim.schedule_wrap(function()
+			pending_page[buf] = nil
+			render(buf, vim.b[buf].pdf_file, page, total)
+		end)
+	)
 end
 
 function M.attach(buf)
 	local file = vim.api.nvim_buf_get_name(buf)
 	local total = page_count(file)
 	render(buf, file, 1, total)
+
+	vim.api.nvim_create_autocmd("BufWipeout", {
+		buffer = buf,
+		once = true,
+		callback = function()
+			pending_page[buf] = nil
+			if nav_timer[buf] then
+				nav_timer[buf]:stop()
+				nav_timer[buf]:close()
+				nav_timer[buf] = nil
+			end
+		end,
+	})
 
 	local opts = { buffer = buf, silent = true, nowait = true }
 	vim.keymap.set("n", "J", function()
