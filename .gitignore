@@ -88,4 +88,4 @@
 !.local/share/pandoc
 
 # .local/state is entirely runtime state/history — stays fully ignored.
-.config/zsh/.zcomdump
+.config/zsh/.zcompdump
