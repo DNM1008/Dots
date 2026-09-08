@@ -101,6 +101,10 @@ if command -v fortune >/dev/null 2>&1; then
   printf '\n'
 fi
 
+# if command -v voltix >/dev/null 2>&1; then
+#   voltix
+#   printf '\n'
+# fi
 
 if command -v eza >/dev/null 2>&1; then
   eza --color=auto --icons=always -la

@@ -75,7 +75,8 @@
 !.config/xdg-terminals.list
 !.config/xfce4
 !.config/xsettingsd
-!.config/zsh
+!.config/zsh/.zshrc
+!.config/zsh/.zshenv
 
 # ---- .local --------------------------------------------------------------
 .local/*
