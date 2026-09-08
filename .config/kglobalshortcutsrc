@@ -26,7 +26,7 @@ push_to_talk=none,none,Push to talk
 
 [ksmserver]
 Halt Without Confirmation=none,none,Shut Down Without Confirmation
-Lock Session=Meta+Space,Screensaver\tMeta+L,Lock Session
+Lock Session=Meta+ScrollLock,Screensaver\tMeta+L,Lock Session
 Log Out=Meta+Shift+Q,Ctrl+Alt+Del,Show Logout Screen
 Log Out Without Confirmation=none,none,Log Out Without Confirmation
 LogOut=none,none,Log Out
@@ -408,7 +408,6 @@ _launch=Meta+Alt+.
 
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=Meta+Shift+Print
-OpenWithoutScreenshot=none
 RecordWindow=none
 RectangularRegionScreenShot=Meta+Shift+S
 _launch=Print
