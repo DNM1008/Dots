@@ -116,9 +116,11 @@ cp -r .local/* ~/.local/
 `/etc/bash.bashrc` sources `~/.config/bash/bash_profile` and set `$ZDOTDIR` to
 `~/.config/zsh` in `/etc/zsh/zshenv`*
 
-**Zsh plugin manager:** `.zshrc` self-installs [zinit](https://github.com/zdharma-continuum/zinit)
-into `$XDG_DATA_HOME/zinit` on first run via `git clone` — just make sure `git`
-is installed before starting zsh for the first time on a new machine.
+**Zsh plugin manager:** `.zshrc` assumes [zinit](https://github.com/zdharma-continuum/zinit)
+is already installed as a system package — install it before starting zsh on a
+new machine:
+- Arch (AUR): `paru -S zinit` (or `yay -S zinit`)
+- macOS: `brew install zinit`
 
 You can either use symlinks or copy the config files straight over
 

@@ -80,10 +80,12 @@ chpwd_venv() {
 }
 chpwd_functions+=(chpwd_venv)
 
-# ── Plugins (zinit) ──────────────────────────────────────────────
-ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
-[[ -d "$ZINIT_HOME" ]] || git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-source "$ZINIT_HOME/zinit.zsh"
+# ── Plugins (zinit, installed as a system package) ────────────────
+# Arch: `pacman -S zinit` (AUR) · macOS: `brew install zinit`
+case "$OSTYPE" in
+  darwin*) source "$(brew --prefix zinit 2>/dev/null)/zinit.zsh" ;;
+  linux*)  source /usr/share/zinit/zinit.zsh ;;
+esac
 
 zinit wait lucid for \
   atinit"zicompinit; zicdreplay" \
