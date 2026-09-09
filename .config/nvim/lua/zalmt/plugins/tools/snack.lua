@@ -58,6 +58,34 @@ return {
 			enabled = true,
 		},
 		words = { enabled = true },
+		zen = {
+			enabled = true,
+			toggles = {
+				dim = true,
+				git_signs = false,
+				mini_diff_signs = false,
+				diagnostics = false,
+				inlay_hints = false,
+			},
+			show = {
+				statusline = false,
+				tabline = false,
+			},
+			win = {
+				style = "zen",
+				width = 0.6,
+				backdrop = { transparent = true, blend = 40 },
+				wo = {
+					number = false,
+					relativenumber = false,
+					signcolumn = "no",
+					cursorline = false,
+					cursorcolumn = false,
+					foldcolumn = "0",
+					list = false,
+				},
+			},
+		},
 
 		explorer = { enabled = false },
 		notifier = { enabled = false },

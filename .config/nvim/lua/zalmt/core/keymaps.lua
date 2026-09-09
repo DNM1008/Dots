@@ -225,6 +225,13 @@ end, {
 	desc = "LazyGit (Snacks)",
 })
 
+-- zen mode
+keymap.set("n", "<leader>zz", function()
+	require("snacks").zen()
+end, {
+	desc = "Zen mode",
+})
+
 ---------------------
 -- terminal toggle
 ---------------------
