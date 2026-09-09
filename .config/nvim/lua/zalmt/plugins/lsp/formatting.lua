@@ -16,7 +16,7 @@ return {
 				html = { "prettierd", "prettier" },
 				json = { "prettierd", "prettier" },
 				yaml = { "prettierd", "prettier" },
-				-- markdown = { "prettierd", "prettier" },
+				markdown = { "prettierd", "prettier" },
 				graphql = { "prettierd", "prettier" },
 				liquid = { "prettierd", "prettier" },
 
