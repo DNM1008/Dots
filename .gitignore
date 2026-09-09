@@ -54,7 +54,7 @@
 !.config/plasmanotifyrc
 !.config/plasmaparc
 !.config/plasma-workspace
-!.config/plasmarc
+.config/plasmarc
 !.config/plasmashellrc
 !.config/powerdevilrc
 !.config/powermanagementprofilesrc
