@@ -46,6 +46,7 @@
 !.config/mimeapps.list
 !.config/nvim
 !.config/pandoc
+!.config/paru
 !.config/pavucontrol.ini
 !.config/pavucontrol-qt
 !.config/pip
