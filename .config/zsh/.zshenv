@@ -25,6 +25,7 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc:$XDG_CONFIG_HOME/gtk-2.0/gt
 export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
 export JULIAUP_DEPOT_PATH="$XDG_DATA_HOME/julia"
 export KEYTIMEOUT=1
+export MANPAGER="bat =plman"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 export TUF_ROOT="$XDG_DATA_HOME"/sigstore/root
