@@ -74,6 +74,7 @@
 !.config/wofi
 !.config/xdg-terminals.list
 !.config/xfce4
+.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 !.config/xsettingsd
 !.config/zsh/.zshrc
 !.config/zsh/.zshenv
