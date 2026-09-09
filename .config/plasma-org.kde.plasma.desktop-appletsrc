@@ -20,8 +20,12 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][428][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/one_offs_unique_in_category/spider_man_1.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/assetto_corsa/assetto_corsa_3.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][428][Wallpaper][org.kde.potd][General]
+FillMode=2
+Provider=simonstalenhag
 
 [Containments][429]
 ItemGeometries-0x0=
@@ -39,8 +43,12 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][429][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/one_offs_unique_in_category/spider_man_1.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/assetto_corsa/assetto_corsa_3.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][429][Wallpaper][org.kde.potd][General]
+FillMode=2
+Provider=simonstalenhag
 
 [Containments][430]
 ItemGeometries-0x0=
@@ -55,8 +63,12 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][430][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/one_offs_unique_in_category/spider_man_1.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/assetto_corsa/assetto_corsa_3.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][430][Wallpaper][org.kde.potd][General]
+FillMode=2
+Provider=simonstalenhag
 
 [Containments][497]
 activityId=
