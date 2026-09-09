@@ -80,9 +80,16 @@ chpwd_venv() {
 }
 chpwd_functions+=(chpwd_venv)
 
-# ── Plugins ──────────────────────────────────────────────────────
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# ── Plugins (zinit) ──────────────────────────────────────────────
+ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
+[[ -d "$ZINIT_HOME" ]] || git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "$ZINIT_HOME/zinit.zsh"
+
+zinit wait lucid for \
+  atinit"zicompinit; zicdreplay" \
+    zdharma-continuum/fast-syntax-highlighting \
+  atload"_zsh_autosuggest_start" \
+    zsh-users/zsh-autosuggestions
 
 # ── Tool Initialisers (last to reduce prompt flicker) ───────────
 eval "$(starship init zsh)"

@@ -25,7 +25,7 @@ Theme: **Catppuccin Macchiato** throughout.
 |------|---------|
 | `.config/bash/bash_profile` | Login shell — sets all XDG paths, env vars, and tool paths. Sourced system-wide via `/etc/bash.bashrc` by the install script. |
 | `.config/bash/bashrc` | Interactive bash — aliases, prompt (Starship), zoxide, fastfetch |
-| `.config/zsh/.zshrc` | Zsh equivalent; uses Antidote for plugin management |
+| `.config/zsh/.zshrc` | Zsh equivalent; uses [zinit](https://github.com/zdharma-continuum/zinit) for plugin management |
 
 Key environment variables set in `bash_profile` and `.zshenv`:
 - `TERMINAL=kitty`
@@ -115,6 +115,10 @@ cp -r .local/* ~/.local/
 *Make sure to point your shell config to the right place, for example I have
 `/etc/bash.bashrc` sources `~/.config/bash/bash_profile` and set `$ZDOTDIR` to
 `~/.config/zsh` in `/etc/zsh/zshenv`*
+
+**Zsh plugin manager:** `.zshrc` self-installs [zinit](https://github.com/zdharma-continuum/zinit)
+into `$XDG_DATA_HOME/zinit` on first run via `git clone` — just make sure `git`
+is installed before starting zsh for the first time on a new machine.
 
 You can either use symlinks or copy the config files straight over
 

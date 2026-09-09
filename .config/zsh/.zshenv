@@ -51,17 +51,24 @@ export EDITOR='nvim'
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMHOME=$XDG_DATA_HOME/texmf
-export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
+[[ "$OSTYPE" == linux* ]] && export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
 export PYTHON_HISTORY=$XDG_STATE_HOME/python/history
 export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
 export PYTHONUSERBASE=$XDG_DATA_HOME/python
 export npm_config_cache="${XDG_CACHE_HOME}/npm"
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
-export TESSDATA_PREFIX="/usr/share"
+case "$OSTYPE" in
+  darwin*)
+    if command -v brew >/dev/null 2>&1; then
+      export TESSDATA_PREFIX="$(brew --prefix tesseract 2>/dev/null)/share/tessdata"
+    fi
+    ;;
+  linux*) export TESSDATA_PREFIX="/usr/share" ;;
+esac
 export TF_ENABLE_ONEDNN_OPTS="0"
 export TUNNEL_ORIGIN_CERT="$HOME/.config/cloudflared/cert.pem"
 export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
-export NLTK_DATA=/usr/share/nltk_data
+[[ "$OSTYPE" == linux* ]] && export NLTK_DATA=/usr/share/nltk_data
 export REDISCLI_HISTFILE="$XDG_DATA_HOME"/redis/rediscli_history
 export VALKEYCLI_HISTFILE="$XDG_DATA_HOME"/valkey/valkeycli_history
 export GUESTFISH_HISTORY=/tmp/guestfish_history
