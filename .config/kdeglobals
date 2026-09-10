@@ -131,11 +131,11 @@ TerminalService=kitty.desktop
 XftAntialias=true
 XftHintStyle=hintnone
 XftSubPixel=rgb
-fixed=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-font=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-menuFont=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-smallestReadableFont=FiraCode Nerd Font Med,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-toolBarFont=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+fixed=Hack JBM Ligatured CCG,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+font=Hack JBM Ligatured CCG,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+menuFont=Hack JBM Ligatured CCG,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+smallestReadableFont=Hack JBM Ligatured CCG,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+toolBarFont=Hack JBM Ligatured CCG,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 
 [Icons]
 Theme=Tela-circle-dracula-dark
@@ -183,7 +183,7 @@ ToolButtonStyleOtherToolbars=NoText
 [WM]
 activeBackground=36,39,58
 activeBlend=202,211,245
-activeFont=FiraCode Nerd Font Med,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+activeFont=Hack JBM Ligatured CCG,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 activeForeground=202,211,245
 inactiveBackground=24,25,38
 inactiveBlend=165,173,203
