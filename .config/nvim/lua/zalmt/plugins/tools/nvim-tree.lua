@@ -90,6 +90,18 @@ return {
 			end,
 		})
 
+		-- nvim-tree's fs watcher only covers its own root; when opened in a
+		-- subdirectory of a larger repo, git status changes at the repo root
+		-- (e.g. `git add`, `git commit`) never trigger a re-render. Force a
+		-- reload on refocus so decorations stay in sync.
+		vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+			callback = function()
+				if tree_utils.find_tree_window() then
+					require("nvim-tree.api").tree.reload()
+				end
+			end,
+		})
+
 		local keymap = vim.keymap
 		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
 		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle explorer on file" })
