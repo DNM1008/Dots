@@ -102,7 +102,7 @@ end
 ---------------------
 
 -- clear search highlight
-keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", {
+keymap.set("n", "<leader>hl", "<cmd>nohl<CR>", {
 	desc = "Clear search highlights",
 })
 
@@ -295,10 +295,26 @@ keymap.set("n", "<leader>pp", function()
 	end
 	local pdf = md:gsub("%.md$", ".pdf")
 	local md_dir = vim.fn.fnamemodify(md, ":h")
+	local name = vim.fn.fnamemodify(pdf, ":t")
+	local errs = {}
 	vim.fn.jobstart({
 		"pandoc", "--defaults", "pdf", md, "-o", pdf, "--resource-path", md_dir,
-	}, { detach = true })
-	vim.notify("Rendering " .. vim.fn.fnamemodify(pdf, ":t") .. "…")
+	}, {
+		stderr_buffered = true,
+		on_stderr = function(_, data)
+			errs = data
+		end,
+		on_exit = function(_, code)
+			vim.schedule(function()
+				if code == 0 then
+					vim.notify("Rendered " .. name)
+				else
+					vim.notify("pandoc failed:\n" .. table.concat(errs, "\n"), vim.log.levels.ERROR)
+				end
+			end)
+		end,
+	})
+	vim.notify("Rendering " .. name .. "…")
 end, {
 	desc = "Render markdown to PDF",
 })

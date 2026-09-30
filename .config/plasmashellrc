@@ -14,6 +14,7 @@ thickness=32
 
 [PlasmaViews][Panel 553]
 floating=1
+floatingApplets=1
 shell=org.kde.plasma.desktop
 
 [PlasmaViews][Panel 553][Defaults]

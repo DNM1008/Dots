@@ -22,7 +22,7 @@
 import os
 import subprocess
 
-# from qtile_extras.widget import StatusNotifier
+from qtile_extras.widget import StatusNotifier
 import colors
 from libqtile import bar, extension, hook, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, KeyChord, Match, Screen
@@ -35,15 +35,16 @@ from qtile_extras.widget.decorations import BorderDecoration
 # import custom_widgets
 
 mod = "mod4"  # Sets mod key to SUPER/WINDOWS
-myTerm = "alacritty"  # My terminal of choice
+myTerm = "kitty"  # My terminal of choice
 # myTerm = "gnome-terminal"  # My terminal of choice
 myBrowser = "firefox"  # My browser of choice
 myFileManager = "thunar"  # My file manager
 # myFileManager = "alacritty --command ranger" # My file manager
 # myMail = 'mailspring --password-store="gnome-libsecret"' # My Mail
-myMail = "thunderbird"  # My Mail
+# myMail = "thunderbird"  # My Mail
 # screenshot = "maim -s | xclip -selection clipboard -t image/png"
-screenshot = "flameshot gui --clipboard "
+# screenshot = "flameshot gui --clipboard "  # X11 only
+screenshot = 'grim -g "$(slurp)" - | wl-copy'
 # Path to custom scripts
 path = os.path.expanduser("~/.local/bin/scripts/")
 
@@ -67,17 +68,17 @@ def minimize_all(qtile):
 # at https://docs.qtile.org/en/latest/manual/config/lazy.html
 keys = [
     # Launching programs
-    Key(
-        [mod],
-        "Backspace",
-        lazy.spawn(
-            'notify-send "$(fortune)" -i /usr/share/icons/Papirus-Dark/16x16/emotes/face-devilish.svg',
-            shell=True,
-        ),
-        desc="Quote",
-    ),
+    # Key(
+    #     [mod],
+    #     "Backspace",
+    #     lazy.spawn(
+    #         'notify-send "$(fortune)" -i /usr/share/icons/Papirus-Dark/16x16/emotes/face-devilish.svg',
+    #         shell=True,
+    #     ),
+    #     desc="Quote",
+    # ),
     Key([mod], "Return", lazy.spawn(myTerm), desc="Terminal"),
-    Key([mod], "d", lazy.spawn("discord"), desc="Discord"),
+    # Key([mod], "d", lazy.spawn("discord"), desc="Discord"),
     Key([mod], "e", lazy.spawn(myFileManager), desc="File browser"),
     #    Key(
     #        [mod, "shift"],
@@ -85,8 +86,16 @@ keys = [
     #        lazy.spawn(path + "todolist", shell=True),
     #        desc="To do list",
     #    ),
-    Key([mod], "m", lazy.spawn(myMail), desc="Mail client"),
-    Key([mod], "v", lazy.spawn("copyq toggle"), desc="Clipboard"),
+    # Key([mod], "m", lazy.spawn(myMail), desc="Mail client"),
+    Key(
+        [mod],
+        "v",
+        lazy.spawn(
+            "cliphist list | wofi --show dmenu | cliphist decode | wl-copy",
+            shell=True,
+        ),
+        desc="Clipboard",
+    ),
     Key([mod], "w", lazy.spawn(myBrowser), desc="Web browser"),
     Key(
         [mod, "shift"],
@@ -94,38 +103,30 @@ keys = [
         lazy.spawn(screenshot, shell=True),
         desc="Screenshot region to clipboard",
     ),
-    # Rofi and prompts
-    Key([mod], "p", lazy.spawn("rofi -show drun"), desc="Run Launcher"),
-    Key([mod], "r", lazy.spawn("rofi -show run"), desc="Run Prompt"),
-    # Key(
-    #     [mod],
-    #     "v",
-    #     lazy.spawn(
-    #         "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
-    #     ),
-    #     desc="Show Clipboard",
-    # ),
+    # Wofi and prompts
+    Key([mod], "p", lazy.spawn("wofi --show drun"), desc="Run Launcher"),
+    Key([mod], "r", lazy.spawn("wofi --show run"), desc="Run Prompt"),
     # Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key(
-        [mod, "shift"],
-        "p",
-        lazy.spawn(path + "rofi_todo"),
-        desc="todolist",
-    ),
+    # Key(
+    #     [mod, "shift"],
+    #     "p",
+    #     lazy.spawn(path + "rofi_todo"),
+    #     desc="todolist",
+    # ),
     Key(
         [mod, "shift"],
         "q",
-        lazy.spawn("rofi -modi p:rofi-power-menu -show p"),
+        lazy.spawn("wlogout"),
         desc="Power Menu",
     ),
     # Key([mod, "shift"], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/scripts/rofi-power-menu "), desc="Logout menu"), (use this if you dont' want to install the rofi-power-menu package)
     # Qtile
-    # Key(
-    #     [mod, "shift"],
-    #     "l",
-    #     lazy.spawn("i3lock -ei ~/.config/qtile/lock"),
-    #     desc="Lock the screen",
-    # ),
+    Key(
+        [mod, "shift"],
+        "l",
+        lazy.spawn("swaylock -f -i ~/.config/qtile/lock"),
+        desc="Lock the screen",
+    ),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     # Key([mod, "shift"], "q", lazy.spawn("oblogout"), desc="Logout"),
@@ -717,18 +718,18 @@ def init_widgets_list():
         #                     )
         #                 ],
         # 		),
-        #        widget.Spacer(length = 8),
-        #        widget.Systray(
-        #                padding = 3,
-        #                icon_size = 16,
-        #                decorations=[
-        #                    BorderDecoration(
-        #                        colour = "#ffffff",
-        #                        border_width = [0, 0, 2, 0],
-        #                    )
-        #                ],
-        #                ),
-        #        widget.Spacer(length = 8),
+        widget.Spacer(length=8),
+        StatusNotifier(
+            padding=3,
+            icon_size=16,
+            decorations=[
+                BorderDecoration(
+                    colour=colors[1],
+                    border_width=[0, 0, 2, 0],
+                )
+            ],
+        ),
+        widget.Spacer(length=8),
     ]
     return widgets_list
 

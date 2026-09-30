@@ -20,7 +20,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][428][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/assetto_corsa/assetto_corsa_3.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/porsche/911_21.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][428][Wallpaper][org.kde.potd][General]
@@ -43,7 +43,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][429][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/assetto_corsa/assetto_corsa_3.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/porsche/911_21.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][429][Wallpaper][org.kde.potd][General]
@@ -63,7 +63,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][430][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/assetto_corsa/assetto_corsa_3.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/porsche/911_21.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][430][Wallpaper][org.kde.potd][General]
@@ -302,6 +302,11 @@ plugin=org.kde.plasma.weather
 [Containments][553][Applets][558][Applets][569][Configuration][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
+
+[Containments][553][Applets][558][Applets][569][Configuration][WeatherStation]
+placeDisplayName=Hanoi, Vietnam, VN
+placeInfo=Hanoi, Vietnam, VN|1581130
+provider=bbcukmet
 
 [Containments][553][Applets][558][Applets][570]
 immutability=1

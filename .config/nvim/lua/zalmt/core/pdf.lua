@@ -12,7 +12,8 @@ end
 -- pdf conversion never actually runs.
 local function render_page(file, page)
 	vim.fn.mkdir(cache_dir, "p")
-	local prefix = cache_dir .. "/" .. vim.fn.sha256(file):sub(1, 12) .. "-p" .. page
+	local key = vim.fn.sha256(file .. vim.fn.getftime(file)):sub(1, 12)
+	local prefix = cache_dir .. "/" .. key .. "-p" .. page
 	local existing = vim.fn.glob(prefix .. "*.png", false, true)
 	if #existing > 0 then
 		return existing[1]
