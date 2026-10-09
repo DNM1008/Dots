@@ -59,6 +59,11 @@
 !.config/plasmashellrc
 !.config/powerdevilrc
 !.config/powermanagementprofilesrc
+!.config/qBittorrent
+.config/qBittorrent/categories.json
+.config/qBittorrent/qBittorrent-data.conf
+.config/qBittorrent/rss
+.config/qBittorrent/watched_folders.json
 !.config/qt5ct
 !.config/qt6ct
 !.config/qtile
