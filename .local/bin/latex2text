@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import sys
+from pylatexenc.latex2text import LatexNodes2Text
+
+sys.stdout.write(LatexNodes2Text().latex_to_text(sys.stdin.read()))

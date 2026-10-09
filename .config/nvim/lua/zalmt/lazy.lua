@@ -31,4 +31,5 @@ require("lazy").setup({
 		partial_clone = false,
 		timeout = 600,
 	},
+	rocks = { enabled = false },
 })
