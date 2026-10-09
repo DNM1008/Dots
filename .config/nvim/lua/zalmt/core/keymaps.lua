@@ -236,7 +236,6 @@ end, {
 -- terminal toggle
 ---------------------
 
-
 keymap.set("n", "<leader><CR>h", function()
 	if term_win and vim.api.nvim_win_is_valid(term_win) then
 		TermToggle("close")
@@ -283,10 +282,16 @@ keymap.set("n", "k", "gk", {
 -- markdown preview
 ---------------------
 
-keymap.set("n", "<leader>pt", "<cmd>RenderMarkdown preview<CR>", {
+keymap.set("n", "<leader>pt", "<cmd>vellum<CR>", {
 	desc = "Markdown preview",
 })
+keymap.set("n", "<leader>pz", function()
+	require("vellum").zoom()
+end)
 
+---------------------
+-- markdown render to pdf
+---------------------
 keymap.set("n", "<leader>pp", function()
 	local md = vim.api.nvim_buf_get_name(0)
 	if not md:match("%.md$") then
@@ -298,7 +303,14 @@ keymap.set("n", "<leader>pp", function()
 	local name = vim.fn.fnamemodify(pdf, ":t")
 	local errs = {}
 	vim.fn.jobstart({
-		"pandoc", "--defaults", "pdf", md, "-o", pdf, "--resource-path", md_dir,
+		"pandoc",
+		"--defaults",
+		"pdf",
+		md,
+		"-o",
+		pdf,
+		"--resource-path",
+		md_dir,
 	}, {
 		stderr_buffered = true,
 		on_stderr = function(_, data)
