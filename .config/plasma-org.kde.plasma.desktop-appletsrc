@@ -303,6 +303,10 @@ plugin=org.kde.plasma.weather
 DialogHeight=630
 DialogWidth=810
 
+[Containments][553][Applets][558][Applets][569][Configuration][Units]
+pressureUnit=5010
+temperatureUnit=6001
+
 [Containments][553][Applets][558][Applets][569][Configuration][WeatherStation]
 placeDisplayName=Hanoi, Vietnam, VN
 placeInfo=Hanoi, Vietnam, VN|1581130
