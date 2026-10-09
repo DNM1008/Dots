@@ -1,3 +1,17 @@
+-- simple_toggle (plain `:ClaudeCode`) only hides/shows the existing terminal and
+-- ignores args while it's alive. Kill the job so the new args actually apply.
+local function fresh_claude(args)
+	local bufnr = require("claudecode.terminal").get_active_terminal_bufnr()
+	if bufnr then
+		local job = vim.b[bufnr].terminal_job_id
+		if job then
+			vim.fn.jobstop(job)
+		end
+		vim.api.nvim_buf_delete(bufnr, { force = true })
+	end
+	vim.cmd("ClaudeCode" .. (args and " " .. args or ""))
+end
+
 return {
 	"coder/claudecode.nvim",
 	dependencies = { "folke/snacks.nvim" },
@@ -39,31 +53,10 @@ return {
 	keys = {
 		{ "<leader>a", nil, desc = "Claude Code" },
 		{ "<leader>ac", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
-		{
-			"<leader>an",
-			function()
-				local is_open = false
-				for _, win in ipairs(vim.api.nvim_list_wins()) do
-					local name = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(win))
-					if name:match("claude") then
-						is_open = true
-						break
-					end
-				end
-
-				if is_open then
-					vim.cmd("ClaudeCode")       -- close it
-					vim.defer_fn(function()
-						vim.cmd("ClaudeCode")   -- reopen fresh (no --resume/--continue)
-					end, 300)
-				else
-					vim.cmd("ClaudeCode")       -- just open fresh
-				end
-			end,
-			desc = "New Claude chat",
-		},
+		{ "<leader>an", function() fresh_claude() end, desc = "New Claude chat" },
 		{ "<leader>af", "<cmd>ClaudeCodeFocus<cr>", desc = "Focus Claude" },
-		{ "<leader>ar", "<cmd>ClaudeCode --resume<cr>", desc = "Resume Claude" },
+		{ "<leader>ar", function() fresh_claude("--resume") end, desc = "Resume Claude (pick session)" },
+		{ "<leader>aC", function() fresh_claude("--continue") end, desc = "Continue last Claude session" },
 		{ "<leader>am", "<cmd>ClaudeCodeSelectModel<cr>", desc = "Select Claude model" },
 		{ "<leader>ab", "<cmd>ClaudeCodeAdd %<cr>", desc = "Add current buffer" },
 		{ "<leader>as", "<cmd>ClaudeCodeSend<cr>", mode = "v", desc = "Send to Claude" },
