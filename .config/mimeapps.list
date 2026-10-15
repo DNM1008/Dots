@@ -61,6 +61,7 @@ x-scheme-handler/viber=viber.desktop;
 application/zip=org.kde.ark.desktop;
 x-scheme-handler/joplin=joplin-desktop.desktop;joplin-app-desktop.desktop;
 x-scheme-handler/notion=notion-app-enhanced.desktop;
+application/pdf=firefox.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
@@ -124,3 +125,4 @@ x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 x-scheme-handler/viber=viber.desktop
 x-scheme-handler/joplin=joplin-desktop.desktop
 x-scheme-handler/notion=notion-app-enhanced.desktop
+application/pdf=firefox.desktop

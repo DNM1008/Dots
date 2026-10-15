@@ -43,7 +43,8 @@ alias grep='grep --color=auto'
 alias ls='eza --color=auto --icons=always -la'
 alias pdpdf='pandoc --citeproc --pdf-engine=lualatex \
   --include-in-header="$HOME/.config/pandoc/header.tex" \
-  --toc --csl="$HOME/.config/pandoc/apa.csl"'
+  --toc --csl="$HOME/.config/pandoc/apa.csl" \
+  -V monofont="DejaVu Sans Mono"'
 alias shutnow='shutdown now'
 alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME/nvidia/settings"'
 alias vim='nvim'

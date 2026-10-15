@@ -20,7 +20,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][428][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/porsche/911_21.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/dragons/dragons_47.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][428][Wallpaper][org.kde.potd][General]
@@ -43,7 +43,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][429][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/porsche/911_21.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/dragons/dragons_47.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][429][Wallpaper][org.kde.potd][General]
@@ -63,7 +63,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][430][Wallpaper][org.kde.image][General]
-Image=file:///home/zeus/Pictures/wallpapers/horizontal/porsche/911_21.jpg
+Image=file:///home/zeus/Pictures/wallpapers/horizontal/dragons/dragons_47.jpg
 SlidePaths=/home/zeus/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][430][Wallpaper][org.kde.potd][General]

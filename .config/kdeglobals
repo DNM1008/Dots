@@ -65,6 +65,20 @@ ForegroundNormal=202, 211, 245
 ForegroundPositive=166, 218, 149
 ForegroundVisited=198, 160, 246
 
+[Colors:Header][Inactive]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
 [Colors:Selection]
 BackgroundAlternate=138, 173, 244
 BackgroundNormal=138, 173, 244
@@ -123,7 +137,6 @@ ForegroundVisited=198, 160, 246
 
 [General]
 AccentColor=0,0,0,0
-ColorScheme=CatppuccinMacchiatoBlue
 ColorSchemeHash=85329bef1994d009d321f8197bd13fffa1ccd06a
 LastUsedCustomAccentColor=61,212,37
 TerminalApplication=kitty
@@ -143,13 +156,13 @@ Theme=Tela-circle-dracula-dark
 [KDE]
 AnimationDurationFactor=0
 DefaultDarkLookAndFeel=Catppuccin.Macchiato
+DefaultLightLookAndFeel=org.kde.breezetwilight.desktop
 DndBehavior=MoveIfSameDevice
-LookAndFeelPackage=Catppuccin.Macchiato
+LookAndFeelPackage=Catppuccin-Macchiato-Blue
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4
 frameContrast=0.2
-widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

@@ -1419,7 +1419,6 @@ XwaylandEavesdrops=All
 XwaylandEavesdropsMouse=true
 
 [org.kde.kdecoration2]
-BorderSize=None
 BorderSizeAuto=false
 ShowToolTips=false
 library=org.kde.breeze

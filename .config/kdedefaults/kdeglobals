@@ -1,8 +1,8 @@
 [General]
-ColorScheme=CatppuccinMacchiato
+ColorScheme=CatppuccinMacchiatoBlue
 
 [Icons]
-Theme=ColorFlow.Agresive.Color
+Theme=breeze
 
 [KDE]
 widgetStyle=Breeze
