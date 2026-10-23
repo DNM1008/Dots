@@ -8,10 +8,6 @@ Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
-[kaccess]
-Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
-_k_friendly_name=Accessibility
-
 [kmix]
 _k_friendly_name=Audio Volume
 decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume
@@ -91,8 +87,8 @@ KrohnkitegrowWidth=Meta+Ctrl+L,none,Krohnkite: Grow Width
 KrohnkitetoggleDock=none,none,Krohnkite: Toggle Dock
 Move Tablet to Next LogicalOutput=none,none,Move the tablet to the next output
 Move Tablet to Next Output=none,none,Move the tablet to the next output
-MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Centre
-MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
+MoveMouseToCenter=Meta+F6,Meta+F6,Center Pointer in Screen
+MoveMouseToFocus=Meta+F5,Meta+F5,Center Pointer in Focused Window
 MoveZoomDown=none,none,Move Zoomed Area Downwards
 MoveZoomLeft=none,none,Move Zoomed Area to Left
 MoveZoomRight=none,none,Move Zoomed Area to Right
@@ -197,10 +193,11 @@ TileUpperRightQuarter=Meta+Alt+Num+9,none,Tile to UPPER RIGHT quarter
 TileUpperRightThird=Meta+Num+9,none,Tile to UPPER RIGHT third
 TileUpperRightThirdWideMiddle=Meta+Ctrl+Num+9,none,Tile to UPPER RIGHT third (wide middle)
 Toggle Night Color=none,none,Suspend/Resume Night Light
+Toggle Show Compositing=none,none,Toggle “Show Compositing” effect
 Toggle Window Raise/Lower=none,none,Toggle Window Raise/Lower
 ToggleMouseClick=Meta+*,Meta+*,Toggle Mouse Click Animation
 Walk Through Windows=Alt+Tab,Alt+Tab\tMeta+Tab,Walk Through Windows
-Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Tab\tMeta+Shift+Tab,Walk Through Windows (Reverse)
+Walk Through Windows (Reverse)=Alt+Shift+Tab,Alt+Shift+Tab\tMeta+Shift+Tab,Walk Through Windows (Reverse)
 Walk Through Windows Alternative=none,none,Walk Through Windows Alternative
 Walk Through Windows Alternative (Reverse)=none,none,Walk Through Windows Alternative (Reverse)
 Walk Through Windows of Current Application=Alt+`,Alt+`\tMeta+`,Walk Through Windows of Current Application
@@ -296,6 +293,33 @@ view_actual_size=none,Meta+0,Zoom to Actual Size
 view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[kwin][$InverseAction]
+Cycle Overview Opposite=Cycle Overview
+Increase Opacity=Decrease Opacity
+Switch One Desktop Down=Switch One Desktop Up
+Switch One Desktop to the Right=Switch One Desktop to the Left
+Switch Window Down=Switch Window Up
+Switch Window Left=Switch Window Right
+Switch to Next Screen=Switch to Previous Screen
+Switch to Previous Desktop=Switch to Next Desktop
+Switch to Screen Above=Switch to Screen Below
+Switch to Screen to the Left=Switch to Screen to the Right
+Walk Through Windows (Reverse)=Walk Through Windows
+Walk Through Windows Alternative (Reverse)=Walk Through Windows Alternative
+Walk Through Windows of Current Application (Reverse)=Walk Through Windows of Current Application
+Walk Through Windows of Current Application Alternative=Walk Through Windows of Current Application Alternative (Reverse)
+Window Grow Horizontal=Window Shrink Horizontal
+Window Grow Vertical=Window Shrink Vertical
+Window Lower=Window Raise
+Window One Desktop Down=Window One Desktop Up
+Window One Desktop to the Left=Window One Desktop to the Right
+Window One Screen Down=Window One Screen Up
+Window One Screen to the Right=Window One Screen to the Left
+Window Pack Down=Window Pack Up
+Window Pack Right=Window Pack Left
+Window to Next Desktop=Window to Previous Desktop
+Window to Next Screen=Window to Previous Screen
+
 [mediacontrol]
 _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
@@ -359,7 +383,7 @@ activate widget 603=none,none,Activate Digital Clock Widget
 activate widget 78=none,none,Activate Application Launcher Widget
 clear history=none,none,Clear Notification History
 clear-history=none,none,Clear Clipboard History
-clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
+clipboard_action=none,none,Toggle Automatic Popping Up of Action Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
@@ -406,9 +430,11 @@ ShowOSD=Meta+Shift+M
 [services][org.kde.plasma.emojier.desktop]
 _launch=Meta+Alt+.
 
+[services][org.kde.screenreader.desktop]
+toggleScreenReader=none
+
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=Meta+Shift+Print
-OpenWithoutScreenshot=none
 RecordWindow=none
 RectangularRegionScreenShot=Meta+Shift+S
 _launch=Print
@@ -424,7 +450,6 @@ _launch=Meta+Return
 
 [services][systemsettings.desktop]
 _launch=Meta+I
-kcm-kscreen=none
 kcm-powerdevilprofilesconfig=Meta+Shift+P
 
 [services][thunar.desktop]
