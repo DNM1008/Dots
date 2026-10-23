@@ -124,5 +124,13 @@ new machine:
 
 You can either use symlinks or copy the config files straight over
 
+**Path filter:** wallpaper and screenshot paths are stripped from KDE configs
+on commit via `.gitattributes`. After cloning, register the filter:
+
+```sh
+git config filter.strip-paths.clean "sed -E '/^Image=.*\/home\//d; /^(lastImageSaveLocation|videoSaveLocation)=/d'"
+git config filter.strip-paths.smudge cat
+```
+
 No package list is tracked here — reinstalling packages is handled separately
 by the [install script](https://github.com/DNM1008/Install-Script).

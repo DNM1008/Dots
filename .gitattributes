@@ -1,0 +1,4 @@
+# Strip machine-local wallpaper/screenshot paths on commit (see README)
+.config/plasma-org.kde.plasma.desktop-appletsrc filter=strip-paths
+.config/kscreenlockerrc filter=strip-paths
+.config/spectaclerc filter=strip-paths

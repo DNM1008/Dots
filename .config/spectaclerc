@@ -7,9 +7,7 @@ videoIncludePointer=false
 
 [ImageSave]
 imageSaveLocation=
-lastImageSaveLocation=file:///home/zeus/Pictures/screenshots/Screenshot_20260824_105139.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
 translatedScreencastsFolder=Screencasts
-videoSaveLocation=file:///home/zeus/Videos/screencasts
