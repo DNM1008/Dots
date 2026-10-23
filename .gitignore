@@ -67,7 +67,6 @@
 !.config/qt5ct
 !.config/qt6ct
 !.config/qtile
-!.config/QtProject.conf
 !.config/reflector-simple-free-params.txt
 !.config/spectacle.notifyrc
 !.config/spectaclerc
