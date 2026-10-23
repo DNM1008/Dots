@@ -81,4 +81,26 @@ function M.pick_window()
 	return picked
 end
 
+-- Spawn a ripdrag window for the bookmarked nodes (or the node under cursor)
+-- so they can be dragged into GUI apps; terminals can't start a drag.
+function M.drag()
+	if vim.fn.executable("ripdrag") == 0 then
+		vim.notify("ripdrag not installed (paru -S ripdrag)", vim.log.levels.WARN)
+		return
+	end
+
+	local api = require("nvim-tree.api")
+	local nodes = api.marks.list()
+	if #nodes == 0 then
+		nodes = { api.tree.get_node_under_cursor() }
+	end
+
+	local cmd = { "ripdrag", "--and-exit", "--all" }
+	for _, node in ipairs(nodes) do
+		table.insert(cmd, node.absolute_path)
+	end
+
+	vim.system(cmd, { detach = true })
+end
+
 return M

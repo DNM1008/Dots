@@ -73,6 +73,7 @@ return {
 				-- vim.keymap.set("n", "<Esc>", preview.unwatch, { buffer = bufnr, desc = "Preview Stop" })
 				vim.keymap.set("n", "<leader>v", api.node.open.vertical, opts("Open: Vertical Split"))
 				vim.keymap.set("n", "<leader>h", api.node.open.horizontal, opts("Open: Horizonta Split"))
+				vim.keymap.set("n", "<leader>d", tree_utils.drag, opts("Drag file(s) out"))
 			end,
 		})
 
