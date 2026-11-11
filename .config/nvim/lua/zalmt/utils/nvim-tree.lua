@@ -103,4 +103,39 @@ function M.drag()
 	vim.system(cmd, { detach = true })
 end
 
+local function file_under_cursor()
+	local node = require("nvim-tree.api").tree.get_node_under_cursor()
+	return node and node.type == "file" and node.absolute_path or nil
+end
+
+-- Play the node under cursor with mpv in a kitty overlay window: nvim's
+-- :terminal doesn't forward the kitty graphics protocol, so it can't host it.
+-- No --vo-kitty-use-shm: kitty shows a blank window with it on this setup.
+function M.play()
+	local sock = vim.env.KITTY_LISTEN_ON
+	if not sock then
+		vim.notify("not in kitty with remote control (listen_on)", vim.log.levels.WARN)
+		return
+	end
+
+	local file = file_under_cursor()
+	if not file then
+		return
+	end
+
+	vim.system({
+		"kitten", "@", "--to", sock, "launch", "--type=overlay",
+		"mpv", "--vo=kitty", "--really-quiet", file,
+	}, { detach = true })
+end
+
+-- Play the node under cursor inside a picked split
+function M.play_in_split()
+	local file = file_under_cursor()
+	local win = file and M.pick_window()
+	if win then
+		require("zalmt.utils.video").play(file, win)
+	end
+end
+
 return M
