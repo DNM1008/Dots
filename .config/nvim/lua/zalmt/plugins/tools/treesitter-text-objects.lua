@@ -58,13 +58,14 @@ return {
 			end, { desc = "Swap " .. s[3] .. " with previous" })
 		end
 
-		-- ]x / [x jump to starts, ]X / [X to ends
+		-- ]x / [x jump to starts, ]X / [X to ends. Class is k and loop is o so
+		-- the built-in ]c (diff), ]l (loclist) and ]s (spelling) keep working
 		for _, m in ipairs({
 			{ "f", "@call.outer", "function call" },
 			{ "m", "@function.outer", "method/function def" },
-			{ "c", "@class.outer", "class" },
+			{ "k", "@class.outer", "class" },
 			{ "i", "@conditional.outer", "conditional" },
-			{ "l", "@loop.outer", "loop" },
+			{ "o", "@loop.outer", "loop" },
 		}) do
 			local key, q, what = m[1], m[2], m[3]
 			local function jump(fn)
@@ -77,7 +78,7 @@ return {
 			map({ "n", "x", "o" }, "]" .. key:upper(), jump("goto_next_end"), { desc = "Next " .. what .. " end" })
 			map({ "n", "x", "o" }, "[" .. key:upper(), jump("goto_previous_end"), { desc = "Prev " .. what .. " end" })
 		end
-		map({ "n", "x", "o" }, "]s", function()
+		map({ "n", "x", "o" }, "]x", function()
 			move.goto_next_start("@local.scope", "locals")
 		end, { desc = "Next scope" })
 		map({ "n", "x", "o" }, "]z", function()
