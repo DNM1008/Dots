@@ -18,7 +18,6 @@
 !.config/environment.d
 !.config/exo
 !.config/fastfetch
-!.config/flameshot
 !.config/fontconfig
 !.config/foot
 !.config/ghostty
@@ -26,7 +25,6 @@
 !.config/gtk-3.0
 !.config/gtk-4.0
 !.config/htop
-!.config/ipython
 !.config/KDE
 !.config/kded5rc
 !.config/kded6rc

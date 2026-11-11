@@ -41,7 +41,6 @@ Key environment variables set in `bash_profile` and `.zshenv`:
 | `.config/qtile/config.py` | Main Qtile config — keybinds, layouts, bar, widgets |
 | `.config/qtile/autostart.sh` | Autostart — xrandr, wallpaper, dunst, copyq, syncthing, udiskie |
 | `.config/qtile/colors.py` | Catppuccin Macchiato colour definitions used by the bar |
-| `.config/awesome/rc.lua` | Awesome WM config (alternative WM, not the primary) |
 
 The `autostart.sh` contains hardcoded xrandr commands for a specific
 dual-monitor layout. Edit these if your outputs differ — check with `xrandr --query`.
@@ -77,14 +76,11 @@ for how to make Thunar and KDE open files in Kitty rather than Konsole.
 | `.config/gtk-4.0/` | Symlinks to Catppuccin Macchiato system theme |
 | `.config/qt5ct/` | Qt5 theme — Catppuccin Macchiato colour scheme |
 | `.config/qt6ct/` | Qt6 equivalent |
-| `.config/Kvantum/` | Kvantum Qt theme engine config |
 
-### Launchers and notifications
+### Launcher
 
 | Path | Purpose |
 |------|---------|
-| `.config/rofi/` | Application launcher config (for X11 use - WIP) |
-| `.config/dunst/` | Notification daemon (if you're using a tiling wm - WIP)|
 | `.config/wofi/` | Wayland launcher (for Wayland use) |
 
 ### Other tools
@@ -93,9 +89,6 @@ for how to make Thunar and KDE open files in Kitty rather than Konsole.
 |------|---------|
 | `.config/starship.toml` | Shell prompt |
 | `.config/fastfetch/` | System info on shell startup |
-| `.config/yazi/` | TUI file manager |
-| `.config/ranger/` | Alternative TUI file manager |
-| `.config/zathura/` | PDF viewer |
 | `.config/lazygit/` | Git TUI |
 
 ---
