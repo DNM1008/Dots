@@ -73,7 +73,7 @@ return {
 		local diagnostic_focused = false
 		local prev_win = nil
 
-		vim.keymap.set("n", "<leader>xf", function()
+		vim.keymap.set("n", "<leader>cx", function()
 			if not diagnostic_focused then
 				-- Save current window
 				prev_win = vim.api.nvim_get_current_win()
@@ -123,13 +123,14 @@ return {
 				local map = vim.keymap.set
 				local opts = { buffer = ev.buf, silent = true }
 
-				map("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
-				map("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
-				map("n", "K", vim.lsp.buf.hover, opts)
-				map("n", "<leader>cr", vim.lsp.buf.rename, opts)
-				map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
-				map("n", "[d", vim.diagnostic.goto_prev, opts)
-				map("n", "]d", vim.diagnostic.goto_next, opts)
+				-- K, [d and ]d are nvim defaults
+				local function o(desc)
+					return vim.tbl_extend("force", opts, { desc = desc })
+				end
+				map("n", "gd", "<cmd>Telescope lsp_definitions<CR>", o("Go to definition"))
+				map("n", "gR", "<cmd>Telescope lsp_references<CR>", o("References"))
+				map("n", "<leader>cr", vim.lsp.buf.rename, o("Rename symbol"))
+				map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, o("Code action"))
 			end,
 		})
 	end,

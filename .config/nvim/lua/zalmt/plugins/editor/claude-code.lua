@@ -24,8 +24,8 @@ return {
 				local buf = ev.buf
 				local opts = { buffer = buf, silent = true }
 
-				-- Esc drops to normal mode (consistent with other splits)
-				vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", opts)
+				-- Esc goes to Claude (interrupts it); leave terminal mode with Ctrl+Shift+C
+				vim.keymap.set("t", "<Esc>", "<Esc>", opts)
 
 				-- Ctrl+Shift+C: exit terminal mode so you can visually select and yank
 				vim.keymap.set("t", "<C-S-c>", "<C-\\><C-n>", opts)

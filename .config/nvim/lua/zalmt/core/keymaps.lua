@@ -102,7 +102,7 @@ end
 ---------------------
 
 -- clear search highlight
-keymap.set("n", "<leader>hl", "<cmd>nohl<CR>", {
+keymap.set("n", "<Esc>", "<cmd>nohl<CR><Esc>", {
 	desc = "Clear search highlights",
 })
 
@@ -260,21 +260,24 @@ keymap.set("t", "<Esc>", "<C-\\><C-n>", {
 	silent = true,
 })
 
--- resize splits from terminal mode
-keymap.set("t", "<A-h>", "<C-\\><C-n><cmd>vertical resize -2<CR>a", { silent = true })
-keymap.set("t", "<A-l>", "<C-\\><C-n><cmd>vertical resize +2<CR>a", { silent = true })
-keymap.set("t", "<A-k>", "<C-\\><C-n><cmd>resize +2<CR>a", { silent = true })
-keymap.set("t", "<A-j>", "<C-\\><C-n><cmd>resize -2<CR>a", { silent = true })
+-- resize splits from terminal mode (same keys as normal mode)
+keymap.set("t", "<A-Left>", "<cmd>vertical resize -2<CR>", { silent = true })
+keymap.set("t", "<A-Right>", "<cmd>vertical resize +2<CR>", { silent = true })
+keymap.set("t", "<A-Up>", "<cmd>resize +2<CR>", { silent = true })
+keymap.set("t", "<A-Down>", "<cmd>resize -2<CR>", { silent = true })
 
 ---------------------
 -- better wrapped-line movement
 ---------------------
 
-keymap.set("n", "j", "gj", {
+-- display lines without a count; real lines with one so 5j matches relativenumber
+keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", {
+	expr = true,
 	desc = "Visual down",
 })
 
-keymap.set("n", "k", "gk", {
+keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", {
+	expr = true,
 	desc = "Visual up",
 })
 
