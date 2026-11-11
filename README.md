@@ -95,7 +95,6 @@ for how to make Thunar and KDE open files in Kitty rather than Konsole.
 | `.config/fastfetch/` | System info on shell startup |
 | `.config/yazi/` | TUI file manager |
 | `.config/ranger/` | Alternative TUI file manager |
-| `.config/mpv/` | Video player |
 | `.config/zathura/` | PDF viewer |
 | `.config/lazygit/` | Git TUI |
 
