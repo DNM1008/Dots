@@ -19,7 +19,7 @@ return {
 		-- { lhs suffix, query, description }; mapped as a<x> / i<x> (outer / inner)
 		local selects = {
 			{ "=", "assignment", "assignment" },
-			{ ":", "property", "object property" }, -- custom capture in after/queries/ecma
+			{ ":", "property", "object property" }, -- JS/TS only: after/queries/ecma/textobjects.scm
 			{ "a", "parameter", "parameter/argument" },
 			{ "i", "conditional", "conditional" },
 			{ "l", "loop", "loop" },
