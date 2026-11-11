@@ -88,7 +88,9 @@ function M.play(buf, win, opts)
 		-- a draw queued before cleanup would leave a stale frame behind
 		if frame and players[buf] == player then
 			last = frame
-			render(frame)
+			if not player.hidden then
+				render(frame)
+			end
 		end
 	end
 
@@ -123,12 +125,14 @@ function M.play(buf, win, opts)
 		pcall(vim.api.nvim_del_augroup_by_id, group)
 		timer:close()
 		os.remove(player.sock)
-		local del = (clear or "") .. delete_at(g)
+		-- a hidden player's image was already removed; the cell now belongs to another tab
+		local del = player.hidden and "" or (clear or "") .. delete_at(g)
 		if
 			player.restart
 			and vim.api.nvim_buf_is_valid(buf)
 			and vim.api.nvim_win_is_valid(win)
 			and vim.api.nvim_win_get_buf(win) == buf
+			and vim.api.nvim_win_get_tabpage(win) == vim.api.nvim_get_current_tabpage()
 		then
 			-- the old (scaled) frame stays up until the new player's first frame
 			M.play(buf, win, { paused = player.paused, clear = del })
@@ -158,7 +162,7 @@ function M.play(buf, win, opts)
 	-- scaled-up frames get blurry: once resizing settles, relaunch at the new
 	-- size if it is noticeably bigger (mpv resumes from its watch-later entry)
 	local function maybe_relaunch()
-		if player.restart or players[buf] ~= player or not last then
+		if player.restart or player.hidden or players[buf] ~= player or not last then
 			return
 		end
 		local s, v = last:match("s=(%d+),v=(%d+)")
@@ -169,34 +173,63 @@ function M.play(buf, win, opts)
 		end
 	end
 
-	vim.api.nvim_create_autocmd({ "WinResized", "VimResized", "WinClosed", "WinNew" }, {
-		group = group,
-		callback = vim.schedule_wrap(function()
-			if players[buf] ~= player then
-				return
-			end
-			if not vim.api.nvim_win_is_valid(win) or vim.api.nvim_win_get_buf(win) ~= buf then
-				-- follow the buffer to another window showing it (e.g. after :only)
-				local tab = vim.api.nvim_get_current_tabpage()
-				local other = vim.iter(vim.fn.win_findbuf(buf)):find(function(w)
-					return vim.api.nvim_win_get_tabpage(w) == tab
-				end)
-				if not other then
-					return M.stop(buf)
-				end
+	local function shows(w, tab)
+		return vim.api.nvim_win_is_valid(w)
+			and vim.api.nvim_win_get_buf(w) == buf
+			and (not tab or vim.api.nvim_win_get_tabpage(w) == tab)
+	end
+
+	local function relayout()
+		if players[buf] ~= player then
+			return
+		end
+		local tab = vim.api.nvim_get_current_tabpage()
+		if not shows(win, tab) then
+			-- follow the buffer to another window showing it (e.g. after :only)
+			local other = vim.iter(vim.fn.win_findbuf(buf)):find(function(w)
+				return shows(w, tab)
+			end)
+			if other then
 				win = other
-			end
-			local ng = geometry(win)
-			if same(ng, g) then
+			elseif shows(win) then
+				-- only on another tab: remove the image and pause until we come back
+				if not player.hidden then
+					player.hidden = true
+					timer:stop()
+					ipc(player.sock, { "set_property", "pause", true })
+					vim.api.nvim_ui_send((clear or "") .. delete_at(g))
+					clear = nil
+				end
 				return
+			else
+				return M.stop(buf)
 			end
-			clear = (clear or "") .. delete_at(g)
-			g = ng
-			if last then
+		end
+		local was_hidden = player.hidden
+		if was_hidden then
+			player.hidden = false
+			ipc(player.sock, { "set_property", "pause", player.paused })
+		end
+		local ng = geometry(win)
+		if same(ng, g) then
+			if was_hidden and last then
 				render(last)
 			end
-			timer:start(400, 0, vim.schedule_wrap(maybe_relaunch))
-		end),
+			return
+		end
+		if not was_hidden then
+			clear = (clear or "") .. delete_at(g)
+		end
+		g = ng
+		if last then
+			render(last)
+		end
+		timer:start(400, 0, vim.schedule_wrap(maybe_relaunch))
+	end
+
+	vim.api.nvim_create_autocmd({ "WinResized", "VimResized", "WinClosed", "WinNew", "TabEnter" }, {
+		group = group,
+		callback = vim.schedule_wrap(relayout),
 	})
 	-- IPC is async and may not land before nvim exits; kill directly
 	vim.api.nvim_create_autocmd("VimLeavePre", {
