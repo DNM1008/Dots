@@ -285,12 +285,12 @@ keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", {
 -- markdown preview
 ---------------------
 
-keymap.set("n", "<leader>pt", "<cmd>vellum<CR>", {
+keymap.set("n", "<leader>pt", "<cmd>Vellum<CR>", {
 	desc = "Markdown preview",
 })
 keymap.set("n", "<leader>pz", function()
 	require("vellum").zoom()
-end)
+end, { desc = "Zoom diagram/image under cursor" })
 
 ---------------------
 -- markdown render to pdf
