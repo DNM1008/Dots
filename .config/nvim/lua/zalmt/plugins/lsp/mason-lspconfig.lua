@@ -9,16 +9,12 @@ return {
 		{ "folke/lazydev.nvim", opts = {} },
 	},
 	config = function()
-		-- ─────────────────────────────────────────────
-		-- Mason: install servers only
-		-- ─────────────────────────────────────────────
-		require("mason").setup()
-
 		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"pyright",
 				"lua_ls",
 				"clangd",
+				"ts_ls",
 			},
 		})
 
@@ -30,6 +26,8 @@ return {
 
 		vim.lsp.config("clangd", {})
 		vim.lsp.enable("clangd")
+
+		vim.lsp.enable("ts_ls")
 
 		vim.lsp.config("lua_ls", {
 			settings = {
