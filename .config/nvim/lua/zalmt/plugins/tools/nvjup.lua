@@ -20,8 +20,10 @@ return {
 				return
 			end
 			local version = vim.json.decode(table.concat(vim.fn.readfile(electron .. "/package.json"), "\n")).version
-			local zip = vim.fn.glob(vim.fn.expand("~/.cache/electron") .. "/*/electron-v" .. version .. "-linux-x64.zip", false, true)[1]
-			assert(zip, "electron " .. version .. " zip not found in ~/.cache/electron")
+			-- @electron/get caches under $XDG_CACHE_HOME (default ~/.cache)
+			local cache = (vim.env.XDG_CACHE_HOME or vim.fn.expand("~/.cache")) .. "/electron"
+			local zip = vim.fn.glob(cache .. "/*/electron-v" .. version .. "-linux-x64.zip", false, true)[1]
+			assert(zip, "electron " .. version .. " zip not found in " .. cache)
 			run({ "unzip", "-oq", zip, "-d", electron .. "/dist" })
 			vim.fn.writefile({ "electron" }, electron .. "/path.txt", "b")
 		end,
