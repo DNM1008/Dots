@@ -7,5 +7,14 @@ minsizerule=2
 wmclass=*
 wmclassmatch=3
 
+[ripdrag-front]
+Description=ripdrag on top and focused
+above=true
+aboverule=2
+fsplevel=0
+fsplevelrule=2
+wmclass=ripdrag
+wmclassmatch=2
+
 [General]
-Order=steam,51e1d1df-5a69-4e1b-aaa2-054268c61dc1
+Order=51e1d1df-5a69-4e1b-aaa2-054268c61dc1,ripdrag-front
