@@ -52,7 +52,6 @@
 !.config/plasma-org.kde.plasma.desktop-appletsrc
 !.config/plasmanotifyrc
 !.config/plasmaparc
-!.config/plasma-workspace
 .config/plasmarc
 !.config/plasmashellrc
 !.config/powerdevilrc
