@@ -3,6 +3,8 @@
 -- interleave with nvim's redraws the way a second writer on the tty would.
 local M = {}
 
+local players = {} -- buf -> active player
+
 local function ipc(sock, cmd)
 	local pipe = vim.uv.new_pipe(false)
 	pipe:connect(sock, function(err)
@@ -15,42 +17,81 @@ local function ipc(sock, cmd)
 	end)
 end
 
-function M.play(file, win)
-	win = win or vim.api.nvim_get_current_win()
-	file = vim.fn.fnamemodify(file, ":p")
-
-	local cell = Snacks.image.terminal.size()
+local function geometry(win)
 	local pos = vim.api.nvim_win_get_position(win)
-	local w, h = vim.api.nvim_win_get_width(win), vim.api.nvim_win_get_height(win)
-	local top, left = pos[1] + 1, pos[2] + 1
+	return {
+		top = pos[1] + 1,
+		left = pos[2] + 1,
+		w = vim.api.nvim_win_get_width(win),
+		h = vim.api.nvim_win_get_height(win),
+	}
+end
 
-	local prev = vim.api.nvim_win_get_buf(win)
-	local buf = vim.api.nvim_create_buf(false, true)
-	vim.bo[buf].bufhidden = "wipe"
-	vim.api.nvim_win_set_buf(win, buf)
+local function same(a, b)
+	return a.top == b.top and a.left == b.left and a.w == b.w and a.h == b.h
+end
 
-	local marker = ("\27[%d;%df"):format(top, left)
-	local sock = vim.fn.tempname() .. ".mpv"
-	local parts, latest, scheduled = {}, nil, false
+-- frames are anonymous images (kitty drops them when relayed with an i=),
+-- so delete every placement covering the video's top-left cell
+local function delete_at(g)
+	return ("\27_Ga=d,d=P,x=%d,y=%d,q=2\27\\"):format(g.left, g.top)
+end
+
+-- opts.paused: start paused; opts.clear: escape sequence sent with the first
+-- frame (removes the previous player's image without a blank gap)
+function M.play(buf, win, opts)
+	if players[buf] then
+		return
+	end
+	opts = opts or {}
+	local file = vim.api.nvim_buf_get_name(buf)
+	local cell = Snacks.image.terminal.size()
+
+	-- g0: geometry mpv renders for; g: where the window is now
+	local g0 = geometry(win)
+	local g = g0
+	local player = { sock = vim.fn.tempname() .. ".mpv", paused = opts.paused or false }
+	players[buf] = player
+
+	local clear = opts.clear
+	local marker = ("\27[%d;%df"):format(g0.top, g0.left)
+	local parts, latest, last, scheduled, started = {}, nil, nil, false, false
+
+	-- mpv's geometry is fixed at launch; when the window has moved, place the
+	-- frame at the new cell and let kitty scale it into the new box
+	local function render(frame)
+		local out = frame
+		if not same(g, g0) then
+			local s, v = frame:match("s=(%d+),v=(%d+)")
+			local scale = math.min(g.w * cell.cell_width / s, g.h * cell.cell_height / v)
+			local c = math.max(1, math.floor(s * scale / cell.cell_width + 0.5))
+			local r = math.max(1, math.floor(v * scale / cell.cell_height + 0.5))
+			local hdr = frame:find("a=T,", #marker + 1, true)
+			out = ("\27[%d;%df"):format(g.top, g.left)
+				.. frame:sub(#marker + 1, hdr + 3)
+				.. ("c=%d,r=%d,"):format(c, r)
+				.. frame:sub(hdr + 4)
+		end
+		if clear then
+			out = clear .. out
+			clear = nil
+		end
+		-- synchronized update with the cursor hidden, so kitty never shows the
+		-- cursor while it is parked at the video's corner
+		vim.api.nvim_ui_send("\27[?2026h\27[?25l\0277" .. out .. "\0278\27[?25h\27[?2026l")
+	end
 
 	local function draw()
 		scheduled = false
 		local frame = latest
 		latest = nil
-		if frame and vim.api.nvim_buf_is_valid(buf) then
-			vim.api.nvim_ui_send("\0277" .. frame .. "\0278")
+		-- a draw queued before cleanup would leave a stale frame behind
+		if frame and players[buf] == player then
+			last = frame
+			render(frame)
 		end
 	end
 
-	local function push(frame)
-		latest = frame
-		if not scheduled then
-			scheduled = true
-			vim.schedule(draw)
-		end
-	end
-
-	local started = false
 	local function on_stdout(_, data)
 		if not data then
 			return
@@ -64,20 +105,36 @@ function M.play(file, win)
 		end
 		if started then
 			parts[#parts + 1] = data:sub(1, p - 1)
-			push(table.concat(parts))
+			latest = table.concat(parts)
+			if not scheduled then
+				scheduled = true
+				vim.schedule(draw)
+			end
 		end
 		started = true
 		parts = { data:sub(p) }
 	end
 
+	local group = vim.api.nvim_create_augroup("zalmt_video_" .. buf, {})
+	local timer = vim.uv.new_timer()
+
 	local function cleanup()
-		-- frames are anonymous images (kitty drops them when relayed with an i=),
-		-- so delete every placement covering the video's top-left cell
-		vim.api.nvim_ui_send(("\27_Ga=d,d=P,x=%d,y=%d,q=2\27\\"):format(left, top))
-		if vim.api.nvim_win_is_valid(win) and vim.api.nvim_win_get_buf(win) == buf then
-			vim.api.nvim_win_set_buf(win, vim.api.nvim_buf_is_valid(prev) and prev or vim.api.nvim_create_buf(true, false))
+		players[buf] = nil
+		pcall(vim.api.nvim_del_augroup_by_id, group)
+		timer:close()
+		os.remove(player.sock)
+		local del = (clear or "") .. delete_at(g)
+		if
+			player.restart
+			and vim.api.nvim_buf_is_valid(buf)
+			and vim.api.nvim_win_is_valid(win)
+			and vim.api.nvim_win_get_buf(win) == buf
+		then
+			-- the old (scaled) frame stays up until the new player's first frame
+			M.play(buf, win, { paused = player.paused, clear = del })
+		else
+			vim.api.nvim_ui_send(del)
 		end
-		os.remove(sock)
 	end
 
 	local proc = vim.system({
@@ -87,35 +144,60 @@ function M.play(file, win)
 		"--vo-kitty-use-shm=no",
 		"--vo-kitty-alt-screen=no",
 		"--vo-kitty-config-clear=no",
-		"--vo-kitty-top=" .. top,
-		"--vo-kitty-left=" .. left,
-		"--vo-kitty-cols=" .. w,
-		"--vo-kitty-rows=" .. h,
-		"--vo-kitty-width=" .. math.floor(w * cell.cell_width),
-		"--vo-kitty-height=" .. math.floor(h * cell.cell_height),
-		"--input-ipc-server=" .. sock,
+		"--vo-kitty-top=" .. g0.top,
+		"--vo-kitty-left=" .. g0.left,
+		"--vo-kitty-cols=" .. g0.w,
+		"--vo-kitty-rows=" .. g0.h,
+		"--vo-kitty-width=" .. math.floor(g0.w * cell.cell_width),
+		"--vo-kitty-height=" .. math.floor(g0.h * cell.cell_height),
+		"--input-ipc-server=" .. player.sock,
+		"--pause=" .. (player.paused and "yes" or "no"),
 		file,
 	}, { stdout = on_stdout }, vim.schedule_wrap(cleanup))
 
-	local function map(lhs, cmd, desc)
-		vim.keymap.set("n", lhs, function()
-			ipc(sock, cmd)
-		end, { buffer = buf, desc = desc, nowait = true })
+	-- scaled-up frames get blurry: once resizing settles, relaunch at the new
+	-- size if it is noticeably bigger (mpv resumes from its watch-later entry)
+	local function maybe_relaunch()
+		if player.restart or players[buf] ~= player or not last then
+			return
+		end
+		local s, v = last:match("s=(%d+),v=(%d+)")
+		local scale = math.min(g.w * cell.cell_width / s, g.h * cell.cell_height / v)
+		if scale > 1.1 then
+			player.restart = true
+			ipc(player.sock, { "quit-watch-later" })
+		end
 	end
-	map("q", { "quit" }, "Video: quit")
-	map("<Space>", { "cycle", "pause" }, "Video: pause")
-	map("p", { "cycle", "pause" }, "Video: pause")
-	map("l", { "seek", 5 }, "Video: +5s")
-	map("h", { "seek", -5 }, "Video: -5s")
-	map("m", { "cycle", "mute" }, "Video: mute")
 
-	-- geometry is fixed at launch; stop rather than draw over other windows
-	local group = vim.api.nvim_create_augroup("zalmt_video_" .. buf, {})
-	local function stop()
-		ipc(sock, { "quit" })
-		pcall(vim.api.nvim_del_augroup_by_id, group)
-	end
-	vim.api.nvim_create_autocmd("BufWipeout", { group = group, buffer = buf, callback = stop })
+	vim.api.nvim_create_autocmd({ "WinResized", "VimResized", "WinClosed", "WinNew" }, {
+		group = group,
+		callback = vim.schedule_wrap(function()
+			if players[buf] ~= player then
+				return
+			end
+			if not vim.api.nvim_win_is_valid(win) or vim.api.nvim_win_get_buf(win) ~= buf then
+				-- follow the buffer to another window showing it (e.g. after :only)
+				local tab = vim.api.nvim_get_current_tabpage()
+				local other = vim.iter(vim.fn.win_findbuf(buf)):find(function(w)
+					return vim.api.nvim_win_get_tabpage(w) == tab
+				end)
+				if not other then
+					return M.stop(buf)
+				end
+				win = other
+			end
+			local ng = geometry(win)
+			if same(ng, g) then
+				return
+			end
+			clear = (clear or "") .. delete_at(g)
+			g = ng
+			if last then
+				render(last)
+			end
+			timer:start(400, 0, vim.schedule_wrap(maybe_relaunch))
+		end),
+	})
 	-- IPC is async and may not land before nvim exits; kill directly
 	vim.api.nvim_create_autocmd("VimLeavePre", {
 		group = group,
@@ -123,21 +205,65 @@ function M.play(file, win)
 			proc:kill(15)
 		end,
 	})
-	local function moved()
-		if not vim.api.nvim_win_is_valid(win) then
-			return true
-		end
-		local p = vim.api.nvim_win_get_position(win)
-		return p[1] + 1 ~= top or p[2] + 1 ~= left
-			or vim.api.nvim_win_get_width(win) ~= w or vim.api.nvim_win_get_height(win) ~= h
+end
+
+function M.stop(buf)
+	local player = players[buf]
+	if player then
+		ipc(player.sock, { "quit" })
 	end
-	vim.api.nvim_create_autocmd({ "WinResized", "VimResized", "WinClosed", "WinNew" }, {
-		group = group,
-		callback = vim.schedule_wrap(function()
-			if moved() then
-				stop()
+end
+
+-- BufReadCmd handler: keep the binary out of the buffer, play on display
+function M.attach(buf)
+	vim.bo[buf].buftype = "nofile"
+	vim.bo[buf].swapfile = false
+	vim.bo[buf].modifiable = false
+	vim.bo[buf].filetype = "video"
+
+	local function map(lhs, fn, desc)
+		vim.keymap.set("n", lhs, fn, { buffer = buf, desc = desc, nowait = true })
+	end
+	local function send(cmd)
+		return function()
+			local player = players[buf]
+			if player then
+				ipc(player.sock, cmd)
 			end
-		end),
+		end
+	end
+	map("p", function()
+		local player = players[buf]
+		if player then
+			player.paused = not player.paused
+			ipc(player.sock, { "set_property", "pause", player.paused })
+		else
+			M.play(buf, vim.api.nvim_get_current_win())
+		end
+	end, "Video: play/pause")
+	map("q", function()
+		M.stop(buf)
+	end, "Video: stop")
+	map("l", send({ "seek", 5 }), "Video: +5s")
+	map("h", send({ "seek", -5 }), "Video: -5s")
+	map("m", send({ "cycle", "mute" }), "Video: mute")
+
+	vim.api.nvim_create_autocmd("BufWinEnter", {
+		buffer = buf,
+		callback = function()
+			local win = vim.api.nvim_get_current_win()
+			vim.schedule(function()
+				if vim.api.nvim_win_is_valid(win) and vim.api.nvim_win_get_buf(win) == buf then
+					M.play(buf, win)
+				end
+			end)
+		end,
+	})
+	vim.api.nvim_create_autocmd("BufWinLeave", {
+		buffer = buf,
+		callback = function()
+			M.stop(buf)
+		end,
 	})
 end
 

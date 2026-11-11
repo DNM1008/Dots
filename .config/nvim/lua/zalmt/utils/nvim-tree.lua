@@ -129,13 +129,4 @@ function M.play()
 	}, { detach = true })
 end
 
--- Play the node under cursor inside a picked split
-function M.play_in_split()
-	local file = file_under_cursor()
-	local win = file and M.pick_window()
-	if win then
-		require("zalmt.utils.video").play(file, win)
-	end
-end
-
 return M

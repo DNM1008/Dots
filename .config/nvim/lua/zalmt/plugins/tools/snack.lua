@@ -16,7 +16,7 @@ return {
 		},
 		image = {
 			enabled = true,
-			-- pdf handled separately in core/pdf.lua with page navigation
+			-- pdf handled in core/pdf.lua, videos in utils/video.lua
 			formats = {
 				"png",
 				"jpg",
@@ -27,11 +27,6 @@ return {
 				"tiff",
 				"heic",
 				"avif",
-				"mp4",
-				"mov",
-				"avi",
-				"mkv",
-				"webm",
 				"icns",
 			},
 			-- doc = {
