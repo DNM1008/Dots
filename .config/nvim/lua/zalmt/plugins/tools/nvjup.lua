@@ -7,7 +7,24 @@ return {
 		"chase/awrit",
 		branch = "electron",
 		lazy = true,
-		build = "./setup.sh",
+		build = function(plugin)
+			local function run(cmd)
+				local r = vim.system(cmd, { cwd = plugin.dir }):wait()
+				assert(r.code == 0, table.concat(cmd, " ") .. " failed:\n" .. (r.stderr or ""))
+			end
+			run({ "./setup.sh" })
+			-- electron's postinstall (extract-zip) stops after the first file on
+			-- recent node/bun; unpack its verified cached zip with unzip instead
+			local electron = plugin.dir .. "/node_modules/electron"
+			if vim.uv.fs_stat(electron .. "/dist/electron") then
+				return
+			end
+			local version = vim.json.decode(table.concat(vim.fn.readfile(electron .. "/package.json"), "\n")).version
+			local zip = vim.fn.glob(vim.fn.expand("~/.cache/electron") .. "/*/electron-v" .. version .. "-linux-x64.zip", false, true)[1]
+			assert(zip, "electron " .. version .. " zip not found in ~/.cache/electron")
+			run({ "unzip", "-oq", zip, "-d", electron .. "/dist" })
+			vim.fn.writefile({ "electron" }, electron .. "/path.txt", "b")
+		end,
 	},
 	{
 		"LumbaBalumba/nvjup",
