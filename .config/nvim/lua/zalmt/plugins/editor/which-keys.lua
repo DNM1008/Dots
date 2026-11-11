@@ -15,6 +15,7 @@ return {
 			{ "<leader>l", group = "lazy/mason" },
 			{ "<leader>m", group = "swap" },
 			{ "<leader>n", group = "noice" },
+			{ "<leader>o", group = "notes" },
 			{ "<leader>p", group = "preview" },
 			{ "<leader>s", group = "splits" },
 			{ "<leader>t", group = "tabs" },

@@ -34,6 +34,27 @@ return {
 		version = "*",
 		ft = "norg",
 		cmd = "Neorg",
+		keys = {
+			{ "<leader>oo", "<cmd>Neorg index<CR>", desc = "Notes index" },
+			{ "<leader>or", "<cmd>Neorg return<CR>", desc = "Close notes, back to previous buffers" },
+			{ "<leader>oj", "<cmd>Neorg journal today<CR>", desc = "Journal: today" },
+		},
+		init = function()
+			-- name neorg's <localleader> prefixes (its keymaps are buffer-local)
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = "norg",
+				callback = function(args)
+					require("which-key").add({
+						{ "<localleader>", group = "neorg", buffer = args.buf },
+						{ "<localleader>c", group = "code", buffer = args.buf },
+						{ "<localleader>i", group = "insert", buffer = args.buf },
+						{ "<localleader>l", group = "list", buffer = args.buf },
+						{ "<localleader>n", group = "note", buffer = args.buf },
+						{ "<localleader>t", group = "todo", buffer = args.buf },
+					})
+				end,
+			})
+		end,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-neorg/lua-utils.nvim",
